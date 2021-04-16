@@ -1,0 +1,10 @@
+{
+  "header": {
+    "menu": {
+      "work": "work",
+      "studio": "studio",
+      "contacts": "get in touch"
+    }
+  },
+  "title": "Hello world!"
+}
