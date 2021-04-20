@@ -156,13 +156,16 @@
   }
 
   .square-pattern {
+    display: flex;
+    position: relative;
+    top: -50px;
     width: 100%;
     height: 100vh;
-    display: flex;
   }
 
   .line {
-    width: 8.3%;
+    width: calc(100% / 12);
+    height: calc(100% + 50px);
     background-image: linear-gradient(to top, #fbfe67 50px, transparent 50px);
     background-size: 50px 100px;
 
@@ -172,7 +175,7 @@
   }
 
   .line:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 5px;
   }
 
   .line:nth-child(5n + 1) {
