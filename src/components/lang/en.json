@@ -1,10 +1,23 @@
 {
   "header": {
     "menu": {
-      "work": "work",
-      "studio": "studio",
-      "contacts": "get in touch"
+      "work": "Work",
+      "studio": "Studio",
+      "contacts": "Get in touch"
     }
+  },
+  "mainPage": {
+    "title": "<span class='underline'>Studio</span> that <span class='pink-marker'>inspires</span><br /><span class='pink-marker'>meaningful</span> events.<br />We develop <span class='circle'>brands</span><br />and <span class='green-marker'>help</span> them<br />communicate <span class='yellow-marker'>with</span><br /><span class='red-marker'>the audience.</span>",
+    "subtitle": "We organize large-scale events, develop BTL promotions and special projects, ensure the presence of companies in the media, and design products and services.",
+    "contactUs": "Feel free to contact us",
+    "or": "or",
+    "connect": "We connect with you",
+    "presentation": "Download our pres.",
+    "inputName": "Your name",
+    "inputTel": "Your phone",
+    "button": "Connect with me",
+    "phone": "Phone",
+    "workText": "Our clients include the largest retailers, global pharmaceutical companies and leaders in the FMCG segment. We know how to delve into the customer's area at the expert level: this is the only way to guarantee the quality of the project. We think beyond the scope of the brief and strive to do more than the client expects."
   },
   "title": "Hello world!"
 }
