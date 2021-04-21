@@ -17,7 +17,7 @@
     "inputTel": "Your phone",
     "button": "Connect with me",
     "phone": "Phone",
-    "workText": "Our clients include the largest retailers, global pharmaceutical companies and leaders in the FMCG segment. We know how to delve into the customer's area at the expert level: this is the only way to guarantee the quality of the project. We think beyond the scope of the brief and strive to do more than the client expects."
+    "workText": "<p>Our clients include the largest retailers, global pharmaceutical companies and leaders in the FMCG segment.</p> <p>We know how to delve into the customer's area at the expert level: this is the only way to guarantee the quality of the project. We think beyond the scope of the brief and strive to do more than the client expects.</p>"
   },
   "title": "Hello world!"
 }

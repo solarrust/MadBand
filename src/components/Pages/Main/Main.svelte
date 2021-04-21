@@ -2,61 +2,12 @@
   import { t } from "../../services/i18n";
   import { Link } from "svelte-navigator";
   import Hero from "./Hero.svelte";
+  import Works from "./Works.svelte";
 </script>
 
 <Hero />
 
-<section class="main__section works">
-  <div class="works__text">
-    {$t("mainPage.workText")}
-  </div>
-  <div class="works__list">
-    <div class="work works__item">
-      <div class="work__name">Alcon</div>
-      <div class="__work__cover" />
-    </div>
-    <div class="work works__item">
-      <div class="work__name">ICE ICE PARTY</div>
-      <div class="__work__cover" />
-    </div>
-    <div class="work works__item">
-      <div class="work__name">OTKRITIE</div>
-      <div class="__work__cover" />
-    </div>
-    <div class="work works__item">
-      <div class="work__name">GASTRO DINNER</div>
-      <div class="__work__cover" />
-    </div>
-    <div class="work works__item _horizontal">
-      <div class="work__name">gills</div>
-      <div class="__work__cover" />
-    </div>
-    <div class="work works__item">
-      <div class="work__name">AB INBEV EFES</div>
-      <div class="__work__cover" />
-    </div>
-    <div class="work works__item">
-      <div class="work__name">Novartis neva</div>
-      <div class="__work__cover" />
-    </div>
-    <div class="work works__item">
-      <div class="work__name">Bud 66</div>
-      <div class="__work__cover" />
-    </div>
-    <div class="work works__item">
-      <div class="work__name">Inventive Retail Group</div>
-      <div class="__work__cover" />
-    </div>
-    <div class="work works__item _horizontal">
-      <div class="work__name">BUD 66</div>
-      <div class="__work__cover" />
-    </div>
-  </div>
-
-  <div class="works__all-link">
-    <Link to="portfolio">All works</Link>
-  </div>
-</section>
+<Works />
 
 <section class="main__section contacts" id="contacts">
   <div class="contacts__block">
@@ -95,10 +46,6 @@
 <style>
   .main__section {
     min-height: 100vh;
-  }
-
-  .works {
-    background-color: var(--dandelion);
   }
 
   .contacts {

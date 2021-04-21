@@ -51,6 +51,7 @@
   .hero__subtitle {
     width: 380px;
     margin-bottom: 35px;
+    margin-right: 40px;
     justify-self: flex-end;
     align-self: flex-end;
     font-size: 14px;

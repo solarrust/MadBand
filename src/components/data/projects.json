@@ -1,0 +1,218 @@
+{
+  "categories": {
+    "en": ["Events", "SMM", "DESIGN & Branding", "PRODUCTION", "CONTENT"],
+    "ru": ["Мероприятия", "SMM", "Дизайн и брендинг", "Продакшен", "Контент"]
+  },
+  "projects": [
+    {
+      "projectName": {
+        "en": "Alcon",
+        "ru": ""
+      },
+      "category": 1,
+      "cover": "img/covers/Alcon.png",
+      "isVideoCover": false,
+      "data": {
+        "client": "",
+        "year": "",
+        "type": "",
+        "credits": [""]
+      },
+      "text": {
+        "en": "",
+        "ru": ""
+      },
+      "photos": [""],
+      "gallery": [""]
+    },
+    {
+      "projectName": {
+        "en": "ICE ICE PARTY",
+        "ru": ""
+      },
+      "category": 1,
+      "cover": "img/covers/ICE ICE PARTY.png",
+      "isVideoCover": false,
+      "data": {
+        "client": "",
+        "year": "",
+        "type": "",
+        "credits": [""]
+      },
+      "text": {
+        "en": "",
+        "ru": ""
+      },
+      "photos": [""],
+      "gallery": [""]
+    },
+    {
+      "projectName": {
+        "en": "OTKRITIE",
+        "ru": ""
+      },
+      "category": 1,
+      "cover": "img/covers/OTKRITIE.png",
+      "isVideoCover": false,
+      "data": {
+        "client": "",
+        "year": "",
+        "type": "",
+        "credits": [""]
+      },
+      "text": {
+        "en": "",
+        "ru": ""
+      },
+      "photos": [""],
+      "gallery": [""]
+    },
+    {
+      "projectName": {
+        "en": "GASTRO DINNER",
+        "ru": ""
+      },
+      "category": 1,
+      "cover": "img/covers/GASTRO DINNER.png",
+      "isVideoCover": false,
+      "data": {
+        "client": "",
+        "year": "",
+        "type": "",
+        "credits": [""]
+      },
+      "text": {
+        "en": "",
+        "ru": ""
+      },
+      "photos": [""],
+      "gallery": [""]
+    },
+    {
+      "projectName": {
+        "en": "gills",
+        "ru": ""
+      },
+      "category": 1,
+      "cover": "img/covers/gills.png",
+      "isVideoCover": true,
+      "data": {
+        "client": "",
+        "year": "",
+        "type": "",
+        "credits": [""]
+      },
+      "text": {
+        "en": "",
+        "ru": ""
+      },
+      "photos": [""],
+      "gallery": [""]
+    },
+    {
+      "projectName": {
+        "en": "AB INBEV EFES",
+        "ru": ""
+      },
+      "category": 1,
+      "cover": "img/covers/AB INBEV EFES.png",
+      "isVideoCover": false,
+      "data": {
+        "client": "",
+        "year": "",
+        "type": "",
+        "credits": [""]
+      },
+      "text": {
+        "en": "",
+        "ru": ""
+      },
+      "photos": [""],
+      "gallery": [""]
+    },
+    {
+      "projectName": {
+        "en": "Novartis neva",
+        "ru": ""
+      },
+      "category": 1,
+      "cover": "img/covers/Novartis neva.png",
+      "isVideoCover": false,
+      "data": {
+        "client": "",
+        "year": "",
+        "type": "",
+        "credits": [""]
+      },
+      "text": {
+        "en": "",
+        "ru": ""
+      },
+      "photos": [""],
+      "gallery": [""]
+    },
+    {
+      "projectName": {
+        "en": "BUD 66",
+        "ru": ""
+      },
+      "category": 1,
+      "cover": "img/covers/BUD 66.png",
+      "isVideoCover": false,
+      "data": {
+        "client": "",
+        "year": "",
+        "type": "",
+        "credits": [""]
+      },
+      "text": {
+        "en": "",
+        "ru": ""
+      },
+      "photos": [""],
+      "gallery": [""]
+    },
+    {
+      "projectName": {
+        "en": "Inventive Retail Group",
+        "ru": ""
+      },
+      "category": 1,
+      "cover": "img/covers/Inventive Retail Group.png",
+      "isVideoCover": false,
+      "data": {
+        "client": "",
+        "year": "",
+        "type": "",
+        "credits": [""]
+      },
+      "text": {
+        "en": "",
+        "ru": ""
+      },
+      "photos": [""],
+      "gallery": [""]
+    },
+    {
+      "projectName": {
+        "en": "BUD 66-2",
+        "ru": ""
+      },
+      "category": 1,
+      "cover": "img/covers/BUD 66-2.png",
+      "isVideoCover": true,
+      "data": {
+        "client": "",
+        "year": "",
+        "type": "",
+        "credits": [""]
+      },
+      "text": {
+        "en": "",
+        "ru": ""
+      },
+      "photos": [""],
+      "gallery": [""]
+    }
+  ]
+}
