@@ -34,7 +34,7 @@
     <nav class="nav header__nav">
       <Link to="portfolio" class="nav__item">{$t("header.menu.work")}</Link>
       <Link to="studio" class="nav__item">{$t("header.menu.studio")}</Link>
-      <Link to="#contacts" class="nav__item">{$t("header.menu.contacts")}</Link>
+      <a href="#contacts" class="nav__item">{$t("header.menu.contacts")}</a>
     </nav>
   </div>
 </header>
@@ -45,12 +45,12 @@
     top: 0;
     left: 0;
     z-index: 10;
-    width: 100%;
+    width: 50%;
     transition: width 0.5s ease-in;
   }
 
-  :global(.header._small) {
-    width: 50%;
+  :global(.header:not(._small)) {
+    width: 100%;
     transition: width 0.5s ease-out;
   }
 

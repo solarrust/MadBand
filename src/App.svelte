@@ -2,7 +2,7 @@
   import translations from "./components/lang/translations";
   import { dict, locale, t } from "./components/services/i18n";
   import { Router, Route, Link } from "svelte-navigator";
-  import Main from "./components/Pages/Main.svelte";
+  import Main from "./components/Pages/Main/Main.svelte";
   import Studio from "./components/Pages/Studio.svelte";
   import Portfolio from "./components/Pages/Portfolio.svelte";
   import Header from "./components/Header/Header.svelte";
@@ -14,6 +14,7 @@
 
 <Router>
   <Header />
+
   <main>
     <Route path="/">
       <Main />
