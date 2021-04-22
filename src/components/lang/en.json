@@ -9,9 +9,9 @@
   "mainPage": {
     "title": "<span class='underline'>Studio</span> that <span class='pink-marker'>inspires</span><br /><span class='pink-marker'>meaningful</span> events.<br />We develop <span class='circle'>brands</span><br />and <span class='green-marker'>help</span> them<br />communicate <span class='yellow-marker'>with</span><br /><span class='red-marker'>the audience.</span>",
     "subtitle": "We organize large-scale events, develop BTL promotions and special projects, ensure the presence of companies in the media, and design products and services.",
-    "contactUs": "Feel free to contact us",
+    "contactUs": "Feel <span class='underline'>free</span> to <span class='lightgreen-marker'>contact us</span>",
     "or": "or",
-    "connect": "We connect with you",
+    "connect": "We connect <span class='green-marker _thistle-text'>with you</span>",
     "presentation": "Download our pres.",
     "inputName": "Your name",
     "inputTel": "Your phone",

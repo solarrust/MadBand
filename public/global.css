@@ -3,6 +3,7 @@
   --dandelion: #fbfe67;
   --sky-blue: #bde6ee;
   --green: #029c53;
+  --green-rgb: rgb(2 156 83 / 0.4);
   --cherry-blossom: #ffb2ce;
   --oriole: #f55b1c;
 
@@ -51,12 +52,7 @@ select,
 textarea {
   font-family: inherit;
   font-size: inherit;
-  -webkit-padding: 0.4em 0;
-  padding: 0.4em;
-  margin: 0 0 0.5em 0;
   box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 2px;
 }
 
 input:disabled {
