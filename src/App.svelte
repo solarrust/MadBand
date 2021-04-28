@@ -28,5 +28,4 @@
       <Studio />
     </Route>
   </main>
-  <Lang />
 </Router>

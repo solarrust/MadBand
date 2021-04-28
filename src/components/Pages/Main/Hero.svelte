@@ -109,6 +109,10 @@
     }
   }
 
+  :global(.marker) {
+    white-space: nowrap;
+  }
+
   :global(.underline) {
     position: relative;
   }

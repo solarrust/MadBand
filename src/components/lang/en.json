@@ -7,11 +7,11 @@
     }
   },
   "mainPage": {
-    "title": "<span class='underline'>Studio</span> that <span class='pink-marker'>inspires</span><br /><span class='pink-marker'>meaningful</span> events.<br />We develop <span class='circle'>brands</span><br />and <span class='green-marker'>help</span> them<br />communicate <span class='yellow-marker'>with</span><br /><span class='red-marker'>the audience.</span>",
+    "title": "<span class='marker underline'>Studio</span> that <span class='marker pink-marker'>inspires</span><br /><span class='marker pink-marker'>meaningful</span> events.<br />We develop <span class='marker circle'>brands</span><br />and <span class='marker green-marker'>help</span> them<br />communicate <span class='marker yellow-marker'>with</span><br /><span class='marker red-marker'>the audience.</span>",
     "subtitle": "We organize large-scale events, develop BTL promotions and special projects, ensure the presence of companies in the media, and design products and services.",
-    "contactUs": "Feel <span class='underline'>free</span> to <span class='lightgreen-marker'>contact us</span>",
+    "contactUs": "Feel <span class='marker underline'>free</span> to <span class='marker lightgreen-marker'>contact us</span>",
     "or": "or",
-    "connect": "We connect <span class='green-marker _thistle-text'>with you</span>",
+    "connect": "We connect <span class='marker green-marker _thistle-text'>with you</span>",
     "presentation": "Download our pres.",
     "inputName": "Your name",
     "inputTel": "Your phone",

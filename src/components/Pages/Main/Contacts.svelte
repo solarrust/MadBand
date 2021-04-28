@@ -2,6 +2,7 @@
   import { t } from "../../services/i18n";
   import { AsYouType, parsePhoneNumber } from "libphonenumber-js";
   import { onMount } from "svelte";
+  import Lang from "../../lang/Lang.svelte";
 
   onMount(() => {
     const phoneInput = document.querySelector("#phone");
@@ -91,6 +92,7 @@
     </div>
   </div>
   <!-- TODO: спросить у ребят на какие англиязычные компании они расчитывают чтобы правильно форматировать и валидирвать телефон -->
+  <Lang />
 </section>
 
 <style>
