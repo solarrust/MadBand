@@ -6,7 +6,6 @@
   import Studio from "./components/Pages/Studio.svelte";
   import Portfolio from "./components/Pages/Portfolio.svelte";
   import Header from "./components/Header/Header.svelte";
-  import Lang from "./components/lang/Lang.svelte";
 
   $: languages = Object.keys(translations);
   $: dict.set(translations);

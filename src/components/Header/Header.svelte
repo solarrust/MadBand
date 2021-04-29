@@ -25,6 +25,14 @@
         }
       }
     });
+
+    let loc = window.location.hash;
+    let anchorLink = document.querySelector(".nav__item._anchor");
+    anchorLink.addEventListener("click", (e) => {
+      if (!e.target.classList.contains("active") || loc === "#contacts") {
+        e.target.classList.add("active");
+      }
+    });
   });
 </script>
 
@@ -34,7 +42,9 @@
     <nav class="nav header__nav">
       <Link to="portfolio" class="nav__item">{$t("header.menu.work")}</Link>
       <Link to="studio" class="nav__item">{$t("header.menu.studio")}</Link>
-      <a href="#contacts" class="nav__item">{$t("header.menu.contacts")}</a>
+      <a href="#contacts" class="nav__item _anchor"
+        >{$t("header.menu.contacts")}</a
+      >
     </nav>
   </div>
 </header>
@@ -63,6 +73,10 @@
     padding: 30px 40px;
   }
 
+  .nav {
+    display: flex;
+  }
+
   :global(.nav__item) {
     color: var(--green);
     font-size: 12px;
@@ -71,5 +85,23 @@
 
   :global(.nav__item:not(:last-child)) {
     margin-right: 45px;
+  }
+
+  :global(.nav__item._anchor:after) {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 13px;
+    background-image: url("../svg/menu-contact-active.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  :global(.nav__item._anchor.active:after) {
+    opacity: 1;
   }
 </style>

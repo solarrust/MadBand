@@ -31,6 +31,23 @@
 
     phoneInput.addEventListener("keyup", onChange);
     phoneInput.addEventListener("focusout", (e) => phoneValidation(e.target));
+
+    let anchorLink = document.querySelector(".nav__item._anchor");
+    let contactsTop = document.querySelector("#contacts").offsetTop;
+
+    let scrollPos = 0;
+
+    window.addEventListener("scroll", function () {
+      if (
+        document.body.getBoundingClientRect().top > scrollPos &&
+        contactsTop > document.body.getBoundingClientRect().top
+      ) {
+        window.location.hash = "";
+        anchorLink.classList.remove("active");
+      }
+
+      scrollPos = document.body.getBoundingClientRect().top;
+    });
   });
 </script>
 
