@@ -9,16 +9,19 @@
 
   onMount(() => {
     let header = document.querySelector(".header");
-    let secondScreen = document.querySelector(".works");
-    let secScrTop = secondScreen.getBoundingClientRect().y;
-
-    if (secondScreen) {
-      header.classList.add("_small");
+    let headerBottom = header.getBoundingClientRect().y + header.offsetHeight;
+    let hero = document.querySelector(".hero");
+    let heroBottom;
+    if (hero) {
+      heroBottom = hero.getBoundingClientRect().y + hero.offsetHeight;
     }
 
     document.addEventListener("scroll", function (e) {
-      if (secondScreen) {
-        if (window.pageYOffset > secScrTop) {
+      if (hero) {
+        if (
+          Math.abs(document.body.getBoundingClientRect().top) >
+          heroBottom - headerBottom / 2
+        ) {
           header.classList.remove("_small");
         } else {
           header.classList.add("_small");

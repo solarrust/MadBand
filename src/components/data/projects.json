@@ -1,13 +1,31 @@
 {
-  "categories": {
-    "en": ["Events", "SMM", "DESIGN & Branding", "PRODUCTION", "CONTENT"],
-    "ru": ["Мероприятия", "SMM", "Дизайн и брендинг", "Продакшен", "Контент"]
-  },
+  "categories": [
+    {
+      "en": "Events",
+      "ru": "Мероприятия"
+    },
+    {
+      "en": "SMM",
+      "ru": "SMM"
+    },
+    {
+      "en": "DESIGN & Branding",
+      "ru": "Дизайн и брендинг"
+    },
+    {
+      "en": "PRODUCTION",
+      "ru": "Продакшен"
+    },
+    {
+      "en": "CONTENT",
+      "ru": "Контент"
+    }
+  ],
   "projects": [
     {
       "projectName": {
         "en": "Alcon",
-        "ru": ""
+        "ru": "Алкон"
       },
       "category": 1,
       "cover": "img/covers/Alcon.png",

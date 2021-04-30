@@ -19,5 +19,8 @@
     "phone": "Phone",
     "workText": "<p>Our clients include the largest retailers, global pharmaceutical companies and leaders in the FMCG segment.</p> <p>We know how to delve into the customer's area at the expert level: this is the only way to guarantee the quality of the project. We think beyond the scope of the brief and strive to do more than the client expects.</p>"
   },
-  "title": "Hello world!"
+  "workPage": {
+    "text": "We create concepts for corporate and public events and fully implement them. We provide full technical equipment and turnkey development of the site, catering and security, well-coordinated work of staff. We provide booking and accompaniment of artists.",
+    "callToAction": "Work with us"
+  }
 }

@@ -24,7 +24,7 @@
         >
           <div class="work__cover">
             <div class="work__name">
-              {#if locale === "en" || project.projectName.ru === ""}
+              {#if $locale === "en" || project.projectName.ru === ""}
                 {project.projectName.en}
               {:else}
                 {project.projectName.ru}
@@ -48,12 +48,12 @@
 </section>
 
 <style>
-  .works {
+  :global(.works) {
     padding: 100px 0 140px;
     background-color: var(--dandelion);
   }
 
-  .works__content {
+  :global(.works__content) {
     width: 85%;
     max-width: 1440px;
     margin: 0 auto;
@@ -70,7 +70,7 @@
     margin-bottom: 24px;
   }
 
-  .works__list {
+  :global(.works__list) {
     display: grid;
     grid-template-columns: repeat(4, calc(25% - 20px));
     grid-auto-rows: minmax(45vh, max-content);
