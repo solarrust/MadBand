@@ -1,4 +1,4 @@
-import { writable, derived } from "svelte/store";
+import { writable, derived, get } from "svelte/store";
 
 export const dict = writable();
 export const locale = writable("ru");
@@ -23,3 +23,5 @@ const createMessageFormatter = (localizedDict) => (id) =>
 export const t = derived(localizedDict, ($localizedDict) => {
   return createMessageFormatter($localizedDict);
 });
+
+export const currentLocale = get(locale);

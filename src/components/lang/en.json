@@ -22,5 +22,27 @@
   "workPage": {
     "text": "We create concepts for corporate and public events and fully implement them. We provide full technical equipment and turnkey development of the site, catering and security, well-coordinated work of staff. We provide booking and accompaniment of artists.",
     "callToAction": "Work with us"
+  },
+  "studioPage": {
+    "subtitle": "We believe that every event happens only once, and we must make this experience unique.",
+    "title": "Mad Band is <span class='marker pink-marker'>a&nbsp;studio</span> that <span class='marker red-marker'>combines</span> <span class='marker underline'>creativity</span>, pleasure, <span class='marker yellow-marker'>provocation</span>, <span class='marker green-marker'>innovation</span> and <span class='marker wave-underline'>quality</span>.",
+    "stuff": [
+      { "img": "", "name": "Dmitry Zakharov", "position": "Co-founder" },
+      { "img": "", "name": "Ivan Ivanov", "position": "Event-manager" },
+      { "img": "", "name": "Elena Kazarinova", "position": "Brand manager" },
+      { "img": "", "name": "Dmitry Zakharov", "position": "Co-founder" }
+    ],
+    "text": "Our team knows how to understand the product and the customer's task at the expert level, this is the only way to guarantee the high-quality implementation of the project. MadBand combines creativity with responsibility and open communication. We think beyond the scope of the brief and strive to do more than the client expects.",
+    "mission": "Our mission is to generate in the customer the <span class='marker pink-marker'>desire</span> to <span class='marker underline'>create</span> meanings that will inspire people. We ourselves <span class='marker green-marker'>experience</span> the pleasure of working on creative projects with an <span class='marker red-marker'>ambitious</span> and <span class='marker yellow-marker'>bright</span> idea.",
+    "philosophy": {
+      "text": "Our philosophy is to put a special meaning in each project that affects all the senses and the mind of the audience. It is important for us to make your event or product not only beautiful, but also inspiring.",
+      "bigText": "It is important for us to make your event or product not only <span class='marker underline'>beautiful</span>, but also <span class='marker pink-marker'>inspiring.</span>",
+      "items": [
+        "MadBand combines creativity with responsibility and open communication.",
+        "We think beyond the scope of the brief and strive to do more than the client expects.",
+        "We truly believe in the power of meaning, and that's why it works!"
+      ]
+    },
+    "callToAction": "Work with us"
   }
 }

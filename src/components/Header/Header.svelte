@@ -1,19 +1,36 @@
 <script>
   import { onMount } from "svelte";
+
   import Logo from "./Logo.svelte";
-  import { Link } from "svelte-navigator";
+  import { Link, Router } from "svelte-routing";
 
   import { t } from "../services/i18n";
 
+  let extraClass;
+
   let y;
+  let header;
+  let headerBottom;
+  let hero;
+  let heroBottom;
 
   onMount(() => {
-    let header = document.querySelector(".header");
-    let headerBottom = header.getBoundingClientRect().y + header.offsetHeight;
-    let hero = document.querySelector(".hero");
-    let heroBottom;
+    header = document.querySelector(".header");
+    headerBottom = header.getBoundingClientRect().y + header.offsetHeight;
+    hero = document.querySelector(".hero");
+    heroBottom;
+
+    let loc = window.location.hash;
+    let anchorLink = document.querySelector(".nav__item._anchor");
+    anchorLink.addEventListener("click", (e) => {
+      if (!e.target.classList.contains("active") || loc === "#contacts") {
+        e.target.classList.add("active");
+      }
+    });
+
     if (hero) {
       heroBottom = hero.getBoundingClientRect().y + hero.offsetHeight;
+      header.classList.add("_small");
     }
 
     document.addEventListener("scroll", function (e) {
@@ -28,23 +45,19 @@
         }
       }
     });
-
-    let loc = window.location.hash;
-    let anchorLink = document.querySelector(".nav__item._anchor");
-    anchorLink.addEventListener("click", (e) => {
-      if (!e.target.classList.contains("active") || loc === "#contacts") {
-        e.target.classList.add("active");
-      }
-    });
   });
 </script>
 
-<header class="header">
+<header class={`header ${extraClass || ""}`}>
   <div class="header__box">
     <Logo />
     <nav class="nav header__nav">
-      <Link to="portfolio" class="nav__item">{$t("header.menu.work")}</Link>
-      <Link to="studio" class="nav__item">{$t("header.menu.studio")}</Link>
+      <Link to="portfolio" class="nav__item _works"
+        >{$t("header.menu.work")}</Link
+      >
+      <Link to="studio" class="nav__item _studio"
+        >{$t("header.menu.studio")}</Link
+      >
       <a href="#contacts" class="nav__item _anchor"
         >{$t("header.menu.contacts")}</a
       >
@@ -58,13 +71,12 @@
     top: 0;
     left: 0;
     z-index: 10;
-    width: 50%;
-    transition: width 0.5s ease-in;
+    width: 100%;
+    transition: width 0.2s ease-in;
   }
 
-  :global(.header:not(._small)) {
-    width: 100%;
-    transition: width 0.5s ease-out;
+  :global(.header._small) {
+    width: 50%;
   }
 
   .header__box {
@@ -90,12 +102,11 @@
     margin-right: 45px;
   }
 
-  :global(.nav__item._anchor:after) {
+  :global(.nav__item:after) {
     content: "";
     display: inline-block;
     width: 100%;
     height: 13px;
-    background-image: url("../svg/menu-contact-active.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -104,7 +115,21 @@
     transition: opacity 0.2s;
   }
 
-  :global(.nav__item._anchor.active:after) {
+  :global(.nav__item._anchor:after) {
+    background-image: url("../svg/menu-contact-active.svg");
+  }
+
+  :global(.nav__item._works:after) {
+    height: 20px;
+    background-image: url("../svg/menu-works-active.svg");
+  }
+
+  :global(.nav__item._studio:after) {
+    background-image: url("../svg/menu-studio-active.svg");
+  }
+
+  :global(.nav__item._anchor.active:after),
+  :global(.nav__item[aria-current="page"]:after) {
     opacity: 1;
   }
 </style>

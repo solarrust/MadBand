@@ -110,6 +110,8 @@
   }
 
   :global(.marker) {
+    position: relative;
+    display: inline-block;
     white-space: nowrap;
   }
 
@@ -125,6 +127,18 @@
     right: 0;
     height: 17px;
     background-image: url("../svg/underline.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  :global(.wave-underline:after) {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    height: 17px;
+    background-image: url("../svg/wave-underline.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }

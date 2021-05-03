@@ -1,6 +1,7 @@
 <script>
   import { t, locale } from "../../services/i18n";
-  import { Link } from "svelte-navigator";
+  import { link } from "svelte-routing";
+  import { Router, Link, Route } from "svelte-routing";
 
   import data from "../../data/projects.json";
 
@@ -9,43 +10,45 @@
   let current = "_horizontal";
 </script>
 
-<section class="main__section works">
-  <div class="works__content">
-    <div class="works__text">
-      {@html $t("mainPage.workText")}
-    </div>
-    <div class="works__list">
-      {#each projects as project}
-        <Link
-          to="portfolio"
-          class="work works__item {project.isVideoCover === true
-            ? current
-            : ''}"
-        >
-          <div class="work__cover">
-            <div class="work__name">
-              {#if $locale === "en" || project.projectName.ru === ""}
-                {project.projectName.en}
-              {:else}
-                {project.projectName.ru}
-              {/if}
-            </div>
-            <img src={project.cover} alt={project.projectName.en} />
-          </div>
-        </Link>
-      {/each}
-    </div>
-  </div>
-
-  <div class="works__all-link">
-    <Link to="portfolio">
-      <div class="ticker">
-        <div class="ticker__item _big" />
-        <div class="ticker__item _small" />
+<Router>
+  <section class="main__section works">
+    <div class="works__content">
+      <div class="works__text">
+        {@html $t("mainPage.workText")}
       </div>
-    </Link>
-  </div>
-</section>
+      <div class="works__list">
+        {#each projects as project}
+          <Link
+            to="portfolio"
+            class="work works__item {project.isVideoCover === true
+              ? current
+              : ''}"
+          >
+            <div class="work__cover">
+              <div class="work__name">
+                {#if $locale === "en" || project.projectName.ru === ""}
+                  {project.projectName.en}
+                {:else}
+                  {project.projectName.ru}
+                {/if}
+              </div>
+              <img src={project.cover} alt={project.projectName.en} />
+            </div>
+          </Link>
+        {/each}
+      </div>
+    </div>
+
+    <div class="works__all-link">
+      <Link to="portfolio">
+        <div class="ticker">
+          <div class="ticker__item _big" />
+          <div class="ticker__item _small" />
+        </div>
+      </Link>
+    </div>
+  </section>
+</Router>
 
 <style>
   :global(.works) {

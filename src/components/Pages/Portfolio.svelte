@@ -1,7 +1,7 @@
 <script>
   import Contacts from "./Main/Contacts.svelte";
   import { dict, t, locale } from "../services/i18n";
-  import { Link } from "svelte-navigator";
+  import { Link, Router } from "svelte-navigator";
 
   import data from "../data/projects.json";
   import { onMount } from "svelte";
@@ -39,65 +39,67 @@
   });
 </script>
 
-<section class="works portfolio">
-  <div class="works__content">
-    <ul class="works__category-list category-list">
-      {#each categories as category, i}
-        <li class="category-list__item">
-          <label class="category-list__btn _{i}">
-            <input
-              type="radio"
-              name="category"
-              value={i}
-              on:change={onChange}
-            />
-            <span>
-              {#if $locale === "en"}
-                {category.en}
-              {:else}
-                {category.ru}
-              {/if}
-            </span>
-          </label>
-        </li>
-      {/each}
-    </ul>
-    <div class="works__text">
-      {@html $t("workPage.text")}
-    </div>
-    <div class="works__list">
-      {#each filteredProjects as project}
-        <Link
-          to="portfolio"
-          class="work works__item {project.isVideoCover === true
-            ? current
-            : ''}"
-        >
-          <div class="work__cover">
-            <div class="work__name">
-              {#if $locale === "en" || project.projectName.ru === ""}
-                {project.projectName.en}
-              {:else}
-                {project.projectName.ru}
-              {/if}
+<Router>
+  <section class="works portfolio">
+    <div class="works__content">
+      <ul class="works__category-list category-list">
+        {#each categories as category, i}
+          <li class="category-list__item">
+            <label class="category-list__btn _{i}">
+              <input
+                type="radio"
+                name="category"
+                value={i}
+                on:change={onChange}
+              />
+              <span>
+                {#if $locale === "en"}
+                  {category.en}
+                {:else}
+                  {category.ru}
+                {/if}
+              </span>
+            </label>
+          </li>
+        {/each}
+      </ul>
+      <div class="works__text">
+        {@html $t("workPage.text")}
+      </div>
+      <div class="works__list">
+        {#each filteredProjects as project}
+          <Link
+            to="portfolio"
+            class="work works__item {project.isVideoCover === true
+              ? current
+              : ''}"
+          >
+            <div class="work__cover">
+              <div class="work__name">
+                {#if $locale === "en" || project.projectName.ru === ""}
+                  {project.projectName.en}
+                {:else}
+                  {project.projectName.ru}
+                {/if}
+              </div>
+              <img src={project.cover} alt={project.projectName.en} />
             </div>
-            <img src={project.cover} alt={project.projectName.en} />
-          </div>
-        </Link>
-      {/each}
+          </Link>
+        {/each}
+      </div>
     </div>
+    <div class="work__call-to-action">
+      <a href="#contacts"
+        >{@html $t("workPage.callToAction")}
+        <div class="work__call-to-action__arrows" />
+      </a>
+    </div>
+  </section>
+  <div class="work__pattern">
+    <div class="portfolio__pattern" />
   </div>
-  <div class="work__call-to-action">
-    <a href="#contacts"
-      >{@html $t("workPage.callToAction")}
-      <div class="work__call-to-action__arrows" />
-    </a>
-  </div>
-</section>
-<div class="work__pattern">
-  <div class="portfolio__pattern" />
-</div>
-<Contacts />
+  <Contacts />
+</Router>
 
 <style>
   .portfolio {
@@ -182,22 +184,22 @@
     background: url("../svg/star.svg") no-repeat center / contain;
   }
 
-  .work__call-to-action {
+  :global(.work__call-to-action) {
     margin-top: 150px;
     text-align: center;
   }
 
-  .work__call-to-action a {
+  :global(.work__call-to-action a) {
     font-family: var(--accent-font);
     font-size: 56px;
     color: var(--green);
   }
 
-  .work__call-to-action a:hover {
+  :global(.work__call-to-action a:hover) {
     text-decoration: none;
   }
 
-  .work__call-to-action__arrows {
+  :global(.work__call-to-action__arrows) {
     height: 40px;
     background-image: url("../svg/arrow-green.svg");
     background-repeat: repeat-x;
@@ -205,11 +207,11 @@
     animation: arrow-bottom 2s alternate-reverse infinite;
   }
 
-  .work__pattern {
+  :global(.work__pattern) {
     overflow: hidden;
   }
 
-  .portfolio__pattern {
+  :global(.portfolio__pattern) {
     height: 100vh;
     margin-top: -35px;
     margin-left: -35px;
