@@ -29,6 +29,7 @@
     "svelte-routing": "^1.6.0"
   },
   "dependencies": {
+    "gsap": "file:gsap-bonus.tgz",
     "libphonenumber-js": "^1.9.16",
     "sirv-cli": "^1.0.0"
   }

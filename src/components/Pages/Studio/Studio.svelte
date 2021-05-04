@@ -1,9 +1,14 @@
 <script>
-  import { onMount } from "svelte";
+  import { gsap } from "gsap";
+  import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
+
+  import { onDestroy, onMount } from "svelte";
   import Contacts from "../Main/Contacts.svelte";
   import { dict, t, locale } from "../../services/i18n";
   import { Link, Router } from "svelte-navigator";
   import Person from "./Person.svelte";
+
+  gsap.registerPlugin(MotionPathPlugin);
 
   import dataRU from "../../lang/ru.json";
   import dataEN from "../../lang/en.json";
@@ -13,7 +18,7 @@
     en: dataEN.studioPage.stuff,
   };
 
-  let philisophyItems = {
+  let philosophyItems = {
     ru: dataRU.studioPage.philosophy.items,
     en: dataEN.studioPage.philosophy.items,
   };
@@ -33,9 +38,26 @@
       circleBlock.classList.add("portfolio__pattern-item");
       patternParent.appendChild(circleBlock);
     }
-  });
 
-  let currentLocale;
+    let pointNodes = document.querySelectorAll(".point");
+
+    let pointAnimationPath =
+      "M270.5 275c0 75.879-15.155 144.551-39.636 194.233-24.495 49.715-58.242 80.267-95.364 80.267-37.122 0-70.869-30.552-95.364-80.267C15.656 419.551.5 350.879.5 275S15.655 130.449 40.136 80.767C64.63 31.052 98.377.5 135.5.5c37.122 0 70.869 30.552 95.364 80.267C255.345 130.449 270.5 199.12 270.5 275z";
+
+    pointNodes.forEach((el, i) => {
+      gsap.to(el, {
+        motionPath: {
+          path: pointAnimationPath,
+          autoRotate: true,
+        },
+        transformOrigin: "50% 50%",
+        repeat: -1,
+        duration: 20,
+        delay: -(i * 5),
+        ease: "linear",
+      });
+    });
+  });
 </script>
 
 <Router>
@@ -84,9 +106,15 @@
           >
           <div class="philosophy__img locus">
             <div class="locus">
-              <div class="locus__item" />
-              <div class="locus__item" />
-              <div class="locus__item" />
+              <div class="locus__item">
+                <div class="point" />
+              </div>
+              <div class="locus__item">
+                <div class="point" />
+              </div>
+              <div class="locus__item">
+                <div class="point" />
+              </div>
               <div class="locus__star" />
             </div>
           </div>
@@ -100,11 +128,11 @@
         <div class="philosophy__items">
           <ul class="philosophy-list">
             {#if $locale === "ru"}
-              {#each philisophyItems.ru as item}
+              {#each philosophyItems.ru as item}
                 <li class="philosophy-list__item">{item}</li>
               {/each}
             {:else}
-              {#each philisophyItems.en as item}
+              {#each philosophyItems.en as item}
                 <li class="philosophy-list__item">{item}</li>
               {/each}
             {/if}
@@ -225,19 +253,19 @@
     border-radius: 50%;
   }
 
-  .locus__item:after {
-    content: "";
+  .point {
+    /*content: "";*/
     position: absolute;
-    top: 0;
-    left: 0;
+    top: calc(0% - 8px);
+    left: calc(0% - 8px);
     width: 13px;
     height: 13px;
     background-color: var(--green);
     border-radius: 50%;
-    offset-path: path(
+    /*offset-path: path(
       "M270.5 275c0 75.879-15.155 144.551-39.636 194.233-24.495 49.715-58.242 80.267-95.364 80.267-37.122 0-70.869-30.552-95.364-80.267C15.656 419.551.5 350.879.5 275S15.655 130.449 40.136 80.767C64.63 31.052 98.377.5 135.5.5c37.122 0 70.869 30.552 95.364 80.267C255.345 130.449 270.5 199.12 270.5 275z"
-    );
-    animation: move 20s infinite linear;
+    );*/
+    /*animation: move 20s infinite linear;*/
   }
 
   .locus__item:nth-child(2):after {
@@ -284,9 +312,9 @@
     margin-top: 230px;
   }
 
-  @keyframes move {
-    100% {
-      offset-distance: 100%;
-    }
-  }
+  /*@keyframes move {*/
+  /*  100% {*/
+  /*    offset-distance: 100%;*/
+  /*  }*/
+  /*}*/
 </style>
