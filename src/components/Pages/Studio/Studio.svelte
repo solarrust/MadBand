@@ -2,7 +2,7 @@
   import { gsap } from "gsap";
   import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
-  import { onDestroy, onMount } from "svelte";
+  import { onMount } from "svelte";
   import Contacts from "../Main/Contacts.svelte";
   import { dict, t, locale } from "../../services/i18n";
   import { Link, Router } from "svelte-navigator";
@@ -29,9 +29,8 @@
     let blockH = patternParent.offsetHeight;
     let circleSize = 75;
 
-    let circleByW = Math.ceil(blockW / circleSize);
-    let circleByH = Math.ceil(blockH / circleSize);
-    let circles = circleByW * circleByH;
+    let circles =
+      Math.ceil(blockW / circleSize) * Math.ceil(blockH / circleSize);
 
     for (let i = 0; i <= circles; i++) {
       let circleBlock = document.createElement("div");
@@ -39,7 +38,7 @@
       patternParent.appendChild(circleBlock);
     }
 
-    let pointNodes = document.querySelectorAll(".point");
+    let pointNodes = document.querySelectorAll(".locus__point");
 
     let pointAnimationPath =
       "M270.5 275c0 75.879-15.155 144.551-39.636 194.233-24.495 49.715-58.242 80.267-95.364 80.267-37.122 0-70.869-30.552-95.364-80.267C15.656 419.551.5 350.879.5 275S15.655 130.449 40.136 80.767C64.63 31.052 98.377.5 135.5.5c37.122 0 70.869 30.552 95.364 80.267C255.345 130.449 270.5 199.12 270.5 275z";
@@ -55,6 +54,37 @@
         duration: 20,
         delay: -(i * 5),
         ease: "linear",
+      });
+    });
+
+    let strokeTextBlocks = document.querySelectorAll("[data-stroke-text]");
+
+    strokeTextBlocks.forEach((el) => {
+      el.setAttribute("aria-label", el.innerHTML);
+
+      let textParent = document.createElement("div");
+      textParent.classList.add("stroke__text-parent");
+
+      let strokeTextWords = el.innerHTML.split(" ");
+
+      strokeTextWords.forEach((word) => {
+        let wordParent = document.createElement("div");
+        wordParent.classList.add("stroke__word-parent");
+        let char = word.split("");
+
+        char.forEach((ch) => {
+          let charParent = document.createElement("span");
+          charParent.classList.add("stroke__char-parent");
+          charParent.setAttribute("aria-hidden", "true");
+          charParent.setAttribute("data-content", ch);
+          charParent.innerHTML = ch;
+
+          wordParent.appendChild(charParent);
+        });
+
+        textParent.appendChild(wordParent);
+        el.innerHTML = "";
+        el.appendChild(textParent);
       });
     });
   });
@@ -90,7 +120,36 @@
         {$t("studioPage.text")}
       </p>
 
-      <div class="studio__pattern square-pattern" />
+      <div class="studio__pattern square-pattern">
+        <div class="square-pattern__line">
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+        </div>
+        <div class="square-pattern__line">
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+        </div>
+        <div class="square-pattern__line">
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+        </div>
+        <div class="square-pattern__line">
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+          <div class="square-pattern__child" />
+        </div>
+      </div>
 
       <div class="studio__mission mission">
         <span class="mission__label label"
@@ -107,13 +166,13 @@
           <div class="philosophy__img locus">
             <div class="locus">
               <div class="locus__item">
-                <div class="point" />
+                <div class="locus__point" />
               </div>
               <div class="locus__item">
-                <div class="point" />
+                <div class="locus__point" />
               </div>
               <div class="locus__item">
-                <div class="point" />
+                <div class="locus__point" />
               </div>
               <div class="locus__star" />
             </div>
@@ -129,11 +188,19 @@
           <ul class="philosophy-list">
             {#if $locale === "ru"}
               {#each philosophyItems.ru as item}
-                <li class="philosophy-list__item">{item}</li>
+                <li class="philosophy-list__item">
+                  <div class="philosophy-list__text" data-stroke-text>
+                    {@html item}
+                  </div>
+                </li>
               {/each}
             {:else}
               {#each philosophyItems.en as item}
-                <li class="philosophy-list__item">{item}</li>
+                <li class="philosophy-list__item">
+                  <div class="philosophy-list__text" data-stroke-text>
+                    {@html item}
+                  </div>
+                </li>
               {/each}
             {/if}
           </ul>
@@ -155,9 +222,11 @@
 
 <style>
   .studio {
+    --bkg-color: var(--sky-blue);
+
     padding: 220px 0 60px;
     color: var(--green);
-    background-color: var(--sky-blue);
+    background-color: var(--bkg-color);
   }
 
   .studio__content {
@@ -253,8 +322,7 @@
     border-radius: 50%;
   }
 
-  .point {
-    /*content: "";*/
+  .locus__point {
     position: absolute;
     top: calc(0% - 8px);
     left: calc(0% - 8px);
@@ -262,10 +330,6 @@
     height: 13px;
     background-color: var(--green);
     border-radius: 50%;
-    /*offset-path: path(
-      "M270.5 275c0 75.879-15.155 144.551-39.636 194.233-24.495 49.715-58.242 80.267-95.364 80.267-37.122 0-70.869-30.552-95.364-80.267C15.656 419.551.5 350.879.5 275S15.655 130.449 40.136 80.767C64.63 31.052 98.377.5 135.5.5c37.122 0 70.869 30.552 95.364 80.267C255.345 130.449 270.5 199.12 270.5 275z"
-    );*/
-    /*animation: move 20s infinite linear;*/
   }
 
   .locus__item:nth-child(2):after {
@@ -312,9 +376,135 @@
     margin-top: 230px;
   }
 
-  /*@keyframes move {*/
-  /*  100% {*/
-  /*    offset-distance: 100%;*/
-  /*  }*/
-  /*}*/
+  .philosophy-list {
+    list-style: none;
+    counter-reset: philosophy-list;
+  }
+
+  .philosophy-list__item {
+    position: relative;
+    padding: 40px 100px;
+    font-size: 36px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--green);
+
+    color: var(--bkg-color);
+    text-shadow: -1px -1px 0 var(--green), 1px -1px 0 var(--green),
+      -1px 1px 0 var(--green), 1px 1px 0 var(--green);
+  }
+
+  .philosophy-list__item:first-child {
+    border-top: 1px solid var(--green);
+  }
+
+  .philosophy-list__item:before {
+    counter-increment: philosophy-list;
+    content: counter(philosophy-list);
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: 14px;
+    color: var(--green);
+    text-shadow: none;
+  }
+
+  .philosophy-list__text {
+    position: relative;
+  }
+
+  :global(.stroke__text-parent) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  :global(.stroke__text-parent > *) {
+    display: flex;
+    margin-right: 0.28em;
+  }
+
+  :global(.stroke__char-parent) {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: pre;
+  }
+
+  :global(.stroke__char-parent:before) {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    content: attr(data-content);
+    overflow: hidden;
+    pointer-events: none;
+    color: var(--green);
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    transition: 0.2s;
+  }
+
+  :global(.philosophy-list__item:hover .stroke__char-parent:before) {
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+  }
+
+  .square-pattern {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .square-pattern__line {
+    display: flex;
+    width: 100%;
+    height: 25%;
+  }
+
+  .square-pattern__line:first-child {
+    animation: stretch ease-in-out 5s infinite alternate;
+  }
+
+  .square-pattern__line:nth-child(2) {
+    animation: stretch-small ease-in-out 5s infinite alternate-reverse;
+  }
+
+  .square-pattern__line:nth-child(3) {
+    animation: stretch-small ease-in-out 5s infinite alternate;
+  }
+
+  .square-pattern__line:last-child {
+    animation: stretch ease-in-out 5s infinite alternate-reverse;
+  }
+
+  .square-pattern__child {
+    width: 20%;
+    height: 100%;
+    /*border: 1px solid red;*/
+    background-image: linear-gradient(
+      75deg,
+      var(--bkg-color) 0,
+      var(--bkg-color) 22%,
+      var(--thistle) 22%,
+      var(--thistle) 80%,
+      var(--bkg-color) 80%
+    );
+  }
+
+  @keyframes stretch {
+    0% {
+      height: 50%;
+    }
+    100% {
+      height: 15%;
+    }
+  }
+
+  @keyframes stretch-small {
+    0% {
+      height: 20%;
+    }
+    100% {
+      height: 35%;
+    }
+  }
 </style>
