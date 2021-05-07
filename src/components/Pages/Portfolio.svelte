@@ -104,6 +104,7 @@
 <style>
   .portfolio {
     padding-bottom: 60px;
+    background-color: var(--portfolio-bkg);
   }
   .works__category-list {
     margin-bottom: 50px;
@@ -237,7 +238,7 @@
 
     display: block;
     border-radius: 50%;
-    background-color: var(--dandelion);
+    background-color: var(--portfolio-bkg);
     animation: circle-blinking 3s ease-in-out infinite alternate-reverse;
     transform-origin: center;
   }

@@ -29,7 +29,7 @@
   .hero {
     display: flex;
     color: var(--green);
-    background-color: var(--sky-blue);
+    background-color: var(--main-bkg);
     overflow: hidden;
   }
 

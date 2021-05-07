@@ -53,7 +53,7 @@
 <style>
   :global(.works) {
     padding: 100px 0 140px;
-    background-color: var(--dandelion);
+    background-color: var(--portfolio-bkg);
   }
 
   :global(.works__content) {

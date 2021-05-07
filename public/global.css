@@ -10,6 +10,11 @@
   --main-font: "Inter", sans-serif;
   --accent-font: "Piazzolla", serif;
   --wow-font: "Space Grotesk", sans-serif;
+
+  --main-bkg: var(--sky-blue);
+  --studio-bkg: var(--main-bkg);
+  --portfolio-bkg: var(--dandelion);
+  --contacts-bkg: var(--thistle);
 }
 
 * {

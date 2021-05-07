@@ -115,7 +115,7 @@
 <style>
   .contacts {
     padding-top: 145px;
-    background-color: var(--thistle);
+    background-color: var(--contacts-bkg);
   }
 
   .contacts__content {
@@ -211,7 +211,7 @@
   }
 
   :global(.green-marker._thistle-text) {
-    color: var(--thistle);
+    color: var(--contacts-bkg);
   }
 
   .contacts__form {
@@ -252,7 +252,7 @@
     width: 100%;
     margin: 13px 0 0;
     padding: 15px 25px;
-    color: var(--thistle);
+    color: var(--contacts-bkg);
     font-size: 12px;
     border: none;
     border-radius: 100px;
