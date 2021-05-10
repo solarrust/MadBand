@@ -71,7 +71,7 @@
     background-image: linear-gradient(to top, #fbfe67 50px, transparent 50px);
     background-size: 50px 100px;
 
-    animation: line-run infinite linear reverse;
+    animation: line-run infinite linear;
 
     animation-duration: 10s;
   }
@@ -83,6 +83,7 @@
   .line:nth-child(5n + 1) {
     transform: translateY(25px);
     animation-duration: 25s;
+    animation-direction: reverse;
   }
 
   .line:nth-child(5n + 2) {
@@ -93,6 +94,7 @@
   .line:nth-child(5n + 3) {
     transform: translateY(25px);
     animation-duration: 10s;
+    animation-direction: reverse;
   }
 
   .line:nth-child(5n + 4) {
@@ -102,10 +104,10 @@
 
   @keyframes line-run {
     from {
-      background-position-y: 0;
+      background-position-y: 1000px;
     }
     to {
-      background-position-y: 1000px;
+      background-position-y: 0;
     }
   }
 
@@ -177,7 +179,7 @@
     right: -5px;
     z-index: 1;
     width: 110%;
-    height: 110%;
+    height: 120%;
     background-image: url("../svg/round.svg");
     background-size: contain;
     background-repeat: no-repeat;

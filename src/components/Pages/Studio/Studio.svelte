@@ -56,37 +56,6 @@
         ease: "linear",
       });
     });
-
-    let strokeTextBlocks = document.querySelectorAll("[data-stroke-text]");
-
-    strokeTextBlocks.forEach((el) => {
-      el.setAttribute("aria-label", el.innerHTML);
-
-      let textParent = document.createElement("div");
-      textParent.classList.add("stroke__text-parent");
-
-      let strokeTextWords = el.innerHTML.split(" ");
-
-      strokeTextWords.forEach((word) => {
-        let wordParent = document.createElement("div");
-        wordParent.classList.add("stroke__word-parent");
-        let char = word.split("");
-
-        char.forEach((ch) => {
-          let charParent = document.createElement("span");
-          charParent.classList.add("stroke__char-parent");
-          charParent.setAttribute("aria-hidden", "true");
-          charParent.setAttribute("data-content", ch);
-          charParent.innerHTML = ch;
-
-          wordParent.appendChild(charParent);
-        });
-
-        textParent.appendChild(wordParent);
-        el.innerHTML = "";
-        el.appendChild(textParent);
-      });
-    });
   });
 </script>
 
@@ -188,7 +157,7 @@
           <ul class="philosophy-list">
             {#if $locale === "ru"}
               {#each philosophyItems.ru as item}
-                <li class="philosophy-list__item">
+                <li class="philosophy-list__item" data-stroke-parent>
                   <div class="philosophy-list__text" data-stroke-text>
                     {@html item}
                   </div>
@@ -196,7 +165,7 @@
               {/each}
             {:else}
               {#each philosophyItems.en as item}
-                <li class="philosophy-list__item">
+                <li class="philosophy-list__item" data-stroke-parent>
                   <div class="philosophy-list__text" data-stroke-text>
                     {@html item}
                   </div>
@@ -419,13 +388,15 @@
 
   :global(.stroke__text-parent > *) {
     display: flex;
+  }
+
+  :global(.stroke__text-parent > *:not(:last-child)) {
     margin-right: 0.28em;
   }
 
   :global(.stroke__char-parent) {
     position: relative;
     display: inline-block;
-    overflow: hidden;
     white-space: pre;
   }
 
@@ -444,7 +415,7 @@
     transition: 0.2s;
   }
 
-  :global(.philosophy-list__item:hover .stroke__char-parent:before) {
+  :global([data-stroke-parent]:hover .stroke__char-parent:before) {
     clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
   }
 
