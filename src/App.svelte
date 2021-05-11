@@ -2,11 +2,12 @@
   import translations from "./components/lang/translations";
   import { dict, locale, t } from "./components/services/i18n";
   import { Router, Link, Route } from "svelte-routing";
+  import { onMount } from "svelte";
   import Main from "./components/Pages/Main/Main.svelte";
   import Studio from "./components/Pages/Studio/Studio.svelte";
   import Portfolio from "./components/Pages/Portfolio.svelte";
   import Header from "./components/Header/Header.svelte";
-  import { onMount } from "svelte";
+  import CaseTemplate from "./components/Pages/Cases/CaseTemplate.svelte";
 
   $: languages = Object.keys(translations);
   $: dict.set(translations);
@@ -65,6 +66,12 @@
       <Header />
 
       <Studio />
+    </Route>
+
+    <Route path="cases/:id" let:params>
+      <Header />
+
+      <CaseTemplate id={params.id} />
     </Route>
   </main>
 </Router>

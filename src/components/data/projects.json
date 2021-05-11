@@ -33,15 +33,30 @@
       "data": {
         "client": "",
         "year": "",
-        "type": "",
         "credits": [""]
       },
+      "caseName": "",
       "text": {
         "en": "",
         "ru": ""
       },
-      "photos": [""],
-      "gallery": [""]
+      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "photos": [
+        "img/cases/BUD 66/image 41.jpg",
+        "img/cases/BUD 66/image 42.jpg",
+        "img/cases/BUD 66/image 43.jpg",
+        "img/cases/BUD 66/image 47.jpg",
+        "img/cases/BUD 66/image 47-1.jpg",
+        "img/cases/BUD 66/image 49.jpg",
+        "img/cases/BUD 66/image 50.jpg",
+        "img/cases/BUD 66/image 51.jpg",
+        "img/cases/BUD 66/image 52.jpg"
+      ],
+      "gallery": [
+        "img/cases/BUD 66/gallery-image 44.jpg",
+        "img/cases/BUD 66/gallery-image 45.jpg",
+        "img/cases/BUD 66/gallery-image 46.jpg"
+      ]
     },
     {
       "projectName": {
@@ -54,15 +69,30 @@
       "data": {
         "client": "",
         "year": "",
-        "type": "",
         "credits": [""]
       },
+      "caseName": "",
       "text": {
         "en": "",
         "ru": ""
       },
-      "photos": [""],
-      "gallery": [""]
+      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "photos": [
+        "img/cases/BUD 66/image 41.jpg",
+        "img/cases/BUD 66/image 42.jpg",
+        "img/cases/BUD 66/image 43.jpg",
+        "img/cases/BUD 66/image 47.jpg",
+        "img/cases/BUD 66/image 47-1.jpg",
+        "img/cases/BUD 66/image 49.jpg",
+        "img/cases/BUD 66/image 50.jpg",
+        "img/cases/BUD 66/image 51.jpg",
+        "img/cases/BUD 66/image 52.jpg"
+      ],
+      "gallery": [
+        "img/cases/BUD 66/gallery-image 44.jpg",
+        "img/cases/BUD 66/gallery-image 45.jpg",
+        "img/cases/BUD 66/gallery-image 46.jpg"
+      ]
     },
     {
       "projectName": {
@@ -75,13 +105,14 @@
       "data": {
         "client": "",
         "year": "",
-        "type": "",
         "credits": [""]
       },
+      "caseName": "",
       "text": {
         "en": "",
         "ru": ""
       },
+      "pageCover": "img/cases/BUD 66/cover.jpg",
       "photos": [""],
       "gallery": [""]
     },
@@ -96,36 +127,62 @@
       "data": {
         "client": "",
         "year": "",
-        "type": "",
         "credits": [""]
       },
+      "caseName": "",
       "text": {
         "en": "",
         "ru": ""
       },
-      "photos": [""],
-      "gallery": [""]
+      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "photos": [
+        "img/cases/BUD 66/image 41.jpg",
+        "img/cases/BUD 66/image 42.jpg",
+        "img/cases/BUD 66/image 43.jpg",
+        "img/cases/BUD 66/image 47.jpg",
+        "img/cases/BUD 66/image 47-1.jpg",
+        "img/cases/BUD 66/image 49.jpg",
+        "img/cases/BUD 66/image 50.jpg",
+        "img/cases/BUD 66/image 51.jpg",
+        "img/cases/BUD 66/image 52.jpg"
+      ],
+      "gallery": [
+        "img/cases/BUD 66/gallery-image 44.jpg",
+        "img/cases/BUD 66/gallery-image 45.jpg",
+        "img/cases/BUD 66/gallery-image 46.jpg"
+      ]
     },
     {
       "projectName": {
         "en": "gills",
         "ru": ""
       },
-      "category": 1,
+      "category": 4,
       "cover": "img/covers/gills.png",
       "isVideoCover": true,
+      "videoCover": "video/Grills/cover.mp4",
       "data": {
-        "client": "",
-        "year": "",
-        "type": "",
-        "credits": [""]
+        "client": "Gills",
+        "year": "2019",
+        "credits": [
+          "Video by Egor Alisherrov",
+          "Stylist by Anna Chromova",
+          "Actor by Vadim Seleznev"
+        ]
       },
+      "caseName": "Conceptual Japanese cafe",
       "text": {
-        "en": "",
-        "ru": ""
+        "en": "The work for a conceptual Japanese cafe depicts how one vivid gastronomic experience can be remembered forever and overshadow all previous experiences.",
+        "ru": "Работа для концептуального японского кафе показывает, как одно яркое гастрономическое переживание может запомниться навсегда и затмить все предыдущие впечатления."
       },
-      "photos": [""],
-      "gallery": [""]
+      "pageCover": "img/cases/Gills/cover.jpg",
+      "photos": [
+        "img/cases/Gills/1.jpg",
+        "img/cases/Gills/2.jpg",
+        "img/cases/Gills/3.jpg",
+        "img/cases/Gills/4.jpg"
+      ],
+      "gallery": []
     },
     {
       "projectName": {
@@ -138,15 +195,30 @@
       "data": {
         "client": "",
         "year": "",
-        "type": "",
         "credits": [""]
       },
+      "caseName": "",
       "text": {
         "en": "",
         "ru": ""
       },
-      "photos": [""],
-      "gallery": [""]
+      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "photos": [
+        "img/cases/BUD 66/image 41.jpg",
+        "img/cases/BUD 66/image 42.jpg",
+        "img/cases/BUD 66/image 43.jpg",
+        "img/cases/BUD 66/image 47.jpg",
+        "img/cases/BUD 66/image 47-1.jpg",
+        "img/cases/BUD 66/image 49.jpg",
+        "img/cases/BUD 66/image 50.jpg",
+        "img/cases/BUD 66/image 51.jpg",
+        "img/cases/BUD 66/image 52.jpg"
+      ],
+      "gallery": [
+        "img/cases/BUD 66/gallery-image 44.jpg",
+        "img/cases/BUD 66/gallery-image 45.jpg",
+        "img/cases/BUD 66/gallery-image 46.jpg"
+      ]
     },
     {
       "projectName": {
@@ -159,15 +231,30 @@
       "data": {
         "client": "",
         "year": "",
-        "type": "",
         "credits": [""]
       },
+      "caseName": "",
       "text": {
         "en": "",
         "ru": ""
       },
-      "photos": [""],
-      "gallery": [""]
+      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "photos": [
+        "img/cases/BUD 66/image 41.jpg",
+        "img/cases/BUD 66/image 42.jpg",
+        "img/cases/BUD 66/image 43.jpg",
+        "img/cases/BUD 66/image 47.jpg",
+        "img/cases/BUD 66/image 47-1.jpg",
+        "img/cases/BUD 66/image 49.jpg",
+        "img/cases/BUD 66/image 50.jpg",
+        "img/cases/BUD 66/image 51.jpg",
+        "img/cases/BUD 66/image 52.jpg"
+      ],
+      "gallery": [
+        "img/cases/BUD 66/gallery-image 44.jpg",
+        "img/cases/BUD 66/gallery-image 45.jpg",
+        "img/cases/BUD 66/gallery-image 46.jpg"
+      ]
     },
     {
       "projectName": {
@@ -178,17 +265,32 @@
       "cover": "img/covers/Bud 66.png",
       "isVideoCover": false,
       "data": {
-        "client": "",
-        "year": "",
-        "type": "",
-        "credits": [""]
+        "client": "BUD 66",
+        "year": "2019",
+        "credits": ["Photo by Egor Alisherrov"]
       },
+      "caseName": "Presentation of new product",
       "text": {
-        "en": "",
-        "ru": ""
+        "en": "Presenting a pool of ten unique locations in Moscow and choosing one together with the client, we held an exclusive premiere of Bud 66 for opinion leaders and top representatives of the industry. Having coordinated all the ideas in stages, we organized the original building, developed interactive zones and media content, directed the stage action in detail. The guests talked at a public talk, listened to musicians' performances and participated in interactions. The presentation united Community 66 and ended with a vibrant party.",
+        "ru": "Представив пул из десяти уникальных локаций в Москве и выбрав одну вместе с клиентом, мы провели эксклюзивную премьеру Bud 66 для лидеров мнений и топ-представителей отрасли. Поэтапно согласовав все идеи, мы организовали оригинальное здание, разработали интерактивные зоны и медиаконтент, детально руководили сценическим действием. Гости выступили в рамках публичного выступления, слушали выступления музыкантов и участвовали в общении. Презентация объединила «Сообщество 66» и завершилась яркой вечеринкой."
       },
-      "photos": [""],
-      "gallery": [""]
+      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "photos": [
+        "img/cases/BUD 66/image 41.jpg",
+        "img/cases/BUD 66/image 42.jpg",
+        "img/cases/BUD 66/image 43.jpg",
+        "img/cases/BUD 66/image 47.jpg",
+        "img/cases/BUD 66/image 47-1.jpg",
+        "img/cases/BUD 66/image 49.jpg",
+        "img/cases/BUD 66/image 50.jpg",
+        "img/cases/BUD 66/image 51.jpg",
+        "img/cases/BUD 66/image 52.jpg"
+      ],
+      "gallery": [
+        "img/cases/BUD 66/gallery-image 44.jpg",
+        "img/cases/BUD 66/gallery-image 45.jpg",
+        "img/cases/BUD 66/gallery-image 46.jpg"
+      ]
     },
     {
       "projectName": {
@@ -201,15 +303,30 @@
       "data": {
         "client": "",
         "year": "",
-        "type": "",
         "credits": [""]
       },
+      "caseName": "",
       "text": {
         "en": "",
         "ru": ""
       },
-      "photos": [""],
-      "gallery": [""]
+      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "photos": [
+        "img/cases/BUD 66/image 41.jpg",
+        "img/cases/BUD 66/image 42.jpg",
+        "img/cases/BUD 66/image 43.jpg",
+        "img/cases/BUD 66/image 47.jpg",
+        "img/cases/BUD 66/image 47-1.jpg",
+        "img/cases/BUD 66/image 49.jpg",
+        "img/cases/BUD 66/image 50.jpg",
+        "img/cases/BUD 66/image 51.jpg",
+        "img/cases/BUD 66/image 52.jpg"
+      ],
+      "gallery": [
+        "img/cases/BUD 66/gallery-image 44.jpg",
+        "img/cases/BUD 66/gallery-image 45.jpg",
+        "img/cases/BUD 66/gallery-image 46.jpg"
+      ]
     },
     {
       "projectName": {
@@ -222,15 +339,30 @@
       "data": {
         "client": "",
         "year": "",
-        "type": "",
         "credits": [""]
       },
+      "caseName": "",
       "text": {
         "en": "",
         "ru": ""
       },
-      "photos": [""],
-      "gallery": [""]
+      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "photos": [
+        "img/cases/BUD 66/image 41.jpg",
+        "img/cases/BUD 66/image 42.jpg",
+        "img/cases/BUD 66/image 43.jpg",
+        "img/cases/BUD 66/image 47.jpg",
+        "img/cases/BUD 66/image 47-1.jpg",
+        "img/cases/BUD 66/image 49.jpg",
+        "img/cases/BUD 66/image 50.jpg",
+        "img/cases/BUD 66/image 51.jpg",
+        "img/cases/BUD 66/image 52.jpg"
+      ],
+      "gallery": [
+        "img/cases/BUD 66/gallery-image 44.jpg",
+        "img/cases/BUD 66/gallery-image 45.jpg",
+        "img/cases/BUD 66/gallery-image 46.jpg"
+      ]
     }
   ]
 }

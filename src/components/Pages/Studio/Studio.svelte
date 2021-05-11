@@ -3,9 +3,9 @@
   import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
   import { onMount } from "svelte";
-  import Contacts from "../Main/Contacts.svelte";
   import { dict, t, locale } from "../../services/i18n";
   import { Link, Router } from "svelte-navigator";
+  import Contacts from "../Main/Contacts.svelte";
   import Person from "./Person.svelte";
 
   gsap.registerPlugin(MotionPathPlugin);

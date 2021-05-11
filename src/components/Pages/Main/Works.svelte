@@ -57,7 +57,9 @@
       <div class="works__list">
         {#each projects as project}
           <Link
-            to="portfolio"
+            to="portfolio/{project.projectName.en
+              .replace(/ /g, '_')
+              .toLowerCase()}"
             class="work works__item {project.isVideoCover === true
               ? current
               : ''}"
