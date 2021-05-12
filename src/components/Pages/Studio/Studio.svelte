@@ -8,8 +8,8 @@
   import Contacts from "../Main/Contacts.svelte";
   import { strokeTextCreator } from "../Main/Main.svelte";
   import Person from "./Person.svelte";
-  import dataRU from "../../lang/ru.json";
-  import dataEN from "../../lang/en.json";
+  import dataRU from "../../../lang/ru.json";
+  import dataEN from "../../../lang/en.json";
 
   gsap.registerPlugin(MotionPathPlugin);
 
@@ -69,23 +69,13 @@
       <h2 class="studio__title">{@html $t("studioPage.title")}</h2>
 
       <div class="stuff studio__stuff">
-        {#if $locale === "ru"}
-          {#each localeStuff.ru as person}
-            <Person
-              name={person.name}
-              position={person.position}
-              img={person.img}
-            />
-          {/each}
-        {:else}
-          {#each localeStuff.en as person}
-            <Person
-              name={person.name}
-              position={person.position}
-              img={person.img}
-            />
-          {/each}
-        {/if}
+        {#each localeStuff[$locale] as person}
+          <Person
+            name={person.name}
+            position={person.position}
+            img={person.img}
+          />
+        {/each}
       </div>
 
       <p class="studio__text">
@@ -158,23 +148,13 @@
         </div>
         <div class="philosophy__items">
           <ul class="philosophy-list">
-            {#if $locale === "ru"}
-              {#each philosophyItems.ru as item}
-                <li class="philosophy-list__item" data-stroke-parent>
-                  <div class="philosophy-list__text" data-stroke-text>
-                    {@html item}
-                  </div>
-                </li>
-              {/each}
-            {:else}
-              {#each philosophyItems.en as item}
-                <li class="philosophy-list__item" data-stroke-parent>
-                  <div class="philosophy-list__text" data-stroke-text>
-                    {@html item}
-                  </div>
-                </li>
-              {/each}
-            {/if}
+            {#each philosophyItems[$locale] as item}
+              <li class="philosophy-list__item" data-stroke-parent>
+                <div class="philosophy-list__text" data-stroke-text>
+                  {@html item}
+                </div>
+              </li>
+            {/each}
           </ul>
         </div>
       </div>

@@ -5,18 +5,53 @@
 
   export let id;
 
-  import data from "../../data/projects.json";
+  import data from "../../../data/projects.json";
+  import Case from "./Case.svelte";
+  import ExploreMore from "./ExploreMore.svelte";
+  import Lang from "../../../lang/Lang.svelte";
 
   let categories = data.categories;
   let projects = data.projects;
+
+  let extraClass = "_purple";
+
+  let currentCase;
+  let currentCategory;
+  let bckColor;
+  let moreProjects = [];
+
+  for (let i = 0; i < projects.length; i++) {
+    if (projects[i].projectName.en.replace(/ /g, "_").toLowerCase() === id) {
+      currentCase = projects[i];
+
+      if (projects[i].category % 2) {
+        bckColor = "thistle";
+      } else {
+        bckColor = "dandelion";
+      }
+
+      currentCategory = categories[projects[i].category - 1];
+    }
+  }
+
+  for (let i = 0; i < projects.length; i++) {
+    if (projects[i].category === currentCase.category) {
+      moreProjects.push(projects[i]);
+    }
+  }
 </script>
 
-{#each projects as p}
-  <Route render="cases/{p.caseName.replace(/ /g, '_').toLowerCase()}">
-    <section class="case" {id}>
-      <h1 class="case__title">{p.caseName}</h1>
-    </section>
-  </Route>
-{/each}
+<slot>
+  <Case
+    title={id}
+    data={currentCase}
+    category={currentCategory}
+    bkg={bckColor}
+  />
 
-<style></style>
+  <ExploreMore {moreProjects} />
+  <Lang />
+</slot>
+
+<style>
+</style>

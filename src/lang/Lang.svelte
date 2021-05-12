@@ -1,5 +1,5 @@
 <script>
-  import { dict, locale, t } from "../services/i18n";
+  import { dict, locale, t } from "../components/services/i18n";
   import translations from "./translations";
   import { onMount } from "svelte";
 

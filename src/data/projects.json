@@ -202,7 +202,7 @@
         "en": "",
         "ru": ""
       },
-      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "pageCover": "./img/cases/BUD 66/cover.jpg",
       "photos": [
         "img/cases/BUD 66/image 41.jpg",
         "img/cases/BUD 66/image 42.jpg",

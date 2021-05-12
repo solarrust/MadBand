@@ -1,5 +1,5 @@
 <script>
-  import translations from "./components/lang/translations";
+  import translations from "./lang/translations";
   import { dict, locale, t } from "./components/services/i18n";
   import { Router, Link, Route } from "svelte-routing";
   import { onMount } from "svelte";
@@ -25,7 +25,7 @@
       <Main />
     </Route>
 
-    <Route path="portfolio">
+    <Route path="cases">
       <Header />
 
       <Portfolio />

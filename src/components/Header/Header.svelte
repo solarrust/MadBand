@@ -51,9 +51,7 @@
   <div class="header__box">
     <Logo />
     <nav class="nav header__nav">
-      <Link to="portfolio" class="nav__item _works"
-        >{$t("header.menu.work")}</Link
-      >
+      <Link to="cases" class="nav__item _works">{$t("header.menu.work")}</Link>
       <Link to="studio" class="nav__item _studio"
         >{$t("header.menu.studio")}</Link
       >

@@ -3,22 +3,29 @@
   import { dict, t, locale } from "../services/i18n";
   import { Link, Router } from "svelte-navigator";
 
-  import data from "../data/projects.json";
+  import data from "../../data/projects.json";
   import { onMount } from "svelte";
+  import WorksList from "./Main/WorksList.svelte";
 
   let projects = data.projects;
   let categories = data.categories;
 
   let filter;
-  let filteredProjects = filter
-    ? data.projects.filter((pr) => pr.category == filter + 1)
-    : projects;
+  let filteredProjects;
+
+  function projectFiltering() {
+    return (filteredProjects = filter
+      ? data.projects.filter((pr) => pr.category == filter)
+      : projects);
+  }
+
+  projectFiltering();
 
   let current = "_horizontal";
 
   function onChange(event) {
     filter = event.currentTarget.value;
-    filteredProjects = data.projects.filter((pr) => pr.category == filter + 1);
+    projectFiltering();
   }
 
   onMount(() => {
@@ -47,19 +54,15 @@
       <ul class="works__category-list category-list">
         {#each categories as category, i}
           <li class="category-list__item">
-            <label class="category-list__btn _{i}">
+            <label class="category-list__btn _{i + 1}">
               <input
                 type="radio"
                 name="category"
-                value={i}
+                value={i + 1}
                 on:change={onChange}
               />
               <span>
-                {#if $locale === "en"}
-                  {category.en}
-                {:else}
-                  {category.ru}
-                {/if}
+                {category[$locale]}
               </span>
             </label>
           </li>
@@ -68,27 +71,7 @@
       <div class="works__text">
         {@html $t("workPage.text")}
       </div>
-      <div class="works__list">
-        {#each filteredProjects as project}
-          <Link
-            to="portfolio"
-            class="work works__item {project.isVideoCover === true
-              ? current
-              : ''}"
-          >
-            <div class="work__cover">
-              <div class="work__name">
-                {#if $locale === "en" || project.projectName.ru === ""}
-                  {project.projectName.en}
-                {:else}
-                  {project.projectName.ru}
-                {/if}
-              </div>
-              <img src={project.cover} alt={project.projectName.en} />
-            </div>
-          </Link>
-        {/each}
-      </div>
+      <WorksList projects={filteredProjects} />
     </div>
     <div class="work__call-to-action">
       <a href="#contacts"
@@ -133,33 +116,33 @@
     cursor: pointer;
   }
 
-  .category-list__btn._0 {
+  .category-list__btn._1 {
     color: var(--dandelion);
     background-color: var(--green);
   }
 
-  .category-list__btn._1 {
+  .category-list__btn._2 {
     color: var(--oriole);
     background-color: var(--thistle);
 
     transform: rotate(2deg);
   }
 
-  .category-list__btn._2 {
+  .category-list__btn._3 {
     color: var(--dandelion);
     background-color: var(--oriole);
 
     transform: rotate(-2deg);
   }
 
-  .category-list__btn._3 {
+  .category-list__btn._4 {
     color: var(--green);
     background-color: var(--sky-blue);
 
     transform: rotate(2deg);
   }
 
-  .category-list__btn._4 {
+  .category-list__btn._5 {
     color: var(--oriole);
     background-color: var(--cherry-blossom);
 
