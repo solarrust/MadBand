@@ -8,7 +8,6 @@
 
   let extraClass;
 
-  let y;
   let header;
   let headerBottom;
   let hero;
@@ -102,6 +101,10 @@
     margin-right: 45px;
   }
 
+  :global(.nav__item:hover) {
+    text-decoration: none;
+  }
+
   :global(.nav__item:after) {
     content: "";
     display: inline-block;
@@ -126,6 +129,12 @@
 
   :global(.nav__item._studio:after) {
     background-image: url("../svg/menu-studio-active.svg");
+  }
+
+  :global(.nav__item._anchor.active),
+  :global(.nav__item[aria-current="page"]) {
+    pointer-events: none;
+    cursor: default;
   }
 
   :global(.nav__item._anchor.active:after),

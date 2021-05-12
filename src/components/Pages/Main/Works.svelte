@@ -3,6 +3,7 @@
   import { ScrollTrigger } from "gsap/ScrollTrigger";
   import { locale, t } from "../../services/i18n";
   import { Link, Router } from "svelte-routing";
+  import { strokeTextCreator } from "../Main/Main.svelte";
   gsap.registerPlugin(ScrollTrigger);
 
   import data from "../../data/projects.json";
@@ -13,7 +14,8 @@
   let current = "_horizontal";
 
   onMount(() => {
-    let windowWidth = window.outerWidth;
+    strokeTextCreator();
+
     let textBox = document.querySelector(".ticker__box");
     let textParent = textBox.parentNode;
     let textBoxWidth = textBox.clientWidth;

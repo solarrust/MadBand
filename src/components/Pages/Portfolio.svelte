@@ -22,6 +22,8 @@
   }
 
   onMount(() => {
+    window.scrollTo(0, 0);
+
     let patternParent = document.querySelector(".portfolio__pattern");
     let blockW = patternParent.offsetWidth;
     let blockH = patternParent.offsetHeight;

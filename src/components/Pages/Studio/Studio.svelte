@@ -3,15 +3,15 @@
   import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
   import { onMount } from "svelte";
-  import { dict, t, locale } from "../../services/i18n";
-  import { Link, Router } from "svelte-navigator";
+  import { locale, t } from "../../services/i18n";
+  import { Router } from "svelte-navigator";
   import Contacts from "../Main/Contacts.svelte";
+  import { strokeTextCreator } from "../Main/Main.svelte";
   import Person from "./Person.svelte";
-
-  gsap.registerPlugin(MotionPathPlugin);
-
   import dataRU from "../../lang/ru.json";
   import dataEN from "../../lang/en.json";
+
+  gsap.registerPlugin(MotionPathPlugin);
 
   let localeStuff = {
     ru: dataRU.studioPage.stuff,
@@ -24,6 +24,10 @@
   };
 
   onMount(() => {
+    strokeTextCreator();
+
+    window.scrollTo(0, 0);
+
     let patternParent = document.querySelector(".portfolio__pattern");
     let blockW = patternParent.offsetWidth;
     let blockH = patternParent.offsetHeight;
@@ -39,7 +43,6 @@
     }
 
     let pointNodes = document.querySelectorAll(".locus__point");
-
     let pointAnimationPath =
       "M270.5 275c0 75.879-15.155 144.551-39.636 194.233-24.495 49.715-58.242 80.267-95.364 80.267-37.122 0-70.869-30.552-95.364-80.267C15.656 419.551.5 350.879.5 275S15.655 130.449 40.136 80.767C64.63 31.052 98.377.5 135.5.5c37.122 0 70.869 30.552 95.364 80.267C255.345 130.449 270.5 199.12 270.5 275z";
 

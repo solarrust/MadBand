@@ -38,12 +38,15 @@
     let scrollPos = 0;
 
     window.addEventListener("scroll", function () {
-      if (
-        document.body.getBoundingClientRect().top > scrollPos &&
-        contactsTop > document.body.getBoundingClientRect().top
-      ) {
+      if (document.body.getBoundingClientRect().top > scrollPos) {
         window.location.hash = "";
         anchorLink.classList.remove("active");
+      }
+
+      if (Math.abs(document.body.getBoundingClientRect().top) >= contactsTop) {
+        if (!anchorLink.classList.contains("active")) {
+          anchorLink.classList.add("active");
+        }
       }
 
       scrollPos = document.body.getBoundingClientRect().top;
