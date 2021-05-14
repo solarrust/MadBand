@@ -2,7 +2,7 @@
   import { t } from "../../services/i18n";
   import { AsYouType, parsePhoneNumber } from "libphonenumber-js";
   import { onMount } from "svelte";
-  import Lang from "../../../lang/Lang.svelte";
+  import Lang from "./Lang.svelte";
 
   onMount(() => {
     const phoneInput = document.querySelector("#phone");

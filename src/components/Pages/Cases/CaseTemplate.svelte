@@ -1,14 +1,12 @@
 <script>
-  import { gsap } from "gsap";
-  import { Link, Router, Route } from "svelte-navigator";
-  import { dict, t, locale } from "../../services/i18n";
+  import { onMount } from "svelte";
 
-  export let id;
+  export let link;
 
   import data from "../../../data/projects.json";
   import Case from "./Case.svelte";
   import ExploreMore from "./ExploreMore.svelte";
-  import Lang from "../../../lang/Lang.svelte";
+  import Lang from "../Main/Lang.svelte";
 
   let categories = data.categories;
   let projects = data.projects;
@@ -20,36 +18,69 @@
   let bckColor;
   let moreProjects = [];
 
-  for (let i = 0; i < projects.length; i++) {
-    if (projects[i].projectName.en.replace(/ /g, "_").toLowerCase() === id) {
-      currentCase = projects[i];
+  function currentCaseDetector(idx) {
+    if (
+      projects[idx].projectName.en.replace(/ /g, "_").toLowerCase() === link
+    ) {
+      currentCase = projects[idx];
+    }
+  }
 
-      if (projects[i].category % 2) {
-        bckColor = "thistle";
-      } else {
-        bckColor = "dandelion";
+  function currentCatDetector() {
+    currentCategory = categories[currentCase.category - 1];
+  }
+
+  function bkgColorDetector() {
+    bckColor = currentCase.category % 2 ? "thistle" : "dandelion";
+  }
+
+  function currentDataAgregator() {
+    for (let i = 0; i < projects.length; i++) {
+      currentCaseDetector(i);
+
+      if (currentCase) {
+        currentCatDetector();
+
+        if (currentCategory) {
+          bkgColorDetector();
+        }
       }
-
-      currentCategory = categories[projects[i].category - 1];
     }
   }
 
-  for (let i = 0; i < projects.length; i++) {
-    if (projects[i].category === currentCase.category) {
-      moreProjects.push(projects[i]);
+  currentDataAgregator();
+
+  function moreProjectsCollector() {
+    for (let i = 0; i < projects.length; i++) {
+      if (
+        projects[i].category === currentCase.category &&
+        projects[i] !== currentCase
+      ) {
+        moreProjects.push(projects[i]);
+      }
     }
   }
+
+  moreProjectsCollector();
+
+  function caseRefreshHandler() {
+    window.location.refresh();
+  }
+
+  let projectData = {
+    title: link,
+    project: currentCase,
+    category: currentCategory,
+    bkg: bckColor,
+  };
+
+  onMount(() => {});
 </script>
 
 <slot>
-  <Case
-    title={id}
-    data={currentCase}
-    category={currentCategory}
-    bkg={bckColor}
-  />
+  <Case {...projectData} />
 
-  <ExploreMore {moreProjects} />
+  <ExploreMore {moreProjects} on:click={caseRefreshHandler} />
   <Lang />
 </slot>
 

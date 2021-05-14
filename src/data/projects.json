@@ -2,23 +2,33 @@
   "categories": [
     {
       "en": "Events",
-      "ru": "Мероприятия"
+      "ru": "Мероприятия",
+      "bkg": "var(--green)",
+      "font": "var(--dandelion)"
     },
     {
       "en": "SMM",
-      "ru": "SMM"
+      "ru": "SMM",
+      "bkg": "var(--thistle)",
+      "font": "var(--oriole)"
     },
     {
       "en": "DESIGN & Branding",
-      "ru": "Дизайн и брендинг"
+      "ru": "Дизайн и брендинг",
+      "bkg": "var(--oriole)",
+      "font": "var(--dandelion)"
     },
     {
       "en": "PRODUCTION",
-      "ru": "Продакшен"
+      "ru": "Продакшен",
+      "bkg": "var(--sky-blue)",
+      "font": "var(--green)"
     },
     {
       "en": "CONTENT",
-      "ru": "Контент"
+      "ru": "Контент",
+      "bkg": "var(--cherry-blossom)",
+      "font": "var(--oriole)"
     }
   ],
   "projects": [
@@ -42,15 +52,46 @@
       },
       "pageCover": "img/cases/BUD 66/cover.jpg",
       "photos": [
-        "img/cases/BUD 66/image 41.jpg",
-        "img/cases/BUD 66/image 42.jpg",
-        "img/cases/BUD 66/image 43.jpg",
-        "img/cases/BUD 66/image 47.jpg",
-        "img/cases/BUD 66/image 47-1.jpg",
-        "img/cases/BUD 66/image 49.jpg",
-        "img/cases/BUD 66/image 50.jpg",
-        "img/cases/BUD 66/image 51.jpg",
-        "img/cases/BUD 66/image 52.jpg"
+        {
+          "src": "img/cases/BUD 66/image 41.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 42.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 43.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 47.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 49.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 50.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 51.jpg",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 52.jpg",
+          "flag": "big"
+        }
       ],
       "gallery": [
         "img/cases/BUD 66/gallery-image 44.jpg",
@@ -78,15 +119,46 @@
       },
       "pageCover": "img/cases/BUD 66/cover.jpg",
       "photos": [
-        "img/cases/BUD 66/image 41.jpg",
-        "img/cases/BUD 66/image 42.jpg",
-        "img/cases/BUD 66/image 43.jpg",
-        "img/cases/BUD 66/image 47.jpg",
-        "img/cases/BUD 66/image 47-1.jpg",
-        "img/cases/BUD 66/image 49.jpg",
-        "img/cases/BUD 66/image 50.jpg",
-        "img/cases/BUD 66/image 51.jpg",
-        "img/cases/BUD 66/image 52.jpg"
+        {
+          "src": "img/cases/BUD 66/image 41.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 42.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 43.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 47.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 49.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 50.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 51.jpg",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 52.jpg",
+          "flag": "big"
+        }
       ],
       "gallery": [
         "img/cases/BUD 66/gallery-image 44.jpg",
@@ -136,15 +208,46 @@
       },
       "pageCover": "img/cases/BUD 66/cover.jpg",
       "photos": [
-        "img/cases/BUD 66/image 41.jpg",
-        "img/cases/BUD 66/image 42.jpg",
-        "img/cases/BUD 66/image 43.jpg",
-        "img/cases/BUD 66/image 47.jpg",
-        "img/cases/BUD 66/image 47-1.jpg",
-        "img/cases/BUD 66/image 49.jpg",
-        "img/cases/BUD 66/image 50.jpg",
-        "img/cases/BUD 66/image 51.jpg",
-        "img/cases/BUD 66/image 52.jpg"
+        {
+          "src": "img/cases/BUD 66/image 41.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 42.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 43.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 47.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 49.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 50.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 51.jpg",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 52.jpg",
+          "flag": "big"
+        }
       ],
       "gallery": [
         "img/cases/BUD 66/gallery-image 44.jpg",
@@ -177,10 +280,10 @@
       },
       "pageCover": "img/cases/Gills/cover.jpg",
       "photos": [
-        "img/cases/Gills/1.jpg",
-        "img/cases/Gills/2.jpg",
-        "img/cases/Gills/3.jpg",
-        "img/cases/Gills/4.jpg"
+        { "src": "img/cases/Gills/2.jpg", "flag": "" },
+        { "src": "img/cases/Gills/4.jpg", "flag": "big" },
+        { "src": "img/cases/Gills/1.jpg", "flag": "big" },
+        { "src": "img/cases/Gills/2.jpg", "flag": "" }
       ],
       "gallery": []
     },
@@ -204,15 +307,46 @@
       },
       "pageCover": "./img/cases/BUD 66/cover.jpg",
       "photos": [
-        "img/cases/BUD 66/image 41.jpg",
-        "img/cases/BUD 66/image 42.jpg",
-        "img/cases/BUD 66/image 43.jpg",
-        "img/cases/BUD 66/image 47.jpg",
-        "img/cases/BUD 66/image 47-1.jpg",
-        "img/cases/BUD 66/image 49.jpg",
-        "img/cases/BUD 66/image 50.jpg",
-        "img/cases/BUD 66/image 51.jpg",
-        "img/cases/BUD 66/image 52.jpg"
+        {
+          "src": "img/cases/BUD 66/image 41.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 42.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 43.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 47.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 49.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 50.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 51.jpg",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 52.jpg",
+          "flag": "big"
+        }
       ],
       "gallery": [
         "img/cases/BUD 66/gallery-image 44.jpg",
@@ -240,15 +374,46 @@
       },
       "pageCover": "img/cases/BUD 66/cover.jpg",
       "photos": [
-        "img/cases/BUD 66/image 41.jpg",
-        "img/cases/BUD 66/image 42.jpg",
-        "img/cases/BUD 66/image 43.jpg",
-        "img/cases/BUD 66/image 47.jpg",
-        "img/cases/BUD 66/image 47-1.jpg",
-        "img/cases/BUD 66/image 49.jpg",
-        "img/cases/BUD 66/image 50.jpg",
-        "img/cases/BUD 66/image 51.jpg",
-        "img/cases/BUD 66/image 52.jpg"
+        {
+          "src": "img/cases/BUD 66/image 41.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 42.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 43.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 47.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 49.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 50.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 51.jpg",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 52.jpg",
+          "flag": "big"
+        }
       ],
       "gallery": [
         "img/cases/BUD 66/gallery-image 44.jpg",
@@ -276,17 +441,54 @@
       },
       "pageCover": "img/cases/BUD 66/cover.jpg",
       "photos": [
-        "img/cases/BUD 66/image 41.jpg",
-        "img/cases/BUD 66/image 42.jpg",
-        "img/cases/BUD 66/image 43.jpg",
-        "img/cases/BUD 66/image 47.jpg",
-        "img/cases/BUD 66/image 47-1.jpg",
-        "img/cases/BUD 66/image 49.jpg",
-        "img/cases/BUD 66/image 50.jpg",
-        "img/cases/BUD 66/image 51.jpg",
-        "img/cases/BUD 66/image 52.jpg"
+        {
+          "src": "img/cases/BUD 66/image 43.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 42.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 47.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 51.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 52.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 41.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 49.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 50.jpg",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 47.jpg",
+          "flag": "big"
+        }
       ],
       "gallery": [
+        "img/cases/BUD 66/gallery-image 44.jpg",
+        "img/cases/BUD 66/gallery-image 45.jpg",
+        "img/cases/BUD 66/gallery-image 46.jpg",
+        "img/cases/BUD 66/gallery-image 44.jpg",
+        "img/cases/BUD 66/gallery-image 45.jpg",
+        "img/cases/BUD 66/gallery-image 46.jpg",
         "img/cases/BUD 66/gallery-image 44.jpg",
         "img/cases/BUD 66/gallery-image 45.jpg",
         "img/cases/BUD 66/gallery-image 46.jpg"
@@ -312,15 +514,46 @@
       },
       "pageCover": "img/cases/BUD 66/cover.jpg",
       "photos": [
-        "img/cases/BUD 66/image 41.jpg",
-        "img/cases/BUD 66/image 42.jpg",
-        "img/cases/BUD 66/image 43.jpg",
-        "img/cases/BUD 66/image 47.jpg",
-        "img/cases/BUD 66/image 47-1.jpg",
-        "img/cases/BUD 66/image 49.jpg",
-        "img/cases/BUD 66/image 50.jpg",
-        "img/cases/BUD 66/image 51.jpg",
-        "img/cases/BUD 66/image 52.jpg"
+        {
+          "src": "img/cases/BUD 66/image 41.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 42.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 43.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 47.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 49.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 50.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 51.jpg",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 52.jpg",
+          "flag": "big"
+        }
       ],
       "gallery": [
         "img/cases/BUD 66/gallery-image 44.jpg",
@@ -348,15 +581,46 @@
       },
       "pageCover": "img/cases/BUD 66/cover.jpg",
       "photos": [
-        "img/cases/BUD 66/image 41.jpg",
-        "img/cases/BUD 66/image 42.jpg",
-        "img/cases/BUD 66/image 43.jpg",
-        "img/cases/BUD 66/image 47.jpg",
-        "img/cases/BUD 66/image 47-1.jpg",
-        "img/cases/BUD 66/image 49.jpg",
-        "img/cases/BUD 66/image 50.jpg",
-        "img/cases/BUD 66/image 51.jpg",
-        "img/cases/BUD 66/image 52.jpg"
+        {
+          "src": "img/cases/BUD 66/image 41.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 42.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 43.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 47.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 49.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 50.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/BUD 66/image 51.jpg",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/BUD 66/image 52.jpg",
+          "flag": "big"
+        }
       ],
       "gallery": [
         "img/cases/BUD 66/gallery-image 44.jpg",

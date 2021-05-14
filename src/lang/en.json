@@ -64,5 +64,8 @@
       ]
     },
     "callToAction": "Work with us"
+  },
+  "casePage": {
+    "exploreText": "Explore More Projects"
   }
 }

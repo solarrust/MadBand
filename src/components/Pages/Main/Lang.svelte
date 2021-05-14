@@ -1,6 +1,6 @@
 <script>
-  import { dict, locale, t } from "../components/services/i18n";
-  import translations from "./translations";
+  import { dict, locale, t } from "../../services/i18n";
+  import translations from "../../../lang/translations";
   import { onMount } from "svelte";
 
   $: languages = Object.keys(translations);
@@ -20,8 +20,13 @@
         window.pageYOffset + document.documentElement.clientHeight / 2 >
         parent.offsetTop
       ) {
-        langEl.style.position = "absolute";
-        langEl.style.bottom = "calc(50vh + 32px)";
+        if (
+          parent.hasAttribute("id") &&
+          parent.getAttribute("id") === "#contacts"
+        ) {
+          langEl.style.position = "absolute";
+          langEl.style.bottom = "calc(50vh + 32px)";
+        }
       } else {
         langEl.style.position = "fixed";
         langEl.style.bottom = "32px";
@@ -56,6 +61,7 @@
     bottom: 35px;
     z-index: 10;
     display: flex;
+    color: var(--green);
   }
 
   .lang__item + .lang__item {
@@ -73,7 +79,6 @@
     width: 32px;
     height: 32px;
     padding: 10px 5px;
-    color: var(--green);
     font-size: 16px;
     font-weight: 600;
     border: 1px solid;

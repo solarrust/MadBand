@@ -54,7 +54,14 @@
       <ul class="works__category-list category-list">
         {#each categories as category, i}
           <li class="category-list__item">
-            <label class="category-list__btn _{i + 1}">
+            <label
+              class="category-list__btn _{i + 1}"
+              style={`
+      --fontColor:
+      ${category.font};
+      --bkg:
+      ${category.bkg}`}
+            >
               <input
                 type="radio"
                 name="category"
@@ -112,39 +119,41 @@
     padding: 20px 25px;
     text-align: center;
     text-transform: uppercase;
+    color: var(--fontColor);
+    background-color: var(--bkg);
 
     cursor: pointer;
   }
 
   .category-list__btn._1 {
-    color: var(--dandelion);
-    background-color: var(--green);
+    /*  color: var(--dandelion);*/
+    /*  background-color: var(--green);*/
   }
 
   .category-list__btn._2 {
-    color: var(--oriole);
-    background-color: var(--thistle);
+    /*  color: var(--oriole);*/
+    /*  background-color: var(--thistle);*/
 
     transform: rotate(2deg);
   }
 
   .category-list__btn._3 {
-    color: var(--dandelion);
-    background-color: var(--oriole);
+    /*  color: var(--dandelion);*/
+    /*  background-color: var(--oriole);*/
 
     transform: rotate(-2deg);
   }
 
   .category-list__btn._4 {
-    color: var(--green);
-    background-color: var(--sky-blue);
+    /*  color: var(--green);*/
+    /*  background-color: var(--sky-blue);*/
 
     transform: rotate(2deg);
   }
 
   .category-list__btn._5 {
-    color: var(--oriole);
-    background-color: var(--cherry-blossom);
+    /*  color: var(--oriole);*/
+    /*  background-color: var(--cherry-blossom);*/
 
     transform: rotate(-2deg);
   }

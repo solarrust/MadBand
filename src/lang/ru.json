@@ -64,5 +64,8 @@
       ]
     },
     "callToAction": "Работать с нами"
+  },
+  "casePage": {
+    "exploreText": "Больше проектов"
   }
 }
