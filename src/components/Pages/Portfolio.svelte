@@ -115,7 +115,7 @@
 
   .category-list__btn {
     display: block;
-    font-size: 14px;
+    font-size: var(--s-text-size);
     padding: 20px 25px;
     text-align: center;
     text-transform: uppercase;
@@ -165,7 +165,7 @@
   .works__text {
     max-width: 62%;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: var(--m-text-size);
     color: var(--green);
     text-align: center;
   }
@@ -186,7 +186,7 @@
 
   :global(.work__call-to-action a) {
     font-family: var(--accent-font);
-    font-size: 56px;
+    font-size: var(--title-text-size);
     color: var(--green);
   }
 

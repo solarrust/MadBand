@@ -1,10 +1,14 @@
 <script>
+  import { gsap } from "gsap";
+  import * as ScrollToPlugin from "gsap/ScrollToPlugin";
   import { onMount } from "svelte";
 
   import Logo from "./Logo.svelte";
   import { Link, Router } from "svelte-routing";
 
   import { t } from "../services/i18n";
+
+  gsap.registerPlugin(ScrollToPlugin);
 
   let extraClass;
 
@@ -22,6 +26,8 @@
     let loc = window.location.hash;
     let anchorLink = document.querySelector(".nav__item._anchor");
     anchorLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      gsap.to(window, { duration: 1, scrollTo: "#contacts" });
       if (!e.target.classList.contains("active") || loc === "#contacts") {
         e.target.classList.add("active");
       }
@@ -91,7 +97,7 @@
 
   :global(.nav__item) {
     color: var(--green);
-    font-size: 12px;
+    font-size: var(--xs-text-size);
     font-weight: 600;
   }
 

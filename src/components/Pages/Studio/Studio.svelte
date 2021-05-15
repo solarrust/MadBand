@@ -194,7 +194,7 @@
 
   .studio__subtitle {
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: var(--m-text-size);
     text-align: center;
   }
 
@@ -203,7 +203,7 @@
     margin: 0 auto;
     font-family: var(--accent-font);
     font-weight: normal;
-    font-size: 56px;
+    font-size: var(--title-text-size);
     text-align: center;
   }
 
@@ -232,14 +232,14 @@
   .mission__text {
     margin-left: 85px;
     font-family: var(--accent-font);
-    font-size: 56px;
+    font-size: var(--title-text-size);
   }
 
   .label {
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 14px;
+    font-size: var(--s-text-size);
   }
 
   .mission__label {
@@ -314,12 +314,12 @@
   }
 
   .philosophy__text {
-    font-size: 24px;
+    font-size: var(--m-text-size);
   }
 
   .philosophy__big-text {
     margin-top: 30px;
-    font-size: 56px;
+    font-size: var(--title-text-size);
     font-family: var(--accent-font);
     font-weight: normal;
   }
@@ -336,7 +336,7 @@
   .philosophy-list__item {
     position: relative;
     padding: 40px 100px;
-    font-size: 36px;
+    font-size: var(--l-text-size);
     text-transform: uppercase;
     border-bottom: 1px solid var(--green);
 
@@ -355,7 +355,7 @@
     position: absolute;
     top: 50px;
     left: 10px;
-    font-size: 14px;
+    font-size: var(--s-text-size);
     color: var(--green);
     text-shadow: none;
   }

@@ -96,8 +96,6 @@
       });
     });
 
-    // document.querySelector("[data-slick]").slick({});
-
     const slider = tns({
       container: "[data-slider]",
       items: 3,
@@ -127,7 +125,7 @@
       <span
         class="case__category"
         style={`
-      --fontColor:
+      --font-color:
       ${category.font};
       --bkg:
       ${category.bkg}`}>{category[$locale]}</span
@@ -221,13 +219,13 @@
   }
 
   .case__client {
-    font-size: 56px;
+    font-size: var(--title-text-size);
     color: var(--green);
     text-transform: capitalize;
   }
 
   .case__name {
-    font-size: 56px;
+    font-size: var(--title-text-size);
   }
 
   .case__cover-block {
@@ -262,9 +260,9 @@
     top: -37px;
     z-index: 1;
     padding: 30px;
-    color: var(--fontColor);
+    color: var(--font-color);
     font-family: var(--main-font);
-    font-size: 14px;
+    font-size: var(--s-text-size);
     text-transform: uppercase;
   }
 
@@ -314,7 +312,7 @@
 
   .case__main {
     padding-right: 40px;
-    font-size: 24px;
+    font-size: var(--m-text-size);
   }
 
   .photos {

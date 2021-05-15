@@ -72,6 +72,10 @@
     display: none;
   }
 
+  .lang__item {
+    user-select: none;
+  }
+
   .lang__item-text {
     display: flex;
     justify-content: center;

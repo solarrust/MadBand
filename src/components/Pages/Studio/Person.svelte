@@ -21,7 +21,7 @@
     align-items: flex-end;
     width: 300px;
     margin-right: 40px;
-    font-size: 14px;
+    font-size: var(--s-text-size);
   }
 
   .person__img {

@@ -45,7 +45,7 @@
 
   .cases__explore-text {
     margin-bottom: 2rem;
-    font-size: 14px;
+    font-size: var(--s-text-size);
   }
 
   .cases__explore-list {
@@ -58,7 +58,7 @@
     width: 65%;
     list-style: none;
     font-family: var(--accent-font);
-    font-size: 56px;
+    font-size: var(--title-text-size);
     font-weight: normal;
     text-transform: capitalize;
   }

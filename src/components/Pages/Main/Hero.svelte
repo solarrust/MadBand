@@ -1,33 +1,40 @@
 <script>
+  import { fade, blur, fly } from "svelte/transition";
+
   import { t } from "../../services/i18n";
+  import { onMount } from "svelte";
+  import Squares from "../../Patterns/Squares.svelte";
+
+  let visible = false;
+
+  onMount(() => {
+    visible = true;
+  });
 </script>
 
 <section class="hero main__section">
-  <div class="hero__block">
-    <h1 class="hero__title">{@html $t("mainPage.title")}</h1>
-    <p class="hero__subtitle">{$t("mainPage.subtitle")}</p>
-  </div>
-  <div class="hero__block">
-    <div class="square-pattern">
-      <div class="line" />
-      <div class="line" />
-      <div class="line" />
-      <div class="line" />
-      <div class="line" />
-      <div class="line" />
-      <div class="line" />
-      <div class="line" />
-      <div class="line" />
-      <div class="line" />
-      <div class="line" />
-      <div class="line" />
+  {#if visible}
+    <div class="hero__block">
+      <h1 class="hero__title">
+        {@html $t("mainPage.title")}
+      </h1>
+      <p class="hero__subtitle">
+        {$t("mainPage.subtitle")}
+      </p>
     </div>
+  {/if}
+
+  <div class="hero__block hero__pattern">
+    <Squares />
   </div>
 </section>
 
 <style>
   .hero {
+    height: 100vh;
+    min-height: 660px;
     display: flex;
+    justify-content: space-between;
     color: var(--green);
     background-color: var(--main-bkg);
     overflow: hidden;
@@ -41,9 +48,10 @@
   }
 
   .hero__title {
-    margin: auto 40px;
+    max-width: 620px;
+    margin: auto 25px auto 40px;
     font-family: var(--accent-font);
-    font-size: 56px;
+    font-size: var(--title-text-size);
     font-weight: 400;
     line-height: 1.2;
   }
@@ -54,61 +62,7 @@
     margin-right: 40px;
     justify-self: flex-end;
     align-self: flex-end;
-    font-size: 14px;
-  }
-
-  .square-pattern {
-    display: flex;
-    position: relative;
-    top: -50px;
-    width: 100%;
-    height: 100vh;
-  }
-
-  .line {
-    width: calc(100% / 12);
-    height: calc(100% + 50px);
-    background-image: linear-gradient(to top, #fbfe67 50px, transparent 50px);
-    background-size: 50px 100px;
-
-    animation: line-run infinite linear;
-
-    animation-duration: 10s;
-  }
-
-  .line:not(:last-child) {
-    margin-right: 5px;
-  }
-
-  .line:nth-child(5n + 1) {
-    transform: translateY(25px);
-    animation-duration: 25s;
-    animation-direction: reverse;
-  }
-
-  .line:nth-child(5n + 2) {
-    transform: translateY(50px);
-    animation-duration: 16s;
-  }
-
-  .line:nth-child(5n + 3) {
-    transform: translateY(25px);
-    animation-duration: 10s;
-    animation-direction: reverse;
-  }
-
-  .line:nth-child(5n + 4) {
-    transform: translateY(10px);
-    animation-duration: 20s;
-  }
-
-  @keyframes line-run {
-    from {
-      background-position-y: 1000px;
-    }
-    to {
-      background-position-y: 0;
-    }
+    font-size: var(--s-text-size);
   }
 
   :global(.marker) {
