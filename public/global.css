@@ -23,6 +23,13 @@
   --xs-text-size: 12px;
 }
 
+@media (max-width: 680px) {
+  :root {
+    --title-text-size: 36px;
+    --m-text-size: 18px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

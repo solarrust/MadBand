@@ -7,7 +7,7 @@
     }
   },
   "mainPage": {
-    "title": "<span class='marker underline'>Studio</span> that <span class='marker pink-marker'>inspires</span><br /><span class='marker pink-marker'>meaningful</span> events.<br />We develop <span class='marker circle'>brands</span><br />and <span class='marker green-marker'>help</span> them<br />communicate <span class='marker yellow-marker'>with</span><br /><span class='marker red-marker'>the audience.</span>",
+    "title": "<span class='marker underline'>Studio</span> that <span class='marker pink-marker'>inspires</span> <span class='marker pink-marker'>meaningful</span> events. We&nbsp;develop <span class='marker circle'>brands</span> and <span class='marker green-marker'>help</span> them communicate <span class='marker yellow-marker'>with</span> <span class='marker red-marker'>the audience.</span>",
     "subtitle": "We organize large-scale events, develop BTL promotions and special projects, ensure the presence of companies in the media, and design products and services.",
     "contactUs": "Feel <span class='marker underline'>free</span> to <span class='marker lightgreen-marker'>contact us</span>",
     "or": "or",

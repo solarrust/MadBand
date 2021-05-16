@@ -3,6 +3,8 @@
   import translations from "../../../lang/translations";
   import { onMount } from "svelte";
 
+  export let extraClass;
+
   $: languages = Object.keys(translations);
 
   function onChange(event) {
@@ -10,32 +12,44 @@
   }
 
   onMount(() => {
-    let langEl = document.querySelector(".lang");
-    let parent = langEl.parentElement;
+    let langEl = document.querySelector(".contacts__lang");
+    let parent = document.querySelector("#contacts");
+    let pageWidth = window.innerWidth;
 
-    parent.style.position = "relative";
-
-    document.addEventListener("scroll", function (e) {
+    function listener(e) {
       if (
         window.pageYOffset + document.documentElement.clientHeight / 2 >
         parent.offsetTop
       ) {
-        if (
-          parent.hasAttribute("id") &&
-          parent.getAttribute("id") === "#contacts"
-        ) {
-          langEl.style.position = "absolute";
-          langEl.style.bottom = "calc(50vh + 32px)";
-        }
+        langEl.style.position = "absolute";
+        langEl.style.bottom = "calc(50vh + 32px)";
       } else {
         langEl.style.position = "fixed";
         langEl.style.bottom = "32px";
+      }
+    }
+
+    if (pageWidth >= 680) {
+      parent.style.position = "relative";
+      document.addEventListener("scroll", listener);
+    } else if (pageWidth < 680) {
+      document.removeEventListener("scroll", listener);
+    }
+
+    window.addEventListener("resize", (e) => {
+      pageWidth = window.innerWidth;
+
+      if (pageWidth >= 680) {
+        parent.style.position = "relative";
+        document.addEventListener("scroll", listener);
+      } else if (pageWidth < 680) {
+        document.removeEventListener("scroll", listener);
       }
     });
   });
 </script>
 
-<div class="lang">
+<div class="lang {extraClass}">
   {#each languages as lang}
     <label class="lang__item">
       {#if lang === "ru"}
@@ -95,5 +109,19 @@
     color: var(--sky-blue);
     border: none;
     background-color: var(--oriole);
+  }
+
+  @media (max-width: 680px) {
+    .lang {
+      top: 36px;
+      bottom: auto;
+      left: auto;
+      right: 70px;
+    }
+
+    .lang__item-text {
+      width: 28px;
+      height: 28px;
+    }
   }
 </style>

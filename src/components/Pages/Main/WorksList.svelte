@@ -29,7 +29,7 @@
 </Router>
 
 <style>
-  :global(.works__list) {
+  .works__list {
     display: grid;
     grid-template-columns: repeat(4, calc(25% - 20px));
     grid-auto-rows: minmax(45vh, max-content);
@@ -42,6 +42,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .work__cover img {
+    max-width: 100%;
   }
 
   :global(.works__item:nth-child(2n + 1)) {
@@ -60,12 +64,12 @@
     grid-column: span 2;
   }
 
-  :global(.work__cover) {
+  .work__cover {
     position: relative;
     padding: 0 10px;
   }
 
-  :global(.work__name) {
+  .work__name {
     position: absolute;
     top: 0;
     left: 0;
@@ -85,5 +89,21 @@
   :global(.works__item._horizontal .work__name) {
     left: auto;
     right: 0;
+  }
+
+  @media (max-width: 1280px) {
+    .works__list {
+      grid-template-columns: repeat(2, calc(50% - 20px));
+    }
+  }
+
+  @media (max-width: 680px) {
+    .works__list {
+      grid-auto-rows: minmax(180px, 10vh);
+    }
+
+    :global(.works__item._horizontal) {
+      align-self: center;
+    }
   }
 </style>

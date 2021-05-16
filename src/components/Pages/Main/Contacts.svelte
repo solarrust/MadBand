@@ -38,20 +38,26 @@
 
     let scrollPos = 0;
 
-    window.addEventListener("scroll", function () {
-      if (document.body.getBoundingClientRect().top > scrollPos) {
-        window.location.hash = "";
-        anchorLink.classList.remove("active");
-      }
+    let pageWidth = window.innerWidth;
 
-      if (Math.abs(document.body.getBoundingClientRect().top) >= contactsTop) {
-        if (!anchorLink.classList.contains("active")) {
-          anchorLink.classList.add("active");
+    if (pageWidth >= 680) {
+      window.addEventListener("scroll", function () {
+        if (document.body.getBoundingClientRect().top > scrollPos) {
+          window.location.hash = "";
+          anchorLink.classList.remove("active");
         }
-      }
 
-      scrollPos = document.body.getBoundingClientRect().top;
-    });
+        if (
+          Math.abs(document.body.getBoundingClientRect().top) >= contactsTop
+        ) {
+          if (!anchorLink.classList.contains("active")) {
+            anchorLink.classList.add("active");
+          }
+        }
+
+        scrollPos = document.body.getBoundingClientRect().top;
+      });
+    }
   });
 </script>
 
@@ -106,7 +112,7 @@
     <Lines />
   </div>
   <!-- TODO: спросить у ребят на какие англиязычные компании они расчитывают чтобы правильно форматировать и валидирвать телефон -->
-  <Lang />
+  <Lang extraClass="contacts__lang" />
 </section>
 
 <style>
@@ -275,5 +281,71 @@
 
   .contacts__pattern {
     margin-top: 150px;
+  }
+
+  @media (max-width: 1280px) {
+    .contacts__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contacts__block {
+      width: 100%;
+    }
+
+    .contacts__block:not(._right) {
+      text-align: center;
+    }
+
+    .contacts__big-text._italic {
+      margin: 40px auto 65px;
+    }
+
+    .contacts__list {
+      margin-top: 65px;
+      text-align: start;
+    }
+    .contacts__pattern {
+      margin-top: 90px;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .contacts {
+      padding-top: 135px;
+    }
+
+    .contacts__list {
+      flex-wrap: wrap;
+    }
+
+    .contacts__item {
+      min-width: 135px;
+    }
+
+    .contacts__big-text._italic {
+      margin: 20px auto;
+      font-size: 56px;
+    }
+
+    .contacts__block._right {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contacts__block._right > .contacts__big-text {
+      margin-right: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contacts__form {
+      width: 100%;
+    }
+
+    .contacts__pattern {
+      margin-top: 50px;
+    }
   }
 </style>

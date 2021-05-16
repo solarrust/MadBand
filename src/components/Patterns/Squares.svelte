@@ -31,7 +31,7 @@
     background-image: linear-gradient(to top, #fbfe67 50px, transparent 50px);
     background-size: 50px 100px;
 
-    animation: line-run infinite linear;
+    animation: line-run-y infinite linear;
 
     animation-duration: 10s;
   }
@@ -41,33 +41,77 @@
   }
 
   .line:nth-child(5n + 1) {
-    transform: translateY(25px);
+    /*transform: translateY(25px);*/
     animation-duration: 25s;
     animation-direction: reverse;
   }
 
   .line:nth-child(5n + 2) {
-    transform: translateY(50px);
+    /*transform: translateY(50px);*/
     animation-duration: 16s;
   }
 
   .line:nth-child(5n + 3) {
-    transform: translateY(25px);
+    /*transform: translateY(25px);*/
     animation-duration: 10s;
     animation-direction: reverse;
   }
 
   .line:nth-child(5n + 4) {
-    transform: translateY(10px);
+    /*transform: translateY(10px);*/
     animation-duration: 20s;
   }
 
-  @keyframes line-run {
+  @keyframes line-run-y {
     from {
       background-position-y: 1000px;
     }
     to {
       background-position-y: 0;
     }
+  }
+
+  @keyframes line-run-x {
+    from {
+      background-position-x: 1000px;
+    }
+    to {
+      background-position-x: 0;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .square-pattern {
+      top: 0;
+      left: 0;
+      flex-direction: column;
+    }
+
+    .line {
+      width: 100%;
+      height: calc(100% / 7);
+      background-image: linear-gradient(
+        to right,
+        #fbfe67 50px,
+        transparent 50px
+      );
+      background-size: 100px 50px;
+      animation-name: line-run-x;
+      /*transform: translateX(50px);*/
+    }
+
+    .line:nth-child(n + 8) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 680px) {
+    /*.line {*/
+    /*  height: calc(100% / 5);*/
+    /*}*/
+
+    /*.line:nth-child(n + 6) {*/
+    /*  display: none;*/
+    /*}*/
   }
 </style>

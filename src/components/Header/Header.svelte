@@ -7,6 +7,7 @@
   import { Link, Router } from "svelte-routing";
 
   import { t } from "../services/i18n";
+  import MobileMenu from "./MobileMenu.svelte";
 
   gsap.registerPlugin(ScrollToPlugin);
 
@@ -33,29 +34,40 @@
       }
     });
 
-    if (hero) {
-      heroBottom = hero.getBoundingClientRect().y + hero.offsetHeight;
-      header.classList.add("_small");
-    }
+    let pageWidth = window.innerWidth;
 
-    document.addEventListener("scroll", function (e) {
+    if (pageWidth >= 680) {
       if (hero) {
-        if (
-          Math.abs(document.body.getBoundingClientRect().top) >
-          heroBottom - headerBottom / 2
-        ) {
-          header.classList.remove("_small");
-        } else {
-          header.classList.add("_small");
-        }
+        heroBottom = hero.getBoundingClientRect().y + hero.offsetHeight;
+        header.classList.add("_small");
       }
-    });
+
+      document.addEventListener("scroll", function (e) {
+        if (hero) {
+          if (
+            Math.abs(document.body.getBoundingClientRect().top) >
+            heroBottom - headerBottom / 2
+          ) {
+            header.classList.remove("_small");
+          } else {
+            header.classList.add("_small");
+          }
+        }
+      });
+    }
   });
 </script>
 
 <header class={`header ${extraClass || ""}`}>
   <div class="header__box">
     <Logo />
+
+    <div class="header__mobile">
+      <div class="header__mobile-burger">
+        <MobileMenu />
+      </div>
+    </div>
+
     <nav class="nav header__nav">
       <Link to="cases" class="nav__item _works">{$t("header.menu.work")}</Link>
       <Link to="studio" class="nav__item _studio"
@@ -76,6 +88,14 @@
     z-index: 10;
     width: 100%;
     transition: width 0.2s ease-in;
+  }
+
+  .header__mobile {
+    display: none;
+  }
+
+  .header__mobile-burger {
+    margin-left: 20px;
   }
 
   :global(.header._small) {
@@ -144,5 +164,25 @@
   :global(.nav__item._anchor.active:after),
   :global(.nav__item[aria-current="page"]:after) {
     opacity: 1;
+  }
+
+  @media (max-width: 1280px) {
+    :global(.header._small) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .header__box {
+      padding: 30px 25px;
+    }
+
+    .header__nav {
+      display: none;
+    }
+
+    .header__mobile {
+      display: flex;
+    }
   }
 </style>

@@ -75,7 +75,7 @@
     background-color: var(--thistle);
     display: flex;
     color: var(--green);
-    font-size: 2.3vw;
+    font-size: 36px;
     text-transform: uppercase;
     overflow: hidden;
   }
@@ -86,7 +86,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 16vw;
+    width: 220px;
     flex-shrink: 0;
     text-decoration: none;
     color: var(--thistle);
@@ -115,6 +115,20 @@
     }
     to {
       background-position-x: 1500px;
+    }
+  }
+
+  @media (max-width: 680px) {
+    :global(.ticker__item._big) {
+      font-size: 24px;
+    }
+
+    :global(.ticker__box) {
+      width: 150px;
+    }
+
+    :global(.ticker__box .stroke__text-parent) {
+      flex-wrap: nowrap;
     }
   }
 </style>

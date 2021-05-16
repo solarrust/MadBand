@@ -51,4 +51,13 @@
   :global(.works__text p:not(:last-child)) {
     margin-bottom: 24px;
   }
+
+  @media (max-width: 680px) {
+    .works {
+      padding-bottom: 40px;
+    }
+    .works__text {
+      width: 100%;
+    }
+  }
 </style>
