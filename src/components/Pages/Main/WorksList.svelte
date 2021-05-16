@@ -99,7 +99,7 @@
 
   @media (max-width: 680px) {
     .works__list {
-      grid-auto-rows: minmax(180px, 10vh);
+      grid-auto-rows: auto;
     }
 
     :global(.works__item._horizontal) {
