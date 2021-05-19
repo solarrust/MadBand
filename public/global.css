@@ -21,6 +21,9 @@
   --m-text-size: 24px;
   --s-text-size: 14px;
   --xs-text-size: 12px;
+
+  --m-window: 1280px;
+  --s-window: 680px;
 }
 
 @media (max-width: 680px) {
@@ -46,6 +49,8 @@ body {
 }
 
 body {
+  min-width: 320px;
+
   color: #333;
   margin: 0;
   box-sizing: border-box;
