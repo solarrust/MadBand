@@ -1,6 +1,7 @@
 <script>
   import { dict, t, locale } from "../../services/i18n";
   import { Link, Router, Route } from "svelte-navigator";
+  import Lang from "../Main/Lang.svelte";
 
   export let moreProjects;
 </script>
@@ -28,6 +29,7 @@
         </li>
       {/each}
     </ul>
+    <Lang />
   </div>
 </Router>
 
@@ -51,16 +53,19 @@
   .cases__explore-list {
     position: relative;
     z-index: 0;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     max-width: 915px;
-    width: 65%;
+    width: 70%;
     list-style: none;
     font-family: var(--accent-font);
     font-size: var(--title-text-size);
     font-weight: normal;
     text-transform: capitalize;
+    text-align: center;
+  }
+
+  .cases__explore-item {
+    display: inline-block;
   }
 
   :global(a.cases__explore-link) {
@@ -96,5 +101,15 @@
     opacity: 0;
     transform: translate(-50%, -50%);
     transition: opacity 0.2s;
+  }
+
+  @media (max-width: 1280px) {
+    .cases__explore-list {
+      width: 100%;
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 680px) {
   }
 </style>

@@ -5,11 +5,14 @@
   import { onMount } from "svelte";
   import { locale, t } from "../../services/i18n";
   import { Router } from "svelte-navigator";
-  import Contacts from "../Main/Contacts.svelte";
+
+  import StretchSquares from "../../Patterns/StretchSquares.svelte";
   import { strokeTextCreator } from "../Main/Main.svelte";
-  import Person from "./Person.svelte";
+  import Contacts from "../Main/Contacts.svelte";
   import dataRU from "../../../lang/ru.json";
   import dataEN from "../../../lang/en.json";
+  import StuffSlider from "./StuffSlider.svelte";
+  import Locus from "../../Patterns/Locus.svelte";
 
   gsap.registerPlugin(MotionPathPlugin);
 
@@ -42,23 +45,30 @@
       patternParent.appendChild(circleBlock);
     }
 
-    let pointNodes = document.querySelectorAll(".locus__point");
-    let pointAnimationPath =
-      "M270.5 275c0 75.879-15.155 144.551-39.636 194.233-24.495 49.715-58.242 80.267-95.364 80.267-37.122 0-70.869-30.552-95.364-80.267C15.656 419.551.5 350.879.5 275S15.655 130.449 40.136 80.767C64.63 31.052 98.377.5 135.5.5c37.122 0 70.869 30.552 95.364 80.267C255.345 130.449 270.5 199.12 270.5 275z";
+    /*let sliderContainerWidth =
+      document.querySelectorAll(".swiper-slide").length * (355 + 40);
 
-    pointNodes.forEach((el, i) => {
-      gsap.to(el, {
-        motionPath: {
-          path: pointAnimationPath,
-          autoRotate: true,
-        },
-        transformOrigin: "50% 50%",
-        repeat: -1,
-        duration: 20,
-        delay: -(i * 5),
-        ease: "linear",
-      });
+    let breakpoints = {
+      980: {
+        slidesPerView: 3.8,
+        spaceBetween: 40,
+      },
+    };
+
+    breakpoints[sliderContainerWidth] = {
+      slidesPerView: document.querySelectorAll(".swiper-slide").length,
+      draggable: false,
+      grabCursor: false,
+    };
+
+    let swiper = new Swiper("[data-slider]", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      grabCursor: true,
+      breakpoints: breakpoints,
     });
+
+    console.log(swiper.originalParams.breakpoints);*/
   });
 </script>
 
@@ -67,51 +77,18 @@
     <div class="studio__content">
       <p class="studio__subtitle">{$t("studioPage.subtitle")}</p>
       <h2 class="studio__title">{@html $t("studioPage.title")}</h2>
+    </div>
 
-      <div class="stuff studio__stuff">
-        {#each localeStuff[$locale] as person}
-          <Person
-            name={person.name}
-            position={person.position}
-            img={person.img}
-          />
-        {/each}
-      </div>
+    <StuffSlider />
 
+    <div class="studio__content">
       <p class="studio__text">
         {$t("studioPage.text")}
       </p>
+    </div>
 
-      <div class="studio__pattern square-pattern">
-        <div class="square-pattern__line">
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-        </div>
-        <div class="square-pattern__line">
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-        </div>
-        <div class="square-pattern__line">
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-        </div>
-        <div class="square-pattern__line">
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-          <div class="square-pattern__child" />
-        </div>
-      </div>
+    <div class="studio__content">
+      <StretchSquares extraClass={"studio__pattern"} />
 
       <div class="studio__mission mission">
         <span class="mission__label label"
@@ -125,20 +102,7 @@
           <span class="philosophy__label label"
             >{$t("studioPage.philosophy.label")}</span
           >
-          <div class="philosophy__img locus">
-            <div class="locus">
-              <div class="locus__item">
-                <div class="locus__point" />
-              </div>
-              <div class="locus__item">
-                <div class="locus__point" />
-              </div>
-              <div class="locus__item">
-                <div class="locus__point" />
-              </div>
-              <div class="locus__star" />
-            </div>
-          </div>
+          <Locus />
           <div class="philosophy__content">
             <p class="philosophy__text">{$t("studioPage.philosophy.text")}</p>
             <p class="philosophy__big-text">
@@ -176,13 +140,13 @@
   .studio {
     --bkg-color: var(--sky-blue);
 
+    min-height: 100vh;
     padding: 220px 0 60px;
     color: var(--green);
     background-color: var(--bkg-color);
   }
 
   .studio__content {
-    min-height: 100vh;
     width: 85%;
     max-width: 1440px;
     margin: 0 auto;
@@ -207,20 +171,11 @@
     text-align: center;
   }
 
-  .studio__stuff {
-    margin-top: 160px;
-    margin-bottom: 105px;
-  }
-
-  .stuff {
-    display: flex;
-  }
-
   .studio__text {
     font-size: 28px;
   }
 
-  .studio__pattern {
+  :global(.studio__pattern) {
     margin: 100px 0 180px;
   }
 
@@ -258,55 +213,6 @@
 
   .philosophy__label {
     transform: translate(-50%, 240%) rotate(-90deg);
-  }
-
-  .locus {
-    position: relative;
-    z-index: 1;
-    display: flex;
-  }
-
-  .locus__item {
-    position: relative;
-    width: 270px;
-    height: 550px;
-    border: 1px solid var(--green);
-    border-radius: 50%;
-  }
-
-  .locus__point {
-    position: absolute;
-    top: calc(0% - 8px);
-    left: calc(0% - 8px);
-    width: 13px;
-    height: 13px;
-    background-color: var(--green);
-    border-radius: 50%;
-  }
-
-  .locus__item:nth-child(2):after {
-    animation-delay: -10s;
-  }
-
-  .locus__item:nth-child(3):after {
-    animation-delay: -5s;
-  }
-
-  .locus__item:not(:first-child) {
-    margin-left: -170px;
-  }
-
-  .locus__star {
-    position: absolute;
-    top: calc(50% - 37px);
-    left: calc(50% - 37px);
-    width: 75px;
-    height: 75px;
-    z-index: -1;
-    background-image: url("../svg/yellow-star.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
   }
 
   .philosophy__content {
@@ -402,63 +308,67 @@
     clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
   }
 
-  .square-pattern {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  .square-pattern__line {
-    display: flex;
-    width: 100%;
-    height: 25%;
-  }
-
-  .square-pattern__line:first-child {
-    animation: stretch ease-in-out 5s infinite alternate;
-  }
-
-  .square-pattern__line:nth-child(2) {
-    animation: stretch-small ease-in-out 5s infinite alternate-reverse;
-  }
-
-  .square-pattern__line:nth-child(3) {
-    animation: stretch-small ease-in-out 5s infinite alternate;
-  }
-
-  .square-pattern__line:last-child {
-    animation: stretch ease-in-out 5s infinite alternate-reverse;
-  }
-
-  .square-pattern__child {
-    width: 20%;
-    height: 100%;
-    /*border: 1px solid red;*/
-    background-image: linear-gradient(
-      75deg,
-      var(--bkg-color) 0,
-      var(--bkg-color) 22%,
-      var(--thistle) 22%,
-      var(--thistle) 80%,
-      var(--bkg-color) 80%
-    );
-  }
-
-  @keyframes stretch {
-    0% {
-      height: 50%;
+  @media (max-width: 1280px) {
+    .studio {
+      padding-top: 140px;
     }
-    100% {
-      height: 15%;
+
+    :global(.studio__pattern) {
+      margin: 120px 0;
+    }
+
+    .studio__title {
+      width: 100%;
+    }
+
+    .mission__text {
+      margin-left: 0;
+    }
+
+    .philosophy__block {
+      flex-direction: column;
+    }
+
+    .philosophy__content {
+      margin-top: 100px;
+      margin-left: 0;
+    }
+
+    .label {
+      position: static;
+    }
+
+    .philosophy__label {
+      margin-bottom: 30px;
+      transform: none;
+    }
+
+    .philosophy-list__item {
+      padding: 40px;
+      padding-right: 0;
     }
   }
 
-  @keyframes stretch-small {
-    0% {
-      height: 20%;
+  @media (max-width: 680px) {
+    .mission {
+      margin-bottom: 100px;
     }
-    100% {
-      height: 35%;
+
+    .philosophy {
+      padding-top: 100px;
+    }
+
+    .philosophy__items {
+      margin-top: 100px;
+    }
+
+    .philosophy-list__item {
+      padding: 30px 0;
+      font-size: 24px;
+    }
+
+    .philosophy-list__item:before {
+      display: none;
     }
   }
 </style>

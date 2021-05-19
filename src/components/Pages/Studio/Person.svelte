@@ -2,9 +2,10 @@
   export let name;
   export let position;
   export let img;
+  export let extraClass;
 </script>
 
-<div class="person stuff__item">
+<div class="person stuff__item {extraClass}">
   <div class="person__img-block">
     <img src={img} alt="{name}, {position}" class="person__img" />
   </div>
@@ -19,9 +20,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 300px;
-    margin-right: 40px;
+    /*flex: auto 0 0;*/
+    /*width: 355px;*/
+    /*margin-right: 40px;*/
     font-size: var(--s-text-size);
+  }
+
+  .person:not(:last-child) {
+    margin-right: 40px;
   }
 
   .person__img {
@@ -42,5 +48,11 @@
 
   .person__position {
     font-style: italic;
+  }
+
+  @media (max-width: 680px) {
+    .person:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 </style>

@@ -99,3 +99,21 @@ button:not(:disabled):active {
 button:focus {
   border-color: #666;
 }
+
+.embla {
+  overflow: hidden;
+}
+
+.embla._no-ev {
+  pointer-events: none;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+

@@ -1,5 +1,5 @@
 <script>
-  import { tns } from "tiny-slider/src/tiny-slider";
+  import EmblaCarousel from "embla-carousel";
 
   import { dict, t, locale } from "../../services/i18n";
   import { onMount } from "svelte";
@@ -96,19 +96,18 @@
       });
     });
 
-    const slider = tns({
-      container: "[data-slider]",
-      items: 3,
-      mouseDrag: true,
-      slideBy: 1,
-      swipeAngle: false,
-      speed: 400,
-      gutter: 35,
-      center: true,
-      controls: false,
-      nav: false,
-      preventScrollOnTouch: "auto",
-    });
+    const emblaNode = document.querySelector(".embla");
+    const options = {
+      align: "start",
+      containScroll: "trimSnaps",
+      hitBreakpoints: {
+        980: {
+          align: "center",
+        },
+      },
+    };
+
+    let embla = EmblaCarousel(emblaNode, options);
   });
 </script>
 
@@ -149,16 +148,19 @@
       <aside class="case__aside">
         <ul class="case__aside-list">
           {#each Object.entries(project.data) as [key, value]}
-            <li class="case__aside-item">
-              <span class="case__aside-label">{key}</span>
-              {#if typeof value === "object"}
+            {#if typeof value === "object"}
+              <li class="case__aside-item _grow">
+                <span class="case__aside-label">{key}</span>
                 {#each value as el}
                   {el}<br />
                 {/each}
-              {:else}
+              </li>
+            {:else}
+              <li class="case__aside-item">
+                <span class="case__aside-label">{key}</span>
                 {value}
-              {/if}
-            </li>
+              </li>
+            {/if}
           {/each}
         </ul>
       </aside>
@@ -173,10 +175,17 @@
   </section>
 
   {#if project.gallery}
-    <div class="case__gallery gallery" data-slider>
-      {#each project.gallery as photo}
-        <img src="/{photo}" alt="" class="gallery__photo" loading="lazy" />
-      {/each}
+    <div class="case__gallery gallery embla" data-slider>
+      <div class="embla__container">
+        {#each project.gallery as photo}
+          <img
+            src="/{photo}"
+            alt=""
+            class="gallery__photo embla__slide"
+            loading="lazy"
+          />
+        {/each}
+      </div>
     </div>
   {/if}
 
@@ -186,17 +195,6 @@
     </a>
   </div>
 </div>
-
-<svelte:head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
-  />
-  <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-  <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
-</svelte:head>
 
 <style>
   .case-page {
@@ -321,7 +319,7 @@
 
   :global(.photos__row) {
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 31.5%);
     grid-column-gap: 35px;
     align-items: center;
   }
@@ -349,5 +347,113 @@
   .gallery__photo {
     max-width: 530px;
     cursor: grab;
+  }
+
+  @media (max-width: 1280px) {
+    .case {
+      padding-top: 145px;
+    }
+
+    .case__main {
+      padding-right: 0;
+    }
+
+    .case__cover-block {
+      margin: 50px -40px 60px;
+    }
+
+    .case__parent {
+      flex-direction: column;
+    }
+
+    .case__aside {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
+
+    .case__aside-list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 110px;
+    }
+
+    .case__aside-item {
+      width: calc(50% - 25px);
+      margin-right: 25px;
+    }
+
+    .case__aside-item:nth-child(n + 3) {
+      margin-left: 25px;
+      margin-right: 0;
+    }
+
+    .case__aside-item._grow {
+      flex-grow: 1;
+    }
+
+    .photos {
+      margin-top: 80px;
+    }
+
+    :global(.photos__row) {
+      grid-column-gap: 20px;
+    }
+  }
+  @media (max-width: 680px) {
+    .case {
+      padding-top: 130px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .case__cover-block {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    .case__category {
+      left: 25px;
+      top: -27px;
+      padding: 15px;
+    }
+
+    .case__aside {
+      min-width: auto;
+    }
+
+    .case__aside-list {
+      height: auto;
+    }
+
+    .case__aside-item {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    .case__aside-item:nth-child(n + 3) {
+      margin-left: 0;
+    }
+
+    .case__aside-item:last-child {
+      border-bottom: none;
+    }
+
+    :global(.photos__row) {
+      grid-template-columns: 100%;
+    }
+
+    :global(.photos__photo.big) {
+      grid-column: 1;
+    }
+
+    :global(.photos__photo:not(:last-child)) {
+      margin-bottom: 40px;
+    }
+
+    :global(.photos__row:not(:last-child)) {
+      margin-bottom: 40px;
+    }
   }
 </style>

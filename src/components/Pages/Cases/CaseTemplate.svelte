@@ -6,7 +6,6 @@
   import data from "../../../data/projects.json";
   import Case from "./Case.svelte";
   import ExploreMore from "./ExploreMore.svelte";
-  import Lang from "../Main/Lang.svelte";
 
   let categories = data.categories;
   let projects = data.projects;
@@ -81,7 +80,6 @@
   <Case {...projectData} />
 
   <ExploreMore {moreProjects} on:click={caseRefreshHandler} />
-  <Lang />
 </slot>
 
 <style>

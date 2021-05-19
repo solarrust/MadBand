@@ -31,7 +31,7 @@
 <style>
   .works__list {
     display: grid;
-    grid-template-columns: repeat(4, calc(25% - 20px));
+    grid-template-columns: repeat(4, calc(25% - 15px));
     grid-auto-rows: minmax(45vh, max-content);
     gap: 40px 20px;
     grid-gap: 40px 20px;

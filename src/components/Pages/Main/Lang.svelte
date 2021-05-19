@@ -3,7 +3,7 @@
   import translations from "../../../lang/translations";
   import { onMount } from "svelte";
 
-  export let extraClass;
+  export let extraClass = "";
 
   $: languages = Object.keys(translations);
 
@@ -12,20 +12,22 @@
   }
 
   onMount(() => {
-    let langEl = document.querySelector(".contacts__lang");
-    let parent = document.querySelector("#contacts");
+    let langEl = document.querySelector(".lang");
+    let parent = langEl.parentNode;
     let pageWidth = window.innerWidth;
 
     function listener(e) {
-      if (
-        window.pageYOffset + document.documentElement.clientHeight / 2 >
-        parent.offsetTop
-      ) {
-        langEl.style.position = "absolute";
-        langEl.style.bottom = "calc(50vh + 32px)";
-      } else {
-        langEl.style.position = "fixed";
-        langEl.style.bottom = "32px";
+      if (parent.id && parent.id === "contacts") {
+        if (
+          window.pageYOffset + document.documentElement.clientHeight / 2 >
+          parent.offsetTop
+        ) {
+          langEl.style.position = "absolute";
+          langEl.style.bottom = "calc(50vh + 32px)";
+        } else {
+          langEl.style.position = "fixed";
+          langEl.style.bottom = "32px";
+        }
       }
     }
 

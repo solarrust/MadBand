@@ -8,8 +8,6 @@
     let mobileMenu = document.querySelector(".mobile-menu");
     let contactsLink = document.querySelector("#contacts-link");
 
-    console.log(contactsLink);
-
     burgerBtn.addEventListener("click", (e) => {
       burgerBtn.classList.toggle("_menu-opened");
       mobileMenu.classList.toggle("_opened");
