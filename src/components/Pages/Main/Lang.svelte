@@ -28,6 +28,15 @@
           langEl.style.position = "fixed";
           langEl.style.bottom = "32px";
         }
+      } else {
+        if (
+          window.pageYOffset + document.documentElement.clientHeight - 32 >
+          parent.offsetTop
+        ) {
+          langEl.classList.add("_thistle");
+        } else {
+          langEl.classList.remove("_thistle");
+        }
       }
     }
 
@@ -53,7 +62,7 @@
 
 <div class="lang {extraClass}">
   {#each languages as lang}
-    <label class="lang__item">
+    <label class="lang__item" aria-label={lang}>
       {#if lang === "ru"}
         <input
           on:change={onChange}
@@ -65,7 +74,7 @@
       {:else}
         <input on:change={onChange} type="radio" name="lang" value={lang} />
       {/if}
-      <span class="lang__item-text">{lang}</span>
+      <span class="lang__item-text" />
     </label>
   {/each}
 </div>
@@ -99,18 +108,49 @@
     width: 32px;
     height: 32px;
     padding: 10px 5px;
-    font-size: 16px;
+    /*font-size: 16px;*/
     font-weight: 600;
-    border: 1px solid;
-    border-radius: 50%;
-    text-transform: capitalize;
+    /*border: 1px solid;*/
+    /*border-radius: 50%;*/
+    /*text-transform: capitalize;*/
     cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: background-image 0.2s;
   }
 
-  input:checked + .lang__item-text {
-    color: var(--sky-blue);
-    border: none;
-    background-color: var(--oriole);
+  [value="ru"] ~ .lang__item-text {
+    background-image: url(../svg/lang-ru.svg);
+  }
+
+  [value="en"] ~ .lang__item-text {
+    background-image: url(../svg/lang-en.svg);
+  }
+
+  [value="ru"]:checked ~ .lang__item-text {
+    background-image: url(../svg/lang-ru-active.svg);
+  }
+
+  [value="en"]:checked ~ .lang__item-text {
+    background-image: url(../svg/lang-en-active.svg);
+  }
+
+  ._thistle [value="ru"] ~ .lang__item-text {
+    background-image: url(../svg/lang-ru-t.svg);
+  }
+
+  ._thistle [value="en"] ~ .lang__item-text {
+    background-image: url(../svg/lang-en-t.svg);
+  }
+
+  ._thistle [value="ru"]:checked ~ .lang__item-text {
+    background-image: url(../svg/lang-ru-t-active.svg);
+  }
+
+  ._thistle [value="en"]:checked ~ .lang__item-text {
+    background-image: url(../svg/lang-en-t-active.svg);
   }
 
   @media (max-width: 680px) {

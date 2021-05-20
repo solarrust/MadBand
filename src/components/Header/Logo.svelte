@@ -1,5 +1,5 @@
 <script>
-  import logoSVG from "../../../public/svg/logo.svg";
+  import logoSVG from "../../../public/svg/logo-no-red.svg";
 </script>
 
 <a href="/" class="logo-link">{@html logoSVG}</a>
