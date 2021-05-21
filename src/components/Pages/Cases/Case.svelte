@@ -1,7 +1,7 @@
 <script>
   import EmblaCarousel from "embla-carousel";
 
-  import { dict, t, locale } from "../../services/i18n";
+  import { locale } from "../../services/i18n";
   import { onMount } from "svelte";
 
   export let title;
@@ -108,6 +108,17 @@
     };
 
     let embla = EmblaCarousel(emblaNode, options);
+
+    let v = document.querySelector("video");
+    v.onclick = function () {
+      if (this.paused) {
+        this.play();
+        this.parentNode.classList.add("_playing");
+      } else {
+        this.pause();
+        this.parentNode.classList.remove("_playing");
+      }
+    };
   });
 </script>
 
@@ -135,9 +146,7 @@
           <video
             src="/{project.videoCover}"
             class="case__video-cover"
-            poster="/{project.pageCover}"
-            muted
-            controls
+            preload="auto"
           />
         </div>
       {:else}
@@ -218,12 +227,14 @@
 
   .case__client {
     font-size: var(--title-text-size);
+    font-weight: 500;
     color: var(--green);
     text-transform: capitalize;
   }
 
   .case__name {
     font-size: var(--title-text-size);
+    font-weight: 500;
   }
 
   .case__cover-block {
@@ -239,13 +250,31 @@
 
   .case__video-wrapper {
     position: relative;
-    padding-bottom: 40%;
+    /*padding-bottom: 40%;*/
+    cursor: pointer;
   }
 
-  .case__video-cover {
+  .case__video-wrapper:before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../svg/play-btn.svg") no-repeat center / 60px 60px;
+
+    transition: opacity 0.2s;
+  }
+
+  ._playing.case__video-wrapper:before {
+    opacity: 0;
+  }
+
+  .case__video-cover {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -260,7 +289,8 @@
     padding: 30px;
     color: var(--font-color);
     font-family: var(--main-font);
-    font-size: var(--s-text-size);
+    font-size: var(--xs-text-size);
+    font-weight: 500;
     text-transform: uppercase;
   }
 
