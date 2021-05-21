@@ -163,7 +163,8 @@
   }
 
   .studio__title {
-    width: 80%;
+    width: 90%;
+    max-width: 1050px;
     margin: 0 auto;
     font-family: var(--accent-font);
     font-weight: normal;
@@ -172,7 +173,7 @@
   }
 
   .studio__text {
-    font-size: 28px;
+    font-size: var(--m-text-size);
   }
 
   :global(.studio__pattern) {
@@ -243,6 +244,7 @@
     position: relative;
     padding: 40px 100px;
     font-size: var(--l-text-size);
+    font-weight: 600;
     text-transform: uppercase;
     border-bottom: 1px solid var(--green);
 
@@ -262,6 +264,7 @@
     top: 50px;
     left: 10px;
     font-size: var(--s-text-size);
+    font-weight: 600;
     color: var(--green);
     text-shadow: none;
   }

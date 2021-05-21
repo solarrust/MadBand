@@ -116,11 +116,12 @@
 
   .category-list__btn {
     display: block;
-    font-size: var(--s-text-size);
     padding: 20px 25px;
     text-align: center;
     text-transform: uppercase;
     color: var(--fontColor);
+    font-size: var(--xs-text-size);
+    font-weight: 500;
     background-color: var(--bkg);
 
     cursor: pointer;
