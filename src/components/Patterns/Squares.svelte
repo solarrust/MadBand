@@ -33,7 +33,7 @@
 
     animation: line-run-y infinite linear;
 
-    animation-duration: 10s;
+    animation-duration: 20s;
   }
 
   .line:not(:last-child) {
@@ -42,24 +42,24 @@
 
   .line:nth-child(5n + 1) {
     /*transform: translateY(25px);*/
-    animation-duration: 25s;
+    animation-duration: 37.5s;
     animation-direction: reverse;
   }
 
   .line:nth-child(5n + 2) {
     /*transform: translateY(50px);*/
-    animation-duration: 16s;
+    animation-duration: 24s;
   }
 
   .line:nth-child(5n + 3) {
     /*transform: translateY(25px);*/
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-direction: reverse;
   }
 
   .line:nth-child(5n + 4) {
     /*transform: translateY(10px);*/
-    animation-duration: 20s;
+    animation-duration: 30s;
   }
 
   @keyframes line-run-y {

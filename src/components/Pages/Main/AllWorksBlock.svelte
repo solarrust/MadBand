@@ -23,7 +23,7 @@
     });
 
     let anim = gsap.to(".ticker__box", {
-      duration: 20,
+      duration: 30,
       repeat: -1,
       ease: "none",
       x: `+=${textParent.clientWidth}`, //move each box 500px to right
@@ -99,7 +99,7 @@
     background-image: url("../svg/see-more.svg");
     background-position-y: center;
     background-repeat: repeat-x;
-    animation: allCases 20s infinite linear reverse;
+    animation: allCases 30s infinite linear reverse;
   }
 
   :global(.works__all-link:hover .ticker__item._small) {
