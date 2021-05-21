@@ -26,15 +26,28 @@
 
     let loc = window.location.hash;
     let anchorLink = document.querySelector(".nav__item._anchor");
+    let menu = document.querySelector(".nav");
+
     anchorLink.addEventListener("click", (e) => {
       e.preventDefault();
-      gsap.to(window, { duration: 1, scrollTo: "#contacts" });
-      if (!e.target.classList.contains("active") || loc === "#contacts") {
-        e.target.classList.add("active");
+      gsap.to(window, { duration: 0, scrollTo: "#contacts" });
+      if (!e.target.classList.contains("_active") || loc === "#contacts") {
+        e.target.classList.add("_active");
+        menu.classList.add("_contacts");
+      } else {
+        menu.classList.remove("_contacts");
       }
     });
 
-    let pageWidth = window.innerWidth;
+    menu.querySelectorAll(".nav__item").forEach((link) => {
+      if (!link.classList.contains("_anchor")) {
+        link.addEventListener("click", () => {
+          gsap.to(window, { scrollTo: 0 });
+        });
+      }
+    });
+
+    /*let pageWidth = window.innerWidth;
 
     if (pageWidth >= 680) {
       if (hero) {
@@ -54,7 +67,7 @@
           }
         }
       });
-    }
+    }*/
   });
 </script>
 
@@ -116,6 +129,7 @@
   }
 
   :global(.nav__item) {
+    position: relative;
     color: var(--green);
     font-size: var(--xs-text-size);
     font-weight: 600;
@@ -129,8 +143,12 @@
     text-decoration: none;
   }
 
-  :global(.nav__item:after) {
+  :global(.nav__item:after),
+  :global(._contacts .nav__item[aria-current="page"]:after) {
     content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
     display: inline-block;
     width: 100%;
     height: 13px;
@@ -155,13 +173,13 @@
     background-image: url("../svg/menu-studio-active.svg");
   }
 
-  :global(.nav__item._anchor.active),
-  :global(.nav__item[aria-current="page"]) {
+  :global(.nav__item._anchor._active),
+  :global(*:not(._contacts) > .nav__item[aria-current="page"]) {
     pointer-events: none;
     cursor: default;
   }
 
-  :global(.nav__item._anchor.active:after),
+  :global(.nav__item._anchor._active:after),
   :global(.nav__item[aria-current="page"]:after) {
     opacity: 1;
   }

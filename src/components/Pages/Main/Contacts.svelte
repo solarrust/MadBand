@@ -44,14 +44,16 @@
       window.addEventListener("scroll", function () {
         if (document.body.getBoundingClientRect().top > scrollPos) {
           window.location.hash = "";
-          anchorLink.classList.remove("active");
+          anchorLink.classList.remove("_active");
+          anchorLink.parentNode.classList.remove("_contacts");
         }
 
         if (
           Math.abs(document.body.getBoundingClientRect().top) >= contactsTop
         ) {
-          if (!anchorLink.classList.contains("active")) {
-            anchorLink.classList.add("active");
+          if (!anchorLink.classList.contains("_active")) {
+            anchorLink.classList.add("_active");
+            anchorLink.parentNode.classList.add("_contacts");
           }
         }
 

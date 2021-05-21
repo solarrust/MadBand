@@ -1,8 +1,9 @@
 <script>
   import logoSVG from "../../../public/svg/logo-no-red.svg";
+  import { Link, Router } from "svelte-routing";
 </script>
 
-<a href="/" class="logo-link">{@html logoSVG}</a>
+<Link href="/" class="logo-link">{@html logoSVG}</Link>
 
 <style>
   .logo-link {
