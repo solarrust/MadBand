@@ -9,6 +9,7 @@
 
   function onChange(event) {
     $locale = event.currentTarget.value;
+    localStorage.setItem("MB_lang", event.currentTarget.value);
   }
 
   onMount(() => {
@@ -63,7 +64,7 @@
 <div class="lang {extraClass}">
   {#each languages as lang}
     <label class="lang__item" aria-label={lang}>
-      {#if lang === "ru"}
+      {#if lang === $locale}
         <input
           on:change={onChange}
           type="radio"

@@ -1,7 +1,13 @@
 import { writable, derived, get } from "svelte/store";
 
 export const dict = writable();
-export const locale = writable("ru");
+export let locale = writable("ru");
+
+const storageLang = localStorage.getItem("MB_lang");
+
+if (storageLang) {
+  locale = writable(storageLang);
+}
 
 const localizedDict = derived([dict, locale], ([$dict, $locale]) => {
   if (!$dict || !$locale) return;
