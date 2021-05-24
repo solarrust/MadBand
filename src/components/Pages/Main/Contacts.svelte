@@ -4,17 +4,44 @@
   import { onMount } from "svelte";
   import Lang from "./Lang.svelte";
   import Lines from "../../Patterns/Lines.svelte";
+  const FORMSPARK_ACTION_URL = "https://submit-form.com/sjKlADd1";
+  let name = "",
+    phone = "";
+  let submitting = false;
+  let isSent = false;
+
+  async function onSubmit() {
+    try {
+      submitting = true;
+      await fetch(FORMSPARK_ACTION_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          phone,
+        }),
+      });
+      name = "";
+      phone = "";
+    } finally {
+      isSent = true;
+      if (isSent) {
+        document.querySelector("form.contact-form").classList.add("_sent");
+      } else {
+        document.querySelector("form.contact-form").classList.remove("_sent");
+      }
+    }
+  }
 
   onMount(() => {
-    const phoneInput = document.querySelector("#phone");
+    const phoneInput = document.querySelector("#form-phone");
     const form = document.querySelector("form.contact-form");
+    const formBtn = form.querySelector("button[type='submit']");
 
-    function onChange() {
-      phoneInput.classList.remove("_invalid");
-      form.classList.remove("_invalid");
-      let oldVal = this.value;
-      this.value = new AsYouType("RU").input(oldVal);
-    }
+    formBtn.disabled = true;
 
     function phoneValidation(input) {
       if (!isValidNumber(input.value)) {
@@ -30,8 +57,34 @@
       return new parsePhoneNumber(number, "RU").isValid();
     }
 
-    phoneInput.addEventListener("keyup", onChange);
-    phoneInput.addEventListener("focusout", (e) => phoneValidation(e.target));
+    async function onChange() {
+      phoneInput.classList.remove("_invalid");
+      form.classList.remove("_invalid");
+      let oldVal = this.value;
+      this.value = new AsYouType("RU").input(oldVal);
+    }
+
+    document.querySelector("#form-phone").addEventListener("keyup", onChange);
+
+    document
+      .querySelector("#form-phone")
+      .addEventListener("focusout", (e) => phoneValidation(e.target));
+
+    document.querySelector("#form-name").addEventListener("keyup", function () {
+      this.value = this.value.replace(/[\d]/g, "");
+    });
+
+    form.querySelectorAll("input").forEach((input) => {
+      input.addEventListener("focusout", () => {
+        if (
+          !form.classList.contains("_invalid") &&
+          phoneInput.value !== "" &&
+          document.querySelector("#form-name").value !== ""
+        ) {
+          formBtn.disabled = false;
+        }
+      });
+    });
 
     let anchorLink = document.querySelector(".nav__item._anchor");
     let contactsTop = document.querySelector("#contacts").offsetTop;
@@ -86,27 +139,40 @@
     <span class="contacts__big-text _italic">{$t("mainPage.or")}</span>
     <div class="contacts__block _right">
       <span class="contacts__big-text">{@html $t("mainPage.connect")}</span>
-      <form action="" class="contacts__form contact-form">
+      <form
+        on:submit|preventDefault={onSubmit}
+        class="contacts__form contact-form"
+      >
+        <input type="hidden" name="_append" value="false" />
         <label class="contact-form__label">
           <input
+            id="form-name"
             class="contact-form__input"
+            name="name"
             type="text"
             placeholder={$t("mainPage.inputName")}
+            pattern="^[a-zA-ZА-Яа-яЁё\s]+$"
+            bind:value={name}
           />
         </label>
         <label class="contact-form__label">
           <input
-            id="phone"
+            id="form-phone"
             class="contact-form__input"
+            name="phone"
             type="tel"
             placeholder={$t("mainPage.inputTel")}
-            pattern="7 (999) 999-99-99"
+            bind:value={phone}
           />
         </label>
-        <button class="contact-form__button" type="submit"
+        <button class="contact-form__button" type="submit" disabled={submitting}
           >{$t("mainPage.button")}</button
         >
-        <span class="contact-form__error">Error</span>
+        <div class="contact-form_tnx">
+          <span>👌</span>
+          <br />
+          <p>{@html $t("mainPage.tnx")}</p>
+        </div>
       </form>
     </div>
   </div>
@@ -137,6 +203,7 @@
   }
 
   .contacts__big-text._italic {
+    margin: 0 5vw 0 2vw;
     font-style: italic;
   }
 
@@ -164,6 +231,7 @@
   }
 
   .contacts__list a[download] {
+    max-width: 130px;
     text-decoration: underline;
   }
 
@@ -186,15 +254,20 @@
   }
 
   .contacts__block {
-    width: 40%;
+    flex-grow: 1;
+    /*width: 40%;*/
+    /*max-width: 515px;*/
   }
 
   .contacts__block._right {
     display: flex;
+    flex-grow: 1;
+    /*max-width: 560px;*/
   }
 
   .contacts__block._right > .contacts__big-text {
-    margin-right: 20px;
+    width: 400px;
+    margin-right: 5vw;
   }
 
   :global(.lightgreen-marker) {
@@ -219,7 +292,8 @@
   }
 
   .contacts__form {
-    flex: 50% 1 0;
+    position: relative;
+    flex: 50% 0 0;
   }
 
   .contact-form__label {
@@ -235,7 +309,7 @@
     border: 2px solid var(--green-rgb);
     border-radius: 100px;
     background-color: transparent;
-    transition: border 0.2s, color 0.2s;
+    transition: all 0.2s;
   }
 
   .contact-form__input::placeholder {
@@ -252,7 +326,11 @@
     border-color: currentColor;
   }
 
-  .contact-form__button {
+  :global(._sent .contact-form__input) {
+    opacity: 0;
+  }
+
+  :global(.contact-form__button) {
     width: 100%;
     margin: 13px 0 0;
     padding: 15px 25px;
@@ -262,6 +340,16 @@
     border-radius: 100px;
     background-color: var(--oriole);
     cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  :global(._sent .contact-form__button) {
+    opacity: 0;
+  }
+
+  .contact-form__button[disabled] {
+    opacity: 0.65;
+    cursor: default;
   }
 
   .contact-form__error {
@@ -279,6 +367,32 @@
   :global(.contact-form._invalid .contact-form__error) {
     opacity: 1;
     transition: opacity 0.2s;
+  }
+
+  :global(.contact-form_tnx) {
+    opacity: 0;
+    z-index: -1;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 60px;
+    color: var(--thistle);
+    text-align: center;
+    background-color: var(--oriole);
+
+    transition: all 0.2s;
+  }
+
+  :global(.contact-form._sent .contact-form_tnx) {
+    opacity: 1;
+    z-index: 1;
   }
 
   .contacts__pattern {

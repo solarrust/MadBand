@@ -33,6 +33,12 @@
   }
 }
 
+/*@media (min-width: 1920px) {*/
+/*  :root {*/
+/*    --title-text-size: 68px;*/
+/*  }*/
+/*}*/
+
 * {
   margin: 0;
   padding: 0;
