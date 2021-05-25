@@ -1,11 +1,12 @@
 <script>
-  import Contacts from "./Main/Contacts.svelte";
   import { dict, t, locale } from "../services/i18n";
   import { Link, Router } from "svelte-navigator";
+  import { onMount } from "svelte";
 
   import data from "../../data/projects.json";
-  import { onMount } from "svelte";
+  import Contacts from "./Main/Contacts.svelte";
   import WorksList from "./Main/WorksList.svelte";
+  import WorksPattern from "../Patterns/WorksPattern.svelte";
 
   let projects = data.projects;
   let categories = data.categories;
@@ -30,21 +31,6 @@
 
   onMount(() => {
     window.scrollTo(0, 0);
-
-    let patternParent = document.querySelector(".portfolio__pattern");
-    let blockW = patternParent.offsetWidth;
-    let blockH = patternParent.offsetHeight;
-    let circleSize = 75;
-
-    let circleByW = Math.ceil(blockW / circleSize);
-    let circleByH = Math.ceil(blockH / circleSize);
-    let circles = circleByW * circleByH;
-
-    for (let i = 0; i <= circles; i++) {
-      let circleBlock = document.createElement("div");
-      circleBlock.classList.add("portfolio__pattern-item");
-      patternParent.appendChild(circleBlock);
-    }
   });
 </script>
 
@@ -88,7 +74,7 @@
     </div>
   </section>
   <div class="work__pattern">
-    <div class="portfolio__pattern" />
+    <WorksPattern />
   </div>
   <Contacts />
 </Router>
@@ -226,18 +212,27 @@
     align-items: center;
     width: 75px;
     height: 75px;
+    background-image: radial-gradient(
+      circle at center,
+      var(--portfolio-bkg) 75%,
+      transparent 75%
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
-  :global(.portfolio__pattern-item:after) {
-    content: "";
-    position: absolute;
-
-    display: block;
-    border-radius: 50%;
-    background-color: var(--portfolio-bkg);
-    animation: circle-blinking 3s ease-in-out infinite alternate-reverse;
-    transform-origin: center;
-  }
+  /*:global(.portfolio__pattern-item:after) {*/
+  /*  content: "";*/
+  /*  position: absolute;*/
+  /*  width: 35%;*/
+  /*  height: 35%;*/
+  /*  display: block;*/
+  /*  border-radius: 50%;*/
+  /*  background-color: var(--portfolio-bkg);*/
+  /*  !*animation: circle-blinking 3s ease-in-out infinite alternate-reverse;*!*/
+  /*  transform-origin: center;*/
+  /*}*/
 
   @keyframes arrow-bottom {
     from {

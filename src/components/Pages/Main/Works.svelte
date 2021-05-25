@@ -8,6 +8,7 @@
 
   import data from "../../../data/projects.json";
   import AllWorksBlock from "./AllWorksBlock.svelte";
+  import WorksPattern from "../../Patterns/WorksPattern.svelte";
 
   let projects = data.projects;
 
@@ -27,6 +28,9 @@
 
     <AllWorksBlock />
   </section>
+  <div class="work__pattern">
+    <WorksPattern />
+  </div>
 </Router>
 
 <style>
