@@ -17,21 +17,19 @@
 
 <Router {url}>
   <Header />
-  <main>
-    <Route path="/">
-      <Main />
-    </Route>
+  <Route path="/">
+    <Main />
+  </Route>
 
-    <Route path="cases">
-      <Portfolio />
-    </Route>
+  <Route path="cases">
+    <Portfolio />
+  </Route>
 
-    <Route path="studio">
-      <Studio />
-    </Route>
+  <Route path="studio">
+    <Studio />
+  </Route>
 
-    <Route path="cases/:id" let:params>
-      <CaseTemplate link={params.id} />
-    </Route>
-  </main>
+  <Route path="cases/:id" let:params>
+    <CaseTemplate link={params.id} />
+  </Route>
 </Router>

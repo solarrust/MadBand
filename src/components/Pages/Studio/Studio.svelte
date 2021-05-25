@@ -1,8 +1,9 @@
 <script>
   import { gsap } from "gsap";
   import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-  import { onMount, onDestroy } from "svelte";
+  import { onMount, afterUpdate, onDestroy, beforeUpdate } from "svelte";
   import { locale, t } from "../../services/i18n";
   import { Router } from "svelte-navigator";
 
@@ -14,11 +15,10 @@
   import dataEN from "../../../lang/en.json";
   import StuffSlider from "./StuffSlider.svelte";
   import Locus from "../../Patterns/Locus.svelte";
-  import WorksPattern, {
-    circlesAnimation,
-  } from "../../Patterns/WorksPattern.svelte";
+  import WorksPattern from "../../Patterns/WorksPattern.svelte";
 
   gsap.registerPlugin(MotionPathPlugin);
+  gsap.registerPlugin(ScrollTrigger);
 
   let localeStuff = {
     ru: dataRU.studioPage.stuff,
@@ -30,9 +30,10 @@
     en: dataEN.studioPage.philosophy.items,
   };
 
+  let animation;
+
   onMount(() => {
-    strokeTextCreator();
-    circlesAnimation(".portfolio__pattern._blue");
+    // strokeTextCreator();
     window.scrollTo(0, 0);
 
     /* let patternParent = document.querySelector(".portfolio__pattern");
@@ -73,6 +74,10 @@
     });
 
     console.log(swiper.originalParams.breakpoints);*/
+  });
+  afterUpdate(() => {
+    strokeTextCreator();
+    ScrollTrigger.refresh();
   });
 </script>
 
@@ -308,6 +313,10 @@
     color: var(--green);
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
     transition: 0.2s;
+  }
+
+  :global([data-stroke-parent]) {
+    cursor: pointer;
   }
 
   :global([data-stroke-parent]:hover .stroke__char-parent:before) {

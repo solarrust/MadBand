@@ -1,6 +1,4 @@
 <script>
-  import { onMount } from "svelte";
-
   export let link;
 
   import data from "../../../data/projects.json";
@@ -72,8 +70,6 @@
     category: currentCategory,
     bkg: bckColor,
   };
-
-  onMount(() => {});
 </script>
 
 <slot>

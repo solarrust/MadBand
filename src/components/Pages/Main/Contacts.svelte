@@ -11,6 +11,7 @@
   let isSent = false;
 
   async function onSubmit() {
+    console.log(this.children);
     try {
       submitting = true;
       await fetch(FORMSPARK_ACTION_URL, {
@@ -75,7 +76,7 @@
     });
 
     form.querySelectorAll("input").forEach((input) => {
-      input.addEventListener("focusout", () => {
+      input.addEventListener("keyup", () => {
         if (
           !form.classList.contains("_invalid") &&
           phoneInput.value !== "" &&
@@ -348,7 +349,8 @@
   }
 
   .contact-form__button[disabled] {
-    opacity: 0.65;
+    color: var(--contacts-bkg);
+    background-color: var(--green);
     cursor: default;
   }
 

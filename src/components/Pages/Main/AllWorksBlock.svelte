@@ -1,12 +1,21 @@
 <script>
-  import { onMount } from "svelte";
+  import { onMount, beforeUpdate, afterUpdate } from "svelte";
   import { Link, Router } from "svelte-routing";
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
+  import { locale, t } from "../../services/i18n";
+  import { strokeTextCreator, strokeTextUpdate } from "./Main.svelte";
 
   gsap.registerPlugin(ScrollTrigger);
 
+  let text = {
+    ru: "Работы",
+    en: "All cases",
+  };
+
   onMount(() => {
+    strokeTextCreator();
+
     let textBox = document.querySelector(".ticker__box");
     let textParent = textBox.parentNode;
     let textBoxWidth = textBox.clientWidth;
@@ -42,6 +51,11 @@
       toggleActions: "restart pause resume pause",
     });
   });
+
+  afterUpdate(() => {
+    // strokeTextUpdate(text[$locale], ".ticker__item._big");
+    // strokeTextCreator();
+  });
 </script>
 
 <div class="works__all-link" data-stroke-parent>
@@ -50,7 +64,7 @@
       <div class="ticker__item _big">
         <div class="ticker__box" data-stroke-text>All cases</div>
       </div>
-      <div class="ticker__item _small" />
+      <div class="ticker__item _small _{$locale}" />
     </div>
   </Link>
 </div>
@@ -100,6 +114,10 @@
     background-position-y: center;
     background-repeat: repeat-x;
     animation: allCases 30s infinite linear reverse;
+  }
+
+  :global(.ticker__item._small._ru) {
+    background-image: url("../svg/see-more-ru.svg");
   }
 
   :global(.works__all-link:hover .ticker__item._small) {

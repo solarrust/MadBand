@@ -1,10 +1,10 @@
-<script context="module">
+<script>
   import { gsap, TimelineLite } from "gsap";
-  import * as scrollTrigger from "gsap/ScrollTrigger";
-  import * as CSSRulePlugin from "gsap/CSSRulePlugin";
-  import { onMount } from "svelte";
-  gsap.registerPlugin(scrollTrigger);
-  gsap.registerPlugin(CSSRulePlugin);
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  import { afterUpdate, beforeUpdate, onMount } from "svelte";
+  gsap.registerPlugin(ScrollTrigger);
+
+  export let extraClass = "";
 
   /*let patternParent = document.querySelector(".portfolio__pattern");
   let blockW = patternParent.offsetWidth;
@@ -21,25 +21,26 @@
     patternParent.appendChild(circleBlock);
   }*/
 
-  export function circlesAnimation(target) {
-    let tl = new TimelineLite();
-    return tl.to(target, {
+  onMount(() => {
+    let anim = gsap.to(".portfolio__pattern", {
       backgroundImage: `radial-gradient(circle at center, var(--pattern-color) 0px, var(--thistle) 0px)`,
-      scrollTrigger: {
-        trigger: target,
-        start: "30% bottom",
-        end: "bottom top",
-        toggleActions: "play none none reverse",
-        scrub: true,
-        // id: id,
-        // markers: true,
-      },
+      delay: 10,
     });
-  }
-</script>
 
-<script>
-  export let extraClass = "";
+    ScrollTrigger.create({
+      animation: anim,
+      trigger: ".portfolio__pattern",
+      start: "30% bottom",
+      end: "bottom top",
+      toggleActions: "play none none reverse",
+      scrub: true,
+      // markers: true,
+    });
+  });
+
+  afterUpdate(() => {
+    ScrollTrigger.refresh();
+  });
 </script>
 
 <div class="portfolio__pattern {extraClass}" />
