@@ -159,6 +159,7 @@
   .studio__subtitle {
     margin-bottom: 30px;
     font-size: var(--m-text-size);
+    line-height: var(--m-text-lh);
     text-align: center;
   }
 
@@ -174,6 +175,7 @@
 
   .studio__text {
     font-size: var(--m-text-size);
+    line-height: var(--m-text-lh);
   }
 
   :global(.studio__pattern) {
@@ -222,6 +224,7 @@
 
   .philosophy__text {
     font-size: var(--m-text-size);
+    line-height: var(--m-text-lh);
   }
 
   .philosophy__big-text {

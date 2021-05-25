@@ -341,6 +341,7 @@
   .case__main {
     padding-right: 40px;
     font-size: var(--m-text-size);
+    line-height: var(--m-text-lh);
   }
 
   .photos {

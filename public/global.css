@@ -18,9 +18,10 @@
 
   --title-text-size: 56px;
   --l-text-size: 36px;
-  --m-text-size: 24px;
+  --m-text-size: 20px;
   --s-text-size: 14px;
   --xs-text-size: 12px;
+  --m-text-lh: 1.4;
 
   --m-window: 1280px;
   --s-window: 680px;
@@ -33,11 +34,11 @@
   }
 }
 
-/*@media (min-width: 1920px) {*/
-/*  :root {*/
-/*    --title-text-size: 68px;*/
-/*  }*/
-/*}*/
+@media (min-width: 1920px) {
+  :root {
+    --title-text-size: 68px;
+  }
+}
 
 * {
   margin: 0;

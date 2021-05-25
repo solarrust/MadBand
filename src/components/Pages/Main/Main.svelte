@@ -1,8 +1,4 @@
 <script context="module">
-  import Hero from "./Hero.svelte";
-  import Works from "./Works.svelte";
-  import Contacts from "./Contacts.svelte";
-
   export function strokeTextCreator() {
     let strokeTextBlocks = document.querySelectorAll("[data-stroke-text]");
 
@@ -38,6 +34,9 @@
 </script>
 
 <script>
+  import Hero from "./Hero.svelte";
+  import Works from "./Works.svelte";
+  import Contacts from "./Contacts.svelte";
   import { onMount } from "svelte";
 
   onMount(() => {
@@ -45,11 +44,13 @@
   });
 </script>
 
-<Hero />
+<slot>
+  <Hero />
 
-<Works />
+  <Works />
 
-<Contacts />
+  <Contacts />
+</slot>
 
 <style>
   :global(.main__section) {

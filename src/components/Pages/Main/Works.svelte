@@ -14,8 +14,6 @@
 
   let projects = data.projects;
 
-  let y;
-
   onMount(() => {
     strokeTextCreator();
     circlesAnimation(".portfolio__pattern._works");
@@ -38,8 +36,6 @@
   </div>
 </Router>
 
-<svelte:window bind:scrollY={y} />
-
 <style>
   :global(.works) {
     padding: 100px 0 140px;
@@ -57,6 +53,7 @@
     width: 65%;
     color: var(--green);
     font-size: var(--m-text-size);
+    line-height: var(--m-text-lh);
   }
 
   :global(.works__text p:not(:last-child)) {

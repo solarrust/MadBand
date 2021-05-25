@@ -1,28 +1,17 @@
 <script>
-  import { fade, blur, fly } from "svelte/transition";
-
   import { t } from "../../services/i18n";
-  import { onMount } from "svelte";
   import Squares from "../../Patterns/Squares.svelte";
-
-  let visible = false;
-
-  onMount(() => {
-    visible = true;
-  });
 </script>
 
 <section class="hero main__section">
-  {#if visible}
-    <div class="hero__block">
-      <h1 class="hero__title">
-        {@html $t("mainPage.title")}
-      </h1>
-      <p class="hero__subtitle">
-        {$t("mainPage.subtitle")}
-      </p>
-    </div>
-  {/if}
+  <div class="hero__block">
+    <h1 class="hero__title">
+      {@html $t("mainPage.title")}
+    </h1>
+    <p class="hero__subtitle">
+      {$t("mainPage.subtitle")}
+    </p>
+  </div>
 
   <div class="hero__block hero__pattern">
     <Squares />

@@ -157,6 +157,7 @@
     max-width: 62%;
     margin: 0 auto;
     font-size: var(--m-text-size);
+    line-height: var(--m-text-lh);
     color: var(--green);
     text-align: center;
   }

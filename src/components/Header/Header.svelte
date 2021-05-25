@@ -82,8 +82,10 @@
     </div>
 
     <nav class="nav header__nav">
-      <a href="/cases" class="nav__item _works">{$t("header.menu.work")}</a>
-      <a href="/studio" class="nav__item _studio">{$t("header.menu.studio")}</a>
+      <Link to="cases" class="nav__item _works">{$t("header.menu.work")}</Link>
+      <Link to="studio" class="nav__item _studio"
+        >{$t("header.menu.studio")}</Link
+      >
       <a href="#contacts" class="nav__item _anchor"
         >{$t("header.menu.contacts")}</a
       >

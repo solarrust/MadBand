@@ -8,7 +8,6 @@
   import Portfolio from "./components/Pages/Portfolio.svelte";
   import Header from "./components/Header/Header.svelte";
   import CaseTemplate from "./components/Pages/Cases/CaseTemplate.svelte";
-  import ExploreMore from "./components/Pages/Cases/ExploreMore.svelte";
 
   $: languages = Object.keys(translations);
   $: dict.set(translations);
@@ -17,28 +16,21 @@
 </script>
 
 <Router {url}>
+  <Header />
   <main>
-    <Route path="/" replace>
-      <Header class="_small" />
-
+    <Route path="/">
       <Main />
     </Route>
 
     <Route path="cases" replace>
-      <Header />
-
       <Portfolio />
     </Route>
 
     <Route path="studio" replace>
-      <Header />
-
       <Studio />
     </Route>
 
     <Route path="cases/:id" let:params replace>
-      <Header />
-
       <CaseTemplate link={params.id} />
     </Route>
   </main>
