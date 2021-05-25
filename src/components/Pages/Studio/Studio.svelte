@@ -2,17 +2,21 @@
   import { gsap } from "gsap";
   import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
-  import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
   import { locale, t } from "../../services/i18n";
   import { Router } from "svelte-navigator";
 
   import StretchSquares from "../../Patterns/StretchSquares.svelte";
   import { strokeTextCreator } from "../Main/Main.svelte";
+
   import Contacts from "../Main/Contacts.svelte";
   import dataRU from "../../../lang/ru.json";
   import dataEN from "../../../lang/en.json";
   import StuffSlider from "./StuffSlider.svelte";
   import Locus from "../../Patterns/Locus.svelte";
+  import WorksPattern, {
+    circlesAnimation,
+  } from "../../Patterns/WorksPattern.svelte";
 
   gsap.registerPlugin(MotionPathPlugin);
 
@@ -28,10 +32,10 @@
 
   onMount(() => {
     strokeTextCreator();
-
+    circlesAnimation(".portfolio__pattern._blue");
     window.scrollTo(0, 0);
 
-    let patternParent = document.querySelector(".portfolio__pattern");
+    /* let patternParent = document.querySelector(".portfolio__pattern");
     let blockW = patternParent.offsetWidth;
     let blockH = patternParent.offsetHeight;
     let circleSize = 75;
@@ -43,7 +47,7 @@
       let circleBlock = document.createElement("div");
       circleBlock.classList.add("portfolio__pattern-item");
       patternParent.appendChild(circleBlock);
-    }
+    }*/
 
     /*let sliderContainerWidth =
       document.querySelectorAll(".swiper-slide").length * (355 + 40);
@@ -131,7 +135,7 @@
     </div>
   </section>
   <div class="work__pattern">
-    <div class="portfolio__pattern _blue" />
+    <WorksPattern extraClass={"_blue"} />
   </div>
   <Contacts />
 </Router>
@@ -150,10 +154,6 @@
     width: 85%;
     max-width: 1440px;
     margin: 0 auto;
-  }
-
-  :global(.portfolio__pattern._blue .portfolio__pattern-item:after) {
-    background-color: var(--sky-blue);
   }
 
   .studio__subtitle {

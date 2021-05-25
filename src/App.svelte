@@ -18,25 +18,25 @@
 
 <Router {url}>
   <main>
-    <Route path="/">
+    <Route path="/" replace>
       <Header class="_small" />
 
       <Main />
     </Route>
 
-    <Route path="cases">
+    <Route path="cases" replace>
       <Header />
 
       <Portfolio />
     </Route>
 
-    <Route path="studio">
+    <Route path="studio" replace>
       <Header />
 
       <Studio />
     </Route>
 
-    <Route path="cases/:id" let:params>
+    <Route path="cases/:id" let:params replace>
       <Header />
 
       <CaseTemplate link={params.id} />

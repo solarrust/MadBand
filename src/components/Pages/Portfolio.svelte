@@ -1,12 +1,14 @@
 <script>
   import { dict, t, locale } from "../services/i18n";
   import { Link, Router } from "svelte-navigator";
-  import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
 
   import data from "../../data/projects.json";
   import Contacts from "./Main/Contacts.svelte";
   import WorksList from "./Main/WorksList.svelte";
-  import WorksPattern from "../Patterns/WorksPattern.svelte";
+  import WorksPattern, {
+    circlesAnimation,
+  } from "../Patterns/WorksPattern.svelte";
 
   let projects = data.projects;
   let categories = data.categories;
@@ -31,6 +33,7 @@
 
   onMount(() => {
     window.scrollTo(0, 0);
+    circlesAnimation(".portfolio__pattern._cases");
   });
 </script>
 
@@ -74,7 +77,7 @@
     </div>
   </section>
   <div class="work__pattern">
-    <WorksPattern />
+    <WorksPattern extraClass={"_cases"} />
   </div>
   <Contacts />
 </Router>

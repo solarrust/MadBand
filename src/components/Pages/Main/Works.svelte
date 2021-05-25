@@ -1,6 +1,6 @@
 <script>
   import { gsap } from "gsap";
-  import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
   import { locale, t } from "../../services/i18n";
   import { Link, Router } from "svelte-routing";
   import { strokeTextCreator } from "../Main/Main.svelte";
@@ -8,12 +8,17 @@
 
   import data from "../../../data/projects.json";
   import AllWorksBlock from "./AllWorksBlock.svelte";
-  import WorksPattern from "../../Patterns/WorksPattern.svelte";
+  import WorksPattern, {
+    circlesAnimation,
+  } from "../../Patterns/WorksPattern.svelte";
 
   let projects = data.projects;
 
+  let y;
+
   onMount(() => {
     strokeTextCreator();
+    circlesAnimation(".portfolio__pattern._works");
   });
 </script>
 
@@ -29,9 +34,11 @@
     <AllWorksBlock />
   </section>
   <div class="work__pattern">
-    <WorksPattern />
+    <WorksPattern extraClass={"_works"} />
   </div>
 </Router>
+
+<svelte:window bind:scrollY={y} />
 
 <style>
   :global(.works) {

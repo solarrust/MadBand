@@ -26,9 +26,8 @@
   </button>
 
   <div class="mobile-menu">
-    <Link to="cases" class="mobile-menu__item">{$t("header.menu.work")}</Link>
-    <Link to="studio" class="mobile-menu__item">{$t("header.menu.studio")}</Link
-    >
+    <a href="/cases" class="mobile-menu__item">{$t("header.menu.work")}</a>
+    <a href="/studio" class="mobile-menu__item">{$t("header.menu.studio")}</a>
     <a href="#contacts" id="contacts-link" class="mobile-menu__item"
       >{$t("header.menu.contacts")}</a
     >

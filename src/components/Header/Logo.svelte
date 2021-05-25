@@ -3,7 +3,7 @@
   import { Link, Router } from "svelte-routing";
 </script>
 
-<Link href="/" class="logo-link">{@html logoSVG}</Link>
+<a href="/" class="logo-link">{@html logoSVG}</a>
 
 <style>
   .logo-link {
