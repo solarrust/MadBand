@@ -22,15 +22,15 @@
       <Main />
     </Route>
 
-    <Route path="cases" replace>
+    <Route path="cases">
       <Portfolio />
     </Route>
 
-    <Route path="studio" replace>
+    <Route path="studio">
       <Studio />
     </Route>
 
-    <Route path="cases/:id" let:params replace>
+    <Route path="cases/:id" let:params>
       <CaseTemplate link={params.id} />
     </Route>
   </main>
