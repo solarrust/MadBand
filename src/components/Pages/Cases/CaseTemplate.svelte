@@ -79,7 +79,9 @@
 <slot>
   <Case {...projectData} />
 
-  <ExploreMore {moreProjects} on:click={caseRefreshHandler} />
+  {#if moreProjects}
+    <ExploreMore {moreProjects} on:click={caseRefreshHandler} />
+  {/if}
 </slot>
 
 <style>

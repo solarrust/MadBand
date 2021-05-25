@@ -110,15 +110,17 @@
     let embla = EmblaCarousel(emblaNode, options);
 
     let v = document.querySelector("video");
-    v.onclick = function () {
-      if (this.paused) {
-        this.play();
-        this.parentNode.classList.add("_playing");
-      } else {
-        this.pause();
-        this.parentNode.classList.remove("_playing");
-      }
-    };
+    if (v) {
+      v.onclick = function () {
+        if (this.paused) {
+          this.play();
+          this.parentNode.classList.add("_playing");
+        } else {
+          this.pause();
+          this.parentNode.classList.remove("_playing");
+        }
+      };
+    }
   });
 </script>
 
