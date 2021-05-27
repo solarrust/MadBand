@@ -39,13 +39,13 @@
       }
     });
 
-    menu.querySelectorAll(".nav__item").forEach((link) => {
-      if (!link.classList.contains("_anchor")) {
-        link.addEventListener("click", () => {
-          gsap.to(window, { scrollTo: 0 });
-        });
-      }
-    });
+    // menu.querySelectorAll(".nav__item").forEach((link) => {
+    //   if (!link.classList.contains("_anchor")) {
+    //     link.addEventListener("click", () => {
+    //       gsap.to(window, { scrollTo: 0 });
+    //     });
+    //   }
+    // });
 
     /*let pageWidth = window.innerWidth;
 

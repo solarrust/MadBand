@@ -1,7 +1,7 @@
 <script>
   import { gsap, TimelineLite } from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
-  import { afterUpdate, beforeUpdate, onMount } from "svelte";
+  import { afterUpdate, onDestroy, onMount, tick } from "svelte";
   gsap.registerPlugin(ScrollTrigger);
 
   export let extraClass = "";
@@ -21,29 +21,47 @@
     patternParent.appendChild(circleBlock);
   }*/
 
-  onMount(() => {
-    let anim = gsap.to(".portfolio__pattern", {
+  let anim;
+
+  function createAnimation(parent, target) {
+    return gsap.to(target, {
       backgroundImage: `radial-gradient(circle at center, var(--pattern-color) 0px, var(--thistle) 0px)`,
-      delay: 10,
-    });
 
-    ScrollTrigger.create({
-      animation: anim,
-      trigger: ".portfolio__pattern",
-      start: "30% bottom",
-      end: "bottom top",
-      toggleActions: "play none none reverse",
-      scrub: true,
-      // markers: true,
+      scrollTrigger: {
+        trigger: parent,
+        start: `30% bottom`,
+        end: "bottom top",
+        toggleActions: "play none none reverse",
+        scrub: 1,
+        // markers: true,
+      },
     });
-  });
+  }
 
-  afterUpdate(() => {
-    ScrollTrigger.refresh();
+  onMount(() => {
+    anim = createAnimation(".pattern-parent", ".portfolio__pattern");
+
+    /*
+      Because WFT bug with animation on Studio page
+      At first rendering of page start / ens positions of ScrollTrigger calc wrong
+    */
+    window.onscroll = () => {
+      let oldPos = anim.scrollTrigger.start;
+      anim.scrollTrigger.refresh();
+
+      if (oldPos !== anim.scrollTrigger.start) {
+        anim.scrollTrigger.refresh();
+        console.log("anim refreshed");
+      }
+    };
+
+    return () => anim.kill();
   });
 </script>
 
-<div class="portfolio__pattern {extraClass}" />
+<div class="pattern-parent">
+  <div class="portfolio__pattern {extraClass}" />
+</div>
 
 <style>
   :global(.portfolio__pattern) {
@@ -67,6 +85,11 @@
 
   :global(.portfolio__pattern._blue) {
     --pattern-color: var(--sky-blue);
+    outline: 1px solid red;
+  }
+
+  :global(.pattern-parent) {
+    overflow: hidden;
   }
 
   /*:global(.portfolio__pattern-item) {*/

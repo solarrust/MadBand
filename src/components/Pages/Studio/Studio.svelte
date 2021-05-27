@@ -30,7 +30,7 @@
     en: dataEN.studioPage.philosophy.items,
   };
 
-  let animation;
+  let anim;
 
   onMount(() => {
     // strokeTextCreator();
@@ -77,7 +77,6 @@
   });
   afterUpdate(() => {
     strokeTextCreator();
-    ScrollTrigger.refresh();
   });
 </script>
 
@@ -88,7 +87,9 @@
       <h2 class="studio__title">{@html $t("studioPage.title")}</h2>
     </div>
 
-    <StuffSlider />
+    <div class="studio__slider">
+      <StuffSlider />
+    </div>
 
     <div class="studio__content">
       <p class="studio__text">
@@ -139,9 +140,7 @@
       </a>
     </div>
   </section>
-  <div class="work__pattern">
-    <WorksPattern extraClass={"_blue"} />
-  </div>
+  <WorksPattern extraClass={"_blue"} />
   <Contacts />
 </Router>
 
@@ -196,6 +195,7 @@
     margin-left: 85px;
     font-family: var(--accent-font);
     font-size: var(--title-text-size);
+    line-height: 1.2;
   }
 
   .label {
@@ -237,6 +237,7 @@
     font-size: var(--title-text-size);
     font-family: var(--accent-font);
     font-weight: normal;
+    line-height: 1.2;
   }
 
   .philosophy__items {

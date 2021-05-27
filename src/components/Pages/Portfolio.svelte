@@ -7,6 +7,7 @@
   import Contacts from "./Main/Contacts.svelte";
   import WorksList from "./Main/WorksList.svelte";
   import WorksPattern from "../Patterns/WorksPattern.svelte";
+  import { gsap } from "gsap";
 
   let projects = data.projects;
   let categories = data.categories;
@@ -178,6 +179,7 @@
   }
 
   :global(.work__call-to-action a) {
+    display: block;
     font-family: var(--accent-font);
     font-size: var(--title-text-size);
     color: var(--green);
@@ -195,37 +197,33 @@
     animation: arrow-bottom 2s alternate-reverse infinite;
   }
 
-  :global(.work__pattern) {
-    overflow: hidden;
-  }
+  /*:global(.portfolio__pattern) {*/
+  /*  height: 100vh;*/
+  /*  margin-top: -35px;*/
+  /*  margin-left: -35px;*/
+  /*  margin-right: -35px;*/
+  /*  display: flex;*/
+  /*  flex-wrap: wrap;*/
+  /*  justify-content: space-between;*/
+  /*  background-color: var(--thistle);*/
+  /*}*/
 
-  :global(.portfolio__pattern) {
-    height: 100vh;
-    margin-top: -35px;
-    margin-left: -35px;
-    margin-right: -35px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: var(--thistle);
-  }
-
-  :global(.portfolio__pattern-item) {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 75px;
-    height: 75px;
-    background-image: radial-gradient(
-      circle at center,
-      var(--portfolio-bkg) 75%,
-      transparent 75%
-    );
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
+  /*:global(.portfolio__pattern-item) {*/
+  /*  position: relative;*/
+  /*  display: flex;*/
+  /*  justify-content: center;*/
+  /*  align-items: center;*/
+  /*  width: 75px;*/
+  /*  height: 75px;*/
+  /*  background-image: radial-gradient(*/
+  /*    circle at center,*/
+  /*    var(--portfolio-bkg) 75%,*/
+  /*    transparent 75%*/
+  /*  );*/
+  /*  background-position: center;*/
+  /*  background-repeat: no-repeat;*/
+  /*  background-size: 100% 100%;*/
+  /*}*/
 
   /*:global(.portfolio__pattern-item:after) {*/
   /*  content: "";*/

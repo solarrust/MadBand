@@ -37,7 +37,7 @@
   }
 
   .hero__title {
-    max-width: 620px;
+    /*max-width: 620px;*/
     margin: auto 25px auto 40px;
     font-family: var(--accent-font);
     font-size: var(--title-text-size);

@@ -1,9 +1,7 @@
 <script>
-  import { gsap } from "gsap";
   import { onMount, onDestroy, beforeUpdate } from "svelte";
   import { locale, t } from "../../services/i18n";
   import { Link, Router } from "svelte-routing";
-  import { strokeTextCreator } from "../Main/Main.svelte";
   import WorkList from "./WorksList.svelte";
 
   import data from "../../../data/projects.json";
@@ -30,9 +28,7 @@
 
     <AllWorksBlock />
   </section>
-  <div class="work__pattern">
-    <WorksPattern extraClass={"_works"} />
-  </div>
+  <WorksPattern extraClass={"_works"} />
 </Router>
 
 <style>

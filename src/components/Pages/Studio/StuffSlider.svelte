@@ -12,19 +12,22 @@
     en: dataEN.studioPage.stuff,
   };
 
+  let embla;
+
+  const options = {
+    align: "start",
+    containScroll: "trimSnaps",
+    inViewThreshold: 0.5,
+    speed: 2,
+  };
+
   onMount(() => {
     const emblaNode = document.querySelector(".embla");
-    const options = {
-      align: "start",
-      containScroll: "trimSnaps",
-      inViewThreshold: 0.5,
-      speed: 2,
-    };
 
     let containerW =
       document.querySelectorAll(".embla__slide").length * (355 + 40);
 
-    let embla = EmblaCarousel(emblaNode, options);
+    embla = EmblaCarousel(emblaNode, options);
 
     function envClassHelper(contW) {
       if (window.innerWidth > contW) {
@@ -43,7 +46,7 @@
   });
 </script>
 
-<div class="stuff studio__stuff embla" data-slider>
+<div class="stuff studio__stuff embla">
   <div class="embla__container">
     {#each localeStuff[$locale] as person}
       <Person
@@ -57,6 +60,23 @@
 </div>
 
 <style>
+  :global(.embla) {
+    overflow: hidden;
+  }
+
+  :global(.embla._no-ev) {
+    pointer-events: none;
+  }
+
+  :global(.embla__container) {
+    display: flex;
+  }
+
+  :global(.embla__slide) {
+    position: relative;
+    flex: 0 0 100%;
+  }
+
   :global(.stuff.embla) {
     cursor: grab;
   }
@@ -95,16 +115,16 @@
     margin-bottom: 105px;
   }
 
-  .stuff {
-    /*display: flex;*/
-    /*justify-content: center;*/
-  }
+  /*.stuff {*/
+  /*  !*display: flex;*!*/
+  /*  !*justify-content: center;*!*/
+  /*}*/
 
-  .stuff-wrapper {
-    /*display: flex;*/
-    /*padding: 0 40px;*/
-    /*overflow-x: scroll;*/
-  }
+  /*.stuff-wrapper {*/
+  /*display: flex;*/
+  /*padding: 0 40px;*/
+  /*overflow-x: scroll;*/
+  /*}*/
 
   /*.stuff-wrapper:after {*/
   /*  content: "";*/

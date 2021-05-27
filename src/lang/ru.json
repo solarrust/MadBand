@@ -7,7 +7,7 @@
     }
   },
   "mainPage": {
-    "title": "<span class='marker underline'>Студия,</span> <span class='marker pink-marker'>вдохновляющая</span> на события <span class='marker pink-marker'>со смыслом.</span> Развиваем <span class='marker circle'>бренды</span> и <span class='marker green-marker'>помогаем</span> им <span class='marker yellow-marker'>общаться</span> <span class='marker red-marker'>с аудиторией.</span>",
+    "title": "<span class='marker underline'>Студия,</span><br> <span class='marker pink-marker'>вдохновляющая</span><br> на события <span class='marker pink-marker'>со смыслом.</span><br> Развиваем <span class='marker circle'>бренды</span> <br>и <span class='marker green-marker'>помогаем</span> им <span class='marker yellow-marker'>общаться</span> <br><span class='marker red-marker'>с аудиторией.</span>",
     "subtitle": "Организуем масштабные мероприятия, разрабатываем BTL-акции и спецпроекты, занимаемся дизайном продуктов и услуг.",
     "contactUs": "Связаться <span class='marker lightgreen-marker'>с нами</span>",
     "or": "или",
