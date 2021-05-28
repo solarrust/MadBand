@@ -399,6 +399,7 @@
 
   .contacts__pattern {
     margin-top: 150px;
+    height: 50vh;
   }
 
   @media (max-width: 1280px) {

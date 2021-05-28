@@ -56,6 +56,7 @@
 
 <style>
   .lines-pattern {
+    min-height: 225px;
     height: 50vh;
   }
 
@@ -63,7 +64,7 @@
     height: calc(100% / 6);
     background-image: linear-gradient(
       to right,
-      transparent 14px,
+      rgb(2 156 83 / 0) 14px,
       var(--green) 15px
     );
     background-size: 15px;
@@ -74,10 +75,10 @@
   .lines-pattern__row:nth-child(2) {
     background-image: linear-gradient(
       to right,
-      transparent 6px,
+      rgb(2 156 83 / 0) 6px,
       var(--green) 6px,
       var(--green) 8px,
-      transparent 8px
+      rgb(2 156 83 / 0) 8px
     );
     /*animation-delay: 1s;*/
   }
@@ -85,8 +86,8 @@
   .lines-pattern__row:nth-child(3) {
     background-image: linear-gradient(
       to right,
-      transparent 12px,
-      var(--green) 12px
+      rgb(2 156 83 / 0) 12.1px,
+      var(--green) 12.1px
     );
     /*animation-delay: 2s;*/
   }
@@ -94,10 +95,10 @@
   .lines-pattern__row:nth-child(4) {
     background-image: linear-gradient(
       to right,
-      transparent 5px,
+      rgb(2 156 83 / 0) 5px,
       var(--green) 5px,
       var(--green) 9px,
-      transparent 9px
+      rgb(2 156 83 / 0) 9px
     );
     /*animation-delay: 1s;*/
   }
@@ -105,10 +106,10 @@
   .lines-pattern__row:nth-child(5) {
     background-image: linear-gradient(
       to right,
-      transparent 10px,
+      rgb(2 156 83 / 0) 10px,
       var(--green) 10px,
       var(--green) 15px,
-      transparent 15px
+      rgb(2 156 83 / 0) 15px
     );
     /*animation-delay: 4s;*/
   }
@@ -116,10 +117,10 @@
   .lines-pattern__row:nth-child(6) {
     background-image: linear-gradient(
       to right,
-      transparent 3px,
+      rgb(2 156 83 / 0) 3px,
       var(--green) 3px,
       var(--green) 11px,
-      transparent 11px
+      rgb(2 156 83 / 0) 11px
     );
     /*animation-delay: 3s;*/
   }
