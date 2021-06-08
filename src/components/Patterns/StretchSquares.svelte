@@ -28,7 +28,7 @@
         end: "bottom 50%",
         toggleActions: "play none none reverse",
         scrub: true,
-        markers: true,
+        // markers: true,
       });
 
       window.onscroll = () => {
