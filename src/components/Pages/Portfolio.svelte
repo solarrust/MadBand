@@ -45,20 +45,22 @@
       <ul class="works__category-list category-list">
         {#each categories as category, i}
           <li class="category-list__item">
+            <input
+              type="radio"
+              name="category"
+              value={i + 1}
+              id={i + 1}
+              on:change={onChange}
+            />
             <label
+              for={i + 1}
               class="category-list__btn _{i + 1}"
               style={`
-      --fontColor:
-      ${category.font};
-      --bkg:
-      ${category.bkg}`}
+                --fontColor:
+                ${category.font};
+                --bkg:
+                ${category.bkg}`}
             >
-              <input
-                type="radio"
-                name="category"
-                value={i + 1}
-                on:change={onChange}
-              />
               <span>
                 {category[$locale]}
               </span>
@@ -106,6 +108,7 @@
   }
 
   .category-list__btn {
+    position: relative;
     display: block;
     padding: 20px 25px;
     text-align: center;
@@ -118,9 +121,44 @@
     cursor: pointer;
   }
 
-  .category-list__btn._1 {
-    /*  color: var(--dandelion);*/
-    /*  background-color: var(--green);*/
+  .category-list__btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+  }
+
+  input:checked ~ .category-list__btn:after {
+    opacity: 1;
+    transition: opacity 0.1s ease-out;
+  }
+
+  .category-list__btn._1:after {
+    background-image: url("../svg/btn-active-1.svg");
+  }
+
+  .category-list__btn._2:after {
+    background-image: url("../svg/btn-active-2.svg");
+  }
+
+  .category-list__btn._3:after {
+    background-image: url("../svg/btn-active-3.svg");
+  }
+
+  .category-list__btn._4:after {
+    background-image: url("../svg/btn-active-4.svg");
+  }
+
+  .category-list__btn._5:after {
+    background-image: url("../svg/btn-active-5.svg");
   }
 
   .category-list__btn._2 {
