@@ -75,7 +75,7 @@
 <slot>
   <Case {...projectData} />
 
-  {#if moreProjects}
+  {#if moreProjects.length > 0}
     <ExploreMore {moreProjects} on:click={caseRefreshHandler} />
   {/if}
 </slot>

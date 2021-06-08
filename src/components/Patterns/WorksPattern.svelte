@@ -43,15 +43,17 @@
 
     /*
       Because WFT bug with animation on Studio page
-      At first rendering of page start / ens positions of ScrollTrigger calc wrong
+      At first rendering of page start / end positions of ScrollTrigger calc wrong
     */
     window.onscroll = () => {
-      let oldPos = anim.scrollTrigger.start;
-      anim.scrollTrigger.refresh();
-
-      if (oldPos !== anim.scrollTrigger.start) {
+      if (anim.scrollTrigger.start) {
+        let oldPos = anim.scrollTrigger.start;
         anim.scrollTrigger.refresh();
-        console.log("anim refreshed");
+
+        if (oldPos !== anim.scrollTrigger.start) {
+          anim.scrollTrigger.refresh();
+          console.log("anim refreshed");
+        }
       }
     };
 
