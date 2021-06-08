@@ -18,6 +18,7 @@
 
       anim.to(line, {
         height: `${10 * (animLines.length - i)}%`,
+        ease: "sine.out",
       });
 
       ScrollTrigger.create({
@@ -26,8 +27,8 @@
         start: "top 50%",
         end: "bottom 50%",
         toggleActions: "play none none reverse",
-        scrub: 1,
-        // markers: true,
+        scrub: true,
+        markers: true,
       });
 
       window.onscroll = () => {
@@ -88,6 +89,7 @@
     flex-grow: 0;
     width: 100%;
     height: 25%;
+    transition: all 0.1s;
     /*animation-play-state: paused;*/
     /*animation-timing-function: ease-in-out;*/
     /*animation-duration: 2s;*/

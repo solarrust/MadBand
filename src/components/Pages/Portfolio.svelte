@@ -109,6 +109,7 @@
 
   .category-list__btn {
     position: relative;
+    z-index: 0;
     display: block;
     padding: 20px 25px;
     text-align: center;
@@ -126,6 +127,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
     width: 100%;
     height: 100%;
     background-position: center;
@@ -228,11 +230,12 @@
   }
 
   :global(.work__call-to-action__arrows) {
-    height: 40px;
+    height: 25px;
+    margin-top: 30px;
     background-image: url("../svg/arrow-green.svg");
     background-repeat: repeat-x;
     background-size: 80px 20px;
-    animation: arrow-bottom 2s alternate-reverse infinite;
+    animation: arrow-bottom 0.8s alternate ease-in-out infinite;
   }
 
   /*:global(.portfolio__pattern) {*/
