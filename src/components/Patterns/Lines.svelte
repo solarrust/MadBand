@@ -57,7 +57,7 @@
 <style>
   .lines-pattern {
     min-height: 225px;
-    height: 50vh;
+    height: 100%;
   }
 
   .lines-pattern__row {

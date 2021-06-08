@@ -133,12 +133,12 @@
     background-size: contain;
 
     opacity: 0;
-    transition: opacity 0.2s ease-in;
+    transition: opacity 0.1s ease-in;
   }
 
   input:checked ~ .category-list__btn:after {
     opacity: 1;
-    transition: opacity 0.1s ease-out;
+    transition: none;
   }
 
   .category-list__btn._1:after {

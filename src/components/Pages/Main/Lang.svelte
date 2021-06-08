@@ -20,11 +20,11 @@
     function listener(e) {
       if (parent.id && parent.id === "contacts") {
         if (
-          window.pageYOffset + document.documentElement.clientHeight / 2 >
+          window.pageYOffset + document.documentElement.clientHeight * 0.4 >
           parent.offsetTop
         ) {
           langEl.style.position = "absolute";
-          langEl.style.bottom = "calc(50vh + 32px)";
+          langEl.style.bottom = "calc(40vh + 32px)";
         } else {
           langEl.style.position = "fixed";
           langEl.style.bottom = "32px";
@@ -84,7 +84,7 @@
   .lang {
     position: fixed;
     left: 40px;
-    bottom: 35px;
+    bottom: 32px;
     z-index: 10;
     display: flex;
     color: var(--green);
