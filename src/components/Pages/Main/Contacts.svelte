@@ -166,8 +166,11 @@
             bind:value={phone}
           />
         </label>
-        <button class="contact-form__button" type="submit" disabled={submitting}
-          >{$t("mainPage.button")}</button
+        <button
+          class="contact-form__button"
+          type="submit"
+          disabled={submitting}
+          data-hover-trigger>{$t("mainPage.button")}</button
         >
         <div class="contact-form_tnx">
           <span>👌</span>
@@ -180,7 +183,7 @@
   <div class="contacts__pattern">
     <Lines />
   </div>
-  <!-- TODO: спросить у ребят на какие англиязычные компании они расчитывают чтобы правильно форматировать и валидирвать телефон -->
+  <!-- TODO: спросить у ребят на какие англоязычные компании они рассчитывают чтобы правильно форматировать и валидировать телефон -->
   <Lang extraClass="contacts__lang" />
 </section>
 
@@ -343,7 +346,7 @@
     border: none;
     border-radius: 100px;
     background-color: var(--oriole);
-    cursor: pointer;
+    cursor: none;
     transition: all 0.2s;
   }
 
@@ -354,7 +357,7 @@
   .contact-form__button[disabled] {
     color: var(--contacts-bkg);
     background-color: var(--green);
-    cursor: default;
+    cursor: none;
   }
 
   .contact-form__error {

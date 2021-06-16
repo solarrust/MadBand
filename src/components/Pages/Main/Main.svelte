@@ -66,9 +66,17 @@
   import Works from "./Works.svelte";
   import Contacts from "./Contacts.svelte";
   import { onMount } from "svelte";
+  import { cursorDefault, cursorMoveHandler } from "../../../App.svelte";
 
   onMount(() => {
     window.scrollTo(0, 0);
+
+    let customCursor = document.querySelector(".custom-cursor");
+    let links = document.querySelectorAll("a");
+    let targets = document.querySelectorAll("[data-hover-trigger]");
+
+    cursorDefault(customCursor);
+    cursorMoveHandler(customCursor, links, targets);
   });
 </script>
 

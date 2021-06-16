@@ -27,6 +27,11 @@
     let loc = window.location.hash;
     let anchorLink = document.querySelector(".nav__item._anchor");
     let menu = document.querySelector(".nav");
+    let logoLink = document.querySelector(".logo-link");
+
+    function scrollerTop() {
+      gsap.to(window, { scrollTo: 0, duration: 0 });
+    }
 
     anchorLink.addEventListener("click", (e) => {
       e.preventDefault();
@@ -39,13 +44,13 @@
       }
     });
 
-    // menu.querySelectorAll(".nav__item").forEach((link) => {
-    //   if (!link.classList.contains("_anchor")) {
-    //     link.addEventListener("click", () => {
-    //       gsap.to(window, { scrollTo: 0 });
-    //     });
-    //   }
-    // });
+    menu.querySelectorAll(".nav__item").forEach((link) => {
+      if (!link.classList.contains("_anchor")) {
+        link.addEventListener("click", scrollerTop);
+      }
+    });
+
+    logoLink.addEventListener("click", scrollerTop);
 
     /*let pageWidth = window.innerWidth;
 

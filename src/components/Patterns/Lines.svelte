@@ -21,10 +21,10 @@
       return direction;
     };
 
-    rows.forEach((row) => {
+    rows.forEach((row, i) => {
       function linesAnim(direction) {
         return gsap.to(row, {
-          duration: 30,
+          duration: 60,
           // repeat: -1,
           ease: "none",
           backgroundPositionX:
@@ -33,14 +33,20 @@
         });
       }
 
+      if (i % 2) {
+        linesAnim("left").duration(30).play();
+      } else {
+        linesAnim("right").duration(30).play();
+      }
+
       row.addEventListener("mousemove", (e) => {
         direction = mouseMoveMethod(e);
         linesAnim(direction).play();
       });
 
-      row.addEventListener("mouseout", (e) => {
-        linesAnim(direction).pause();
-      });
+      // row.addEventListener("mouseout", (e) => {
+      //   linesAnim(direction).pause();
+      // });
     });
   });
 </script>

@@ -16,6 +16,7 @@
   import StuffSlider from "./StuffSlider.svelte";
   import Locus from "../../Patterns/Locus.svelte";
   import WorksPattern from "../../Patterns/WorksPattern.svelte";
+  import { cursorDefault, cursorMoveHandler } from "../../../App.svelte";
 
   gsap.registerPlugin(MotionPathPlugin);
   gsap.registerPlugin(ScrollTrigger);
@@ -35,6 +36,13 @@
   onMount(() => {
     // strokeTextCreator();
     window.scrollTo(0, 0);
+
+    let customCursor = document.querySelector(".custom-cursor");
+    let links = document.querySelectorAll("a");
+    let targets = document.querySelectorAll("[data-hover-trigger]");
+
+    cursorDefault(customCursor);
+    cursorMoveHandler(customCursor, links, targets);
 
     /* let patternParent = document.querySelector(".portfolio__pattern");
     let blockW = patternParent.offsetWidth;
@@ -123,7 +131,11 @@
         <div class="philosophy__items">
           <ul class="philosophy-list">
             {#each philosophyItems[$locale] as item}
-              <li class="philosophy-list__item" data-stroke-parent>
+              <li
+                class="philosophy-list__item"
+                data-stroke-parent
+                data-hover-trigger
+              >
                 <div class="philosophy-list__text" data-stroke-text>
                   {@html item}
                 </div>
@@ -317,7 +329,8 @@
   }
 
   :global([data-stroke-parent]) {
-    cursor: pointer;
+    /*cursor: pointer;*/
+    cursor: none;
   }
 
   :global([data-stroke-parent]:hover .stroke__char-parent:before) {

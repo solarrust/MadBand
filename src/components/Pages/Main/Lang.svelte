@@ -63,7 +63,7 @@
 
 <div class="lang {extraClass}">
   {#each languages as lang}
-    <label class="lang__item" aria-label={lang}>
+    <label class="lang__item" aria-label={lang} data-hover-trigger>
       {#if lang === $locale}
         <input
           on:change={onChange}
@@ -114,7 +114,7 @@
     /*border: 1px solid;*/
     /*border-radius: 50%;*/
     /*text-transform: capitalize;*/
-    cursor: pointer;
+    /*cursor: pointer;*/
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

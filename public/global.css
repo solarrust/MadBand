@@ -49,11 +49,31 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.custom-cursor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/cursor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translateY(50%) translateX(5px);
+}
+
+.custom-cursor._hover {
+  background-image: url("../img/rock_2.png");
+}
+
 html,
 body {
   position: relative;
   width: 100%;
   /*height: 100%;*/
+  cursor: none;
 }
 
 body {
@@ -69,12 +89,15 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a:hover,
+label:hover {
+  text-decoration: none;
+  cursor: none;
 }
 
 label {
   display: block;
+  cursor: none;
 }
 
 input,

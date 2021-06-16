@@ -7,7 +7,7 @@
   import Contacts from "./Main/Contacts.svelte";
   import WorksList from "./Main/WorksList.svelte";
   import WorksPattern from "../Patterns/WorksPattern.svelte";
-  import { gsap } from "gsap";
+  import { cursorDefault, cursorMoveHandler } from "../../App.svelte";
 
   let projects = data.projects;
   let categories = data.categories;
@@ -34,6 +34,13 @@
 
   onMount(() => {
     window.scrollTo(0, 0);
+
+    let customCursor = document.querySelector(".custom-cursor");
+    let links = document.querySelectorAll("a");
+    let targets = document.querySelectorAll("[data-hover-trigger]");
+
+    cursorDefault(customCursor);
+    cursorMoveHandler(customCursor, links, targets);
   });
 
   beforeUpdate(() => {});
@@ -55,6 +62,7 @@
             <label
               for={i + 1}
               class="category-list__btn _{i + 1}"
+              data-hover-trigger
               style={`
                 --fontColor:
                 ${category.font};
@@ -119,7 +127,7 @@
     font-weight: 500;
     background-color: var(--bkg);
 
-    cursor: pointer;
+    cursor: none;
   }
 
   .category-list__btn:after {
