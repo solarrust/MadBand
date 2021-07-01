@@ -55,9 +55,9 @@
   left: 50%;
   z-index: 9999;
   pointer-events: none;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/cursor.png");
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/cursor.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -65,7 +65,7 @@
 }
 
 .custom-cursor._hover {
-  background-image: url("../img/rock_2.png");
+  background-image: url("../img/hand.svg");
 }
 
 html,
