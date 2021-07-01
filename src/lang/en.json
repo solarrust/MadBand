@@ -18,6 +18,21 @@
     "button": "Connect with me",
     "tnx": "Great!<br>We will contact you shortly :)",
     "phone": "Phone",
+    "workTitle": "Организуем масштабные маркетинговые и HR&#8209;мероприятия для брендов, разрабатываем BTL&#8209;акции и спецпроекты.",
+    "workWithUs": [
+      {
+        "title": "УВЕРЕННОСТЬ",
+        "text": "У нас огромный опыт, прозрачность работы, нестандартный подход и перфекционизм в мелочах"
+      },
+      {
+        "title": "СПОКОЙСТВИЕ",
+        "text": "Вы не будете погружаться в нюансы и разбираться со сложными ситуациями – мы все сделаем сами"
+      },
+      {
+        "title": "ДОВЕРИЕ",
+        "text": "Вы гарантированно сделаете интересный и неординарный проект в классной компании профессионалов"
+      }
+    ],
     "workText": "<p>Our clients include the largest retailers, global pharmaceutical companies and leaders in the FMCG segment.</p> <p>We know how to delve into the customer's area at the expert level: this is the only way to guarantee the quality of the project. We think beyond the scope of the brief and strive to do more than the client expects.</p>"
   },
   "workPage": {

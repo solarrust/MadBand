@@ -9,7 +9,7 @@
   gsap.registerPlugin(ScrollTrigger);
 
   let text = {
-    ru: "Работы",
+    ru: "Все кейсы",
     en: "All cases",
   };
 

@@ -91,7 +91,6 @@
 <Router>
   <section class="studio">
     <div class="studio__content">
-      <p class="studio__subtitle">{$t("studioPage.subtitle")}</p>
       <h2 class="studio__title">{@html $t("studioPage.title")}</h2>
     </div>
 
@@ -101,7 +100,7 @@
 
     <div class="studio__content">
       <p class="studio__text">
-        {$t("studioPage.text")}
+        {$t("studioPage.subtitle")}
       </p>
     </div>
 
@@ -292,49 +291,6 @@
 
   .philosophy-list__text {
     position: relative;
-  }
-
-  :global(.stroke__text-parent) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  :global(.stroke__text-parent > *) {
-    display: flex;
-  }
-
-  :global(.stroke__text-parent > *:not(:last-child)) {
-    margin-right: 0.28em;
-  }
-
-  :global(.stroke__char-parent) {
-    position: relative;
-    display: inline-block;
-    white-space: pre;
-  }
-
-  :global(.stroke__char-parent:before) {
-    display: block;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    content: attr(data-content);
-    overflow: hidden;
-    pointer-events: none;
-    color: var(--green);
-    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-    transition: 0.2s;
-  }
-
-  :global([data-stroke-parent]) {
-    /*cursor: pointer;*/
-    cursor: none;
-  }
-
-  :global([data-stroke-parent]:hover .stroke__char-parent:before) {
-    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
   }
 
   @media (max-width: 1280px) {
