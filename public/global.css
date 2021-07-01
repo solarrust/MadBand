@@ -49,23 +49,26 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.custom-cursor {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 9999;
-  pointer-events: none;
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/cursor.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transform: translateY(50%) translateX(5px);
-}
 
-.custom-cursor._hover {
-  background-image: url("../img/hand.svg");
+@media (min-width: 1025px) {
+  .custom-cursor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/cursor.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateY(50%) translateX(5px);
+  }
+
+  .custom-cursor._hover {
+    background-image: url("../img/hand.svg");
+  }
 }
 
 html,
