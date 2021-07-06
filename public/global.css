@@ -64,6 +64,7 @@
     background-position: center;
     background-size: contain;
     transform: translateY(50%) translateX(5px);
+    will-change: auto;
   }
 
   .custom-cursor._hover {

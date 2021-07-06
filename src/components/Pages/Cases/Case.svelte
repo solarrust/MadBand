@@ -149,6 +149,7 @@
             src="/{project.videoCover}"
             class="case__video-cover"
             preload="auto"
+            data-hover-trigger
           />
         </div>
       {:else}
@@ -253,7 +254,7 @@
   .case__video-wrapper {
     position: relative;
     /*padding-bottom: 40%;*/
-    cursor: pointer;
+    cursor: none;
   }
 
   .case__video-wrapper:before {

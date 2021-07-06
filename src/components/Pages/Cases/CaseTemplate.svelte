@@ -1,9 +1,12 @@
 <script>
+  import { onMount } from "svelte";
+
   export let link;
 
   import data from "../../../data/projects.json";
   import Case from "./Case.svelte";
   import ExploreMore from "./ExploreMore.svelte";
+  import { cursorDefault, cursorMoveHandler } from "../../../App.svelte";
 
   let categories = data.categories;
   let projects = data.projects;
@@ -70,6 +73,15 @@
     category: currentCategory,
     bkg: bckColor,
   };
+
+  onMount(() => {
+    let customCursor = document.querySelector(".custom-cursor");
+    let links = document.querySelectorAll("a");
+    let targets = document.querySelectorAll("[data-hover-trigger]");
+
+    cursorDefault(customCursor);
+    cursorMoveHandler(customCursor, links, targets);
+  });
 </script>
 
 <slot>
