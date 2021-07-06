@@ -1,5 +1,5 @@
 <script context="module">
-  import { TweenMax } from "gsap";
+  import { TweenLite } from "gsap";
 
   let customCursor;
   let links;
@@ -16,9 +16,10 @@
 
   export function cursorMoveHandler(cursor, links, targets) {
     document.addEventListener("mousemove", (e) => {
-      TweenMax.to(cursor, 0.05, {
+      TweenLite.to(cursor, 0.02, {
         top: `${e.clientY - cursor.offsetHeight / 2}px`,
         left: `${e.clientX - cursor.offsetWidth / 2}px`,
+        overwrite: true,
       });
     });
 
