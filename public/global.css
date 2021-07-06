@@ -57,8 +57,8 @@
     left: 50%;
     z-index: 9999;
     pointer-events: none;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     background-image: url("../img/cursor.svg");
     background-repeat: no-repeat;
     background-position: center;

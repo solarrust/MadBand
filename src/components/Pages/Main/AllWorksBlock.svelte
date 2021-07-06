@@ -74,6 +74,8 @@
     margin-top: 65px;
     text-decoration: none;
     overflow: hidden;
+
+    --bkg-color: var(--thistle);
   }
 
   :global(.works__all-link:hover a) {
