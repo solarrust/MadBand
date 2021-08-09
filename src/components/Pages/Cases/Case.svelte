@@ -126,12 +126,17 @@
 
 <div class="case-page _{bkg}">
   <section class="case">
-    {#if $locale === "ru" && project.projectName.ru !== ""}
-      <h2 class="case__client">{project.projectName.ru}</h2>
+    {#if $locale === "ru" && project.data.client.ru !== ""}
+      <h2 class="case__client">{project.data.client.ru}</h2>
     {:else}
-      <h2 class="case__client">{project.projectName.en}</h2>
+      <h2 class="case__client">{project.data.client.en}</h2>
     {/if}
-    <h1 class="case__name">{project.caseName}</h1>
+
+    {#if $locale === "ru" && project.caseName.ru !== ""}
+      <h1 class="case__name">{project.caseName.ru}</h1>
+    {:else}
+      <h1 class="case__name">{project.caseName.en}</h1>
+    {/if}
 
     <div class="case__cover-block">
       <span
@@ -160,18 +165,25 @@
       <aside class="case__aside">
         <ul class="case__aside-list">
           {#each Object.entries(project.data) as [key, value]}
-            {#if typeof value === "object"}
-              <li class="case__aside-item _grow">
-                <span class="case__aside-label">{key}</span>
-                {#each value as el}
-                  {el}<br />
-                {/each}
-              </li>
-            {:else}
-              <li class="case__aside-item">
-                <span class="case__aside-label">{key}</span>
-                {value}
-              </li>
+            {#if value !== undefined && Object.keys(value).length}
+              {#if value instanceof Array}
+                <li class="case__aside-item _grow">
+                  <span class="case__aside-label">{key}</span>
+                  {#each value as el}
+                    {el}<br />
+                  {/each}
+                </li>
+              {:else if value.hasOwnProperty("ru")}
+                <li class="case__aside-item _grow">
+                  <span class="case__aside-label">{key}</span>
+                  {value[$locale]}
+                </li>
+              {:else}
+                <li class="case__aside-item">
+                  <span class="case__aside-label">{key}</span>
+                  {value}
+                </li>
+              {/if}
             {/if}
           {/each}
         </ul>
