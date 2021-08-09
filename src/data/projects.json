@@ -34,54 +34,60 @@
   "projects": [
     {
       "projectName": {
-        "en": "Alcon",
-        "ru": "Алкон"
+        "en": "BCS World Investment",
+        "ru": "БКС Мир Инвестиций"
       },
       "category": 1,
-      "cover": "img/covers/Alcon.png",
+      "cover": "https://via.placeholder.com/300",
       "isVideoCover": false,
       "data": {
-        "client": "",
+        "client": {
+          "en": "BCS World Investment",
+          "ru": "БКС Мир Инвестиций"
+        },
         "year": "",
-        "credits": [""]
+        "credits": []
       },
-      "caseName": "",
+      "caseName": {
+        "en": "Immersive online ballet «Nutcracker. Reboot»",
+        "ru": "Иммерсивный онлайн балет «Щелкунчик. Reboot»"
+      },
       "text": {
-        "en": "",
-        "ru": ""
+        "en": "We created an online event of special value and beauty in which seemingly incompatible worlds were mixed. A world of classical music, ballet, modern dance school and digital art. We have created for the first time in the world immersive online performance of the ballet «Nutcracker», which included modern choreography and classical school, and the action on the screen was driven by the viewers themselves through online voting. Right during the broadcast, the audience changed sets, moved the plot and dance numbers, chose their own styles and created the script. Full freedom and presence within the show. And all this was made possible by the world famous choreographer Vladimir Varnava. Traditions and technology were so organically intertwined that it was a bold and very talented performance.",
+        "ru": "Мы создали онлайн событие особой ценности и красоты, в котором перемешались, казалось бы, совершенно несовместимые миры. Мир классической музыки, балета, современной танцевальной школы и цифрового искусства. Нами впервые в мире была создана иммерсивная онлайн постановка балета «Щелкунчик», которая включала в себя современную хореографию и классическую школу, а действием на экране управляли сами зрители с помощью онлайн голосования. Прямо во время трансляции зрители меняли декорации, двигали сюжет и танцевальные номера, сами выбирали стилистику и создавали сценарий. Полная свобода и присутствие внутри спектакля. И все это стало возможно благодаря известному во всем мире хореографу Владимиру Варнаве. Традиции и технологии так органично переплелись, что получился смелый и очень талантливый перфоманс."
       },
-      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "pageCover": "/via.placeholder.com/300x150",
       "photos": [
         {
-          "src": "img/cases/BUD 66/image 41.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 42.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 43.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 47.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 49.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 50.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 51.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
@@ -89,66 +95,72 @@
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 52.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/BUD 66/gallery-image 44.jpg",
-        "img/cases/BUD 66/gallery-image 45.jpg",
-        "img/cases/BUD 66/gallery-image 46.jpg"
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
       ]
     },
     {
       "projectName": {
-        "en": "ICE ICE PARTY",
-        "ru": ""
+        "en": "AB InBev Efes",
+        "ru": "AB InBev Efes"
       },
       "category": 1,
-      "cover": "img/covers/ICE ICE PARTY.png",
+      "cover": "https://via.placeholder.com/300",
       "isVideoCover": false,
       "data": {
-        "client": "",
+        "client": {
+          "en": "AB InBev Efes",
+          "ru": "AB InBev Efes"
+        },
         "year": "",
-        "credits": [""]
+        "credits": []
       },
-      "caseName": "",
+      "caseName": {
+        "en": "Beer Presentation Bud 66",
+        "ru": "Презентация пива Bud 66"
+      },
       "text": {
-        "en": "",
-        "ru": ""
+        "en": "In a unique location, in an ancient underground wine store we gave an exclusive premiere of the Bud 66 for opinion leaders and top industry representatives. Agreeing on all ideas step by step,  we set up an original building, we developed interactive zones and media content, we orchestrated the scene in detail. Guests spoke on public talk, listened to musicians' performances and participated in interactives. The presentation united a new  Community 66 and ended with a bright party.",
+        "ru": "В уникальной локации, в старинном подземном винном хранилище мы провели эксклюзивную премьеру напитка Bud 66 для лидеров мнений и топовых представителей индустрии. Согласовав все идеи поэтапно, мы организовали оригинальную застройку, разработали интерактивные зоны и медиаконтент, детально срежиссировали сценическое действие. Гости общались на public talk, слушали выступления музыкантов и участвовали в интерактивах. Презентация объединила новое сообщество Community 66 и завершилась яркой вечеринкой."
       },
-      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "pageCover": "/via.placeholder.com/300x150",
       "photos": [
         {
-          "src": "img/cases/BUD 66/image 41.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 42.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 43.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 47.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 49.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 50.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 51.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
@@ -156,88 +168,100 @@
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 52.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/BUD 66/gallery-image 44.jpg",
-        "img/cases/BUD 66/gallery-image 45.jpg",
-        "img/cases/BUD 66/gallery-image 46.jpg"
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
       ]
     },
     {
       "projectName": {
         "en": "OTKRITIE",
-        "ru": ""
+        "ru": "Открытие"
       },
       "category": 1,
-      "cover": "img/covers/OTKRITIE.png",
+      "cover": "https://via.placeholder.com/300",
       "isVideoCover": false,
       "data": {
-        "client": "",
+        "client": {
+          "en": "OTKRITIE",
+          "ru": "Открытие"
+        },
         "year": "",
-        "credits": [""]
+        "credits": []
       },
-      "caseName": "",
+      "caseName": {
+        "en": "Midwinter night dream",
+        "ru": "Midwinter night dream"
+      },
       "text": {
-        "en": "",
-        "ru": ""
+        "en": "Have you ever had a feeling that everything that happens around you seems like a dream? And you don’t know, if it is time to wake up or you’re already back in reality. For a New Year’s corporate event  we created a two-storey fantasy space with sparkly décor and a big roller right in the middle of the set. Guests were greeted by characters from Midwinter night, created by Shakespeare. Supernatural creatures and flock of friendly fairies, whispering in Elvish, surrounded by guests and called to their non-existent world. Ice was the dress code, but not the atmosphere: and everybody danced to the ground with the headliner and the cover bands and dived into the dry pool and rolled.",
+        "ru": "У вас бывает ощущение, когда все, что происходит вокруг кажется сном? И вы еще не понимаете пора просыпаться или вы уже вернулись в реальность. Для новогоднего корпоративного мероприятия мы создали двухэтажное фантазийное пространство со сверкающим декором и большим катком прямо посреди площадки. Гостей встречали персонажи из придуманной нами сказки Midwinter night, созданной по мотивам Шекспира. Сверхъестественные создания и стаи дружных фей, перешептывающиеся на эльфийском языке, окружали гостей и звали в свой несуществующий мир. Ледяным был дресс-код, но не атмосфера: все танцевали до упада под любимые треки хэдлайнера и кавер-групп, ныряли в сухой бассейн и катались на катке."
       },
-      "pageCover": "img/cases/BUD 66/cover.jpg",
-      "photos": [""],
-      "gallery": [""]
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [],
+      "gallery": []
     },
     {
       "projectName": {
-        "en": "GASTRO DINNER",
-        "ru": ""
+        "en": "Inventive Retail Group",
+        "ru": "Inventive Retail Group"
       },
       "category": 1,
-      "cover": "img/covers/GASTRO DINNER.png",
+      "cover": "https://via.placeholder.com/300",
       "isVideoCover": false,
       "data": {
-        "client": "",
+        "client": {
+          "en": "Inventive Retail Group",
+          "ru": "Inventive Retail Group"
+        },
         "year": "",
-        "credits": [""]
+        "credits": []
       },
-      "caseName": "",
+      "caseName": {
+        "en": "Inventium",
+        "ru": "Inventium"
+      },
       "text": {
-        "en": "",
-        "ru": ""
+        "en": "Molecular Transformations - this was the idea behind the corporate event for Inventive Retail Group. Group of companies unites hundreds of points of sales of high-tech brands, and we have invented for them a large-scale interactive Inventium-zone with a table of elements that are «a part» of IRG projects. The theme was reflected in activities for the guests, among whom was a specially designed quest with augmented reality, with a picture of the products of all Group brands. Many photographic zones, visual effects activities kept guests from getting bored. We directed the opening of the evening and the experimental show  to be long remembered by the employees.",
+        "ru": "Трансформации на молекулярном уровне - такая идея стояла за корпоративным мероприятием для Inventive Retail Group. Группа компаний объединяет сотни точек продаж высокотехнологичных брендов, и мы придумали для них масштабную интерактивную Inventium-зону с таблицей элементов, которые входят «в состав» проектов IRG. Тема отразилась в активностях для гостей, среди которых был специально разработанный квест с дополненной реальностью, с изображением продуктов всех брендов группы компаний. Множество фотозон, активностей с визуальными спецэффектами не давали гостям скучать. Срежиссированное нами открытие вечера и экспериментальное шоу надолго остались в памяти сотрудников."
       },
-      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "pageCover": "/via.placeholder.com/300x150",
       "photos": [
         {
-          "src": "img/cases/BUD 66/image 41.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 42.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 43.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 47.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 49.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 50.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 51.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
@@ -245,98 +269,105 @@
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 52.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/BUD 66/gallery-image 44.jpg",
-        "img/cases/BUD 66/gallery-image 45.jpg",
-        "img/cases/BUD 66/gallery-image 46.jpg"
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
       ]
     },
     {
       "projectName": {
-        "en": "gills",
-        "ru": ""
+        "en": "Novartis Neva",
+        "ru": "Новартис Нева"
       },
-      "category": 4,
-      "cover": "img/covers/gills.png",
-      "isVideoCover": true,
-      "videoCover": "video/Grills/cover.mp4",
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
       "data": {
-        "client": "Gills",
-        "year": "2019",
-        "credits": [
-          "Video by Egor Alisherrov",
-          "Stylist by Anna Chromova",
-          "Actor by Vadim Seleznev"
-        ]
+        "client": {
+          "en": "Novartis Neva",
+          "ru": "Новартис Нева"
+        },
+        "year": "",
+        "credits": []
       },
-      "caseName": "Conceptual Japanese cafe",
+      "caseName": {
+        "en": "Pharmaceutical Plant Opening Ceremony",
+        "ru": "Церемония открытия фармацевтического завода"
+      },
       "text": {
-        "en": "The work for a conceptual Japanese cafe depicts how one vivid gastronomic experience can be remembered forever and overshadow all previous experiences.",
-        "ru": "Работа для концептуального японского кафе показывает, как одно яркое гастрономическое переживание может запомниться навсегда и затмить все предыдущие впечатления."
+        "en": "Novartis' first production launch In Russia - an important event not only for the company, but also for the whole country. We were responsible for the organization and full support of the event from stage construction to video recording. A unique visual choreography was created for the ceremony, where the dancers' movements were complemented by synchronized video content. The speakers made a symbolic «launch» of production. Official Part included a speech by the Governor of Saint Petersburg, the event was covered by invited journalists from key Russian publications.",
+        "ru": "Запуск первого производства Novartis в России — важное событие не только для компании, но и для всей страны. Мы отвечали за организацию и полное сопровождение мероприятия, от возведения сцены до подготовки видеоотчетов. Для церемонии была создана уникальная визуально-хореографическая постановка, где движения танцоров дополнялись синхронизированным видеоконтентом. Спикеры произвели символический «запуск» производства. Официальная часть включала выступление губернатора Санкт-Петербурга, событие освещалось приглашенными журналистами из ключевых российских изданий."
       },
-      "pageCover": "img/cases/Gills/cover.jpg",
+      "pageCover": "/via.placeholder.com/300x150",
       "photos": [
-        { "src": "img/cases/Gills/2.jpg", "flag": "" },
-        { "src": "img/cases/Gills/4.jpg", "flag": "big" },
-        { "src": "img/cases/Gills/1.jpg", "flag": "big" },
-        { "src": "img/cases/Gills/2.jpg", "flag": "" }
+        { "src": "/via.placeholder.com/300", "flag": "" },
+        { "src": "/via.placeholder.com/300", "flag": "big" },
+        { "src": "/via.placeholder.com/300", "flag": "big" },
+        { "src": "/via.placeholder.com/300", "flag": "" }
       ],
       "gallery": []
     },
     {
       "projectName": {
-        "en": "AB INBEV EFES",
-        "ru": ""
+        "en": "Alcon",
+        "ru": "Alcon"
       },
       "category": 1,
-      "cover": "img/covers/AB INBEV EFES.png",
+      "cover": "https://via.placeholder.com/300",
       "isVideoCover": false,
       "data": {
-        "client": "",
+        "client": {
+          "en": "Alcon",
+          "ru": "Alcon"
+        },
         "year": "",
-        "credits": [""]
+        "credits": []
       },
-      "caseName": "",
+      "caseName": {
+        "en": "Annual conference for company partners",
+        "ru": "Ежегодная конференция для партнеров компании"
+      },
       "text": {
-        "en": "",
-        "ru": ""
+        "en": "We have organized a conference for three consecutive years for Alcon’s top management, partners and representatives. It was a massive technological event that matched the status The world leader in ophthalmology. This time, the area of the site had the appearance of an interactive space with original activities, scientific and business zones, expositions  of the latest ophthalmological equipment, augmented and virtual reality zones. Multimedia took place on the main stage  - presentation with synchronization of video content, light, sound and movements of people, as well as performances of celebrity and leaders of opinion.",
+        "ru": "Три года подряд мы организовывали конференцию для топ-менеджмента компании Alcon, ее партнеров и представителей. Это были масштабные технологичные события, соответствующие статусу мирового лидера в офтальмологии. На это раз территория площадки имела вид интерактивного пространства с оригинальными активностями, научными и деловыми зонами, экспозициями новейшего офтальмологического оборудования, зонами дополненной и виртуальной реальности. На главной сцене происходило мультимедийное представление с синхронизацией видеоконтента, света, звука и движений людей, а также выступления селебрити и лидеров мнений."
       },
-      "pageCover": "./img/cases/BUD 66/cover.jpg",
+      "pageCover": "/via.placeholder.com/300x150",
       "photos": [
         {
-          "src": "img/cases/BUD 66/image 41.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 42.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 43.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 47.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 49.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 50.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 51.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
@@ -344,66 +375,78 @@
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 52.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/BUD 66/gallery-image 44.jpg",
-        "img/cases/BUD 66/gallery-image 45.jpg",
-        "img/cases/BUD 66/gallery-image 46.jpg"
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
       ]
     },
     {
       "projectName": {
-        "en": "Novartis neva",
-        "ru": ""
+        "en": "Mind art",
+        "ru": "Mind art"
       },
       "category": 1,
-      "cover": "img/covers/Novartis neva.png",
+      "cover": "https://via.placeholder.com/300",
       "isVideoCover": false,
       "data": {
-        "client": "",
+        "client": {
+          "en": "Открытие",
+          "ru": "OTKRITIE"
+        },
         "year": "",
-        "credits": [""]
+        "credits": []
       },
-      "caseName": "",
+      "caseName": {
+        "en": "Mind art",
+        "ru": "Mind art"
+      },
       "text": {
-        "en": "",
-        "ru": ""
+        "en": "Paper is the inspiration for the idea of the event. A simple white sheet contains real power and beauty. It’s a material for creating something new, a beginning, a starting point. We offered the guests absolutely new experience. The guests are in a space where absolutely all the sets are made of paper. This is a virgin-white-paper  city that was going to be transformed and the guests were able to take a direct part in it. At the entrance we gave all the guests out the markers that they used to color the sets and even the clothes of the animators, put their own vision into the color decision, and thoughts. The dancers of the staged show, while dancing, painted bright colors on themselves, and the guests transformed their images into fluorescent Makeup. Bright colorful interactives worked, and during the awards ceremony, employees created a real art object, which then was taken to the company office.",
+        "ru": "Вдохновением к идее мероприятия стала бумага. Простой белый лист таит в себе настоящую силу и красоту. Это материал для создания чего-то нового, некое начало, отправная точка. Мы предложили гостям совершенно новый экспириенс. Гости попали в пространство, в котором абсолютно все декорации сделаны из бумаги. Это целый девственно белый бумажный город, который должен был преобразиться, а гости смогли принять в этом непосредственное участие. На входе мы раздали всем гостям маркеры, которыми они раскрашивали декорации и даже одежду аниматоров, вкладывали в цветовое решение свое собственное видение и мысли. Танцоры постановочного шоу прямо во время танца наносили на себя яркие краски, а гости преображали свои образы флуоресцентным мейкапом. Работали яркие красочные интерактивы, а во время церемонии награждения сотрудники создавали настоящий арт объект, который потом отправился в офис компании."
       },
-      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "pageCover": "/via.placeholder.com/300x150",
       "photos": [
         {
-          "src": "img/cases/BUD 66/image 41.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 42.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 43.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 47.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 49.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 50.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 51.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
@@ -411,66 +454,72 @@
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 52.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/BUD 66/gallery-image 44.jpg",
-        "img/cases/BUD 66/gallery-image 45.jpg",
-        "img/cases/BUD 66/gallery-image 46.jpg"
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
       ]
     },
     {
       "projectName": {
-        "en": "BUD 66",
-        "ru": ""
+        "en": "Nikon",
+        "ru": "Nikon"
       },
       "category": 1,
-      "cover": "img/covers/Bud 66.png",
+      "cover": "https://via.placeholder.com/300",
       "isVideoCover": false,
       "data": {
-        "client": "BUD 66",
-        "year": "2019",
-        "credits": ["Photo by Egor Alisherrov"]
+        "client": {
+          "en": "Nikon",
+          "ru": "Nikon"
+        },
+        "year": "",
+        "credits": []
       },
-      "caseName": "Presentation of new product",
+      "caseName": {
+        "en": "Nikon Plaza Online Launch",
+        "ru": "Онлайн открытие Nikon Plaza"
+      },
       "text": {
-        "en": "Presenting a pool of ten unique locations in Moscow and choosing one together with the client, we held an exclusive premiere of Bud 66 for opinion leaders and top representatives of the industry. Having coordinated all the ideas in stages, we organized the original building, developed interactive zones and media content, directed the stage action in detail. The guests talked at a public talk, listened to musicians' performances and participated in interactions. The presentation united Community 66 and ended with a vibrant party.",
-        "ru": "Представив пул из десяти уникальных локаций в Москве и выбрав одну вместе с клиентом, мы провели эксклюзивную премьеру Bud 66 для лидеров мнений и топ-представителей отрасли. Поэтапно согласовав все идеи, мы организовали оригинальное здание, разработали интерактивные зоны и медиаконтент, детально руководили сценическим действием. Гости выступили в рамках публичного выступления, слушали выступления музыкантов и участвовали в общении. Презентация объединила «Сообщество 66» и завершилась яркой вечеринкой."
+        "en": "Our goal was to plan and hold an online event dedicated to opening a new Nikon house in Russia. We wrote a script, created online activity and directed a creative shoot during live broadcasting. Off-line opening ceremony, event for influensers and bloggers was held simultaneously with online room-tour in Nikon Plaza. Also broadcast interviews with renowned photographers and competitions for online audiences.",
+        "ru": "Перед нами стояла задача спланировать и провести онлайн мероприятие, посвященное открытию нового дома Nikon в России. Мы написали сценарий, придумали онлайн активности и срежиссировали креативную съемку во время прямого эфира. Офлайн церемония открытия, мероприятие для инфлюэнсеров и блогеров проводилось одновременно с онлайн румтуром по Nikon plaza. В эфире брали интервью у именитых фотографов и проводили конкурсы для онлайн аудитории."
       },
-      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "pageCover": "/via.placeholder.com/300x150",
       "photos": [
         {
-          "src": "img/cases/BUD 66/image 43.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 42.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 47.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 51.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 52.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 41.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 49.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 50.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
@@ -478,72 +527,72 @@
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 47.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/BUD 66/gallery-image 44.jpg",
-        "img/cases/BUD 66/gallery-image 45.jpg",
-        "img/cases/BUD 66/gallery-image 46.jpg",
-        "img/cases/BUD 66/gallery-image 44.jpg",
-        "img/cases/BUD 66/gallery-image 45.jpg",
-        "img/cases/BUD 66/gallery-image 46.jpg",
-        "img/cases/BUD 66/gallery-image 44.jpg",
-        "img/cases/BUD 66/gallery-image 45.jpg",
-        "img/cases/BUD 66/gallery-image 46.jpg"
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
       ]
     },
     {
       "projectName": {
-        "en": "Inventive Retail Group",
-        "ru": ""
+        "en": "Chess Tournament Finals",
+        "ru": "Финал шахматного турнира"
       },
       "category": 1,
-      "cover": "img/covers/Inventive Retail Group.png",
+      "cover": "https://via.placeholder.com/300",
       "isVideoCover": false,
       "data": {
-        "client": "",
+        "client": {
+          "en": "OTKRITIE",
+          "ru": "Открытие"
+        },
         "year": "",
-        "credits": [""]
+        "credits": []
       },
-      "caseName": "",
+      "caseName": {
+        "en": "Chess Tournament Finals",
+        "ru": "Финал шахматного турнира"
+      },
       "text": {
-        "en": "",
-        "ru": ""
+        "en": "Every pawn can become a queen! Series of chess tournaments throughout Russia ended with a grand final in an unusual location «Center of Arts. Moscow». We organized the final tournament among investors and held an award ceremony, as well as an interview session for journalists. During the event, for the first time in history, a simultaneous game session of 24 players with two great grandmasters - Anatoly Karpov and Sergei Karyakin. The rest of the guests could fight a unique robot chess player. Alive chess pieces, board for individual games, buffet  in black and white colors - it seems absolutely everything has submitted to the world of chess! The event was opened by the amazing musician Nikola Melnikov. This was followed by an award ceremony for the tournament finalists.",
+        "ru": "Каждая пешка может стать ферзём! Серия шахматных турниров по всей России закончился грандиозным финалом в необычной локации «Центр Искусств. Москва». Мы организовали заключительный турнир среди инвесторов и провели церемонию награждения, а также сессию интервью для журналистов.  Во время мероприятия впервые в истории состоялся сеанс одновременной игры 24 игроков с двумя великими гроссмейстерами - Анатолием Карповым и Сергеем Карякиным. Остальные гости могли сразиться в поединке с уникальным роботом-шахматистом. Ожившие шахматные фигуры, доски для индивидуальных игр, фуршет в черно-белых цветах, кажется абсолютно все подчинилось миру шахмат. Открывал мероприятие потрясающий музыкант Никола Мельников. После яркого открытия последовала церемония награждения финалистов турнира."
       },
-      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "pageCover": "/via.placeholder.com/300x150",
       "photos": [
         {
-          "src": "img/cases/BUD 66/image 41.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 42.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 43.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 47.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 49.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 50.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 51.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
@@ -551,66 +600,72 @@
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 52.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/BUD 66/gallery-image 44.jpg",
-        "img/cases/BUD 66/gallery-image 45.jpg",
-        "img/cases/BUD 66/gallery-image 46.jpg"
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
       ]
     },
     {
       "projectName": {
-        "en": "BUD 66-2",
-        "ru": ""
+        "en": "Auction of the Gosha Kutsenko Charitable Foundation",
+        "ru": "Аукцион Благотворительного фонда Гоши Куценко"
       },
       "category": 1,
-      "cover": "img/covers/BUD 66-2.png",
-      "isVideoCover": true,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
       "data": {
-        "client": "",
+        "client": {
+          "en": "BCS World Investment",
+          "ru": "БКС Мир Инвестиций"
+        },
         "year": "",
-        "credits": [""]
+        "credits": []
       },
-      "caseName": "",
+      "caseName": {
+        "en": "Auction of the Gosha Kutsenko Charitable Foundation",
+        "ru": "Аукцион Благотворительного фонда Гоши Куценко"
+      },
       "text": {
-        "en": "",
-        "ru": ""
+        "en": "We have done extensive work on search for and attract sponsors of the Charity Auction. We have fully thought out the mechanics of conducting the tender, studied the legislative basis, necessary documentation, auction lots selected. During the event, funds were raised for the Charity «Step Together» by Gosha Kutsenko foundation. The guests of the event had the opportunity to see an exhibition of the most unusual paintings, watches, jewelry, take part in the watercolor master class of a famous Georgian artist, and even learn to draw with wine.",
+        "ru": "Мы провели масштабную работу по поиску и привлечению спонсоров Благотворительного аукциона. Нами полностью была продумана механика проведения торгов, изучена законодательная база, составлена необходимая документация, подобраны лоты аукциона. Во время мероприятия были собраны средства для Благотворительного фонда Гоши Куценко «Шаг вместе». Гости мероприятия имели возможность увидеть выставку самых необычных картин, часов, ювелирных украшений, принять участие в акварельном мастер-классе известного грузинского художника, и даже научиться рисовать вином."
       },
-      "pageCover": "img/cases/BUD 66/cover.jpg",
+      "pageCover": "/via.placeholder.com/300x150",
       "photos": [
         {
-          "src": "img/cases/BUD 66/image 41.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 42.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 43.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 47.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 47-1.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 49.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 50.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/BUD 66/image 51.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
@@ -618,14 +673,379 @@
           "flag": ""
         },
         {
-          "src": "img/cases/BUD 66/image 52.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/BUD 66/gallery-image 44.jpg",
-        "img/cases/BUD 66/gallery-image 45.jpg",
-        "img/cases/BUD 66/gallery-image 46.jpg"
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Зона Bud 66 на фестивале уличной культуры Faces&Laces",
+        "ru": "Area Bud 66 at Faces&Laces Street Culture Festival"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "AB InBev Efes",
+          "ru": "OTKRITIE"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Зона Bud 66 на фестивале уличной культуры Faces&Laces",
+        "ru": "Area Bud 66 at Faces&Laces Street Culture Festival"
+      },
+      "text": {
+        "en": "For the Street Culture Festival Faces&Laces was required to create a Bud 66 area that would reflect style, attract guests and fit the overall context of the event.  We solved the problem by working out the details of the bar and clothing store Community 66,  where you could buy a Russian-American collaboration The Ziq & Yoni brand with Bud 66. We have also organized the construction of a store and bar area, all technical parts and staff work.",
+        "ru": "Для фестиваля уличной культуры Faces&Laces требовалось создать зону Bud 66, которая бы отражала стиль, привлекала гостей и вписывалась в общий контекст события. Мы решили задачу, продумав в деталях бар и магазин одежды Community 66, в котором можно было купить коллаборацию российско-американского бренда Ziq & Yoni c Bud 66. Также мы организовали строительство зоны магазина и бара, всю техническую часть и работу персонала."
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Ice ice party",
+        "ru": "Ice ice party"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "BCS World Investment",
+          "ru": "БКС Мир Инвестиций"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Ice ice party",
+        "ru": "Ice ice party"
+      },
+      "text": {
+        "en": "Description: How to surprise VIP clients of a financial company? Offer them to do with their hands what they hardly ever did! At the event we created the atmosphere of a real alpine chalet with trees, soft pleats and mulled wine near a real fireplace. The center of the party was a huge ice logo, which the guests made by themselves during the event. The fun rate was raised by an ice bar, where they served burning-tasted cocktails in ice-made shot-glasses, which could be prepared with the help of special technologies. Guests boiled mulled wine, created gingerbread houses and snowballs. A spectacular nitrogen show literally blew up the atmosphere of the evening, and a cover band only amplified that effect.",
+        "ru": "Чем удивить вип-клиентов финансовой компании? Предложить им своими руками сделать то, что они вряд ли когда-либо делали! На мероприятии мы создали атмосферу настоящего зимнего альпийского шале с ёлками, мягкими пледами и глинтвейном у настоящего камина. Центром вечеринки стал огромный логотип изо льда, который гости вытачивали своими руками в течение мероприятия. Градус веселья поднимал ледяной бар, где подавали жгучие коктейли из ледяных рюмок, молекулярные коктейли, которые можно было приготовить с помощью специальных технологий. Гости варили глинтвейн, создавали пряничные домики и сноуболлы. Эффектное азотное шоу в буквальном смысле взорвало атмосферу вечера, а кавер-группа только усилила этот эффект."
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Online New Year’s Day «Flashback»",
+        "ru": "Онлайн Новый год «Flashback»"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "OTKRITIE",
+          "ru": "Открытие"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Online New Year’s Day «Flashback»",
+        "ru": "Онлайн Новый год «Flashback»"
+      },
+      "text": {
+        "en": "We mixed in a blender humor, curiosity, multimedia, all the brightest trends and impressions, dipped in crazy popesthetic sauce, and got the perfect online cocktail called FLASHBACK! At the New Year’s Online Party, the whole country, all the branches fought to become the most erudite team, playing Quiz, participated in humor competitions, spoke in chat, exchanged congratulations.We asked the viewers to choose their own future development of the script using online voting during the viewing. Right during the broadcast, the guests voted for the presenter costume, the set, which was changed directly on live TV.",
+        "ru": "Мы смешали в блендере безудержный юмор, курьезы, мультимедийность, все самые яркие тренды и впечатления, полили соусом из безумной попэстетики, и получили идеальный коктейль онлайна под названием FLASHBACK! На новогодней онлайн вечеринке вся страна, все филиалы боролись за звание самой эрудированной команды, играя в Квиз, участвовали в юмористических конкурсах, общались в чате, обменивались поздравлениями. Мы предложили  зрителям самим выбрать дальнейшее развитие сценария с помощью онлайн голосования во время просмотра. Прямо во время трансляции гости голосовали за костюм ведущего, декорации, которые менялись прямо в прямом эфире. "
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Photo exhibition «Earth. Harmony of similar»",
+        "ru": "Фотовыставка «Земля. Гармония подобных»"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "Photographer Nadezhda Kharaz",
+          "ru": "фотограф Надежда Хараз"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Photo exhibition «Earth. Harmony of similar»",
+        "ru": "Фотовыставка «Земля. Гармония подобных»"
+      },
+      "text": {
+        "en": "Description: Nadezhda Kharaz - Moscow photographer, works in genre of female portrait and staged photo. We have organized a photo exhibition of the works of the «Earth. Harmony of similar» cycle in the most unusual and suitable place - among tropical plants in the closed conservatory of the Botanical Garden. The room of the greenhouse allowed the visitors of the exhibition to descent into the oasis of life in the center of Moscow, and to touch deep meanings embedded in every photo.",
+        "ru": "Надежда Хараз - московский фотограф, работает в жанре женский портрет и постановочная фотография. Мы организовали фотовыставку работ цикла «Земля. Гармония подобных» в самом необычном и подходящем месте – среди тропических растений в закрытой оранжерее ботанического сада. Пространство оранжереи позволило посетителям выставки погрузиться в оазис жизни в центре Москвы, и через работы автора прикоснуться к глубоким смыслам, заложенным в каждую фотографию."
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Online game «Santa Claus Post»",
+        "ru": "Онлайн игра «Почта Деда Мороза»"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "OTKRITIE",
+          "ru": "Открытие"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Online game «Santa Claus Post»",
+        "ru": "Онлайн игра «Почта Деда Мороза»"
+      },
+      "text": {
+        "en": "The first digital New Year performance  for children online has become the most unusual and an unforgettable holiday! With the help of a computer game, we showed children how the modern Santa Claus Post Office works, full of incredible digital tricks and magical transformations. On a great mission, helping Santa Claus to find all the lost letters, children had a virtual tour around the Santa Claus Residence, visited the virtual Post Office, took a mega slide ride down the hill at the Elf House, picked up a package at the Gift Factory, drank cocoa at the Tea House.",
+        "ru": "Первая диджитал ёлка в онлайн режиме стала самым необычным и незабываемым праздником! С помощью компьютерной игры мы показали детям как устроена современная Почта Деда Мороза, полная невероятных диджитал технологий и волшебных превращений. Выполняя великую миссию, помогая Деду Морозу найти все потерянные письма, ребята совершили виртуальную экскурсию в Резиденцию Деда Мороза, побывали на виртуальной Почте, прокатились с мега горки в Домике Эльфов, подобрали упаковку на Фабрике подарков, пили какао в Чайном домике."
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
       ]
     }
   ]
