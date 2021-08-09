@@ -124,7 +124,7 @@
     width: 110%;
     height: 120%;
     background-image: url("../svg/round.svg");
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
   }
 

@@ -29,7 +29,7 @@
           {#if $locale === "ru"}
             Работа с нами это:
           {:else}
-            Работа с нами это:
+            Working with us is:
           {/if}
 
           <ol class="works__list work-list">
@@ -115,6 +115,7 @@
 
   .works-list__title {
     display: flex;
+    text-transform: uppercase;
   }
 
   .works-list__title::before {
