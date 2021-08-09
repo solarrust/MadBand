@@ -7,8 +7,8 @@
     }
   },
   "mainPage": {
-    "title": "<span class='marker underline'>Studio</span> that <span class='marker pink-marker'>inspires</span><br> <span class='marker pink-marker'>meaningful</span> events.<br> We&nbsp;develop <span class='marker circle'>brands</span> <br>and <span class='marker green-marker'>help</span> them<br> communicate <span class='marker yellow-marker'>with</span> <br><span class='marker red-marker'>the audience.</span>",
-    "subtitle": "We organize large-scale events, develop BTL promotions and special projects, ensure the presence of companies in the media, and design products and services.",
+    "title": "A <span class='marker underline'>studio</span> that <span class='marker pink-marker'>inspires</span><br> events with <span class='marker green-marker'>meaning</span>.<br> Creating <span class='marker yellow-marker'>bright</span><br> concepts for <span class='marker circle'>your</span> <br><span class='marker red-marker'>events</span>",
+    "subtitle": "",
     "contactUs": "Feel <span class='marker underline'>free</span> to <span class='marker lightgreen-marker'>contact us</span>",
     "or": "or",
     "connect": "We connect <span class='marker green-marker _thistle-text'>with you</span>",
@@ -18,25 +18,25 @@
     "button": "Connect with me",
     "tnx": "Great!<br>We will contact you shortly :)",
     "phone": "Phone",
-    "workTitle": "Организуем масштабные маркетинговые и HR&#8209;мероприятия для брендов, разрабатываем BTL&#8209;акции и спецпроекты.",
+    "workTitle": "We organize large-scale marketing and HR-events for brands, develop BTL-actions and special projects.",
     "workWithUs": [
       {
-        "title": "УВЕРЕННОСТЬ",
-        "text": "У нас огромный опыт, прозрачность работы, нестандартный подход и перфекционизм в мелочах"
+        "title": "Confidence",
+        "text": "We have great experience, transparency of work, non-standard approach and perfection in details"
       },
       {
-        "title": "СПОКОЙСТВИЕ",
-        "text": "Вы не будете погружаться в нюансы и разбираться со сложными ситуациями – мы все сделаем сами"
+        "title": "Calm",
+        "text": "You won’t get nuanced and handle difficult situations - we’ll do it ourselves"
       },
       {
-        "title": "ДОВЕРИЕ",
-        "text": "Вы гарантированно сделаете интересный и неординарный проект в классной компании профессионалов"
+        "title": "Trust",
+        "text": "You will make an interesting and extraordinary project in a cool company of professionals"
       }
     ],
-    "workText": "<p>Our clients include the largest retailers, global pharmaceutical companies and leaders in the FMCG segment.</p> <p>We know how to delve into the customer's area at the expert level: this is the only way to guarantee the quality of the project. We think beyond the scope of the brief and strive to do more than the client expects.</p>"
+    "workText": "<p>Our clients include major financial groups, retailers, global pharmaceutical companies.</p><p>Our team is able to understand the customer’s sphere at the expert level: this is the only way to guarantee the quality of the project.</p><p>We think beyond the brief and strive to do more than the client expects.</p>"
   },
   "workPage": {
-    "text": "We create concepts for corporate and public events and fully implement them. We provide full technical equipment and turnkey development of the site, catering and security, well-coordinated work of staff. We provide booking and accompaniment of artists.",
+    "text": "In 12 years, we have come up with a lot of concepts for corporate and mass events, and we have fully implemented them. Our studio provided a full cycle of services in organization, cohesive work of staff, technical equipment and development of sites, catering and accompanying artists. And clients could enjoy the result.",
     "callToAction": "Work with us"
   },
   "studioPage": {
@@ -67,16 +67,16 @@
     "text": "Our team knows how to understand the product and the customer's task at the expert level, this is the only way to guarantee the high-quality implementation of the project. MadBand combines creativity with responsibility and open communication. We think beyond the scope of the brief and strive to do more than the client expects.",
     "mission": {
       "label": "Mission",
-      "text": "Our mission is to generate in the customer the <span class='marker pink-marker'>desire</span> to <span class='marker underline'>create</span> meanings that will inspire people. We ourselves <span class='marker green-marker'>experience</span> the pleasure of working on creative projects with an <span class='marker red-marker'>ambitious</span> and <span class='marker yellow-marker'>bright</span> idea."
+      "text": "Our mission is to help you to create <span class='marker pink-marker'>meanings</span> that will inspire <span class='marker underline'>people</span> and <span class='marker green-marker'>enjoy</span> working together on creative projects with <span class='marker red-marker'>an ambitious</span> and <span class='marker yellow-marker'>bright</span> idea."
     },
     "philosophy": {
       "label": "Philosophy",
-      "text": "Our philosophy is to put a special meaning in each project that affects all the senses and the mind of the audience. It is important for us to make your event or product not only beautiful, but also inspiring.",
+      "text": "Our philosophy is to make beautiful events that affect all senses and the mind of the audience, and invest in them.",
       "bigText": "It is important for us to make your event or product not only <span class='marker underline'>beautiful</span>, but also <span class='marker pink-marker'>inspiring.</span>",
       "items": [
-        "MadBand combines creativity with responsibility and open communication.",
-        "We think beyond the scope of the brief and strive to do more than the client expects.",
-        "We truly believe in the power of meaning, and that's why it works!"
+        "Mad Band combines creativity with responsibility and easy communication.",
+        "We think beyond the brieff and do more than you expect.",
+        "We truly believe in the power of meaning, so it works!"
       ]
     },
     "callToAction": "Work with us"
