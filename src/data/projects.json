@@ -1047,6 +1047,517 @@
         "/via.placeholder.com/300",
         "/via.placeholder.com/300"
       ]
+    },
+    {
+      "projectName": {
+        "en": "Corporate Ad Sandoz",
+        "ru": "Корпоративный ролик Sandoz"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "Sandoz",
+          "ru": "Sandoz"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Corporate Ad Sandoz",
+        "ru": "Корпоративный ролик Sandoz"
+      },
+      "text": {
+        "en": "German leader in production of bioanalogues and generics conducts a lot of research and develops a lot of therapeutic areas. The video reveals these aspects and demonstrates that the company is not just creating drugs, but striving to make medicine more accessible in order to prolong people’s lives.",
+        "ru": "Немецкий лидер производства биоаналогов и дженериковых препаратов проводит обширную научную деятельность и развивает множество терапевтических областей. Ролик раскрывает эти аспекты и демонстрирует — компания не просто создает препараты, но стремится делать медицину доступнее, чтобы продлить жизни людей."
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Alcon People Videos",
+        "ru": "Ролики Alcon People"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "Alcon",
+          "ru": "Alcon"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Alcon People Videos",
+        "ru": "Ролики Alcon People"
+      },
+      "text": {
+        "en": "The videos were shot for the company’s social networks. The video revealed images of typical Alcon lens users, their personal stories and why they trust the brand, as well as situations, where they need contact lenses.",
+        "ru": "Видеоролики были сняты для социальных сетей компании. Видео раскрыли образы типичных пользователей линз Alcon, их личные истории и то, почему они доверяют бренду, а также ситуации, в которых контактные линзы им необходимы."
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Production Film",
+        "ru": "Фильм о производстве"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "Novartis",
+          "ru": "Novartis"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Production Film",
+        "ru": "Фильм о производстве"
+      },
+      "text": {
+        "en": "Novartis Plant «Novartis Neva» - Novartis' first production site in Russia. In the film we told the story of the opening of the factory and demonstrated the highest level of automation, strict quality control. The video also expressed the global mission of the company, which is behind each packaging.",
+        "ru": "Завод «Новартис Нева» — первая производственная площадка Novartis в России. В фильме мы рассказали историю открытия завода и продемонстрировали высочайший уровень  автоматизации производства, строгий контроль качества. Ролик также выразил глобальную миссию компании, которая стоит за каждой сходящей с конвейера упаковкой."
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Video Content for Conferences «See More» and «See the Future»",
+        "ru": "Видеоконтент для Конференций «Видеть больше» и «Видеть будущее»"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "Alcon",
+          "ru": "Alcon"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Video Content for Conferences «See More» and «See the Future»",
+        "ru": "Видеоконтент для Конференций «Видеть больше» и «Видеть будущее»"
+      },
+      "text": {
+        "en": "Developed for three conferences, the author’s media content of the highest quality for broadcasting on the main screen. It's demonstration was synchronized with the lighting design and the play on the stage.",
+        "ru": "Для трех конференций был разработан авторский медиаконтент высочайшего качества для трансляции на главном экране. Его демонстрация была синхронизирована со световым оформлением и событиями на сцене."
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Content for Multimedia Performance Series «Experience Collection»",
+        "ru": "Контент для серии мультимедийных перфомансов «Собрание впечатлений»"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "Gazprombank",
+          "ru": "Газпромбанк"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Content for Multimedia Performance Series «Experience Collection»",
+        "ru": "Контент для серии мультимедийных перфомансов «Собрание впечатлений»"
+      },
+      "text": {
+        "en": "Solemn reception of «Gazprombank» under the name «New Classic» became one of the brightest events of the non-business part ot the programme of  St. Petersburg International Economic Forum. We created 5 multimedia for accompanying performances that were shown to the public at this status event.",
+        "ru": "Торжественный прием «Газпромбанка» под названием «Новая классика» стал одним из самых ярких событий неделовой программы Петербургского международного экономического форума. Нами были созданы 5 мультимедиа для сопровождения перфомансов, которые были показаны публике на этом статусном мероприятии."
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Concept Cafe Video",
+        "ru": "Ролик для концептуального кафе"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "Gills",
+          "ru": "Gills"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Concept Cafe Video",
+        "ru": "Ролик для концептуального кафе"
+      },
+      "text": {
+        "en": "The work for the conceptual Japanese café depicts how one bright gastronomic impression can be remembered forever and eclipse all previous experiences.",
+        "ru": "Работа для концептуального японского кафе изображает, как одно яркое гастрономическое впечатление может остаться в памяти навсегда и затмить все предыдущие переживания."
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Motorcycle Shop Video",
+        "ru": "Ролик для магазина мототехники"
+      },
+      "category": 1,
+      "cover": "https://via.placeholder.com/300",
+      "isVideoCover": false,
+      "data": {
+        "client": {
+          "en": "Lord Of Moto",
+          "ru": "Lord Of Moto"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Motorcycle Shop Video",
+        "ru": "Ролик для магазина мототехники"
+      },
+      "text": {
+        "en": "Lord of Moto is a shop of custom and classical motorcycles where they come not just for the bike, but for the true style and inspiration. In the video, we transferred the power and freedom you feel from the first time you press the handle of the gas.",
+        "ru": "Lord of Moto — это магазин кастомных и классических мотоциклов, куда приходят не просто за байком, но за подлинным стилем и вдохновением. В ролике мы передали ту мощь и свободу, которые испытываешь с первого нажатия на ручку газа."
+      },
+      "pageCover": "/via.placeholder.com/300x150",
+      "photos": [
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": ""
+        },
+        {
+          "src": "",
+          "flag": ""
+        },
+        {
+          "src": "/via.placeholder.com/300",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300",
+        "/via.placeholder.com/300"
+      ]
     }
   ]
 }
