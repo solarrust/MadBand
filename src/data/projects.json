@@ -184,8 +184,9 @@
         "ru": "Открытие"
       },
       "category": 1,
-      "cover": "https://via.placeholder.com/300",
-      "isVideoCover": false,
+      "cover": "img/cases/Midwinter/OTKRITIE_MAX00006.jpg",
+      "isVideoCover": true,
+      "videoCover": "/epic.spb.ru/madBand/video.mp4",
       "data": {
         "client": {
           "en": "OTKRITIE",
@@ -202,9 +203,77 @@
         "en": "Have you ever had a feeling that everything that happens around you seems like a dream? And you don’t know, if it is time to wake up or you’re already back in reality. For a New Year’s corporate event  we created a two-storey fantasy space with sparkly décor and a big roller right in the middle of the set. Guests were greeted by characters from Midwinter night, created by Shakespeare. Supernatural creatures and flock of friendly fairies, whispering in Elvish, surrounded by guests and called to their non-existent world. Ice was the dress code, but not the atmosphere: and everybody danced to the ground with the headliner and the cover bands and dived into the dry pool and rolled.",
         "ru": "У вас бывает ощущение, когда все, что происходит вокруг кажется сном? И вы еще не понимаете пора просыпаться или вы уже вернулись в реальность. Для новогоднего корпоративного мероприятия мы создали двухэтажное фантазийное пространство со сверкающим декором и большим катком прямо посреди площадки. Гостей встречали персонажи из придуманной нами сказки Midwinter night, созданной по мотивам Шекспира. Сверхъестественные создания и стаи дружных фей, перешептывающиеся на эльфийском языке, окружали гостей и звали в свой несуществующий мир. Ледяным был дресс-код, но не атмосфера: все танцевали до упада под любимые треки хэдлайнера и кавер-групп, ныряли в сухой бассейн и катались на катке."
       },
-      "pageCover": "/via.placeholder.com/300x150",
-      "photos": [],
-      "gallery": []
+      "pageCover": "img/cases/Midwinter/OTKRITIE_MAX00006.jpg",
+      "photos": [
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00006.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00031.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00039.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00046.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00055.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00056.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00086.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00098.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00107.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00112.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00128.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00199.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00409.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Midwinter/OTKRITIE_MAX00206.jpg",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "img/cases/Midwinter/OTKRITIE_MAX00238.jpg",
+        "img/cases/Midwinter/OTKRITIE_MAX00245.jpg",
+        "img/cases/Midwinter/OTKRITIE_MAX00275.jpg",
+        "img/cases/Midwinter/OTKRITIE_MAX00323.jpg",
+        "img/cases/Midwinter/OTKRITIE_MAX00358.jpg",
+        "img/cases/Midwinter/OTKRITIE_MAX00648.jpg",
+        "img/cases/Midwinter/OTKRITIE_MAX00728.jpg",
+        "img/cases/Midwinter/OTKRITIE_MAX00736.jpg",
+        "img/cases/Midwinter/OTKRITIE_MAX00741.jpg",
+        "img/cases/Midwinter/OTKRITIE_MAX00935.jpg"
+      ]
     },
     {
       "projectName": {
@@ -212,8 +281,9 @@
         "ru": "Inventive Retail Group"
       },
       "category": 1,
-      "cover": "https://via.placeholder.com/300",
-      "isVideoCover": false,
+      "cover": "img/cases/Inventium/INVENTIV_web0023.jpg",
+      "isVideoCover": true,
+      "videoCover": "/epic.spb.ru/madBand/Inventive%20Retail%20Group_PM6.mp4",
       "data": {
         "client": {
           "en": "Inventive Retail Group",
@@ -230,53 +300,67 @@
         "en": "Molecular Transformations - this was the idea behind the corporate event for Inventive Retail Group. Group of companies unites hundreds of points of sales of high-tech brands, and we have invented for them a large-scale interactive Inventium-zone with a table of elements that are «a part» of IRG projects. The theme was reflected in activities for the guests, among whom was a specially designed quest with augmented reality, with a picture of the products of all Group brands. Many photographic zones, visual effects activities kept guests from getting bored. We directed the opening of the evening and the experimental show  to be long remembered by the employees.",
         "ru": "Трансформации на молекулярном уровне - такая идея стояла за корпоративным мероприятием для Inventive Retail Group. Группа компаний объединяет сотни точек продаж высокотехнологичных брендов, и мы придумали для них масштабную интерактивную Inventium-зону с таблицей элементов, которые входят «в состав» проектов IRG. Тема отразилась в активностях для гостей, среди которых был специально разработанный квест с дополненной реальностью, с изображением продуктов всех брендов группы компаний. Множество фотозон, активностей с визуальными спецэффектами не давали гостям скучать. Срежиссированное нами открытие вечера и экспериментальное шоу надолго остались в памяти сотрудников."
       },
-      "pageCover": "/via.placeholder.com/300x150",
+      "pageCover": "img/cases/Inventium/INVENTIV_web0023.jpg",
       "photos": [
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Inventium/INVENTIV_web0023.jpg",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Inventium/INVENTIV_web0028.jpg",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Inventium/INVENTIV_web0029.jpg",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Inventium/INVENTIV_web0039.jpg",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Inventium/INVENTIV_web0088.jpg",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Inventium/INVENTIV_web0232.jpg",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Inventium/INVENTIV_web0238.jpg",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Inventium/INVENTIV_web0251.jpg",
           "flag": ""
         },
         {
-          "src": "",
+          "src": "img/cases/Inventium/INVENTIV_web0259.jpg",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Inventium/INVENTIV_web0283.jpg",
           "flag": "big"
+        },
+        {
+          "src": "img/cases/Inventium/INVENTIV_web0771.jpg",
+          "flag": ""
         }
       ],
       "gallery": [
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300"
+        "img/cases/Inventium/INVENTIV_web0332.jpg",
+        "img/cases/Inventium/INVENTIV_web0466.jpg",
+        "img/cases/Inventium/INVENTIV_web0474.jpg",
+        "img/cases/Inventium/INVENTIV_web0482.jpg",
+        "img/cases/Inventium/INVENTIV_web0584.jpg",
+        "img/cases/Inventium/INVENTIV_web0602.jpg",
+        "img/cases/Inventium/INVENTIV_web0629.jpg",
+        "img/cases/Inventium/INVENTIV_web0760.jpg",
+        "img/cases/Inventium/INVENTIV_web0836.jpg",
+        "img/cases/Inventium/INVENTIV_web0849.jpg",
+        "img/cases/Inventium/INVENTIV_web0868.jpg",
+        "img/cases/Inventium/INVENTIV_web0870.jpg",
+        "img/cases/Inventium/INVENTIV_web0929.jpg"
       ]
     },
     {
@@ -401,8 +485,8 @@
       "isVideoCover": false,
       "data": {
         "client": {
-          "en": "Открытие",
-          "ru": "OTKRITIE"
+          "en": "OTKRITIE",
+          "ru": "Открытие"
         },
         "year": "",
         "credits": []
@@ -685,60 +769,45 @@
     },
     {
       "projectName": {
-        "en": "Зона Bud 66 на фестивале уличной культуры Faces&Laces",
-        "ru": "Area Bud 66 at Faces&Laces Street Culture Festival"
+        "en": "Area Bud 66 at Faces&Laces Street Culture Festival",
+        "ru": "Зона Bud 66 на фестивале уличной культуры Faces&Laces"
       },
       "category": 1,
-      "cover": "https://via.placeholder.com/300",
-      "isVideoCover": false,
+      "cover": "img/cases/Faces&Laces/image1.jpeg",
+      "isVideoCover": true,
+      "videoCover": "/epic.spb.ru/madBand/Bud_66_Faces.mp4",
       "data": {
         "client": {
           "en": "AB InBev Efes",
-          "ru": "OTKRITIE"
+          "ru": "AB InBev Efes"
         },
         "year": "",
         "credits": []
       },
       "caseName": {
-        "en": "Зона Bud 66 на фестивале уличной культуры Faces&Laces",
-        "ru": "Area Bud 66 at Faces&Laces Street Culture Festival"
+        "en": "Area Bud 66 at Faces&Laces Street Culture Festival",
+        "ru": "Зона Bud 66 на фестивале уличной культуры Faces&Laces"
       },
       "text": {
         "en": "For the Street Culture Festival Faces&Laces was required to create a Bud 66 area that would reflect style, attract guests and fit the overall context of the event.  We solved the problem by working out the details of the bar and clothing store Community 66,  where you could buy a Russian-American collaboration The Ziq & Yoni brand with Bud 66. We have also organized the construction of a store and bar area, all technical parts and staff work.",
         "ru": "Для фестиваля уличной культуры Faces&Laces требовалось создать зону Bud 66, которая бы отражала стиль, привлекала гостей и вписывалась в общий контекст события. Мы решили задачу, продумав в деталях бар и магазин одежды Community 66, в котором можно было купить коллаборацию российско-американского бренда Ziq & Yoni c Bud 66. Также мы организовали строительство зоны магазина и бара, всю техническую часть и работу персонала."
       },
-      "pageCover": "/via.placeholder.com/300x150",
+      "pageCover": "img/cases/Faces&Laces/image1.jpeg",
       "photos": [
         {
-          "src": "/via.placeholder.com/300",
+          "src": "",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Faces&Laces/image1.jpeg",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Faces&Laces/BUD_2_2019_05_24.jpg",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
+          "src": "",
           "flag": ""
         },
         {
@@ -746,15 +815,19 @@
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Faces&Laces/BUD_4_2019_05_24.jpeg",
           "flag": "big"
+        },
+        {
+          "src": "img/cases/Faces&Laces/BUD_4_2019_05_29.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "",
+          "flag": ""
         }
       ],
-      "gallery": [
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300"
-      ]
+      "gallery": []
     },
     {
       "projectName": {
@@ -913,7 +986,7 @@
       "data": {
         "client": {
           "en": "Photographer Nadezhda Kharaz",
-          "ru": "фотограф Надежда Хараз"
+          "ru": "Фотограф Надежда Хараз"
         },
         "year": "",
         "credits": []
@@ -1290,79 +1363,6 @@
       "text": {
         "en": "Developed for three conferences, the author’s media content of the highest quality for broadcasting on the main screen. It's demonstration was synchronized with the lighting design and the play on the stage.",
         "ru": "Для трех конференций был разработан авторский медиаконтент высочайшего качества для трансляции на главном экране. Его демонстрация была синхронизирована со световым оформлением и событиями на сцене."
-      },
-      "pageCover": "/via.placeholder.com/300x150",
-      "photos": [
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        }
-      ],
-      "gallery": [
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300"
-      ]
-    },
-    {
-      "projectName": {
-        "en": "Content for Multimedia Performance Series «Experience Collection»",
-        "ru": "Контент для серии мультимедийных перфомансов «Собрание впечатлений»"
-      },
-      "category": 4,
-      "cover": "https://via.placeholder.com/300",
-      "isVideoCover": false,
-      "data": {
-        "client": {
-          "en": "Gazprombank",
-          "ru": "Газпромбанк"
-        },
-        "year": "",
-        "credits": []
-      },
-      "caseName": {
-        "en": "Content for Multimedia Performance Series «Experience Collection»",
-        "ru": "Контент для серии мультимедийных перфомансов «Собрание впечатлений»"
-      },
-      "text": {
-        "en": "Solemn reception of «Gazprombank» under the name «New Classic» became one of the brightest events of the non-business part ot the programme of  St. Petersburg International Economic Forum. We created 5 multimedia for accompanying performances that were shown to the public at this status event.",
-        "ru": "Торжественный прием «Газпромбанка» под названием «Новая классика» стал одним из самых ярких событий неделовой программы Петербургского международного экономического форума. Нами были созданы 5 мультимедиа для сопровождения перфомансов, которые были показаны публике на этом статусном мероприятии."
       },
       "pageCover": "/via.placeholder.com/300x150",
       "photos": [
