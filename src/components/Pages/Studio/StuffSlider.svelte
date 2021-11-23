@@ -70,6 +70,8 @@
 
   :global(.embla__container) {
     display: flex;
+    align-items: center;
+    cursor: none;
   }
 
   :global(.embla__slide) {

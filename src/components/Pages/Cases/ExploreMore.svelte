@@ -54,8 +54,8 @@
     position: relative;
     z-index: 0;
     justify-content: center;
-    max-width: 915px;
-    width: 70%;
+    max-width: 1280px;
+    width: 85%;
     list-style: none;
     font-family: var(--accent-font);
     font-size: var(--title-text-size);
@@ -97,10 +97,20 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    max-width: 1280px;
     z-index: -1;
     opacity: 0;
-    transform: translate(-50%, -50%);
+    border-radius: 15em;
     transition: opacity 0.2s;
+    overflow: hidden;
+  }
+
+  .cases__explore-img:nth-child(odd) {
+    transform: translate(-50%, -50%) rotate(-5deg);
+  }
+
+  .cases__explore-img:nth-child(even) {
+    transform: translate(-50%, -50%) rotate(5deg);
   }
 
   @media (max-width: 1280px) {

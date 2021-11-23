@@ -43,9 +43,10 @@
         } else {
           currentArr = photosArr1;
         }
-        if (currentArr[i].src !== "") {
+        if (currentArr[i] && currentArr[i].src !== "") {
           img = document.createElement("img");
           img.src = `/${currentArr[i].src}`;
+
           if (currentArr[i].flag !== "") {
             currentArr[i].flag
               .split(" ")
@@ -67,19 +68,28 @@
 
   function classCreator(img) {
     img.onload = () => {
-      let w = img.width;
-      let h = img.height;
+      let w = img.naturalWidth;
+      let h = img.naturalHeight;
 
-      if (w > h) {
+      if (w > h && !img.classList.contains("big")) {
         img.classList.add("_horizontal");
 
-        img.parentNode.childNodes.forEach((ch) => {
-          if (!ch.classList.contains("_horizontal")) {
-            ch.classList.add("_stretch");
-          }
-        });
+        if (!img.classList.contains("_horizontal")) {
+          img.classList.add("_stretch");
+        }
       }
     };
+  }
+
+  function handleClick(e) {
+    console.log("click");
+    if (e.target.paused) {
+      this.play();
+      this.parentNode.classList.add("_playing");
+    } else {
+      this.pause();
+      this.parentNode.classList.remove("_playing");
+    }
   }
 
   onMount(() => {
@@ -96,30 +106,19 @@
       });
     });
 
-    const emblaNode = document.querySelector(".embla");
-    const options = {
-      align: "start",
-      containScroll: "trimSnaps",
-      hitBreakpoints: {
-        980: {
-          align: "center",
+    if (document.querySelector(".embla")) {
+      const emblaNode = document.querySelector(".embla");
+      const options = {
+        align: "start",
+        containScroll: "trimSnaps",
+        hitBreakpoints: {
+          980: {
+            align: "center",
+          },
         },
-      },
-    };
-
-    let embla = EmblaCarousel(emblaNode, options);
-
-    let v = document.querySelector("video");
-    if (v) {
-      v.onclick = function () {
-        if (this.paused) {
-          this.play();
-          this.parentNode.classList.add("_playing");
-        } else {
-          this.pause();
-          this.parentNode.classList.remove("_playing");
-        }
       };
+
+      let embla = EmblaCarousel(emblaNode, options);
     }
   });
 </script>
@@ -154,7 +153,9 @@
             src="/{project.videoCover}"
             class="case__video-cover"
             preload="auto"
+            poster="/{project.pageCover}"
             data-hover-trigger
+            on:click={handleClick}
           />
         </div>
       {:else}
@@ -198,7 +199,7 @@
     {/if}
   </section>
 
-  {#if project.gallery}
+  {#if project.gallery.length}
     <div class="case__gallery gallery embla" data-slider>
       <div class="embla__container">
         {#each project.gallery as photo}
@@ -269,19 +270,21 @@
     cursor: none;
   }
 
-  .case__video-wrapper:before {
+  .case__video-wrapper::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../svg/play-btn.svg") no-repeat center / 60px 60px;
+    background: rgb(0 0 0 / 0.6) url("../svg/play-btn.svg") no-repeat center /
+      60px 60px;
+    pointer-events: none;
 
     transition: opacity 0.2s;
   }
 
-  ._playing.case__video-wrapper:before {
+  ._playing.case__video-wrapper::before {
     opacity: 0;
   }
 
@@ -392,7 +395,7 @@
 
   .gallery__photo {
     max-width: 530px;
-    cursor: grab;
+    cursor: none;
   }
 
   @media (max-width: 1280px) {

@@ -48,6 +48,10 @@
     max-width: 100%;
   }
 
+  ._horizontal .work__cover img {
+    border-radius: 15em;
+  }
+
   :global(.works__item:nth-child(2n + 1)) {
     align-self: flex-end;
   }

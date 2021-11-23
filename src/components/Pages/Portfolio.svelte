@@ -25,6 +25,18 @@
 
   projectFiltering();
 
+  let sortCategories = (function () {
+    let filterCatList = [];
+
+    projects.forEach((pr) => {
+      if (!filterCatList.includes(pr.category)) {
+        filterCatList.push(pr.category);
+      }
+    });
+
+    return filterCatList;
+  })();
+
   let current = "_horizontal";
 
   function onChange(event) {
@@ -51,29 +63,31 @@
     <div class="works__content">
       <ul class="works__category-list category-list">
         {#each categories as category, i}
-          <li class="category-list__item">
-            <input
-              type="radio"
-              name="category"
-              value={i + 1}
-              id={i + 1}
-              on:change={onChange}
-            />
-            <label
-              for={i + 1}
-              class="category-list__btn _{i + 1}"
-              data-hover-trigger
-              style={`
-                --fontColor:
-                ${category.font};
-                --bkg:
-                ${category.bkg}`}
-            >
-              <span>
-                {category[$locale]}
-              </span>
-            </label>
-          </li>
+          {#if sortCategories.includes(i + 1)}
+            <li class="category-list__item">
+              <input
+                type="radio"
+                name="category"
+                value={i + 1}
+                id={i + 1}
+                on:change={onChange}
+              />
+              <label
+                for={i + 1}
+                class="category-list__btn _{i + 1}"
+                data-hover-trigger
+                style={`
+                  --fontColor:
+                  ${category.font};
+                  --bkg:
+                  ${category.bkg}`}
+              >
+                <span>
+                  {category[$locale]}
+                </span>
+              </label>
+            </li>
+          {/if}
         {/each}
       </ul>
       <div class="works__text">
@@ -130,7 +144,7 @@
     cursor: none;
   }
 
-  .category-list__btn:after {
+  .category-list__btn::after {
     content: "";
     position: absolute;
     top: 0;
@@ -146,28 +160,28 @@
     transition: opacity 0.1s ease-in;
   }
 
-  input:checked ~ .category-list__btn:after {
+  input:checked ~ .category-list__btn::after {
     opacity: 1;
     transition: none;
   }
 
-  .category-list__btn._1:after {
+  .category-list__btn._1::after {
     background-image: url("../svg/btn-active-1.svg");
   }
 
-  .category-list__btn._2:after {
+  .category-list__btn._2::after {
     background-image: url("../svg/btn-active-2.svg");
   }
 
-  .category-list__btn._3:after {
+  .category-list__btn._3::after {
     background-image: url("../svg/btn-active-3.svg");
   }
 
-  .category-list__btn._4:after {
+  .category-list__btn._4::after {
     background-image: url("../svg/btn-active-4.svg");
   }
 
-  .category-list__btn._5:after {
+  .category-list__btn._5::after {
     background-image: url("../svg/btn-active-5.svg");
   }
 
@@ -212,7 +226,7 @@
     text-align: center;
   }
 
-  .works__text:after {
+  .works__text::after {
     content: "";
     display: block;
     width: 75px;
