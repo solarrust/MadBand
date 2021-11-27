@@ -38,28 +38,25 @@
     });
   }
 
+  function handleScroll() {
+    if (anim.scrollTrigger.start) {
+      let oldPos = anim.scrollTrigger.start;
+      anim.scrollTrigger.refresh();
+
+      if (oldPos !== anim.scrollTrigger.start) {
+        anim.scrollTrigger.refresh();
+      }
+    }
+  }
+
   onMount(() => {
     anim = createAnimation(".pattern-parent", ".portfolio__pattern");
-
-    /*
-      Because WFT bug with animation on Studio page
-      At first rendering of page start / end positions of ScrollTrigger calc wrong
-    */
-    window.onscroll = () => {
-      if (anim.scrollTrigger.start) {
-        let oldPos = anim.scrollTrigger.start;
-        anim.scrollTrigger.refresh();
-
-        if (oldPos !== anim.scrollTrigger.start) {
-          anim.scrollTrigger.refresh();
-          console.log("anim refreshed");
-        }
-      }
-    };
 
     return () => anim.kill();
   });
 </script>
+
+<svelte:window on:scroll={handleScroll} />
 
 <div class="pattern-parent">
   <div class="portfolio__pattern {extraClass}" />

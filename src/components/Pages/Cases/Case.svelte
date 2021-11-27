@@ -147,7 +147,7 @@
       ${category.bkg}`}>{category[$locale]}</span
       >
 
-      {#if project.isVideoCover}
+      {#if project.videoCover && project.videoCover !== ""}
         <div class="case__video-wrapper">
           <video
             src="/{project.videoCover}"

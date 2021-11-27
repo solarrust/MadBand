@@ -5,14 +5,9 @@
   gsap.registerPlugin(ScrollTrigger);
 
   export let extraClass;
+  let anim = gsap.timeline();
 
-  onMount(() => {
-    let animLines = Array.from(
-      document.querySelectorAll(".square-pattern__line")
-    );
-
-    let anim = gsap.timeline();
-
+  function createAnimation(animLines) {
     animLines.forEach((line, i) => {
       line.style.height = `${10 * (i + 1)}%`;
 
@@ -30,21 +25,29 @@
         scrub: true,
         // markers: true,
       });
-
-      window.onscroll = () => {
-        let oldPos = anim.scrollTrigger.start;
-        anim.scrollTrigger.refresh();
-
-        if (oldPos !== anim.scrollTrigger.start) {
-          anim.scrollTrigger.refresh();
-          console.log("anim refreshed");
-        }
-      };
-
-      return () => anim.kill();
     });
+  }
+
+  function handleScroll() {
+    let oldPos = anim.scrollTrigger.start;
+    anim.scrollTrigger.refresh();
+
+    if (oldPos !== anim.scrollTrigger.start) {
+      anim.scrollTrigger.refresh();
+      console.log("anim refreshed");
+    }
+  }
+
+  onMount(() => {
+    let animLines = Array.from(
+      document.querySelectorAll(".square-pattern__line")
+    );
+
+    createAnimation(animLines);
   });
 </script>
+
+<svelte:window on:scroll={handleScroll} />
 
 <div class="square-pattern {extraClass}">
   <div class="square-pattern__line">
