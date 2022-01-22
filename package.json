@@ -32,6 +32,7 @@
     "embla-carousel": "^4.5.1",
     "gsap": "file:gsap-bonus.tgz",
     "libphonenumber-js": "^1.9.16",
-    "sirv-cli": "^1.0.0"
+    "sirv-cli": "^1.0.0",
+    "swiper": "^7.4.1"
   }
 }

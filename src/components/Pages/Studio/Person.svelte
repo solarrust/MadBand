@@ -2,10 +2,10 @@
   export let name;
   export let position;
   export let img;
-  export let extraClass;
+  export let className;
 </script>
 
-<div class="person stuff__item {extraClass}">
+<div class="person stuff__item {className}">
   <div class="person__img-block">
     <img src={img} alt="{name}, {position}" class="person__img" />
   </div>
@@ -21,7 +21,8 @@
     flex-direction: column;
     align-items: flex-end;
     /*flex: auto 0 0;*/
-    /*width: 355px;*/
+    width: 355px;
+    margin: 0 auto;
     /*margin-right: 40px;*/
     font-size: var(--s-text-size);
   }

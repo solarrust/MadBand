@@ -1,144 +1,65 @@
 <script>
-  import { onMount } from "svelte";
   import { locale, t } from "../../services/i18n";
-  import EmblaCarousel from "embla-carousel";
+  import { Swiper, SwiperSlide } from "swiper/svelte";
+  import "swiper/css";
 
   import Person from "./Person.svelte";
   import dataRU from "../../../lang/ru.json";
   import dataEN from "../../../lang/en.json";
+  import { onMount } from "svelte";
 
   let localeStuff = {
     ru: dataRU.studioPage.stuff,
     en: dataEN.studioPage.stuff,
   };
 
-  let embla;
-
-  const options = {
-    align: "start",
-    containScroll: "trimSnaps",
-    inViewThreshold: 0.5,
-    speed: 2,
-  };
-
   onMount(() => {
-    const emblaNode = document.querySelector(".embla");
+    let sliderW = (355 + 40) * localeStuff[$locale].length;
+    let swiper = document.querySelector(".swiper");
 
-    let containerW =
-      document.querySelectorAll(".embla__slide").length * (355 + 40);
-
-    embla = EmblaCarousel(emblaNode, options);
-
-    function envClassHelper(contW) {
-      if (window.innerWidth > contW) {
-        emblaNode.classList.add("_no-ev");
+    function pointerFunc(width) {
+      if (width > sliderW) {
+        swiper.style.pointerEvents = "none";
       } else {
-        emblaNode.classList.remove("_no-ev");
+        swiper.style.pointerEvents = "all";
       }
     }
 
-    envClassHelper(containerW);
+    pointerFunc(window.innerWidth);
 
     window.addEventListener("resize", () => {
-      embla.scrollTo(0);
-      envClassHelper(containerW);
+      pointerFunc(window.innerWidth);
     });
   });
 </script>
 
-<div class="stuff studio__stuff embla">
-  <div class="embla__container">
+<div class="stuff studio__stuff">
+  <Swiper
+    spaceBetween={40}
+    slidesPerView="auto"
+    on:slideChange={() => console.log("slide change")}
+    on:swiper={(e) => console.log(e.detail[0])}
+  >
     {#each localeStuff[$locale] as person}
-      <Person
-        extraClass={"embla__slide"}
-        name={person.name}
-        position={person.position}
-        img={person.img}
-      />
+      <SwiperSlide>
+        <Person
+          className={"person__slide"}
+          name={person.name}
+          position={person.position}
+          img={person.img}
+        />
+      </SwiperSlide>
     {/each}
-  </div>
+  </Swiper>
 </div>
 
 <style>
-  :global(.embla) {
-    overflow: hidden;
-  }
-
-  :global(.embla._no-ev) {
-    pointer-events: none;
-  }
-
-  :global(.embla__container) {
-    display: flex;
-    align-items: center;
-    cursor: none;
-  }
-
-  :global(.embla__slide) {
-    position: relative;
-    flex: 0 0 100%;
-  }
-
-  :global(.stuff.embla) {
-    cursor: grab;
-  }
-
-  :global(.stuff._no-ev .embla__container) {
-    justify-content: center;
-  }
-
-  :global(.stuff .embla__slide) {
-    position: relative;
-    flex: 0 0 25%;
-    max-width: 355px;
-  }
-
-  :global(.stuff .embla__slide:not(:last-child)) {
-    margin-right: 40px;
-  }
-
-  :global(.stuff.embla.is-drugging) {
-    cursor: grabbing;
-  }
-
-  @media (max-width: 980px) {
-    :global(.stuff .embla__slide) {
-      position: relative;
-      flex: 0 0 40%;
-    }
-
-    :global(.stuff .embla__slide:not(:last-child)) {
-      margin-right: 20px;
-    }
-  }
-
   .studio__stuff {
     margin-top: 160px;
     margin-bottom: 105px;
   }
 
-  /*.stuff {*/
-  /*  !*display: flex;*!*/
-  /*  !*justify-content: center;*!*/
-  /*}*/
-
-  /*.stuff-wrapper {*/
-  /*display: flex;*/
-  /*padding: 0 40px;*/
-  /*overflow-x: scroll;*/
-  /*}*/
-
-  /*.stuff-wrapper:after {*/
-  /*  content: "";*/
-  /*  display: block;*/
-  /*  margin-right: 80px;*/
-  /*}*/
-
-  /*.stuff-wrapper::-webkit-scrollbar {*/
-  /*  display: none;*/
-  /*}*/
-
-  /*.stuff-wrapper::-webkit-scrollbar-track {*/
-  /*  background-color: transparent;*/
-  /*}*/
+  .studio__stuff :global(.swiper-slide) {
+    flex-shrink: 1;
+  }
 </style>

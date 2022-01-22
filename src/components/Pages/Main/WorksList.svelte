@@ -21,7 +21,9 @@
               {project.projectName.en}
             {/if}
           </div>
-          <img src={project.cover} alt="" />
+          <div class="work__img">
+            <img src={project.cover} alt="" />
+          </div>
         </div>
       </Link>
     {/each}
@@ -48,8 +50,24 @@
     max-width: 100%;
   }
 
-  ._horizontal .work__cover img {
+  .work__img {
+    width: 196px;
+    height: 288px;
     border-radius: 15em;
+    overflow: hidden;
+  }
+
+  :global(._horizontal) .work__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .work__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   :global(.works__item:nth-child(2n + 1)) {
@@ -68,6 +86,18 @@
     grid-column: span 2;
   }
 
+  :global(.works__item:nth-child(2n + 1):not(._horizontal) .work__img) {
+    transform: rotate(6deg);
+  }
+
+  :global(.works__item:nth-child(2n + 2):not(._horizontal) .work__img) {
+    transform: rotate(0);
+  }
+
+  :global(.works__item:nth-child(4n):not(._horizontal) .work__img) {
+    transform: rotate(-6deg);
+  }
+
   .work__cover {
     position: relative;
     padding: 0 10px;
@@ -76,7 +106,7 @@
   .work__name {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -10px;
     color: var(--oriole);
     font-size: 10px;
     font-weight: 500;
@@ -92,7 +122,7 @@
 
   :global(.works__item._horizontal .work__name) {
     left: auto;
-    right: 0;
+    right: -10px;
   }
 
   @media (max-width: 1280px) {

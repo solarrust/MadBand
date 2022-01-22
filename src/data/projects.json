@@ -34,12 +34,12 @@
   "projects": [
     {
       "projectName": {
-        "en": "BCS World Investment",
-        "ru": "БКС Мир Инвестиций"
+        "en": "Online ballet \"Nutcracker. Reboot\"",
+        "ru": "Онлайн балет \"Щелкунчик. Reboot\""
       },
       "category": 1,
-      "cover": "img/cases/Reboot/REBOOT_0021.jpg",
-      "isVideoCover": false,
+      "cover": "img/cases/Reboot/cover.jpg",
+      "isVideoCover": true,
       "videoCover": "/epic.spb.ru/madBand/NUTCRACKER_BKS_mp4.mp4",
       "data": {
         "client": {
@@ -57,69 +57,70 @@
         "en": "We created an online event of special value and beauty in which seemingly incompatible worlds were mixed. A world of classical music, ballet, modern dance school and digital art. We have created for the first time in the world immersive online performance of the ballet «Nutcracker», which included modern choreography and classical school, and the action on the screen was driven by the viewers themselves through online voting. Right during the broadcast, the audience changed sets, moved the plot and dance numbers, chose their own styles and created the script. Full freedom and presence within the show. And all this was made possible by the world famous choreographer Vladimir Varnava. Traditions and technology were so organically intertwined that it was a bold and very talented performance.",
         "ru": "Мы создали онлайн событие особой ценности и красоты, в котором перемешались, казалось бы, совершенно несовместимые миры. Мир классической музыки, балета, современной танцевальной школы и цифрового искусства. Нами впервые в мире была создана иммерсивная онлайн постановка балета «Щелкунчик», которая включала в себя современную хореографию и классическую школу, а действием на экране управляли сами зрители с помощью онлайн голосования. Прямо во время трансляции зрители меняли декорации, двигали сюжет и танцевальные номера, сами выбирали стилистику и создавали сценарий. Полная свобода и присутствие внутри спектакля. И все это стало возможно благодаря известному во всем мире хореографу Владимиру Варнаве. Традиции и технологии так органично переплелись, что получился смелый и очень талантливый перфоманс."
       },
-      "pageCover": "img/cases/Reboot/REBOOT_2_0002.jpg",
+      "pageCover": "img/cases/Reboot/cover-video.jpg",
       "photos": [
         {
-          "src": "img/cases/Reboot/REBOOT_2_0004.jpg",
+          "src": "img/cases/Reboot/1.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Reboot/REBOOT_2_0011.jpg",
+          "src": "img/cases/Reboot/2.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Reboot/REBOOT_2_0061.jpg",
+          "src": "img/cases/Reboot/3.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Reboot/REBOOT_2_0101.jpg",
+          "src": "img/cases/Reboot/4.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Reboot/REBOOT_2_0112.jpg",
+          "src": "img/cases/Reboot/5.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Reboot/REBOOT_0021.jpg",
+          "src": "img/cases/Reboot/6.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Reboot/REBOOT_0026.jpg",
+          "src": "img/cases/Reboot/7.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Reboot/REBOOT_0032.jpg",
+          "src": "img/cases/Reboot/8.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Reboot/REBOOT_0034.jpg",
+          "src": "img/cases/Reboot/9.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Reboot/REBOOT_0036.jpg",
+          "src": "img/cases/Reboot/10.jpg",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/Reboot/REBOOT_0084.jpg",
-        "img/cases/Reboot/REBOOT_0094.jpg",
-        "img/cases/Reboot/REBOOT_0107.jpg",
-        "img/cases/Reboot/REBOOT_0109.jpg",
-        "img/cases/Reboot/REBOOT_0114.jpg",
-        "img/cases/Reboot/REBOOT_0122.jpg",
-        "img/cases/Reboot/REBOOT_0127.jpg",
-        "img/cases/Reboot/REBOOT_0167.jpg",
-        "img/cases/Reboot/REBOOT_0173.jpg",
-        "img/cases/Reboot/REBOOT_0192.jpg"
+        "img/cases/Reboot/11.jpg",
+        "img/cases/Reboot/12.jpg",
+        "img/cases/Reboot/13.jpg",
+        "img/cases/Reboot/14.jpg",
+        "img/cases/Reboot/15.jpg",
+        "img/cases/Reboot/16.jpg",
+        "img/cases/Reboot/17.jpg",
+        "img/cases/Reboot/18.jpg",
+        "img/cases/Reboot/19.jpg",
+        "img/cases/Reboot/20.jpg",
+        "img/cases/Reboot/21.jpg"
       ]
     },
     {
       "projectName": {
-        "en": "AB InBev Efes",
-        "ru": "AB InBev Efes"
+        "en": "Beer Presentation Bud 66",
+        "ru": "Презентация пива Bud 66"
       },
       "category": 1,
-      "cover": "img/cases/Bud66/Bud_66_58.jpg",
+      "cover": "img/cases/Bud66/cover.jpg",
       "isVideoCover": false,
       "videoCover": "/epic.spb.ru/madBand/BUD66.mp4",
       "data": {
@@ -138,68 +139,70 @@
         "en": "In a unique location, in an ancient underground wine store we gave an exclusive premiere of the Bud 66 for opinion leaders and top industry representatives. Agreeing on all ideas step by step,  we set up an original building, we developed interactive zones and media content, we orchestrated the scene in detail. Guests spoke on talk, listened to musicians' performances and participated in interactives. The presentation united a new  Community 66 and ended with a bright party.",
         "ru": "В уникальной локации, в старинном подземном винном хранилище мы провели эксклюзивную премьеру напитка Bud 66 для лидеров мнений и топовых представителей индустрии. Согласовав все идеи поэтапно, мы организовали оригинальную застройку, разработали интерактивные зоны и медиаконтент, детально срежиссировали сценическое действие. Гости общались на talk, слушали выступления музыкантов и участвовали в интерактивах. Презентация объединила новое сообщество Community 66 и завершилась яркой вечеринкой."
       },
-      "pageCover": "img/cases/Bud66/Bud_66_56.jpg",
+      "pageCover": "img/cases/Bud66/cover-video.jpg",
       "photos": [
         {
-          "src": "img/cases/Bud66/Bud_66_57.jpg",
+          "src": "img/cases/Bud66/1.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Bud66/Bud_66_58.jpg",
+          "src": "img/cases/Bud66/2.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Bud66/Bud_66_59.jpg",
+          "src": "img/cases/Bud66/3.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Bud66/Bud_66_91.jpg",
+          "src": "img/cases/Bud66/4.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Bud66/Bud_66_101.jpg",
+          "src": "img/cases/Bud66/5.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Bud66/Bud_66_110.jpg",
+          "src": "img/cases/Bud66/6.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Bud66/Bud_66_122.jpg",
+          "src": "img/cases/Bud66/7.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Bud66/Bud_66_127.jpg",
+          "src": "img/cases/Bud66/8.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Bud66/Bud_66_133.jpg",
+          "src": "img/cases/Bud66/9.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Bud66/Bud_66_144.jpg",
+          "src": "img/cases/Bud66/10.jpg",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/Bud66/Bud_66_147.jpg",
-        "img/cases/Bud66/Bud_66_149.jpg",
-        "img/cases/Bud66/Bud_66_153.jpg",
-        "img/cases/Bud66/Bud_66_157.jpg",
-        "img/cases/Bud66/Bud_66_175.jpg",
-        "img/cases/Bud66/Bud_66_179.jpg",
-        "img/cases/Bud66/Bud_66_183.jpg",
-        "img/cases/Bud66/Bud_66_185.jpg",
-        "img/cases/Bud66/Bud_66_202.jpg",
-        "img/cases/Bud66/Bud_66_208.jpg",
-        "img/cases/Bud66/DSCF7642.jpg",
-        "img/cases/Bud66/DSCF7915.jpg",
-        "img/cases/Bud66/DSCF7965.jpg",
-        "img/cases/Bud66/DSCF7996.jpg",
-        "img/cases/Bud66/DSCF8011.jpg",
-        "img/cases/Bud66/DSCF8033.jpg",
-        "img/cases/Bud66/DSCF8198.jpg",
-        "img/cases/Bud66/DSCF8203.jpg"
+        "img/cases/Bud66/11.jpg",
+        "img/cases/Bud66/12.jpg",
+        "img/cases/Bud66/13.jpg",
+        "img/cases/Bud66/14.jpg",
+        "img/cases/Bud66/15.jpg",
+        "img/cases/Bud66/16.jpg",
+        "img/cases/Bud66/17.jpg",
+        "img/cases/Bud66/18.jpg",
+        "img/cases/Bud66/19.jpg",
+        "img/cases/Bud66/20.jpg",
+        "img/cases/Bud66/21.jpg",
+        "img/cases/Bud66/22.jpg",
+        "img/cases/Bud66/23.jpg",
+        "img/cases/Bud66/24.jpg",
+        "img/cases/Bud66/25.jpg",
+        "img/cases/Bud66/26.jpg",
+        "img/cases/Bud66/27.jpg",
+        "img/cases/Bud66/28.jpg",
+        "img/cases/Bud66/29.jpg",
+        "img/cases/Bud66/30.jpg"
       ]
     },
     {
@@ -208,8 +211,8 @@
         "ru": "Открытие"
       },
       "category": 1,
-      "cover": "img/cases/Midwinter/OTKRITIE_MAX00006.jpg",
-      "isVideoCover": true,
+      "cover": "img/cases/Midwinter/cover.jpg",
+      "isVideoCover": false,
       "videoCover": "/epic.spb.ru/madBand/video.mp4",
       "data": {
         "client": {
@@ -227,206 +230,85 @@
         "en": "Have you ever had a feeling that everything that happens around you seems like a dream? And you don’t know, if it is time to wake up or you’re already back in reality. For a New Year’s corporate event  we created a two-storey fantasy space with sparkly décor and a big roller right in the middle of the set. Guests were greeted by characters from Midwinter night, created by Shakespeare. Supernatural creatures and flock of friendly fairies, whispering in Elvish, surrounded by guests and called to their non-existent world. Ice was the dress code, but not the atmosphere: and everybody danced to the ground with the headliner and the cover bands and dived into the dry pool and rolled.",
         "ru": "У вас бывает ощущение, когда все, что происходит вокруг кажется сном? И вы еще не понимаете пора просыпаться или вы уже вернулись в реальность. Для новогоднего корпоративного мероприятия мы создали двухэтажное фантазийное пространство со сверкающим декором и большим катком прямо посреди площадки. Гостей встречали персонажи из придуманной нами сказки Midwinter night, созданной по мотивам Шекспира. Сверхъестественные создания и стаи дружных фей, перешептывающиеся на эльфийском языке, окружали гостей и звали в свой несуществующий мир. Ледяным был дресс-код, но не атмосфера: все танцевали до упада под любимые треки хэдлайнера и кавер-групп, ныряли в сухой бассейн и катались на катке."
       },
-      "pageCover": "img/cases/Midwinter/OTKRITIE_MAX00006.jpg",
+      "pageCover": "img/cases/Midwinter/cover-video.jpg",
       "photos": [
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00006.jpg",
+          "src": "img/cases/Midwinter/1.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00031.jpg",
+          "src": "img/cases/Midwinter/2.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00039.jpg",
+          "src": "img/cases/Midwinter/3.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00046.jpg",
+          "src": "img/cases/Midwinter/4.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00055.jpg",
+          "src": "img/cases/Midwinter/5.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00056.jpg",
+          "src": "img/cases/Midwinter/6.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00086.jpg",
+          "src": "img/cases/Midwinter/7.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00098.jpg",
+          "src": "img/cases/Midwinter/8.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00107.jpg",
+          "src": "img/cases/Midwinter/9.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00112.jpg",
+          "src": "img/cases/Midwinter/10.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00128.jpg",
+          "src": "img/cases/Midwinter/11.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00199.jpg",
+          "src": "img/cases/Midwinter/12.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00409.jpg",
+          "src": "img/cases/Midwinter/13.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Midwinter/OTKRITIE_MAX00206.jpg",
+          "src": "img/cases/Midwinter/14.jpg",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/Midwinter/OTKRITIE_MAX00238.jpg",
-        "img/cases/Midwinter/OTKRITIE_MAX00245.jpg",
-        "img/cases/Midwinter/OTKRITIE_MAX00275.jpg",
-        "img/cases/Midwinter/OTKRITIE_MAX00323.jpg",
-        "img/cases/Midwinter/OTKRITIE_MAX00358.jpg",
-        "img/cases/Midwinter/OTKRITIE_MAX00648.jpg",
-        "img/cases/Midwinter/OTKRITIE_MAX00728.jpg",
-        "img/cases/Midwinter/OTKRITIE_MAX00736.jpg",
-        "img/cases/Midwinter/OTKRITIE_MAX00741.jpg",
-        "img/cases/Midwinter/OTKRITIE_MAX00935.jpg"
+        "img/cases/Midwinter/15.jpg",
+        "img/cases/Midwinter/16.jpg",
+        "img/cases/Midwinter/17.jpg",
+        "img/cases/Midwinter/18.jpg",
+        "img/cases/Midwinter/19.jpg",
+        "img/cases/Midwinter/20.jpg",
+        "img/cases/Midwinter/21.jpg",
+        "img/cases/Midwinter/22.jpg",
+        "img/cases/Midwinter/23.jpg",
+        "img/cases/Midwinter/24.jpg"
       ]
     },
     {
       "projectName": {
-        "en": "Inventive Retail Group",
-        "ru": "Inventive Retail Group"
+        "en": "Conference for company Alcon partners",
+        "ru": "Конференция партнеров Alcon"
       },
       "category": 1,
-      "cover": "img/cases/Inventium/INVENTIV_web0023.jpg",
-      "isVideoCover": true,
-      "videoCover": "/epic.spb.ru/madBand/Inventive%20Retail%20Group_PM6.mp4",
-      "data": {
-        "client": {
-          "en": "Inventive Retail Group",
-          "ru": "Inventive Retail Group"
-        },
-        "year": "",
-        "credits": []
-      },
-      "caseName": {
-        "en": "Inventium",
-        "ru": "Inventium"
-      },
-      "text": {
-        "en": "Molecular Transformations - this was the idea behind the corporate event for Inventive Retail Group. Group of companies unites hundreds of points of sales of high-tech brands, and we have invented for them a large-scale interactive Inventium-zone with a table of elements that are «a part» of IRG projects. The theme was reflected in activities for the guests, among whom was a specially designed quest with augmented reality, with a picture of the products of all Group brands. Many photographic zones, visual effects activities kept guests from getting bored. We directed the opening of the evening and the experimental show  to be long remembered by the employees.",
-        "ru": "Трансформации на молекулярном уровне - такая идея стояла за корпоративным мероприятием для Inventive Retail Group. Группа компаний объединяет сотни точек продаж высокотехнологичных брендов, и мы придумали для них масштабную интерактивную Inventium-зону с таблицей элементов, которые входят «в состав» проектов IRG. Тема отразилась в активностях для гостей, среди которых был специально разработанный квест с дополненной реальностью, с изображением продуктов всех брендов группы компаний. Множество фотозон, активностей с визуальными спецэффектами не давали гостям скучать. Срежиссированное нами открытие вечера и экспериментальное шоу надолго остались в памяти сотрудников."
-      },
-      "pageCover": "img/cases/Inventium/INVENTIV_web0023.jpg",
-      "photos": [
-        {
-          "src": "img/cases/Inventium/INVENTIV_web0023.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Inventium/INVENTIV_web0028.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Inventium/INVENTIV_web0029.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Inventium/INVENTIV_web0039.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Inventium/INVENTIV_web0088.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Inventium/INVENTIV_web0232.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Inventium/INVENTIV_web0238.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Inventium/INVENTIV_web0251.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Inventium/INVENTIV_web0259.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Inventium/INVENTIV_web0283.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Inventium/INVENTIV_web0771.jpg",
-          "flag": ""
-        }
-      ],
-      "gallery": [
-        "img/cases/Inventium/INVENTIV_web0332.jpg",
-        "img/cases/Inventium/INVENTIV_web0466.jpg",
-        "img/cases/Inventium/INVENTIV_web0474.jpg",
-        "img/cases/Inventium/INVENTIV_web0482.jpg",
-        "img/cases/Inventium/INVENTIV_web0584.jpg",
-        "img/cases/Inventium/INVENTIV_web0602.jpg",
-        "img/cases/Inventium/INVENTIV_web0629.jpg",
-        "img/cases/Inventium/INVENTIV_web0760.jpg",
-        "img/cases/Inventium/INVENTIV_web0836.jpg",
-        "img/cases/Inventium/INVENTIV_web0849.jpg",
-        "img/cases/Inventium/INVENTIV_web0868.jpg",
-        "img/cases/Inventium/INVENTIV_web0870.jpg",
-        "img/cases/Inventium/INVENTIV_web0929.jpg"
-      ]
-    },
-    {
-      "projectName": {
-        "en": "Novartis Neva",
-        "ru": "Новартис Нева"
-      },
-      "category": 1,
-      "cover": "https://via.placeholder.com/300",
-      "isVideoCover": false,
-      "data": {
-        "client": {
-          "en": "Novartis Neva",
-          "ru": "Новартис Нева"
-        },
-        "year": "",
-        "credits": []
-      },
-      "caseName": {
-        "en": "Pharmaceutical Plant Opening Ceremony",
-        "ru": "Церемония открытия фармацевтического завода"
-      },
-      "text": {
-        "en": "Novartis' first production launch In Russia - an important event not only for the company, but also for the whole country. We were responsible for the organization and full support of the event from stage construction to video recording. A unique visual choreography was created for the ceremony, where the dancers' movements were complemented by synchronized video content. The speakers made a symbolic «launch» of production. Official Part included a speech by the Governor of Saint Petersburg, the event was covered by invited journalists from key Russian tions.",
-        "ru": "Запуск первого производства Novartis в России — важное событие не только для компании, но и для всей страны. Мы отвечали за организацию и полное сопровождение мероприятия, от возведения сцены до подготовки видеоотчетов. Для церемонии была создана уникальная визуально-хореографическая постановка, где движения танцоров дополнялись синхронизированным видеоконтентом. Спикеры произвели символический «запуск» производства. Официальная часть включала выступление губернатора Санкт-Петербурга, событие освещалось приглашенными журналистами из ключевых российских изданий."
-      },
-      "pageCover": "/via.placeholder.com/300x150",
-      "photos": [
-        { "src": "/via.placeholder.com/300", "flag": "" },
-        { "src": "/via.placeholder.com/300", "flag": "big" },
-        { "src": "/via.placeholder.com/300", "flag": "big" },
-        { "src": "/via.placeholder.com/300", "flag": "" }
-      ],
-      "gallery": []
-    },
-    {
-      "projectName": {
-        "en": "Alcon",
-        "ru": "Alcon"
-      },
-      "category": 1,
-      "cover": "img/cases/Alcon_conf/1.jpg",
+      "cover": "img/cases/Alcon_conf/cover.jpg",
       "isVideoCover": false,
       "videoCover": "/epic.spb.ru/madBand/Alcon_conf.mp4",
       "data": {
@@ -445,11 +327,15 @@
         "en": "We have organized a conference for three consecutive years for Alcon’s top management, partners and representatives. It was a massive technological event that matched the status The world leader in ophthalmology. This time, the area of the site had the appearance of an interactive space with original activities, scientific and business zones, expositions  of the latest ophthalmological equipment, augmented and virtual reality zones. Multimedia took place on the main stage  - presentation with synchronization of video content, light, sound and movements of people, as well as performances of celebrity and leaders of opinion.",
         "ru": "Три года подряд мы организовывали конференцию для топ-менеджмента компании Alcon, ее партнеров и представителей. Это были масштабные технологичные события, соответствующие статусу мирового лидера в офтальмологии. На это раз территория площадки имела вид интерактивного пространства с оригинальными активностями, научными и деловыми зонами, экспозициями новейшего офтальмологического оборудования, зонами дополненной и виртуальной реальности. На главной сцене происходило мультимедийное представление с синхронизацией видеоконтента, света, звука и движений людей, а также выступления селебрити и лидеров мнений."
       },
-      "pageCover": "img/cases/Alcon_conf/1.jpg",
+      "pageCover": "img/cases/Alcon_conf/cover-video.jpg",
       "photos": [
         {
-          "src": "img/cases/Alcon_conf/2.jpg",
+          "src": "img/cases/Alcon_conf/1.jpg",
           "flag": ""
+        },
+        {
+          "src": "img/cases/Alcon_conf/2.jpg",
+          "flag": "big"
         },
         {
           "src": "img/cases/Alcon_conf/3.jpg",
@@ -457,54 +343,54 @@
         },
         {
           "src": "img/cases/Alcon_conf/4.jpg",
-          "flag": "big"
+          "flag": ""
         },
         {
           "src": "img/cases/Alcon_conf/5.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Alcon_conf/RDM_0240.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Alcon_conf/RDM_0286.jpg",
+          "src": "img/cases/Alcon_conf/6.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Alcon_conf/RDM_0314.jpg",
+          "src": "img/cases/Alcon_conf/7.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Alcon_conf/RDM_0353.jpg",
+          "src": "img/cases/Alcon_conf/8.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Alcon_conf/RDM_0380.jpg",
+          "src": "img/cases/Alcon_conf/9.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Alcon_conf/RDM_0389.jpg",
+          "src": "img/cases/Alcon_conf/10.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Alcon_conf/RDM_0743.jpg",
+          "src": "img/cases/Alcon_conf/11.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Alcon_conf/RDM_0580.jpg",
+          "src": "img/cases/Alcon_conf/12.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Alcon_conf/RDM_2299.jpg",
+          "src": "img/cases/Alcon_conf/13.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Alcon_conf/RDM_2255.jpg",
+          "src": "img/cases/Alcon_conf/14.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Alcon_conf/Панорама.jpg",
+          "src": "img/cases/Alcon_conf/15.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Alcon_conf/16.jpg",
           "flag": "big"
         }
       ],
@@ -512,11 +398,11 @@
     },
     {
       "projectName": {
-        "en": "Mind art",
-        "ru": "Mind art"
+        "en": "Midwinter night`s dream",
+        "ru": "Midwinter night`s dream"
       },
       "category": 1,
-      "cover": "img/cases/MindArt/MindArt_027.jpg",
+      "cover": "img/cases/MindArt/cover.jpg",
       "isVideoCover": false,
       "videoCover": "/epic.spb.ru/madBand/MindArt.mp4",
       "data": {
@@ -535,69 +421,161 @@
         "en": "Paper is the inspiration for the idea of the event. A simple white sheet contains real power and beauty. It’s a material for creating something new, a beginning, a starting point. We offered the guests absolutely new experience. The guests are in a space where absolutely all the sets are made of paper. This is a virgin-white-paper  city that was going to be transformed and the guests were able to take a direct part in it. At the entrance we gave all the guests out the markers that they used to color the sets and even the clothes of the animators, put their own vision into the color decision, and thoughts. The dancers of the staged show, while dancing, painted bright colors on themselves, and the guests transformed their images into fluorescent Makeup. Bright colorful interactives worked, and during the awards ceremony, employees created a real art object, which then was taken to the company office.",
         "ru": "Вдохновением к идее мероприятия стала бумага. Простой белый лист таит в себе настоящую силу и красоту. Это материал для создания чего-то нового, некое начало, отправная точка. Мы предложили гостям совершенно новый экспириенс. Гости попали в пространство, в котором абсолютно все декорации сделаны из бумаги. Это целый девственно белый бумажный город, который должен был преобразиться, а гости смогли принять в этом непосредственное участие. На входе мы раздали всем гостям маркеры, которыми они раскрашивали декорации и даже одежду аниматоров, вкладывали в цветовое решение свое собственное видение и мысли. Танцоры постановочного шоу прямо во время танца наносили на себя яркие краски, а гости преображали свои образы флуоресцентным мейкапом. Работали яркие красочные интерактивы, а во время церемонии награждения сотрудники создавали настоящий арт объект, который потом отправился в офис компании."
       },
-      "pageCover": "img/cases/MindArt/MindArt_027.jpg",
+      "pageCover": "img/cases/MindArt/cover-video.jpg",
       "photos": [
         {
-          "src": "img/cases/MindArt/MindArt_029.jpg",
+          "src": "img/cases/MindArt/1.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/MindArt/MindArt_030.jpg",
+          "src": "img/cases/MindArt/2.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/MindArt/MindArt_033.jpg",
+          "src": "img/cases/MindArt/3.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/MindArt/MindArt_046.jpg",
+          "src": "img/cases/MindArt/4.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/MindArt/MindArt_056.jpg",
+          "src": "img/cases/MindArt/5.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/MindArt/MindArt_059.jpg",
+          "src": "img/cases/MindArt/6.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/MindArt/MindArt_064.jpg",
+          "src": "img/cases/MindArt/7.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/MindArt/MindArt_070.jpg",
+          "src": "img/cases/MindArt/8.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/MindArt/MindArt_073.jpg",
-          "flag": ""
+          "src": "img/cases/MindArt/9.jpg",
+          "flag": "big"
         },
         {
-          "src": "img/cases/MindArt/MindArt_180.jpg",
+          "src": "img/cases/MindArt/10.jpg",
           "flag": ""
         }
       ],
       "gallery": [
-        "img/cases/MindArt/MindArt_145.jpg",
-        "img/cases/MindArt/MindArt_148.jpg",
-        "img/cases/MindArt/MindArt_172.jpg",
-        "img/cases/MindArt/MindArt_129.jpg",
-        "img/cases/MindArt/MindArt_193.jpg",
-        "img/cases/MindArt/MindArt_206.jpg",
-        "img/cases/MindArt/MindArt_212.jpg",
-        "img/cases/MindArt/MindArt_249.jpg",
-        "img/cases/MindArt/MindArt_268.jpg",
-        "img/cases/MindArt/MindArt_270.jpg",
-        "img/cases/MindArt/MindArt_307.jpg",
-        "img/cases/MindArt/MindArt_354.jpg",
-        "img/cases/MindArt/MindArt_371.jpg",
-        "img/cases/MindArt/MindArt_439.jpg",
-        "img/cases/MindArt/MindArt_466.jpg",
-        "img/cases/MindArt/MindArt_477.jpg",
-        "img/cases/MindArt/MindArt_571.jpg",
-        "img/cases/MindArt/MindArt_602.jpg",
-        "img/cases/MindArt/MindArt_625.jpg"
+        "img/cases/MindArt/11.jpg",
+        "img/cases/MindArt/12.jpg",
+        "img/cases/MindArt/13.jpg",
+        "img/cases/MindArt/14.jpg",
+        "img/cases/MindArt/15.jpg",
+        "img/cases/MindArt/16.jpg",
+        "img/cases/MindArt/17.jpg",
+        "img/cases/MindArt/18.jpg",
+        "img/cases/MindArt/19.jpg",
+        "img/cases/MindArt/20.jpg",
+        "img/cases/MindArt/21.jpg",
+        "img/cases/MindArt/22.jpg",
+        "img/cases/MindArt/23.jpg",
+        "img/cases/MindArt/24.jpg",
+        "img/cases/MindArt/25.jpg",
+        "img/cases/MindArt/26.jpg",
+        "img/cases/MindArt/27.jpg",
+        "img/cases/MindArt/28.jpg",
+        "img/cases/MindArt/29.jpg",
+        "img/cases/MindArt/30.jpg",
+        "img/cases/MindArt/31.jpg",
+        "img/cases/MindArt/32.jpg",
+        "img/cases/MindArt/33.jpg"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Inventium",
+        "ru": "Inventium"
+      },
+      "category": 1,
+      "cover": "img/cases/Inventium/cover.jpg",
+      "isVideoCover": true,
+      "videoCover": "/epic.spb.ru/madBand/Inventive%20Retail%20Group_PM6.mp4",
+      "data": {
+        "client": {
+          "en": "Inventive Retail Group",
+          "ru": "Inventive Retail Group"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Inventium",
+        "ru": "Inventium"
+      },
+      "text": {
+        "en": "Molecular Transformations - this was the idea behind the corporate event for Inventive Retail Group. Group of companies unites hundreds of points of sales of high-tech brands, and we have invented for them a large-scale interactive Inventium-zone with a table of elements that are «a part» of IRG projects. The theme was reflected in activities for the guests, among whom was a specially designed quest with augmented reality, with a picture of the products of all Group brands. Many photographic zones, visual effects activities kept guests from getting bored. We directed the opening of the evening and the experimental show  to be long remembered by the employees.",
+        "ru": "Трансформации на молекулярном уровне - такая идея стояла за корпоративным мероприятием для Inventive Retail Group. Группа компаний объединяет сотни точек продаж высокотехнологичных брендов, и мы придумали для них масштабную интерактивную Inventium-зону с таблицей элементов, которые входят «в состав» проектов IRG. Тема отразилась в активностях для гостей, среди которых был специально разработанный квест с дополненной реальностью, с изображением продуктов всех брендов группы компаний. Множество фотозон, активностей с визуальными спецэффектами не давали гостям скучать. Срежиссированное нами открытие вечера и экспериментальное шоу надолго остались в памяти сотрудников."
+      },
+      "pageCover": "img/cases/Inventium/cover-video.jpg",
+      "photos": [
+        {
+          "src": "img/cases/Inventium/1.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Inventium/2.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Inventium/3.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Inventium/4.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Inventium/5.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Inventium/6.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Inventium/7.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Inventium/8.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Inventium/9.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Inventium/10.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Inventium/11.jpg",
+          "flag": ""
+        }
+      ],
+      "gallery": [
+        "img/cases/Inventium/12.jpg",
+        "img/cases/Inventium/13.jpg",
+        "img/cases/Inventium/14.jpg",
+        "img/cases/Inventium/15.jpg",
+        "img/cases/Inventium/16.jpg",
+        "img/cases/Inventium/17.jpg",
+        "img/cases/Inventium/18.jpg",
+        "img/cases/Inventium/19.jpg",
+        "img/cases/Inventium/20.jpg",
+        "img/cases/Inventium/21.jpg",
+        "img/cases/Inventium/22.jpg",
+        "img/cases/Inventium/23.jpg",
+        "img/cases/Inventium/24.jpg"
       ]
     },
     {
@@ -606,8 +584,9 @@
         "ru": "Nikon"
       },
       "category": 1,
-      "cover": "https://via.placeholder.com/300",
+      "cover": "img/cases/Nikon/cover.jpg",
       "isVideoCover": false,
+      "videoCover": "video/Nikon/Nikon.mp4",
       "data": {
         "client": {
           "en": "Nikon",
@@ -624,38 +603,38 @@
         "en": "Our goal was to plan and hold an online event dedicated to opening a new Nikon house in Russia. We wrote a script, created online activity and directed a creative shoot during live broadcasting. Off-line opening ceremony, event for influensers and bloggers was held simultaneously with online room-tour in Nikon Plaza. Also broadcast interviews with renowned photographers and competitions for online audiences.",
         "ru": "Перед нами стояла задача спланировать и провести онлайн мероприятие, посвященное открытию нового дома Nikon в России. Мы написали сценарий, придумали онлайн активности и срежиссировали креативную съемку во время прямого эфира. Офлайн церемония открытия, мероприятие для инфлюэнсеров и блогеров проводилось одновременно с онлайн румтуром по Nikon plaza. В эфире брали интервью у именитых фотографов и проводили конкурсы для онлайн аудитории."
       },
-      "pageCover": "/via.placeholder.com/300x150",
+      "pageCover": "img/cases/Nikon/cover-video.jpg",
       "photos": [
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Nikon/1.jpg",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Nikon/2.jpg",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Nikon/3.jpg",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Nikon/4.jpg",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Nikon/5.jpg",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Nikon/6.jpg",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Nikon/7.jpg",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Nikon/8.jpg",
           "flag": ""
         },
         {
@@ -663,14 +642,16 @@
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Nikon/9.jpg",
           "flag": "big"
         }
       ],
       "gallery": [
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300"
+        "img/cases/Nikon/10.jpg",
+        "img/cases/Nikon/11.jpg",
+        "img/cases/Nikon/12.jpg",
+        "img/cases/Nikon/13.jpg",
+        "img/cases/Nikon/14.jpg"
       ]
     },
     {
@@ -679,7 +660,7 @@
         "ru": "Финал шахматного турнира"
       },
       "category": 1,
-      "cover": "img/cases/Chess/0059.jpg",
+      "cover": "img/cases/Chess/cover.jpg",
       "isVideoCover": true,
       "videoCover": "/epic.spb.ru/madBand/Chess.mp4",
       "data": {
@@ -698,54 +679,54 @@
         "en": "Every pawn can become a queen! Series of chess tournaments throughout Russia ended with a grand final in an unusual location «Center of Arts. Moscow». We organized the final tournament among investors and held an award ceremony, as well as an interview session for journalists. During the event, for the first time in history, a simultaneous game session of 24 players with two great grandmasters - Anatoly Karpov and Sergei Karyakin. The rest of the guests could fight a unique robot chess player. Alive chess pieces, board for individual games, buffet  in black and white colors - it seems absolutely everything has submitted to the world of chess! The event was opened by the amazing musician Nikola Melnikov. This was followed by an award ceremony for the tournament finalists.",
         "ru": "Каждая пешка может стать ферзём! Серия шахматных турниров по всей России закончился грандиозным финалом в необычной локации «Центр Искусств. Москва». Мы организовали заключительный турнир среди инвесторов и провели церемонию награждения, а также сессию интервью для журналистов.  Во время мероприятия впервые в истории состоялся сеанс одновременной игры 24 игроков с двумя великими гроссмейстерами - Анатолием Карповым и Сергеем Карякиным. Остальные гости могли сразиться в поединке с уникальным роботом-шахматистом. Ожившие шахматные фигуры, доски для индивидуальных игр, фуршет в черно-белых цветах, кажется абсолютно все подчинилось миру шахмат. Открывал мероприятие потрясающий музыкант Никола Мельников. После яркого открытия последовала церемония награждения финалистов турнира."
       },
-      "pageCover": "img/cases/Chess/0059.jpg",
+      "pageCover": "img/cases/Chess/cover-video.jpg",
       "photos": [
         {
-          "src": "img/cases/Chess/0007.jpg",
+          "src": "img/cases/Chess/1.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Chess/0011.jpg",
+          "src": "img/cases/Chess/2.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Chess/0015.jpg",
+          "src": "img/cases/Chess/3.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Chess/0018.jpg",
+          "src": "img/cases/Chess/4.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Chess/0023.jpg",
+          "src": "img/cases/Chess/5.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Chess/0026.jpg",
+          "src": "img/cases/Chess/6.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Chess/0030.jpg",
+          "src": "img/cases/Chess/7.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Chess/0033.jpg",
+          "src": "img/cases/Chess/8.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Chess/0054.jpg",
+          "src": "img/cases/Chess/9.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Chess/0210.jpg",
+          "src": "img/cases/Chess/10.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Chess/0221.jpg",
+          "src": "img/cases/Chess/11.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Chess/0069.jpg",
+          "src": "img/cases/Chess/12.jpg",
           "flag": ""
         },
         {
@@ -753,27 +734,29 @@
           "flag": ""
         },
         {
-          "src": "img/cases/Chess/0124.jpg",
+          "src": "img/cases/Chess/13.jpg",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/Chess/0067.jpg",
-        "img/cases/Chess/0077.jpg",
-        "img/cases/Chess/0090.jpg",
-        "img/cases/Chess/0123.jpg",
-        "img/cases/Chess/0125.jpg",
-        "img/cases/Chess/0184.jpg",
-        "img/cases/Chess/0237.jpg"
+        "img/cases/Chess/14.jpg",
+        "img/cases/Chess/15.jpg",
+        "img/cases/Chess/16.jpg",
+        "img/cases/Chess/17.jpg",
+        "img/cases/Chess/18.jpg",
+        "img/cases/Chess/19.jpg",
+        "img/cases/Chess/20.jpg",
+        "img/cases/Chess/21.jpg",
+        "img/cases/Chess/22.jpg"
       ]
     },
     {
       "projectName": {
-        "en": "Auction of the Gosha Kutsenko Charitable Foundation",
-        "ru": "Аукцион Благотворительного фонда Гоши Куценко"
+        "en": "Charitable auction of the Gosha Kutsenko Foundation",
+        "ru": "Благотворительный аукцион Гоши Куценко"
       },
       "category": 1,
-      "cover": "img/cases/Kutsenko/080.jpg",
+      "cover": "img/cases/Kutsenko/cover.jpg",
       "isVideoCover": false,
       "data": {
         "client": {
@@ -791,61 +774,61 @@
         "en": "We have done extensive work on search for and attract sponsors of the Charity Auction. We have fully thought out the mechanics of conducting the tender, studied the legislative basis, necessary documentation, auction lots selected. During the event, funds were raised for the Charity «Step Together» by Gosha Kutsenko foundation. The guests of the event had the opportunity to see an exhibition of the most unusual paintings, watches, jewelry, take part in the watercolor master class of a famous Georgian artist, and even learn to draw with wine.",
         "ru": "Мы провели масштабную работу по поиску и привлечению спонсоров Благотворительного аукциона. Нами полностью была продумана механика проведения торгов, изучена законодательная база, составлена необходимая документация, подобраны лоты аукциона. Во время мероприятия были собраны средства для Благотворительного фонда Гоши Куценко «Шаг вместе». Гости мероприятия имели возможность увидеть выставку самых необычных картин, часов, ювелирных украшений, принять участие в акварельном мастер-классе известного грузинского художника, и даже научиться рисовать вином."
       },
-      "pageCover": "img/cases/Kutsenko/080.jpg",
+      "pageCover": "img/cases/Kutsenko/cover.jpg",
       "photos": [
         {
-          "src": "img/cases/Kutsenko/004.jpg",
+          "src": "img/cases/Kutsenko/1.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Kutsenko/006.jpg",
+          "src": "img/cases/Kutsenko/2.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Kutsenko/009.jpg",
+          "src": "img/cases/Kutsenko/3.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Kutsenko/013.jpg",
+          "src": "img/cases/Kutsenko/4.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Kutsenko/019.jpg",
+          "src": "img/cases/Kutsenko/5.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Kutsenko/021.jpg",
+          "src": "img/cases/Kutsenko/6.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Kutsenko/023.jpg",
+          "src": "img/cases/Kutsenko/7.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Kutsenko/037.jpg",
+          "src": "img/cases/Kutsenko/8.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Kutsenko/042.jpg",
+          "src": "img/cases/Kutsenko/9.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Kutsenko/045.jpg",
+          "src": "img/cases/Kutsenko/10.jpg",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/Kutsenko/050.jpg",
-        "img/cases/Kutsenko/053.jpg",
-        "img/cases/Kutsenko/064.jpg",
-        "img/cases/Kutsenko/003.jpg",
-        "img/cases/Kutsenko/085.jpg",
-        "img/cases/Kutsenko/088.jpg",
-        "img/cases/Kutsenko/090.jpg",
-        "img/cases/Kutsenko/092.jpg",
-        "img/cases/Kutsenko/104.jpg",
-        "img/cases/Kutsenko/255.jpg",
-        "img/cases/Kutsenko/430.jpg"
+        "img/cases/Kutsenko/11.jpg",
+        "img/cases/Kutsenko/12.jpg",
+        "img/cases/Kutsenko/13.jpg",
+        "img/cases/Kutsenko/14.jpg",
+        "img/cases/Kutsenko/15.jpg",
+        "img/cases/Kutsenko/16.jpg",
+        "img/cases/Kutsenko/17.jpg",
+        "img/cases/Kutsenko/18.jpg",
+        "img/cases/Kutsenko/19.jpg",
+        "img/cases/Kutsenko/20.jpg",
+        "img/cases/Kutsenko/21.jpg"
       ]
     },
     {
@@ -854,7 +837,7 @@
         "ru": "Зона Bud 66 на фестивале уличной культуры Faces&Laces"
       },
       "category": 1,
-      "cover": "img/cases/Faces&Laces/image1.jpeg",
+      "cover": "img/cases/Faces&Laces/cover.jpeg",
       "isVideoCover": true,
       "videoCover": "/epic.spb.ru/madBand/Bud_66_Faces.mp4",
       "data": {
@@ -873,18 +856,18 @@
         "en": "For the Street Culture Festival Faces&Laces was required to create a Bud 66 area that would reflect style, attract guests and fit the overall context of the event.  We solved the problem by working out the details of the bar and clothing store Community 66,  where you could buy a Russian-American collaboration The Ziq & Yoni brand with Bud 66. We have also organized the construction of a store and bar area, all technical parts and staff work.",
         "ru": "Для фестиваля уличной культуры Faces&Laces требовалось создать зону Bud 66, которая бы отражала стиль, привлекала гостей и вписывалась в общий контекст события. Мы решили задачу, продумав в деталях бар и магазин одежды Community 66, в котором можно было купить коллаборацию российско-американского бренда Ziq & Yoni c Bud 66. Также мы организовали строительство зоны магазина и бара, всю техническую часть и работу персонала."
       },
-      "pageCover": "img/cases/Faces&Laces/image1.jpeg",
+      "pageCover": "img/cases/Faces&Laces/cover.jpeg",
       "photos": [
         {
           "src": "",
           "flag": ""
         },
         {
-          "src": "img/cases/Faces&Laces/image1.jpeg",
+          "src": "img/cases/Faces&Laces/1.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Faces&Laces/BUD_2_2019_05_24.jpg",
+          "src": "img/cases/Faces&Laces/2.jpeg",
           "flag": "big"
         },
         {
@@ -896,11 +879,11 @@
           "flag": ""
         },
         {
-          "src": "img/cases/Faces&Laces/BUD_4_2019_05_24.jpeg",
+          "src": "img/cases/Faces&Laces/3.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Faces&Laces/BUD_4_2019_05_29.jpg",
+          "src": "img/cases/Faces&Laces/4.jpeg",
           "flag": "big"
         },
         {
@@ -916,7 +899,7 @@
         "ru": "Ice ice party"
       },
       "category": 1,
-      "cover": "img/cases/IceIce/0512_BCS_001.jpg",
+      "cover": "img/cases/IceIce/cover.jpg",
       "isVideoCover": false,
       "data": {
         "client": {
@@ -934,58 +917,59 @@
         "en": "Description: How to surprise VIP clients of a financial company? Offer them to do with their hands what they hardly ever did! At the event we created the atmosphere of a real alpine chalet with trees, soft pleats and mulled wine near a real fireplace. The center of the party was a huge ice logo, which the guests made by themselves during the event. The fun rate was raised by an ice bar, where they served burning-tasted cocktails in ice-made shot-glasses, which could be prepared with the help of special technologies. Guests boiled mulled wine, created gingerbread houses and snowballs. A spectacular nitrogen show literally blew up the atmosphere of the evening, and a cover band only amplified that effect.",
         "ru": "Чем удивить вип-клиентов финансовой компании? Предложить им своими руками сделать то, что они вряд ли когда-либо делали! На мероприятии мы создали атмосферу настоящего зимнего альпийского шале с ёлками, мягкими пледами и глинтвейном у настоящего камина. Центром вечеринки стал огромный логотип изо льда, который гости вытачивали своими руками в течение мероприятия. Градус веселья поднимал ледяной бар, где подавали жгучие коктейли из ледяных рюмок, молекулярные коктейли, которые можно было приготовить с помощью специальных технологий. Гости варили глинтвейн, создавали пряничные домики и сноуболлы. Эффектное азотное шоу в буквальном смысле взорвало атмосферу вечера, а кавер-группа только усилила этот эффект."
       },
-      "pageCover": "img/cases/IceIce/0512_BCS_001.jpg",
+      "pageCover": "img/cases/IceIce/cover.jpg",
       "photos": [
         {
-          "src": "img/cases/IceIce/0512_BCS_002.jpg",
+          "src": "img/cases/IceIce/1.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/IceIce/0512_BCS_006.jpg",
+          "src": "img/cases/IceIce/2.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/IceIce/0512_BCS_008.jpg",
+          "src": "img/cases/IceIce/3.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/IceIce/0512_BCS_009.jpg",
+          "src": "img/cases/IceIce/4.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/IceIce/0512_BCS_010.jpg",
+          "src": "img/cases/IceIce/5.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/IceIce/0512_BCS_018.jpg",
+          "src": "img/cases/IceIce/6.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/IceIce/0512_BCS_019.jpg",
+          "src": "img/cases/IceIce/7.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/IceIce/0512_BCS_021.jpg",
+          "src": "img/cases/IceIce/8.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/IceIce/0512_BCS_026.jpg",
+          "src": "img/cases/IceIce/9.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/IceIce/0512_BCS_027.jpg",
+          "src": "img/cases/IceIce/10.jpg",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/IceIce/0512_BCS_029.jpg",
-        "img/cases/IceIce/0512_BCS_035.jpg",
-        "img/cases/IceIce/0512_BCS_040.jpg",
-        "img/cases/IceIce/0512_BCS_043.jpg",
-        "img/cases/IceIce/0512_BCS_051.jpg",
-        "img/cases/IceIce/0512_BCS_058.jpg",
-        "img/cases/IceIce/0512_ICEPARTY_031.jpg",
-        "img/cases/IceIce/0512_ICEPARTY_061.jpg"
+        "img/cases/IceIce/11.jpg",
+        "img/cases/IceIce/12.jpg",
+        "img/cases/IceIce/13.jpg",
+        "img/cases/IceIce/14.jpg",
+        "img/cases/IceIce/15.jpg",
+        "img/cases/IceIce/16.jpg",
+        "img/cases/IceIce/17.jpg",
+        "img/cases/IceIce/18.jpg",
+        "img/cases/IceIce/19.jpg"
       ]
     },
     {
@@ -994,7 +978,7 @@
         "ru": "Онлайн Новый год «Flashback»"
       },
       "category": 1,
-      "cover": "img/cases/Flashback/Online_0005.jpg",
+      "cover": "img/cases/Flashback/cover.jpg",
       "isVideoCover": false,
       "data": {
         "client": {
@@ -1012,38 +996,38 @@
         "en": "We mixed in a blender humor, curiosity, multimedia, all the brightest trends and impressions, dipped in crazy popesthetic sauce, and got the perfect online cocktail called FLASHBACK! At the New Year’s Online Party, the whole country, all the branches fought to become the most erudite team, playing Quiz, participated in humor competitions, spoke in chat, exchanged congratulations.We asked the viewers to choose their own future development of the script using online voting during the viewing. Right during the broadcast, the guests voted for the presenter costume, the set, which was changed directly on live TV.",
         "ru": "Мы смешали в блендере безудержный юмор, курьезы, мультимедийность, все самые яркие тренды и впечатления, полили соусом из безумной попэстетики, и получили идеальный коктейль онлайна под названием FLASHBACK! На новогодней онлайн вечеринке вся страна, все филиалы боролись за звание самой эрудированной команды, играя в Квиз, участвовали в юмористических конкурсах, общались в чате, обменивались поздравлениями. Мы предложили  зрителям самим выбрать дальнейшее развитие сценария с помощью онлайн голосования во время просмотра. Прямо во время трансляции гости голосовали за костюм ведущего, декорации, которые менялись прямо в прямом эфире. "
       },
-      "pageCover": "img/cases/Flashback/Online_0005.jpg",
+      "pageCover": "img/cases/Flashback/cover.jpg",
       "photos": [
         {
-          "src": "img/cases/Flashback/Online_0007.jpg",
+          "src": "img/cases/Flashback/1.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Flashback/Online_0019.jpg",
+          "src": "img/cases/Flashback/2.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Flashback/Online_0024.jpg",
+          "src": "img/cases/Flashback/3.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Flashback/Online_0027.jpg",
+          "src": "img/cases/Flashback/4.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Flashback/Online_0029.jpg",
+          "src": "img/cases/Flashback/5.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Flashback/Online_0030.jpg",
+          "src": "img/cases/Flashback/6.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Flashback/Online_0036.jpg",
+          "src": "img/cases/Flashback/7.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Flashback/Online_0039.jpg",
+          "src": "img/cases/Flashback/8.jpg",
           "flag": ""
         },
         {
@@ -1051,19 +1035,19 @@
           "flag": ""
         },
         {
-          "src": "img/cases/Flashback/Online_0047.jpg",
+          "src": "img/cases/Flashback/9.jpg",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/Flashback/Online_0051.jpg",
-        "img/cases/Flashback/Online_0069.jpg",
-        "img/cases/Flashback/Online_0075.jpg",
-        "img/cases/Flashback/Online_0082.jpg",
-        "img/cases/Flashback/Online_0084.jpg",
-        "img/cases/Flashback/Online_0094.jpg",
-        "img/cases/Flashback/Online_0101.jpg",
-        "img/cases/Flashback/Online_0134.jpg"
+        "img/cases/Flashback/10.jpg",
+        "img/cases/Flashback/11.jpg",
+        "img/cases/Flashback/12.jpg",
+        "img/cases/Flashback/13.jpg",
+        "img/cases/Flashback/14.jpg",
+        "img/cases/Flashback/15.jpg",
+        "img/cases/Flashback/16.jpg",
+        "img/cases/Flashback/17.jpg"
       ]
     },
     {
@@ -1072,7 +1056,7 @@
         "ru": "Фотовыставка «Земля. Гармония подобных»"
       },
       "category": 1,
-      "cover": "img/cases/Kharaz/Vistavka_iphone-2.jpg",
+      "cover": "img/cases/Kharaz/cover.jpg",
       "isVideoCover": false,
       "videoCover": "/epic.spb.ru/madBand/find.mp4",
       "data": {
@@ -1091,55 +1075,66 @@
         "en": "Description: Nadezhda Kharaz - Moscow photographer, works in genre of female portrait and staged photo. We have organized a photo exhibition of the works of the «Earth. Harmony of similar» cycle in the most unusual and suitable place - among tropical plants in the closed conservatory of the Botanical Garden. The room of the greenhouse allowed the visitors of the exhibition to descent into the oasis of life in the center of Moscow, and to touch deep meanings embedded in every photo.",
         "ru": "Надежда Хараз - московский фотограф, работает в жанре женский портрет и постановочная фотография. Мы организовали фотовыставку работ цикла «Земля. Гармония подобных» в самом необычном и подходящем месте – среди тропических растений в закрытой оранжерее ботанического сада. Пространство оранжереи позволило посетителям выставки погрузиться в оазис жизни в центре Москвы, и через работы автора прикоснуться к глубоким смыслам, заложенным в каждую фотографию."
       },
-      "pageCover": "img/cases/Kharaz/Vistavka_iphone-2.jpg",
+      "pageCover": "img/cases/Kharaz/cover-video.jpg",
       "photos": [
         {
-          "src": "img/cases/Kharaz/Vistavka_iphone-24.jpg",
+          "src": "img/cases/Kharaz/1.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Kharaz/Vistavka_iphone-124.jpg",
+          "src": "img/cases/Kharaz/2.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Kharaz/Vistavka_iphone-133.jpg",
+          "src": "img/cases/Kharaz/3.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Kharaz/Vistavka_Papushnikov-14.jpg",
+          "src": "img/cases/Kharaz/4.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Kharaz/Vistavka_Papushnikov-18.jpg",
+          "src": "img/cases/Kharaz/5.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Kharaz/Vistavka_Papushnikov-57.jpg",
+          "src": "img/cases/Kharaz/6.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Kharaz/Vistavka_Papushnikov-113.jpg",
+          "src": "img/cases/Kharaz/7.jpg",
           "flag": "big"
         },
         {
-          "src": "img/cases/Kharaz/Vistavka_Papushnikov-138.jpg",
+          "src": "img/cases/Kharaz/8.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Kharaz/Vistavka_Papushnikov-156.jpg",
+          "src": "img/cases/Kharaz/9.jpg",
           "flag": ""
         },
         {
-          "src": "img/cases/Kharaz/Vistavka_Papushnikov-197.jpg",
+          "src": "img/cases/Kharaz/10.jpg",
           "flag": "big"
         }
       ],
       "gallery": [
-        "img/cases/Kharaz/Vistavka_Papushnikov-200.jpg",
-        "img/cases/Kharaz/Vistavka_Papushnikov-201.jpg",
-        "img/cases/Kharaz/Vistavka_Papushnikov-263.jpg",
-        "img/cases/Kharaz/Vistavka_Rustam-71.jpg",
-        "img/cases/Kharaz/Vistavka_Rustam-121.jpg"
+        "img/cases/Kharaz/11.jpg",
+        "img/cases/Kharaz/12.jpg",
+        "img/cases/Kharaz/13.jpg",
+        "img/cases/Kharaz/14.jpg",
+        "img/cases/Kharaz/15.jpg",
+        "img/cases/Kharaz/16.jpg",
+        "img/cases/Kharaz/17.jpg",
+        "img/cases/Kharaz/18.jpg",
+        "img/cases/Kharaz/19.jpg",
+        "img/cases/Kharaz/20.jpg",
+        "img/cases/Kharaz/21.jpg",
+        "img/cases/Kharaz/22.jpg",
+        "img/cases/Kharaz/23.jpg",
+        "img/cases/Kharaz/24.jpg",
+        "img/cases/Kharaz/25.jpg",
+        "img/cases/Kharaz/26.jpg"
       ]
     },
     {
@@ -1148,7 +1143,7 @@
         "ru": "Онлайн игра «Почта Деда Мороза»"
       },
       "category": 1,
-      "cover": "https://via.placeholder.com/300",
+      "cover": "img/cases/Santa/cover.png",
       "isVideoCover": false,
       "data": {
         "client": {
@@ -1166,54 +1161,111 @@
         "en": "The first digital New Year performance  for children online has become the most unusual and an unforgettable holiday! With the help of a computer game, we showed children how the modern Santa Claus Post Office works, full of incredible digital tricks and magical transformations. On a great mission, helping Santa Claus to find all the lost letters, children had a virtual tour around the Santa Claus Residence, visited the virtual Post Office, took a mega slide ride down the hill at the Elf House, picked up a package at the Gift Factory, drank cocoa at the Tea House.",
         "ru": "Первая диджитал ёлка в онлайн режиме стала самым необычным и незабываемым праздником! С помощью компьютерной игры мы показали детям как устроена современная Почта Деда Мороза, полная невероятных диджитал технологий и волшебных превращений. Выполняя великую миссию, помогая Деду Морозу найти все потерянные письма, ребята совершили виртуальную экскурсию в Резиденцию Деда Мороза, побывали на виртуальной Почте, прокатились с мега горки в Домике Эльфов, подобрали упаковку на Фабрике подарков, пили какао в Чайном домике."
       },
-      "pageCover": "/via.placeholder.com/300x150",
+      "pageCover": "img/cases/Santa/cover.png",
       "photos": [
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Santa/1.png",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Santa/2.png",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Santa/3.png",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Santa/4.png",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Santa/5.png",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Santa/6.png",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Santa/7.png",
           "flag": "big"
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Santa/8.png",
           "flag": ""
         },
         {
-          "src": "",
+          "src": "img/cases/Santa/9.png",
           "flag": ""
         },
         {
-          "src": "/via.placeholder.com/300",
+          "src": "img/cases/Santa/10.png",
           "flag": "big"
         }
       ],
       "gallery": [
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300"
+        "img/cases/Santa/11.png",
+        "img/cases/Santa/12.png",
+        "img/cases/Santa/13.png",
+        "img/cases/Santa/14.png",
+        "img/cases/Santa/15.png",
+        "img/cases/Santa/16.png",
+        "img/cases/Santa/17.png",
+        "img/cases/Santa/18.png",
+        "img/cases/Santa/19.png",
+        "img/cases/Santa/20.png",
+        "img/cases/Santa/21.png",
+        "img/cases/Santa/22.png",
+        "img/cases/Santa/23.png",
+        "img/cases/Santa/24.png",
+        "img/cases/Santa/25.png",
+        "img/cases/Santa/26.png",
+        "img/cases/Santa/27.png",
+        "img/cases/Santa/28.png",
+        "img/cases/Santa/29.png",
+        "img/cases/Santa/30.png",
+        "img/cases/Santa/31.png"
       ]
+    },
+    {
+      "projectName": {
+        "en": "Novartis Plant Opening Ceremony",
+        "ru": "Церемония открытия завода Novartis"
+      },
+      "category": 1,
+      "cover": "img/cases/NovartisNeva/cover.jpg",
+      "isVideoCover": true,
+      "data": {
+        "client": {
+          "en": "Novartis Neva",
+          "ru": "Новартис Нева"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Pharmaceutical Plant Opening Ceremony",
+        "ru": "Церемония открытия фармацевтического завода"
+      },
+      "text": {
+        "en": "Novartis' first production launch In Russia - an important event not only for the company, but also for the whole country. We were responsible for the organization and full support of the event from stage construction to video recording. A unique visual choreography was created for the ceremony, where the dancers' movements were complemented by synchronized video content. The speakers made a symbolic «launch» of production. Official Part included a speech by the Governor of Saint Petersburg, the event was covered by invited journalists from key Russian tions.",
+        "ru": "Запуск первого производства Novartis в России — важное событие не только для компании, но и для всей страны. Мы отвечали за организацию и полное сопровождение мероприятия, от возведения сцены до подготовки видеоотчетов. Для церемонии была создана уникальная визуально-хореографическая постановка, где движения танцоров дополнялись синхронизированным видеоконтентом. Спикеры произвели символический «запуск» производства. Официальная часть включала выступление губернатора Санкт-Петербурга, событие освещалось приглашенными журналистами из ключевых российских изданий."
+      },
+      "pageCover": "img/cases/NovartisNeva/cover.jpg",
+      "photos": [
+        { "src": "img/cases/NovartisNeva/1.jpg", "flag": "" },
+        { "src": "img/cases/NovartisNeva/2.jpg", "flag": "big" },
+        { "src": "img/cases/NovartisNeva/3.jpg", "flag": "big" },
+        { "src": "img/cases/NovartisNeva/4.jpg", "flag": "" },
+        { "src": "img/cases/NovartisNeva/5.jpg", "flag": "" },
+        { "src": "img/cases/NovartisNeva/6.jpg", "flag": "big" },
+        { "src": "img/cases/NovartisNeva/7.jpg", "flag": "big" },
+        { "src": "img/cases/NovartisNeva/8.jpg", "flag": "" },
+        { "src": "img/cases/NovartisNeva/9.jpg", "flag": "" },
+        { "src": "img/cases/NovartisNeva/10.jpg", "flag": "big" }
+      ],
+      "gallery": []
     },
     {
       "projectName": {
@@ -1367,7 +1419,7 @@
         "ru": "Фильм о производстве"
       },
       "category": 4,
-      "cover": "img/cases/NovartisNeva/Zavod_Hr_116.jpg",
+      "cover": "https://via.placeholder.com/300",
       "isVideoCover": false,
       "data": {
         "client": {
@@ -1385,46 +1437,46 @@
         "en": "Novartis Plant «Novartis Neva» - Novartis' first production site in Russia. In the film we told the story of the opening of the factory and demonstrated the highest level of automation, strict quality control. The video also expressed the global mission of the company, which is behind each packaging.",
         "ru": "Завод «Новартис Нева» — первая производственная площадка Novartis в России. В фильме мы рассказали историю открытия завода и продемонстрировали высочайший уровень  автоматизации производства, строгий контроль качества. Ролик также выразил глобальную миссию компании, которая стоит за каждой сходящей с конвейера упаковкой."
       },
-      "pageCover": "img/cases/NovartisNeva/Zavod_Hr_116.jpg",
+      "pageCover": "/via.placeholder.com/300",
       "photos": [
         {
-          "src": "img/cases/NovartisNeva/Zavod_Hr_172.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/NovartisNeva/Zavod_Hr_177.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/NovartisNeva/Zavod_Hr_178.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/NovartisNeva/Zavod_Hr_184.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/NovartisNeva/Zavod_Hr_200.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/NovartisNeva/Zavod_Hr_209.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/NovartisNeva/Zavod_Hr_213.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         },
         {
-          "src": "img/cases/NovartisNeva/Zavod_Hr_216.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/NovartisNeva/Zavod_Hr_281.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": ""
         },
         {
-          "src": "img/cases/NovartisNeva/Zavod_Hr_307.jpg",
+          "src": "/via.placeholder.com/300",
           "flag": "big"
         }
       ],

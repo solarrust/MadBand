@@ -1,5 +1,9 @@
 <script>
-  import EmblaCarousel from "embla-carousel";
+  import { Swiper, SwiperSlide } from "swiper/svelte";
+  import { Navigation, A11y } from "swiper";
+  import "swiper/css";
+  import "swiper/css/navigation";
+  import "swiper/css/a11y";
 
   import { locale } from "../../services/i18n";
   import { onMount } from "svelte";
@@ -105,21 +109,6 @@
         classCreator(c);
       });
     });
-
-    if (document.querySelector(".embla")) {
-      const emblaNode = document.querySelector(".embla");
-      const options = {
-        align: "start",
-        containScroll: "trimSnaps",
-        hitBreakpoints: {
-          980: {
-            align: "center",
-          },
-        },
-      };
-
-      let embla = EmblaCarousel(emblaNode, options);
-    }
   });
 </script>
 
@@ -200,17 +189,22 @@
   </section>
 
   {#if project.gallery.length}
-    <div class="case__gallery gallery embla" data-slider>
-      <div class="embla__container">
+    <div class="case__gallery">
+      <Swiper
+        modules={[Navigation, A11y]}
+        navigation
+        spaceBetween={35}
+        slidesPerView="auto"
+        freeMode={true}
+        on:slideChange={() => console.log("slide change")}
+        on:swiper={(e) => console.log(e.detail[0])}
+      >
         {#each project.gallery as photo}
-          <img
-            src="/{photo}"
-            alt=""
-            class="gallery__photo embla__slide"
-            loading="lazy"
-          />
+          <SwiperSlide>
+            <img src="/{photo}" alt="" loading="lazy" class="gallery__photo" />
+          </SwiperSlide>
         {/each}
-      </div>
+      </Swiper>
     </div>
   {/if}
 
@@ -390,11 +384,28 @@
   }
 
   .case__gallery {
+    height: 500px;
     margin: 200px 0;
   }
 
+  .case__gallery :global(.swiper) {
+    height: 100%;
+  }
+
+  .case__gallery :global(.swiper-slide) {
+    flex-shrink: 1;
+  }
+
+  .case__gallery-container {
+    /*height: 350px;*/
+  }
+
   .gallery__photo {
-    max-width: 530px;
+    /*flex-basis: 25%;*/
+    width: auto;
+    /*height: 350px;*/
+    height: 100%;
+    /*height: 350px;*/
     cursor: none;
   }
 
