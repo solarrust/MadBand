@@ -97,7 +97,8 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    max-width: 1280px;
+    max-width: 90vw;
+    max-height: 50vh;
     z-index: -1;
     opacity: 0;
     border-radius: 15em;
@@ -105,11 +106,11 @@
     overflow: hidden;
   }
 
-  .cases__explore-img:nth-child(odd) {
+  .cases__explore-item:nth-child(odd) .cases__explore-img {
     transform: translate(-50%, -50%) rotate(-5deg);
   }
 
-  .cases__explore-img:nth-child(even) {
+  .cases__explore-item:nth-child(even) .cases__explore-img {
     transform: translate(-50%, -50%) rotate(5deg);
   }
 
@@ -121,5 +122,8 @@
   }
 
   @media (max-width: 680px) {
+    .cases__explore-list {
+      font-size: 28px;
+    }
   }
 </style>

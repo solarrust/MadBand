@@ -49,6 +49,7 @@
         }
         if (currentArr[i] && currentArr[i].src !== "") {
           img = document.createElement("img");
+          img.loading = "lazy";
           img.src = `/${currentArr[i].src}`;
 
           if (currentArr[i].flag !== "") {
@@ -86,7 +87,6 @@
   }
 
   function handleClick(e) {
-    console.log("click");
     if (e.target.paused) {
       this.play();
       this.parentNode.classList.add("_playing");
@@ -164,15 +164,17 @@
                   {/each}
                 </li>
               {:else if value.hasOwnProperty("ru")}
-                <li class="case__aside-item _grow">
-                  <span class="case__aside-label">{key}</span>
-                  {value[$locale]}
-                </li>
-              {:else}
-                <li class="case__aside-item">
-                  <span class="case__aside-label">{key}</span>
-                  {value}
-                </li>
+                {#if key === "client" && $locale === "ru"}
+                  <li class="case__aside-item">
+                    <span class="case__aside-label">Клиент</span>
+                    {value[$locale]}
+                  </li>
+                {:else}
+                  <li class="case__aside-item">
+                    <span class="case__aside-label">Client</span>
+                    {value[$locale]}
+                  </li>
+                {/if}
               {/if}
             {/if}
           {/each}
@@ -193,15 +195,24 @@
       <Swiper
         modules={[Navigation, A11y]}
         navigation
-        spaceBetween={35}
+        centeredSlides
+        loop
+        loopedSlides={2}
+        spaceBetween={20}
         slidesPerView="auto"
-        freeMode={true}
-        on:slideChange={() => console.log("slide change")}
-        on:swiper={(e) => console.log(e.detail[0])}
+        freeMode
+        breakpoints={{
+          "680": {
+            spaceBetween: 30,
+          },
+          "1280": {
+            spaceBetween: 35,
+          },
+        }}
       >
         {#each project.gallery as photo}
           <SwiperSlide>
-            <img src="/{photo}" alt="" loading="lazy" class="gallery__photo" />
+            <img src="/{photo}" class="gallery__photo" />
           </SwiperSlide>
         {/each}
       </Swiper>
@@ -409,6 +420,31 @@
     cursor: none;
   }
 
+  :global(.swiper-button-next::after, .swiper-button-prev::after) {
+    display: none;
+  }
+
+  :global(.swiper-button-next, .swiper-button-prev) {
+    border: none;
+    width: 40px !important;
+    height: 40px !important;
+    cursor: none;
+    background: url("../svg/slider_arrow.svg") no-repeat center / contain;
+  }
+
+  :global(.swiper-button-next:hover, .swiper-button-prev:hover) {
+    cursor: none;
+  }
+
+  :global(.swiper-button-next) {
+    right: 70px !important;
+  }
+
+  :global(.swiper-button-prev) {
+    left: 70px !important;
+    transform: rotate(180deg);
+  }
+
   @media (max-width: 1280px) {
     .case {
       padding-top: 145px;
@@ -459,6 +495,11 @@
 
     :global(.photos__row) {
       grid-column-gap: 20px;
+    }
+
+    .case__gallery {
+      height: 450px;
+      margin: 140px 0;
     }
   }
   @media (max-width: 680px) {
@@ -514,6 +555,10 @@
 
     :global(.photos__row:not(:last-child)) {
       margin-bottom: 40px;
+    }
+    .case__gallery {
+      height: 320px;
+      margin: 100px 0;
     }
   }
 </style>

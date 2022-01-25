@@ -1,9 +1,30 @@
 <script>
   import { locale, t } from "../../services/i18n";
   import { Link, Router } from "svelte-routing";
+  import { onMount } from "svelte";
 
   export let projects;
   let current = "_horizontal";
+
+  function transform() {
+    const items = Array.from(document.querySelectorAll(".work"));
+    let count = 0;
+
+    items.forEach((item) => {
+      if (item.classList.contains("_horizontal")) {
+        if (count % 2) {
+          item.querySelector(".work__img").style.transform = "rotate(3deg)";
+        } else {
+          item.querySelector(".work__img").style.transform = "rotate(-3deg)";
+        }
+        count++;
+      }
+    });
+  }
+
+  onMount(() => {
+    window.addEventListener("load", transform);
+  });
 </script>
 
 <Router>
@@ -22,7 +43,7 @@
             {/if}
           </div>
           <div class="work__img">
-            <img src={project.cover} alt="" />
+            <img src={project.cover} alt="" loading="lazy" />
           </div>
         </div>
       </Link>
@@ -34,7 +55,8 @@
   .works__list {
     display: grid;
     grid-template-columns: repeat(4, calc(25% - 15px));
-    grid-auto-rows: minmax(45vh, max-content);
+    grid-auto-rows: minmax(350px, max-content);
+    grid-auto-flow: row dense;
     gap: 40px 20px;
     grid-gap: 40px 20px;
     margin: 30px auto;
@@ -59,7 +81,9 @@
 
   :global(._horizontal) .work__img {
     width: 100%;
+    max-width: 550px;
     height: 100%;
+    max-height: 250px;
   }
 
   .work__img img {
@@ -86,17 +110,25 @@
     grid-column: span 2;
   }
 
-  :global(.works__item:nth-child(2n + 1):not(._horizontal) .work__img) {
+  :global(.works__item:not(._horizontal):nth-of-type(2n + 1) .work__img) {
     transform: rotate(6deg);
   }
 
-  :global(.works__item:nth-child(2n + 2):not(._horizontal) .work__img) {
+  :global(.works__item:not(._horizontal):nth-of-type(2n + 2) .work__img) {
     transform: rotate(0);
   }
 
-  :global(.works__item:nth-child(4n):not(._horizontal) .work__img) {
+  :global(.works__item:not(._horizontal):nth-of-type(4n) .work__img) {
     transform: rotate(-6deg);
   }
+
+  /*:global(.works__item._horizontal:nth-of-type(odd) .work__img) {*/
+  /*  transform: rotate(-3deg);*/
+  /*}*/
+
+  /*:global(.works__item._horizontal:nth-of-type(even) .work__img) {*/
+  /*  transform: rotate(3deg);*/
+  /*}*/
 
   .work__cover {
     position: relative;
@@ -106,7 +138,8 @@
   .work__name {
     position: absolute;
     top: 0;
-    left: -10px;
+    left: -20px;
+    z-index: 1;
     color: var(--oriole);
     font-size: 10px;
     font-weight: 500;
@@ -149,15 +182,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      /*width: 100%;*/
     }
 
     :global(.works__item._horizontal .work__cover) {
-      width: 100%;
+      /*width: 100%;*/
     }
 
     .work__cover img {
       width: 100%;
+    }
+
+    .work__img {
+      width: 208px;
     }
 
     :global(.works__item._horizontal .work__cover img) {
@@ -179,7 +216,12 @@
     }
 
     .work__cover {
-      width: 100%;
+      /*width: 100%;*/
+    }
+
+    .work__img {
+      width: 128px;
+      height: 180px;
     }
   }
 </style>
