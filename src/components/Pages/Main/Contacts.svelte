@@ -4,7 +4,7 @@
   import { onMount } from "svelte";
   import Lang from "./Lang.svelte";
   import Lines from "../../Patterns/Lines.svelte";
-  const FORMSPARK_ACTION_URL = "https://submit-form.com/sjKlADd1";
+  const FORMSPARK_ACTION_URL = "https://submit-form.com/zH0XbYXF";
   let name = "",
     phone = "";
   let submitting = false;
