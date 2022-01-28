@@ -38,7 +38,7 @@
         "ru": "Онлайн балет \"Щелкунчик. Reboot\""
       },
       "category": 1,
-      "cover": "img/cases/Reboot/cover.jpg",
+      "cover": "img/cases/Reboot/cover_prev.jpg",
       "isVideoCover": true,
       "videoCover": "/epic.spb.ru/madBand/NUTCRACKER_BKS_mp4.mp4",
       "data": {
@@ -120,7 +120,7 @@
         "ru": "Презентация пива Bud 66"
       },
       "category": 1,
-      "cover": "img/cases/Bud66/cover.jpg",
+      "cover": "img/cases/Bud66/cover_prev.jpg",
       "isVideoCover": false,
       "videoCover": "/epic.spb.ru/madBand/BUD66.mp4",
       "data": {
@@ -207,11 +207,11 @@
     },
     {
       "projectName": {
-        "en": "Midwinter night dream",
-        "ru": "Midwinter night dream"
+        "en": "Midwinter night`s dream",
+        "ru": "Midwinter night`s dream"
       },
       "category": 1,
-      "cover": "img/cases/Midwinter/cover.jpg",
+      "cover": "img/cases/Midwinter/cover_prev.jpg",
       "isVideoCover": false,
       "videoCover": "/epic.spb.ru/madBand/video.mp4",
       "data": {
@@ -223,8 +223,8 @@
         "credits": []
       },
       "caseName": {
-        "en": "Midwinter night dream",
-        "ru": "Midwinter night dream"
+        "en": "Midwinter night`s dream",
+        "ru": "Midwinter night`s dream"
       },
       "text": {
         "en": "Have you ever had a feeling that everything that happens around you seems like a dream? And you don’t know, if it is time to wake up or you’re already back in reality. For a New Year’s corporate event  we created a two-storey fantasy space with sparkly décor and a big roller right in the middle of the set. Guests were greeted by characters from Midwinter night, created by Shakespeare. Supernatural creatures and flock of friendly fairies, whispering in Elvish, surrounded by guests and called to their non-existent world. Ice was the dress code, but not the atmosphere: and everybody danced to the ground with the headliner and the cover bands and dived into the dry pool and rolled.",
@@ -304,11 +304,11 @@
     },
     {
       "projectName": {
-        "en": "Annual conference for company partners",
-        "ru": "Ежегодная конференция для партнеров компании"
+        "en": "Alcon Partners Conference",
+        "ru": "Конференция партнеров Alcon"
       },
       "category": 1,
-      "cover": "img/cases/Alcon_conf/cover.jpg",
+      "cover": "img/cases/Alcon_conf/cover_prev.jpg",
       "isVideoCover": false,
       "videoCover": "/epic.spb.ru/madBand/Alcon_conf.mp4",
       "data": {
@@ -320,8 +320,8 @@
         "credits": []
       },
       "caseName": {
-        "en": "Annual conference for company partners",
-        "ru": "Ежегодная конференция для партнеров компании"
+        "en": "Alcon Partners Conference",
+        "ru": "Конференция партнеров Alcon"
       },
       "text": {
         "en": "We have organized a conference for three consecutive years for Alcon’s top management, partners and representatives. It was a massive technological event that matched the status The world leader in ophthalmology. This time, the area of the site had the appearance of an interactive space with original activities, scientific and business zones, expositions  of the latest ophthalmological equipment, augmented and virtual reality zones. Multimedia took place on the main stage  - presentation with synchronization of video content, light, sound and movements of people, as well as performances of celebrity and leaders of opinion.",
@@ -398,11 +398,11 @@
     },
     {
       "projectName": {
-        "en": "Midwinter night`s dream",
-        "ru": "Midwinter night`s dream"
+        "en": "Mind art",
+        "ru": "Mind art"
       },
       "category": 1,
-      "cover": "img/cases/MindArt/cover.jpg",
+      "cover": "img/cases/MindArt/cover_prev.jpg",
       "isVideoCover": false,
       "videoCover": "/epic.spb.ru/madBand/MindArt.mp4",
       "data": {
@@ -414,8 +414,8 @@
         "credits": []
       },
       "caseName": {
-        "en": "Midwinter night`s dream",
-        "ru": "Midwinter night`s dream"
+        "en": "Mind art",
+        "ru": "Mind art"
       },
       "text": {
         "en": "Paper is the inspiration for the idea of the event. A simple white sheet contains real power and beauty. It’s a material for creating something new, a beginning, a starting point. We offered the guests absolutely new experience. The guests are in a space where absolutely all the sets are made of paper. This is a virgin-white-paper  city that was going to be transformed and the guests were able to take a direct part in it. At the entrance we gave all the guests out the markers that they used to color the sets and even the clothes of the animators, put their own vision into the color decision, and thoughts. The dancers of the staged show, while dancing, painted bright colors on themselves, and the guests transformed their images into fluorescent Makeup. Bright colorful interactives worked, and during the awards ceremony, employees created a real art object, which then was taken to the company office.",
@@ -496,7 +496,7 @@
         "ru": "Inventium"
       },
       "category": 1,
-      "cover": "img/cases/Inventium/cover.jpg",
+      "cover": "img/cases/Inventium/cover_prev.jpg",
       "isVideoCover": true,
       "videoCover": "/epic.spb.ru/madBand/Inventive%20Retail%20Group_PM6.mp4",
       "data": {
@@ -580,13 +580,13 @@
     },
     {
       "projectName": {
-        "en": "Nikon Plaza Online Launch",
-        "ru": "Онлайн открытие Nikon Plaza"
+        "en": "Opening of Nikon Plaza",
+        "ru": "Открытие Nikon Plaza"
       },
       "category": 1,
-      "cover": "img/cases/Nikon/cover.jpg",
+      "cover": "img/cases/Nikon/cover_prev.jpg",
       "isVideoCover": false,
-      "videoCover": "video/Nikon/Nikon.mp4",
+      "videoCover": "/epic.spb.ru/madBand/Nikon.mp4",
       "data": {
         "client": {
           "en": "Nikon",
@@ -596,8 +596,8 @@
         "credits": []
       },
       "caseName": {
-        "en": "Nikon Plaza Online Launch",
-        "ru": "Онлайн открытие Nikon Plaza"
+        "en": "Opening of Nikon Plaza",
+        "ru": "Открытие Nikon Plaza"
       },
       "text": {
         "en": "Our goal was to plan and hold an online event dedicated to opening a new Nikon house in Russia. We wrote a script, created online activity and directed a creative shoot during live broadcasting. Off-line opening ceremony, event for influensers and bloggers was held simultaneously with online room-tour in Nikon Plaza. Also broadcast interviews with renowned photographers and competitions for online audiences.",
@@ -660,7 +660,7 @@
         "ru": "Финал шахматного турнира"
       },
       "category": 1,
-      "cover": "img/cases/Chess/cover.jpg",
+      "cover": "img/cases/Chess/cover_prev.jpg",
       "isVideoCover": true,
       "videoCover": "/epic.spb.ru/madBand/Chess.mp4",
       "data": {
@@ -752,11 +752,11 @@
     },
     {
       "projectName": {
-        "en": "Charitable auction of the Gosha Kutsenko Foundation",
+        "en": "Gosha Kutsenko's charity auction",
         "ru": "Благотворительный аукцион Гоши Куценко"
       },
       "category": 1,
-      "cover": "img/cases/Kutsenko/cover.jpg",
+      "cover": "img/cases/Kutsenko/cover_prev.jpg",
       "isVideoCover": false,
       "data": {
         "client": {
@@ -767,7 +767,7 @@
         "credits": []
       },
       "caseName": {
-        "en": "Charitable auction of the Gosha Kutsenko Foundation",
+        "en": "Gosha Kutsenko's charity auction",
         "ru": "Благотворительный аукцион Гоши Куценко"
       },
       "text": {
@@ -837,7 +837,7 @@
         "ru": "Зона Bud 66 на фестивале уличной культуры Faces&Laces"
       },
       "category": 1,
-      "cover": "img/cases/Faces&Laces/cover.jpeg",
+      "cover": "img/cases/Faces&Laces/cover_prev.jpeg",
       "isVideoCover": true,
       "videoCover": "/epic.spb.ru/madBand/Bud_66_Faces.mp4",
       "data": {
@@ -899,7 +899,7 @@
         "ru": "Ice ice party"
       },
       "category": 1,
-      "cover": "img/cases/IceIce/cover.jpg",
+      "cover": "img/cases/IceIce/cover_prev.jpg",
       "isVideoCover": false,
       "data": {
         "client": {
@@ -978,7 +978,7 @@
         "ru": "Онлайн Новый год «Flashback»"
       },
       "category": 1,
-      "cover": "img/cases/Flashback/cover.jpg",
+      "cover": "img/cases/Flashback/cover_prev.jpg",
       "isVideoCover": false,
       "data": {
         "client": {
@@ -1050,100 +1050,14 @@
         "img/cases/Flashback/17.jpg"
       ]
     },
-    {
-      "projectName": {
-        "en": "Photo exhibition «Earth. Harmony of similar»",
-        "ru": "Фотовыставка «Земля. Гармония подобных»"
-      },
-      "category": 1,
-      "cover": "img/cases/Kharaz/cover.jpg",
-      "isVideoCover": false,
-      "videoCover": "/epic.spb.ru/madBand/find.mp4",
-      "data": {
-        "client": {
-          "en": "Photographer Nadezhda Kharaz",
-          "ru": "Фотограф Надежда Хараз"
-        },
-        "year": "",
-        "credits": []
-      },
-      "caseName": {
-        "en": "Photo exhibition «Earth. Harmony of similar»",
-        "ru": "Фотовыставка «Земля. Гармония подобных»"
-      },
-      "text": {
-        "en": "Description: Nadezhda Kharaz - Moscow photographer, works in genre of female portrait and staged photo. We have organized a photo exhibition of the works of the «Earth. Harmony of similar» cycle in the most unusual and suitable place - among tropical plants in the closed conservatory of the Botanical Garden. The room of the greenhouse allowed the visitors of the exhibition to descent into the oasis of life in the center of Moscow, and to touch deep meanings embedded in every photo.",
-        "ru": "Надежда Хараз - московский фотограф, работает в жанре женский портрет и постановочная фотография. Мы организовали фотовыставку работ цикла «Земля. Гармония подобных» в самом необычном и подходящем месте – среди тропических растений в закрытой оранжерее ботанического сада. Пространство оранжереи позволило посетителям выставки погрузиться в оазис жизни в центре Москвы, и через работы автора прикоснуться к глубоким смыслам, заложенным в каждую фотографию."
-      },
-      "pageCover": "img/cases/Kharaz/cover-video.jpg",
-      "photos": [
-        {
-          "src": "img/cases/Kharaz/1.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Kharaz/2.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Kharaz/3.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Kharaz/4.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Kharaz/5.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Kharaz/6.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Kharaz/7.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Kharaz/8.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Kharaz/9.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Kharaz/10.jpg",
-          "flag": "big"
-        }
-      ],
-      "gallery": [
-        "img/cases/Kharaz/11.jpg",
-        "img/cases/Kharaz/12.jpg",
-        "img/cases/Kharaz/13.jpg",
-        "img/cases/Kharaz/14.jpg",
-        "img/cases/Kharaz/15.jpg",
-        "img/cases/Kharaz/16.jpg",
-        "img/cases/Kharaz/17.jpg",
-        "img/cases/Kharaz/18.jpg",
-        "img/cases/Kharaz/19.jpg",
-        "img/cases/Kharaz/20.jpg",
-        "img/cases/Kharaz/21.jpg",
-        "img/cases/Kharaz/22.jpg",
-        "img/cases/Kharaz/23.jpg",
-        "img/cases/Kharaz/24.jpg",
-        "img/cases/Kharaz/25.jpg",
-        "img/cases/Kharaz/26.jpg"
-      ]
-    },
+
     {
       "projectName": {
         "en": "Online game «Santa Claus Post»",
         "ru": "Онлайн игра «Почта Деда Мороза»"
       },
       "category": 1,
-      "cover": "img/cases/Santa/cover.png",
+      "cover": "img/cases/Santa/cover_prev.png",
       "isVideoCover": false,
       "data": {
         "client": {
@@ -1230,12 +1144,12 @@
     },
     {
       "projectName": {
-        "en": "Pharmaceutical Plant Opening Ceremony",
-        "ru": "Церемония открытия фармацевтического завода"
+        "en": "Novartis plant opening ceremony",
+        "ru": "Церемония открытия завода Novartis"
       },
       "category": 1,
-      "cover": "img/cases/NovartisNeva/cover.jpg",
-      "isVideoCover": true,
+      "cover": "img/cases/NovartisNeva/cover_prev.jpg",
+      "isVideoCover": false,
       "data": {
         "client": {
           "en": "Novartis Neva",
@@ -1245,8 +1159,8 @@
         "credits": []
       },
       "caseName": {
-        "en": "Pharmaceutical Plant Opening Ceremony",
-        "ru": "Церемония открытия фармацевтического завода"
+        "en": "Novartis plant opening ceremony",
+        "ru": "Церемония открытия завода Novartis"
       },
       "text": {
         "en": "Novartis' first production launch In Russia - an important event not only for the company, but also for the whole country. We were responsible for the organization and full support of the event from stage construction to video recording. A unique visual choreography was created for the ceremony, where the dancers' movements were complemented by synchronized video content. The speakers made a symbolic «launch» of production. Official Part included a speech by the Governor of Saint Petersburg, the event was covered by invited journalists from key Russian tions.",
@@ -1269,12 +1183,100 @@
     },
     {
       "projectName": {
-        "en": "Corporate Ad Sandoz",
+        "en": "Photo exhibition «Earth. Harmony of similar»",
+        "ru": "Фотовыставка «Земля. Гармония подобных»"
+      },
+      "category": 1,
+      "cover": "img/cases/Kharaz/cover_prev.jpg",
+      "isVideoCover": true,
+      "videoCover": "/epic.spb.ru/madBand/find.mp4",
+      "data": {
+        "client": {
+          "en": "Photographer Nadezhda Kharaz",
+          "ru": "Фотограф Надежда Хараз"
+        },
+        "year": "",
+        "credits": []
+      },
+      "caseName": {
+        "en": "Photo exhibition «Earth. Harmony of similar»",
+        "ru": "Фотовыставка «Земля. Гармония подобных»"
+      },
+      "text": {
+        "en": "Description: Nadezhda Kharaz - Moscow photographer, works in genre of female portrait and staged photo. We have organized a photo exhibition of the works of the «Earth. Harmony of similar» cycle in the most unusual and suitable place - among tropical plants in the closed conservatory of the Botanical Garden. The room of the greenhouse allowed the visitors of the exhibition to descent into the oasis of life in the center of Moscow, and to touch deep meanings embedded in every photo.",
+        "ru": "Надежда Хараз - московский фотограф, работает в жанре женский портрет и постановочная фотография. Мы организовали фотовыставку работ цикла «Земля. Гармония подобных» в самом необычном и подходящем месте – среди тропических растений в закрытой оранжерее ботанического сада. Пространство оранжереи позволило посетителям выставки погрузиться в оазис жизни в центре Москвы, и через работы автора прикоснуться к глубоким смыслам, заложенным в каждую фотографию."
+      },
+      "pageCover": "img/cases/Kharaz/cover-video.jpg",
+      "photos": [
+        {
+          "src": "img/cases/Kharaz/1.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Kharaz/2.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Kharaz/3.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Kharaz/4.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Kharaz/5.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Kharaz/6.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Kharaz/7.jpg",
+          "flag": "big"
+        },
+        {
+          "src": "img/cases/Kharaz/8.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Kharaz/9.jpg",
+          "flag": ""
+        },
+        {
+          "src": "img/cases/Kharaz/10.jpg",
+          "flag": "big"
+        }
+      ],
+      "gallery": [
+        "img/cases/Kharaz/11.jpg",
+        "img/cases/Kharaz/12.jpg",
+        "img/cases/Kharaz/13.jpg",
+        "img/cases/Kharaz/14.jpg",
+        "img/cases/Kharaz/15.jpg",
+        "img/cases/Kharaz/16.jpg",
+        "img/cases/Kharaz/17.jpg",
+        "img/cases/Kharaz/18.jpg",
+        "img/cases/Kharaz/19.jpg",
+        "img/cases/Kharaz/20.jpg",
+        "img/cases/Kharaz/21.jpg",
+        "img/cases/Kharaz/22.jpg",
+        "img/cases/Kharaz/23.jpg",
+        "img/cases/Kharaz/24.jpg",
+        "img/cases/Kharaz/25.jpg",
+        "img/cases/Kharaz/26.jpg"
+      ]
+    },
+    {
+      "projectName": {
+        "en": "Sandoz corporate video",
         "ru": "Корпоративный ролик Sandoz"
       },
       "category": 4,
-      "cover": "https://via.placeholder.com/300",
-      "isVideoCover": false,
+      "cover": "img/cases/Sandoz/cover_prev.png",
+      "isVideoCover": true,
+      "videoCover": "/epic.spb.ru/madBand/Sandoz.mp4",
       "data": {
         "client": {
           "en": "Sandoz",
@@ -1284,61 +1286,16 @@
         "credits": []
       },
       "caseName": {
-        "en": "Corporate Ad Sandoz",
+        "en": "Sandoz corporate video",
         "ru": "Корпоративный ролик Sandoz"
       },
       "text": {
         "en": "German leader in production of bioanalogues and generics conducts a lot of research and develops a lot of therapeutic areas. The video reveals these aspects and demonstrates that the company is not just creating drugs, but striving to make medicine more accessible in order to prolong people’s lives.",
         "ru": "Немецкий лидер производства биоаналогов и дженериковых препаратов проводит обширную научную деятельность и развивает множество терапевтических областей. Ролик раскрывает эти аспекты и демонстрирует — компания не просто создает препараты, но стремится делать медицину доступнее, чтобы продлить жизни людей."
       },
-      "pageCover": "/via.placeholder.com/300x150",
-      "photos": [
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        }
-      ],
-      "gallery": [
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300"
-      ]
+      "pageCover": "img/cases/Sandoz/cover.png",
+      "photos": [],
+      "gallery": []
     },
     {
       "projectName": {
@@ -1346,8 +1303,9 @@
         "ru": "Ролики Alcon People"
       },
       "category": 4,
-      "cover": "https://via.placeholder.com/300",
+      "cover": "img/cases/Alcon_people/cover_prev.png",
       "isVideoCover": false,
+      "videoCover": "/epic.spb.ru/madBand/DAILIES-TOTAL1.mp4",
       "data": {
         "client": {
           "en": "Alcon",
@@ -1364,63 +1322,19 @@
         "en": "The videos were shot for the company’s social networks. The video revealed images of typical Alcon lens users, their personal stories and why they trust the brand, as well as situations, where they need contact lenses.",
         "ru": "Видеоролики были сняты для социальных сетей компании. Видео раскрыли образы типичных пользователей линз Alcon, их личные истории и то, почему они доверяют бренду, а также ситуации, в которых контактные линзы им необходимы."
       },
-      "pageCover": "/via.placeholder.com/300x150",
-      "photos": [
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        }
-      ],
-      "gallery": [
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300"
-      ]
+      "pageCover": "img/cases/Alcon_people/cover.png",
+      "photos": [],
+      "gallery": []
     },
     {
       "projectName": {
-        "en": "Production Film",
-        "ru": "Фильм о производстве"
+        "en": "A film about Novartis production",
+        "ru": "Фильм о производстве Novartis"
       },
       "category": 4,
-      "cover": "https://via.placeholder.com/300",
+      "cover": "img/cases/Novartis/cover_prev.jpg",
       "isVideoCover": false,
+      "videoCover": "/epic.spb.ru/madBand/Novartis.mp4",
       "data": {
         "client": {
           "en": "Novartis",
@@ -1430,66 +1344,26 @@
         "credits": []
       },
       "caseName": {
-        "en": "Production Film",
-        "ru": "Фильм о производстве"
+        "en": "A film about Novartis production",
+        "ru": "Фильм о производстве Novartis"
       },
       "text": {
         "en": "Novartis Plant «Novartis Neva» - Novartis' first production site in Russia. In the film we told the story of the opening of the factory and demonstrated the highest level of automation, strict quality control. The video also expressed the global mission of the company, which is behind each packaging.",
         "ru": "Завод «Новартис Нева» — первая производственная площадка Novartis в России. В фильме мы рассказали историю открытия завода и продемонстрировали высочайший уровень  автоматизации производства, строгий контроль качества. Ролик также выразил глобальную миссию компании, которая стоит за каждой сходящей с конвейера упаковкой."
       },
-      "pageCover": "/via.placeholder.com/300",
-      "photos": [
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        }
-      ],
+      "pageCover": "img/cases/Novartis/cover.jpg",
+      "photos": [],
       "gallery": []
     },
     {
       "projectName": {
-        "en": "Video Content for Conferences «See More» and «See the Future»",
-        "ru": "Видеоконтент для Конференций «Видеть больше» и «Видеть будущее»"
+        "en": "Video Content for Alcon Conferences",
+        "ru": "Видеоконтент для конференций Alcon"
       },
       "category": 4,
-      "cover": "https://via.placeholder.com/300",
+      "cover": "img/cases/Alcon/cover_prev.jpg",
       "isVideoCover": false,
+      "videoCover": "/epic.spb.ru/madBand/Alcon.mp4",
       "data": {
         "client": {
           "en": "Alcon",
@@ -1499,70 +1373,26 @@
         "credits": []
       },
       "caseName": {
-        "en": "Video Content for Conferences «See More» and «See the Future»",
-        "ru": "Видеоконтент для Конференций «Видеть больше» и «Видеть будущее»"
+        "en": "Video Content for Alcon Conferences",
+        "ru": "Видеоконтент для конференций Alcon"
       },
       "text": {
         "en": "Developed for three conferences, the author’s media content of the highest quality for broadcasting on the main screen. It's demonstration was synchronized with the lighting design and the play on the stage.",
         "ru": "Для трех конференций был разработан авторский медиаконтент высочайшего качества для трансляции на главном экране. Его демонстрация была синхронизирована со световым оформлением и событиями на сцене."
       },
-      "pageCover": "/via.placeholder.com/300x150",
-      "photos": [
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        }
-      ],
-      "gallery": [
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300"
-      ]
+      "pageCover": "img/cases/Alcon/cover.jpg",
+      "photos": [],
+      "gallery": []
     },
     {
       "projectName": {
-        "en": "Concept Cafe Video",
-        "ru": "Ролик для концептуального кафе"
+        "en": "Video for the Gills",
+        "ru": "Ролик для Gills"
       },
       "category": 4,
-      "cover": "https://via.placeholder.com/300",
+      "cover": "img/cases/Gills/cover_prev.png",
       "isVideoCover": false,
+      "videoCover": "/epic.spb.ru/madBand/Gills.mp4",
       "data": {
         "client": {
           "en": "Gills",
@@ -1572,70 +1402,26 @@
         "credits": []
       },
       "caseName": {
-        "en": "Concept Cafe Video",
-        "ru": "Ролик для концептуального кафе"
+        "en": "Video for the Gills",
+        "ru": "Ролик для Gills"
       },
       "text": {
         "en": "The work for the conceptual Japanese café depicts how one bright gastronomic impression can be remembered forever and eclipse all previous experiences.",
         "ru": "Работа для концептуального японского кафе изображает, как одно яркое гастрономическое впечатление может остаться в памяти навсегда и затмить все предыдущие переживания."
       },
-      "pageCover": "/via.placeholder.com/300x150",
-      "photos": [
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        }
-      ],
-      "gallery": [
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300"
-      ]
+      "pageCover": "img/cases/Gills/cover.png",
+      "photos": [],
+      "gallery": []
     },
     {
       "projectName": {
-        "en": "Motorcycle Shop Video",
-        "ru": "Ролик для магазина мототехники"
+        "en": "Video for the Lord Of Moto",
+        "ru": "Ролик для Lord Of Moto"
       },
       "category": 4,
-      "cover": "https://via.placeholder.com/300",
-      "isVideoCover": false,
+      "cover": "img/cases/Lord-of-Moto/cover_prev.png",
+      "isVideoCover": true,
+      "videoCover": "/epic.spb.ru/madBand/Lord-Of-Moto.mp4",
       "data": {
         "client": {
           "en": "Lord Of Moto",
@@ -1645,61 +1431,16 @@
         "credits": []
       },
       "caseName": {
-        "en": "Motorcycle Shop Video",
-        "ru": "Ролик для магазина мототехники"
+        "en": "Video for the Lord Of Moto",
+        "ru": "Ролик для Lord Of Moto"
       },
       "text": {
         "en": "Lord of Moto is a shop of custom and classical motorcycles where they come not just for the bike, but for the true style and inspiration. In the video, we transferred the power and freedom you feel from the first time you press the handle of the gas.",
         "ru": "Lord of Moto — это магазин кастомных и классических мотоциклов, куда приходят не просто за байком, но за подлинным стилем и вдохновением. В ролике мы передали ту мощь и свободу, которые испытываешь с первого нажатия на ручку газа."
       },
-      "pageCover": "/via.placeholder.com/300x150",
-      "photos": [
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": ""
-        },
-        {
-          "src": "",
-          "flag": ""
-        },
-        {
-          "src": "/via.placeholder.com/300",
-          "flag": "big"
-        }
-      ],
-      "gallery": [
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300",
-        "/via.placeholder.com/300"
-      ]
+      "pageCover": "img/cases/Lord-of-Moto/cover.png",
+      "photos": [],
+      "gallery": []
     }
   ]
 }

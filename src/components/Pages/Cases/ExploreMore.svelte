@@ -25,7 +25,12 @@
               {project.projectName.en}
             {/if}
           </Link>
-          <img class="cases__explore-img" src="/{project.cover}" alt="" />
+          <img
+            class="cases__explore-img"
+            src="/{project.cover}"
+            alt=""
+            loading="lazy"
+          />
         </li>
       {/each}
     </ul>

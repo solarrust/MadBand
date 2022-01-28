@@ -96,6 +96,10 @@
     }
   }
 
+  function videoHeightFinder(video) {
+    video.height = video.offsetHeight;
+  }
+
   onMount(() => {
     window.scrollTo(0, 0);
 
@@ -109,19 +113,23 @@
         classCreator(c);
       });
     });
+
+    if (document.querySelector("video")) {
+      videoHeightFinder(document.querySelector("video"));
+    }
   });
 </script>
 
 <div class="case-page _{bkg}">
   <section class="case">
-    {#if $locale === "ru" && project.data.client.ru !== ""}
-      <h2 class="case__client">{project.data.client.ru}</h2>
+    {#if project.data.client.ru !== ""}
+      <h2 class="case__client">{project.data.client[$locale]}</h2>
     {:else}
       <h2 class="case__client">{project.data.client.en}</h2>
     {/if}
 
-    {#if $locale === "ru" && project.caseName.ru !== ""}
-      <h1 class="case__name">{project.caseName.ru}</h1>
+    {#if project.caseName.ru !== ""}
+      <h1 class="case__name">{project.caseName[$locale]}</h1>
     {:else}
       <h1 class="case__name">{project.caseName.en}</h1>
     {/if}
@@ -139,13 +147,14 @@
       {#if project.videoCover && project.videoCover !== ""}
         <div class="case__video-wrapper">
           <video
-            src="/{project.videoCover}"
             class="case__video-cover"
             preload="auto"
             poster="/{project.pageCover}"
             data-hover-trigger
             on:click={handleClick}
-          />
+          >
+            <source src="/{project.videoCover}" />
+          </video>
         </div>
       {:else}
         <img src="/{project.pageCover}" alt="" />
@@ -212,7 +221,7 @@
       >
         {#each project.gallery as photo}
           <SwiperSlide>
-            <img src="/{photo}" class="gallery__photo" />
+            <img src="/{photo}" class="gallery__photo" loading="lazy" />
           </SwiperSlide>
         {/each}
       </Swiper>
@@ -299,9 +308,13 @@
     /*left: 0;*/
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    /*height: auto;*/
+    object-fit: cover;
     background-color: black;
+  }
+
+  .case__video-cover[poster] {
+    object-fit: cover;
   }
 
   .case__category {

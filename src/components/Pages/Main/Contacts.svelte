@@ -35,6 +35,13 @@
         document.querySelector("form.contact-form").classList.remove("_sent");
       }
     }
+
+    isSent = true;
+    if (isSent) {
+      document.querySelector("form.contact-form").classList.add("_sent");
+    } else {
+      document.querySelector("form.contact-form").classList.remove("_sent");
+    }
   }
 
   onMount(() => {
@@ -141,8 +148,10 @@
     <div class="contacts__block _right">
       <span class="contacts__big-text">{@html $t("mainPage.connect")}</span>
       <form
+        method="post"
         on:submit|preventDefault={onSubmit}
         class="contacts__form contact-form"
+        action="/epic.spb.ru/madBand/emailSender.php"
       >
         <input type="hidden" name="_append" value="false" />
         <label class="contact-form__label">
@@ -167,6 +176,7 @@
           />
         </label>
         <button
+          id="form-submit"
           class="contact-form__button"
           type="submit"
           disabled={submitting}

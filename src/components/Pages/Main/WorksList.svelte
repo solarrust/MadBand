@@ -43,7 +43,7 @@
             {/if}
           </div>
           <div class="work__img">
-            <img src={project.cover} alt="" loading="lazy" />
+            <img src={project.cover} alt={project.projectName[$locale]} />
           </div>
         </div>
       </Link>
@@ -77,6 +77,7 @@
     height: 288px;
     border-radius: 15em;
     overflow: hidden;
+    transition: 0.2s;
   }
 
   :global(._horizontal) .work__img {
