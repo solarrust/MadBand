@@ -1,1 +1,3 @@
-/*   /index.html   200
+/*   /index.html
+/cases   /index.html
+/cases/:id   /cases/:id/index.html
