@@ -6,7 +6,6 @@ import { terser } from "rollup-plugin-terser";
 import css from "rollup-plugin-css-only";
 import json from "@rollup/plugin-json";
 import svg from "rollup-plugin-svg-import";
-import image from "svelte-image";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -50,13 +49,7 @@ export default {
         hydratable: true,
         dev: !production,
       },
-      preprocess: {
-        ...image({
-          tagName: "img",
-          publicDir: "./public",
-          processFolders: ["img/cases/"],
-        }),
-      },
+      preprocess: {},
     }),
     // we'll extract any component CSS out into
     // a separate file - better for performance
