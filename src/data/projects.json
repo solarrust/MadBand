@@ -40,7 +40,7 @@
       "category": 1,
       "cover": "img/cases/Reboot/cover_prev.jpg",
       "isVideoCover": true,
-      "videoCover": "/epic.spb.ru/madBand/NUTCRACKER_BKS_mp4.mp4",
+      "videoCover": "video/Reboot/NUTCRACKER_BKS_mp4.mp4",
       "data": {
         "client": {
           "en": "BCS World Investment",
@@ -122,7 +122,7 @@
       "category": 1,
       "cover": "img/cases/Bud66/cover_prev.jpg",
       "isVideoCover": false,
-      "videoCover": "/epic.spb.ru/madBand/BUD66.mp4",
+      "videoCover": "video/Bud66/BUD66.mp4",
       "data": {
         "client": {
           "en": "AB InBev Efes",
@@ -213,7 +213,7 @@
       "category": 1,
       "cover": "img/cases/Midwinter/cover_prev.jpg",
       "isVideoCover": false,
-      "videoCover": "/epic.spb.ru/madBand/video.mp4",
+      "videoCover": "video/Midwinter/video.mp4",
       "data": {
         "client": {
           "en": "OTKRITIE",
@@ -310,7 +310,7 @@
       "category": 1,
       "cover": "img/cases/Alcon_conf/cover_prev.jpg",
       "isVideoCover": false,
-      "videoCover": "/epic.spb.ru/madBand/Alcon_conf.mp4",
+      "videoCover": "video/Alcon_conf/Alcon_conf.mp4",
       "data": {
         "client": {
           "en": "Alcon",
@@ -404,7 +404,7 @@
       "category": 1,
       "cover": "img/cases/MindArt/cover_prev.jpg",
       "isVideoCover": false,
-      "videoCover": "/epic.spb.ru/madBand/MindArt.mp4",
+      "videoCover": "video/MindArt/MindArt.mp4",
       "data": {
         "client": {
           "en": "OTKRITIE",
@@ -498,7 +498,7 @@
       "category": 1,
       "cover": "img/cases/Inventium/cover_prev.jpg",
       "isVideoCover": true,
-      "videoCover": "/epic.spb.ru/madBand/Inventive%20Retail%20Group_PM6.mp4",
+      "videoCover": "video/Inventium/Inventive%20Retail%20Group_PM6.mp4",
       "data": {
         "client": {
           "en": "Inventive Retail Group",
@@ -586,7 +586,7 @@
       "category": 1,
       "cover": "img/cases/Nikon/cover_prev.jpg",
       "isVideoCover": false,
-      "videoCover": "/epic.spb.ru/madBand/Nikon.mp4",
+      "videoCover": "video/Nikon/Nikon.mp4",
       "data": {
         "client": {
           "en": "Nikon",
@@ -662,7 +662,7 @@
       "category": 1,
       "cover": "img/cases/Chess/cover_prev.jpg",
       "isVideoCover": true,
-      "videoCover": "/epic.spb.ru/madBand/Chess.mp4",
+      "videoCover": "video/Chess/Chess.mp4",
       "data": {
         "client": {
           "en": "OTKRITIE",
@@ -839,7 +839,7 @@
       "category": 1,
       "cover": "img/cases/Faces&Laces/cover_prev.jpeg",
       "isVideoCover": true,
-      "videoCover": "/epic.spb.ru/madBand/Bud_66_Faces.mp4",
+      "videoCover": "video/Faces&Laces/Bud_66_Faces.mp4",
       "data": {
         "client": {
           "en": "AB InBev Efes",
@@ -1189,7 +1189,7 @@
       "category": 1,
       "cover": "img/cases/Kharaz/cover_prev.jpg",
       "isVideoCover": true,
-      "videoCover": "/epic.spb.ru/madBand/find.mp4",
+      "videoCover": "video/Kharaz/find.mp4",
       "data": {
         "client": {
           "en": "Photographer Nadezhda Kharaz",
@@ -1276,7 +1276,7 @@
       "category": 4,
       "cover": "img/cases/Sandoz/cover_prev.png",
       "isVideoCover": true,
-      "videoCover": "/epic.spb.ru/madBand/Sandoz.mp4",
+      "videoCover": "video/Sandoz/Sandoz.mp4",
       "data": {
         "client": {
           "en": "Sandoz",
@@ -1305,7 +1305,7 @@
       "category": 4,
       "cover": "img/cases/Alcon_people/cover_prev.png",
       "isVideoCover": false,
-      "videoCover": "/epic.spb.ru/madBand/DAILIES-TOTAL1.mp4",
+      "videoCover": "video/Alcon_people/DAILIES-TOTAL1.mp4",
       "data": {
         "client": {
           "en": "Alcon",
@@ -1334,7 +1334,7 @@
       "category": 4,
       "cover": "img/cases/Novartis/cover_prev.jpg",
       "isVideoCover": false,
-      "videoCover": "/epic.spb.ru/madBand/Novartis.mp4",
+      "videoCover": "video/Novartis/Novartis.mp4",
       "data": {
         "client": {
           "en": "Novartis",
@@ -1363,7 +1363,7 @@
       "category": 4,
       "cover": "img/cases/Alcon/cover_prev.jpg",
       "isVideoCover": false,
-      "videoCover": "/epic.spb.ru/madBand/Alcon.mp4",
+      "videoCover": "video/Alcon/Alcon.mp4",
       "data": {
         "client": {
           "en": "Alcon",
@@ -1392,7 +1392,7 @@
       "category": 4,
       "cover": "img/cases/Gills/cover_prev.png",
       "isVideoCover": false,
-      "videoCover": "/epic.spb.ru/madBand/Gills.mp4",
+      "videoCover": "video/Gills/Gills.mp4",
       "data": {
         "client": {
           "en": "Gills",
@@ -1421,7 +1421,7 @@
       "category": 4,
       "cover": "img/cases/Lord-of-Moto/cover_prev.png",
       "isVideoCover": true,
-      "videoCover": "/epic.spb.ru/madBand/Lord-Of-Moto.mp4",
+      "videoCover": "video/Lord-of-Moto/Lord-Of-Moto.mp4",
       "data": {
         "client": {
           "en": "Lord Of Moto",
