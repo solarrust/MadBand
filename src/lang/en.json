@@ -45,23 +45,23 @@
     "stuff": [
       {
         "img": "img/stuff/1.png",
-        "name": "Dmitry Zakharov",
-        "position": "Co-founder"
+        "name": "Dima Zakharov",
+        "position": "CEO, Managing Partner"
       },
       {
         "img": "img/stuff/2.png",
-        "name": "Ivan Ivanov",
-        "position": "Event-manager"
+        "name": "Yulia Gracheva",
+        "position": "Director of Client Services, Partner"
       },
       {
         "img": "img/stuff/3.png",
-        "name": "Elena Kazarinova",
-        "position": "Brand manager"
+        "name": "Max Cubbe",
+        "position": "Creative Director"
       },
       {
         "img": "img/stuff/4.png",
-        "name": "Dmitry Zakharov",
-        "position": "Co-founder"
+        "name": "Tonya Evstigneeva",
+        "position": "Event Director"
       }
     ],
     "text": "Our team knows how to understand the product and the customer's task at the expert level, this is the only way to guarantee the high-quality implementation of the project. MadBand combines creativity with responsibility and open communication. We think beyond the scope of the brief and strive to do more than the client expects.",

@@ -45,23 +45,23 @@
     "stuff": [
       {
         "img": "img/stuff/1.png",
-        "name": "Дмитрий Захаров",
-        "position": "Совладелец"
+        "name": "Дима Захаров",
+        "position": "CEO, Управляющий партнер"
       },
       {
         "img": "img/stuff/2.png",
-        "name": "Иван Иванов",
-        "position": "Event-менеджер"
+        "name": "Юля Грачева",
+        "position": "Директор клиентского сервиса, партнер"
       },
       {
         "img": "img/stuff/3.png",
-        "name": "Елена Казаринова",
-        "position": "Brand менеджер"
+        "name": "Макс Куббе",
+        "position": "Креативный директор"
       },
       {
         "img": "img/stuff/4.png",
-        "name": "Дмитрий Захаров",
-        "position": "Совладелец"
+        "name": "Тоня Евстигнеева",
+        "position": "Ивент-директор"
       }
     ],
     "text": "",

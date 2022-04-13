@@ -40,10 +40,10 @@
     on:slideChange={() => console.log("slide change")}
     on:swiper={(e) => console.log(e.detail[0])}
   >
-    {#each localeStuff[$locale] as person}
+    {#each localeStuff[$locale] as person, i}
       <SwiperSlide>
         <Person
-          className={"person__slide"}
+          className="person__slide _{i}"
           name={person.name}
           position={person.position}
           img={person.img}

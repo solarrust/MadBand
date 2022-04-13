@@ -21,10 +21,15 @@
     flex-direction: column;
     align-items: flex-end;
     /*flex: auto 0 0;*/
-    width: 355px;
+    min-width: 355px;
     margin: 0 auto;
     /*margin-right: 40px;*/
     font-size: var(--s-text-size);
+  }
+
+  .person._1,
+  .person._3 {
+    color: var(--oriole);
   }
 
   .person:not(:last-child) {
@@ -35,15 +40,8 @@
     max-width: 100%;
   }
 
-  .person:nth-child(odd) {
-    color: var(--green);
-  }
-
-  .person:nth-child(even) {
-    color: var(--oriole);
-  }
-
   .person__text {
+    max-width: 50%;
     margin-top: 15px;
   }
 
