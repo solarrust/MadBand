@@ -1,7 +1,7 @@
 <script>
   import { onMount, onDestroy, beforeUpdate, afterUpdate } from "svelte";
   import { locale, t } from "../../services/i18n";
-  import { Link, Router } from "svelte-routing";
+  import { Link, Router } from "svelte-navigator";
   import WorkList from "./WorksList.svelte";
 
   import data from "../../../data/projects.json";
@@ -9,6 +9,7 @@
   import en from "../../../lang/en.json";
   import AllWorksBlock from "./AllWorksBlock.svelte";
   import WorksPattern from "../../Patterns/WorksPattern.svelte";
+  import { strokeTextCreator, strokeTextUpdate } from "./Main.svelte";
 
   let projects = data.projects;
   let worksList = {
@@ -17,6 +18,12 @@
   };
 
   let animation;
+
+  afterUpdate(() => {
+    document
+      .querySelectorAll("[data-stroke-text]:not(.ticker__box)")
+      .forEach((el) => strokeTextUpdate(el.textContent, el));
+  });
 </script>
 
 <Router>
@@ -144,8 +151,13 @@
     .works {
       padding-bottom: 40px;
     }
+
     .works__text {
       width: 100%;
+    }
+
+    .works__list-block {
+      font-size: 28px;
     }
   }
 </style>

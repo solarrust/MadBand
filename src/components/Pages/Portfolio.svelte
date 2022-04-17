@@ -1,6 +1,6 @@
 <script>
   import { dict, t, locale } from "../services/i18n";
-  import { Link, Router } from "svelte-navigator";
+  import { Link, Router, useLocation } from "svelte-navigator";
   import { onMount, onDestroy, beforeUpdate } from "svelte";
 
   import data from "../../data/projects.json";
@@ -13,17 +13,25 @@
   let categories = data.categories;
 
   let filter;
-  let filteredProjects;
+  let filteredProjects = projects;
 
   let animation;
+
+  const urlParams = new URLSearchParams(window.location.search);
+
+  function searchParamHandler() {
+    if (urlParams.toString() !== "") {
+      filter = urlParams.get("category");
+
+      document.querySelector(`input[value='${filter}']`).checked = true;
+    }
+  }
 
   function projectFiltering() {
     return (filteredProjects = filter
       ? data.projects.filter((pr) => pr.category == filter)
       : projects);
   }
-
-  projectFiltering();
 
   let sortCategories = (function () {
     let filterCatList = [];
@@ -41,6 +49,10 @@
 
   function onChange(event) {
     filter = event.currentTarget.value;
+    if (filter) {
+      urlParams.set("category", filter);
+      window.location.search = urlParams;
+    }
     projectFiltering();
   }
 
@@ -53,6 +65,8 @@
 
     cursorDefault(customCursor);
     cursorMoveHandler(customCursor, links, targets);
+    searchParamHandler();
+    projectFiltering();
   });
 
   beforeUpdate(() => {});
@@ -335,6 +349,12 @@
 
     .works__text:after {
       margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .category-list__btn {
+      cursor: pointer;
     }
   }
 

@@ -53,7 +53,7 @@
 <script>
   import translations from "./lang/translations";
   import { dict, locale, t } from "./components/services/i18n";
-  import { Router, Link, Route } from "svelte-routing";
+  import { Router, Link, Route } from "svelte-navigator";
   import { afterUpdate, onMount } from "svelte";
   import Main from "./components/Pages/Main/Main.svelte";
   import Studio from "./components/Pages/Studio/Studio.svelte";
@@ -74,7 +74,7 @@
     <Main />
   </Route>
 
-  <Route path="cases">
+  <Route path="cases" primary={false}>
     <Portfolio />
   </Route>
 

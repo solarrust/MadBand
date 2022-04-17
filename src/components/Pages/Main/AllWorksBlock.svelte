@@ -1,6 +1,6 @@
 <script>
   import { onMount, beforeUpdate, afterUpdate } from "svelte";
-  import { Link, Router } from "svelte-routing";
+  import { Link, Router } from "svelte-navigator";
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
   import { locale, t } from "../../services/i18n";
@@ -51,18 +51,13 @@
       toggleActions: "restart pause resume pause",
     });
   });
-
-  afterUpdate(() => {
-    // strokeTextUpdate(text[$locale], ".ticker__item._big");
-    // strokeTextCreator();
-  });
 </script>
 
 <div class="works__all-link" data-stroke-parent>
   <Link to="cases">
     <div class="ticker">
       <div class="ticker__item _big">
-        <div class="ticker__box" data-stroke-text>All cases</div>
+        <div class="ticker__box" data-stroke-text>All Cases</div>
       </div>
       <div class="ticker__item _small _{$locale}" />
     </div>

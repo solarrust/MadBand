@@ -4,7 +4,7 @@
   import { onMount } from "svelte";
 
   import Logo from "./Logo.svelte";
-  import { Link, Router } from "svelte-routing";
+  import { Link, Router } from "svelte-navigator";
 
   import { t } from "../services/i18n";
   import MobileMenu from "./MobileMenu.svelte";

@@ -1,6 +1,6 @@
 <script>
   import { locale, t } from "../../services/i18n";
-  import { Link, Router } from "svelte-routing";
+  import { Link, Router } from "svelte-navigator";
   import { onMount } from "svelte";
 
   export let projects;
@@ -154,10 +154,10 @@
     bottom: 0;
   }
 
-  :global(.works__item._horizontal .work__name) {
-    left: auto;
-    right: -10px;
-  }
+  /*:global(.works__item._horizontal .work__name) {*/
+  /*  left: auto;*/
+  /*  right: -10px;*/
+  /*}*/
 
   @media (max-width: 1280px) {
     .works__list {

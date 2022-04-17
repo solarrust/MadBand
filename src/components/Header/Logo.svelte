@@ -1,6 +1,6 @@
 <script>
   import logoSVG from "../../../public/svg/logo-no-red.svg";
-  import { Link, Router } from "svelte-routing";
+  import { Link, Router } from "svelte-navigator";
 </script>
 
 <Link to="" class="logo-link">{@html logoSVG}</Link>

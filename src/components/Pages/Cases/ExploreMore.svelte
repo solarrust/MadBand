@@ -25,12 +25,14 @@
               {project.projectName.en}
             {/if}
           </Link>
-          <img
-            class="cases__explore-img"
-            src="/{project.cover}"
-            alt=""
-            loading="lazy"
-          />
+          <div class="cases__explore-img-block">
+            <img
+              class="cases__explore-img"
+              src="/{project.cover}"
+              alt=""
+              loading="lazy"
+            />
+          </div>
         </li>
       {/each}
     </ul>
@@ -71,6 +73,7 @@
 
   .cases__explore-item {
     display: inline-block;
+    z-index: 1;
   }
 
   :global(a.cases__explore-link) {
@@ -93,12 +96,12 @@
     content: ",";
   }
 
-  .cases__explore-item:hover .cases__explore-img {
+  .cases__explore-item:hover .cases__explore-img-block {
     opacity: 1;
     transition: opacity 0.3s;
   }
 
-  .cases__explore-img {
+  .cases__explore-img-block {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -107,15 +110,21 @@
     z-index: -1;
     opacity: 0;
     border-radius: 15em;
-    transition: opacity 0.2s;
     overflow: hidden;
+    transition: opacity 0.2s;
   }
 
-  .cases__explore-item:nth-child(odd) .cases__explore-img {
+  .cases__explore-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cases__explore-item:nth-child(odd) .cases__explore-img-block {
     transform: translate(-50%, -50%) rotate(-5deg);
   }
 
-  .cases__explore-item:nth-child(even) .cases__explore-img {
+  .cases__explore-item:nth-child(even) .cases__explore-img-block {
     transform: translate(-50%, -50%) rotate(5deg);
   }
 

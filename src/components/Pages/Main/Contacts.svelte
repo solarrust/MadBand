@@ -11,7 +11,6 @@
   let isSent = false;
 
   async function onSubmit() {
-    console.log(this.children);
     try {
       submitting = true;
       await fetch(FORMSPARK_ACTION_URL, {
@@ -62,7 +61,8 @@
     }
 
     function isValidNumber(number) {
-      return new parsePhoneNumber(number, "RU").isValid();
+      // return new parsePhoneNumber(number, "RU").isValid();
+      return true;
     }
 
     async function onChange() {
@@ -193,7 +193,6 @@
   <div class="contacts__pattern">
     <Lines />
   </div>
-  <!-- TODO: спросить у ребят на какие англоязычные компании они рассчитывают чтобы правильно форматировать и валидировать телефон -->
   <Lang extraClass="contacts__lang" />
 </section>
 
@@ -249,6 +248,7 @@
 
   .contacts__list a[download] {
     max-width: 130px;
+    margin-top: 0;
     text-decoration: underline;
   }
 

@@ -366,35 +366,18 @@
           "flag": ""
         },
         {
-          "src": "img/cases/Alcon_conf/10.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Alcon_conf/11.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Alcon_conf/12.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Alcon_conf/13.jpg",
-          "flag": ""
-        },
-        {
-          "src": "img/cases/Alcon_conf/14.jpg",
-          "flag": "big"
-        },
-        {
           "src": "img/cases/Alcon_conf/15.jpg",
-          "flag": "big"
-        },
-        {
-          "src": "img/cases/Alcon_conf/16.jpg",
           "flag": "big"
         }
       ],
-      "gallery": []
+      "gallery": [
+        "img/cases/Alcon_conf/11.jpg",
+        "img/cases/Alcon_conf/12.jpg",
+        "img/cases/Alcon_conf/13.jpg",
+        "img/cases/Alcon_conf/14.jpg",
+        "img/cases/Alcon_conf/10.jpg",
+        "img/cases/Alcon_conf/16.jpg"
+      ]
     },
     {
       "projectName": {
@@ -752,8 +735,8 @@
     },
     {
       "projectName": {
-        "en": "Gosha Kutsenko's charity auction",
-        "ru": "Благотворительный аукцион Гоши Куценко"
+        "en": "Gosha Kutsenko's auction",
+        "ru": "Аукцион Гоши Куценко"
       },
       "category": 1,
       "cover": "img/cases/Kutsenko/cover_prev.jpg",
@@ -833,8 +816,8 @@
     },
     {
       "projectName": {
-        "en": "Area Bud 66 at Faces&Laces Street Culture Festival",
-        "ru": "Зона Bud 66 на фестивале уличной культуры Faces&Laces"
+        "en": "Faces&Laces",
+        "ru": "Faces&Laces"
       },
       "category": 1,
       "cover": "img/cases/Faces&Laces/cover_prev.jpeg",
@@ -1144,8 +1127,8 @@
     },
     {
       "projectName": {
-        "en": "Novartis plant opening ceremony",
-        "ru": "Церемония открытия завода Novartis"
+        "en": "Novartis plant opening",
+        "ru": "Открытие завода Novartis"
       },
       "category": 1,
       "cover": "img/cases/NovartisNeva/cover_prev.jpg",
@@ -1183,8 +1166,8 @@
     },
     {
       "projectName": {
-        "en": "Photo exhibition «Earth. Harmony of similar»",
-        "ru": "Фотовыставка «Земля. Гармония подобных»"
+        "en": "Nadezhda Kharaz's Photo Exhibition",
+        "ru": "Фотовыставка Надежды Хараз"
       },
       "category": 1,
       "cover": "img/cases/Kharaz/cover_prev.jpg",
@@ -1363,7 +1346,7 @@
       "category": 4,
       "cover": "img/cases/Alcon/cover_prev.jpg",
       "isVideoCover": false,
-      "videoCover": "video/Alcon/Alcon.mp4",
+      "videoCover": "video/Alcon_content/Alcon.mp4",
       "data": {
         "client": {
           "en": "Alcon",

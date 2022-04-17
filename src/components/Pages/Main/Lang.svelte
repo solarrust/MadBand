@@ -157,7 +157,7 @@
   @media (max-width: 680px) {
     .lang {
       top: 36px;
-      bottom: auto;
+      bottom: auto !important;
       left: auto;
       right: 70px;
     }

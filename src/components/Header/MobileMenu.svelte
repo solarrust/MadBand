@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import { Link, Router } from "svelte-routing";
+  import { Link, Router } from "svelte-navigator";
   import { t } from "../services/i18n";
 
   onMount(() => {
