@@ -1,6 +1,7 @@
-/node_modules/
-/public/build/
-/public/video/
+node_modules/
+public/build/
+public/video/
+*.pdf
 
 .DS_Store
 .idea

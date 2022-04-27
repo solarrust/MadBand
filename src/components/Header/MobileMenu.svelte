@@ -7,15 +7,34 @@
     let burgerBtn = document.querySelector(".burger");
     let mobileMenu = document.querySelector(".mobile-menu");
     let contactsLink = document.querySelector("#contacts-link");
+    let menuLinks = document.querySelectorAll(".mobile-menu__item");
+    let logoLink = document.querySelector(".logo-link");
 
-    burgerBtn.addEventListener("click", (e) => {
+    function mobileMenuHelper() {
       burgerBtn.classList.toggle("_menu-opened");
       mobileMenu.classList.toggle("_opened");
+    }
+
+    burgerBtn.addEventListener("click", (e) => {
+      mobileMenuHelper();
     });
 
     contactsLink.addEventListener("click", (e) => {
-      burgerBtn.classList.toggle("_menu-opened");
-      mobileMenu.classList.toggle("_opened");
+      mobileMenuHelper();
+    });
+
+    logoLink.addEventListener("click", (e) => {
+      if (mobileMenu.classList.contains("_opened")) {
+        mobileMenuHelper();
+      }
+    });
+
+    menuLinks.forEach((link) => {
+      if (link.id !== "contacts-link") {
+        link.addEventListener("click", (e) => {
+          mobileMenuHelper();
+        });
+      }
     });
   });
 </script>
@@ -64,8 +83,8 @@
     transform: rotate(90deg);
   }
 
-  .burger__line:before,
-  .burger__line:after {
+  .burger__line::before,
+  .burger__line::after {
     content: "";
     position: absolute;
     left: 0;
@@ -77,11 +96,11 @@
     transition: all 0.2s;
   }
 
-  .burger__line:before {
+  .burger__line::before {
     top: 6px;
   }
 
-  :global(._menu-opened .burger__line:before) {
+  :global(._menu-opened .burger__line::before) {
     top: 0;
     transform: rotate(55deg);
   }
@@ -90,7 +109,7 @@
     top: 12px;
   }
 
-  :global(._menu-opened .burger__line:after) {
+  :global(._menu-opened .burger__line::after) {
     top: 0;
     transform: rotate(-55deg);
   }
@@ -111,7 +130,7 @@
     transition: right 0.5s;
   }
 
-  .mobile-menu:after {
+  .mobile-menu::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -134,7 +153,7 @@
     font-size: 36px;
   }
 
-  :global(.mobile-menu__item:after) {
+  :global(.mobile-menu__item::after) {
     content: "";
     display: block;
     height: 30px;

@@ -21,7 +21,7 @@
     flex-direction: column;
     align-items: flex-end;
     /*flex: auto 0 0;*/
-    min-width: 355px;
+    min-width: 200px;
     margin: 0 auto;
     /*margin-right: 40px;*/
     font-size: var(--s-text-size);
@@ -50,8 +50,19 @@
   }
 
   @media (max-width: 680px) {
+    .person {
+      width: 55vw;
+    }
+
     .person:not(:last-child) {
       margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .person {
+      width: 45vw;
+      max-width: 355px;
     }
   }
 </style>

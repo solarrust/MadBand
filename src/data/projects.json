@@ -34,8 +34,8 @@
   "projects": [
     {
       "projectName": {
-        "en": "Online ballet \"Nutcracker. Reboot\"",
-        "ru": "Онлайн балет \"Щелкунчик. Reboot\""
+        "en": "NUTCRACKER. REBOOT",
+        "ru": "ЩЕЛКУНЧИК. REBOOT"
       },
       "category": 1,
       "cover": "img/cases/Reboot/cover_prev.jpg",
@@ -116,8 +116,8 @@
     },
     {
       "projectName": {
-        "en": "Beer Presentation Bud 66",
-        "ru": "Презентация пива Bud 66"
+        "en": "LAUNCH BUD 66",
+        "ru": "LAUNCH BUD 66"
       },
       "category": 1,
       "cover": "img/cases/Bud66/cover_prev.jpg",
@@ -207,8 +207,8 @@
     },
     {
       "projectName": {
-        "en": "Midwinter night`s dream",
-        "ru": "Midwinter night`s dream"
+        "en": "MIDWINTER NIGHT`S DREAM",
+        "ru": "MIDWINTER NIGHT`S DREAM"
       },
       "category": 1,
       "cover": "img/cases/Midwinter/cover_prev.jpg",
@@ -304,8 +304,8 @@
     },
     {
       "projectName": {
-        "en": "Alcon Partners Conference",
-        "ru": "Конференция партнеров Alcon"
+        "en": "ALCON CONFERENCE",
+        "ru": "КОНФЕРЕНЦИЯ ALCON"
       },
       "category": 1,
       "cover": "img/cases/Alcon_conf/cover_prev.jpg",
@@ -563,8 +563,8 @@
     },
     {
       "projectName": {
-        "en": "Opening of Nikon Plaza",
-        "ru": "Открытие Nikon Plaza"
+        "en": "Nikon Plaza",
+        "ru": "Nikon Plaza"
       },
       "category": 1,
       "cover": "img/cases/Nikon/cover_prev.jpg",
@@ -639,8 +639,8 @@
     },
     {
       "projectName": {
-        "en": "Chess Tournament Finals",
-        "ru": "Финал шахматного турнира"
+        "en": "CHESS TOURNAMENT",
+        "ru": "ШАХМАТНЫЙ ТУРНИР"
       },
       "category": 1,
       "cover": "img/cases/Chess/cover_prev.jpg",
@@ -816,8 +816,8 @@
     },
     {
       "projectName": {
-        "en": "Faces&Laces",
-        "ru": "Faces&Laces"
+        "en": "BUD 66 AT FACES&LACES",
+        "ru": "BUD 66 НА FACES&LACES"
       },
       "category": 1,
       "cover": "img/cases/Faces&Laces/cover_prev.jpeg",
@@ -957,8 +957,8 @@
     },
     {
       "projectName": {
-        "en": "Online New Year’s Day «Flashback»",
-        "ru": "Онлайн Новый год «Flashback»"
+        "en": "FLASHBACK",
+        "ru": "FLASHBACK"
       },
       "category": 1,
       "cover": "img/cases/Flashback/cover_prev.jpg",
@@ -1036,8 +1036,8 @@
 
     {
       "projectName": {
-        "en": "Online game «Santa Claus Post»",
-        "ru": "Онлайн игра «Почта Деда Мороза»"
+        "en": "Online game",
+        "ru": "Онлайн игра"
       },
       "category": 1,
       "cover": "img/cases/Santa/cover_prev.png",
@@ -1166,8 +1166,8 @@
     },
     {
       "projectName": {
-        "en": "Nadezhda Kharaz's Photo Exhibition",
-        "ru": "Фотовыставка Надежды Хараз"
+        "en": "Photo Exhibition",
+        "ru": "Фотовыставка"
       },
       "category": 1,
       "cover": "img/cases/Kharaz/cover_prev.jpg",
@@ -1253,8 +1253,8 @@
     },
     {
       "projectName": {
-        "en": "Sandoz corporate video",
-        "ru": "Корпоративный ролик Sandoz"
+        "en": "Sandoz video",
+        "ru": "ролик Sandoz"
       },
       "category": 4,
       "cover": "img/cases/Sandoz/cover_prev.png",
@@ -1311,8 +1311,8 @@
     },
     {
       "projectName": {
-        "en": "A film about Novartis production",
-        "ru": "Фильм о производстве Novartis"
+        "en": "A film about Novartis",
+        "ru": "Фильм о Novartis"
       },
       "category": 4,
       "cover": "img/cases/Novartis/cover_prev.jpg",
@@ -1340,8 +1340,8 @@
     },
     {
       "projectName": {
-        "en": "Video Content for Alcon Conferences",
-        "ru": "Видеоконтент для конференций Alcon"
+        "en": "Video Content for Conferences",
+        "ru": "Видеоконтент для конференций"
       },
       "category": 4,
       "cover": "img/cases/Alcon/cover_prev.jpg",

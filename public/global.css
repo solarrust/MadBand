@@ -98,7 +98,7 @@ body {
 
 body {
   min-width: 320px;
-
+  /*overflow-x: hidden;*/
   color: #333;
   margin: 0;
   box-sizing: border-box;

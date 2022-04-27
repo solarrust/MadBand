@@ -41,7 +41,7 @@
   },
   "studioPage": {
     "subtitle": "Мы верим, что каждый ивент случается лишь раз, и мы должны сделать этот опыт уникальным.",
-    "title": "Mad Band — это <span class='marker pink-marker'>студия</span>, <span class='marker red-marker'>объединяющая</span> <span class='marker underline'>креатив</span>, удовольствие, <span class='marker yellow-marker'>провокацию</span>, <span class='marker green-marker'>новаторство</span> и <span class='marker wave-underline'>качество</span>",
+    "title": "Mad Band — это <span class='marker pink-marker'>студия,</span> <span class='marker red-marker'>объединяющая</span> <span class='marker underline'>креатив</span>, удовольствие, <span class='marker yellow-marker'>провокацию,</span> <span class='marker green-marker'>новаторство</span> и <span class='marker wave-underline'>качество</span>",
     "stuff": [
       {
         "img": "img/stuff/1.png",
@@ -67,7 +67,7 @@
     "text": "",
     "mission": {
       "label": "Миссия",
-      "text": "Наша миссия — помогать вам создавать <span class='marker pink-marker'>смыслы</span>, которые будут вдохновлять <span class='marker underline'>людей,</span> и испытывать <span class='marker green-marker'>удовольствие</span> от совместной работы над творческими проектами с <span class='marker red-marker'>амбициозной</span> и <span class='marker yellow-marker'>яркой</span> идеей."
+      "text": "Наша миссия — помогать вам создавать <span class='marker pink-marker'>смыслы,</span> которые будут вдохновлять <span class='marker underline'>людей,</span> и испытывать <span class='marker green-marker'>удовольствие</span> от совместной работы над творческими проектами с <span class='marker red-marker'>амбициозной</span> и <span class='marker yellow-marker'>яркой</span> идеей."
     },
     "philosophy": {
       "label": "Философия",

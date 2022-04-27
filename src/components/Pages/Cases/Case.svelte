@@ -1,9 +1,10 @@
 <script>
   import { Swiper, SwiperSlide } from "swiper/svelte";
-  import { Navigation, A11y } from "swiper";
+  import { Navigation, A11y, FreeMode } from "swiper";
   import "swiper/css";
   import "swiper/css/navigation";
   import "swiper/css/a11y";
+  import "swiper/css/free-mode";
 
   import { locale } from "../../services/i18n";
   import { onMount } from "svelte";
@@ -202,14 +203,14 @@
   {#if project.gallery.length}
     <div class="case__gallery">
       <Swiper
-        modules={[Navigation, A11y]}
+        modules={[Navigation, A11y, FreeMode]}
         navigation
         centeredSlides
-        loop
-        loopedSlides={2}
-        spaceBetween={20}
+        centeredSlidesBounds={true}
         slidesPerView="auto"
+        loop
         freeMode
+        spaceBetween={20}
         breakpoints={{
           "680": {
             spaceBetween: 30,
@@ -221,7 +222,7 @@
       >
         {#each project.gallery as photo}
           <SwiperSlide>
-            <img src="/{photo}" class="gallery__photo" loading="lazy" />
+            <img src="/{photo}" class="gallery__photo" />
           </SwiperSlide>
         {/each}
       </Swiper>
@@ -416,8 +417,10 @@
     height: 100%;
   }
 
-  .case__gallery :global(.swiper-slide) {
-    flex-shrink: 1;
+  :global(.case__gallery .swiper-slide) {
+    /*flex-shrink: 1;*/
+    width: auto;
+    max-width: 100vw;
   }
 
   .case__gallery-container {
@@ -427,8 +430,10 @@
   .gallery__photo {
     /*flex-basis: 25%;*/
     width: auto;
+    max-width: 100%;
     /*height: 350px;*/
     height: 100%;
+    object-fit: cover;
     /*height: 350px;*/
     cursor: none;
   }

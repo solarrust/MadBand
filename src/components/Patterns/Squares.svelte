@@ -113,5 +113,8 @@
     /*.line:nth-child(n + 6) {*/
     /*  display: none;*/
     /*}*/
+    .line:not(:last-child) {
+      margin-right: 0;
+    }
   }
 </style>

@@ -34,12 +34,7 @@
 </script>
 
 <div class="stuff studio__stuff">
-  <Swiper
-    spaceBetween={40}
-    slidesPerView="auto"
-    on:slideChange={() => console.log("slide change")}
-    on:swiper={(e) => console.log(e.detail[0])}
-  >
+  <Swiper spaceBetween={40} slidesPerView="auto">
     {#each localeStuff[$locale] as person, i}
       <SwiperSlide>
         <Person
@@ -59,7 +54,7 @@
     margin-bottom: 105px;
   }
 
-  .studio__stuff :global(.swiper-slide) {
+  :global(.studio__stuff .swiper-slide) {
     flex-shrink: 1;
   }
 </style>

@@ -139,7 +139,9 @@
           <a href="tel:+7(903)-590-92-64">+7(903)-590-92-64</a>
         </div>
         <div class="contacts__item">
-          <a href="" download="">{$t("mainPage.presentation")}</a>
+          <a href="madBand_presentation.pdf" download="madBand_presentation.pdf"
+            >{$t("mainPage.presentation")}</a
+          >
         </div>
       </div>
     </div>
@@ -472,6 +474,7 @@
     }
 
     .contacts__block._right > .contacts__big-text {
+      width: 340px;
       margin-right: 0;
       margin-bottom: 20px;
       text-align: center;
