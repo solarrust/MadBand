@@ -49,7 +49,6 @@ export default {
         hydratable: true,
         dev: !production,
       },
-      preprocess: {},
     }),
     // we'll extract any component CSS out into
     // a separate file - better for performance

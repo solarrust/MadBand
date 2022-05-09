@@ -5,6 +5,7 @@
   import "swiper/css/navigation";
   import "swiper/css/a11y";
   import "swiper/css/free-mode";
+  import lozad from "lozad";
 
   import { locale } from "../../services/i18n";
   import { onMount } from "svelte";
@@ -14,63 +15,63 @@
   export let category;
   export let bkg;
 
-  function photosRowCreator(arr) {
-    let count = Math.round(arr.length / 2);
+  // function photosRowCreator(arr) {
+  //   let count = Math.round(arr.length / 2);
+  //
+  //   for (let i = 0; i < count; i++) {
+  //     let rowBlock = document.createElement("div");
+  //     rowBlock.classList.add("photos__row");
+  //     document.querySelector(".photos").append(rowBlock);
+  //   }
+  // }
 
-    for (let i = 0; i < count; i++) {
-      let rowBlock = document.createElement("div");
-      rowBlock.classList.add("photos__row");
-      document.querySelector(".photos").append(rowBlock);
-    }
-  }
-
-  function photosInsert(arr, parentClass) {
-    let parents = document.querySelectorAll(`.${parentClass}`);
-    let photosArr1 = [];
-    let photosArr2 = [];
-
-    for (let i = 0; i < arr.length; i++) {
-      if (i % 2) {
-        photosArr1.push(arr[i]);
-      } else {
-        photosArr2.push(arr[i]);
-      }
-    }
-
-    for (let i = 0; i < parents.length; i++) {
-      let img;
-      let currentArr;
-      let count = 0;
-
-      while (count < 2) {
-        if (parents[i].innerHTML === "") {
-          currentArr = photosArr2;
-        } else {
-          currentArr = photosArr1;
-        }
-        if (currentArr[i] && currentArr[i].src !== "") {
-          img = document.createElement("img");
-          img.loading = "lazy";
-          img.src = `/${currentArr[i].src}`;
-
-          if (currentArr[i].flag !== "") {
-            currentArr[i].flag
-              .split(" ")
-              .forEach((cl) => img.classList.add(cl));
-          }
-        } else {
-          img = document.createElement("div");
-          img.classList.add("empty");
-        }
-
-        img.classList.add("photos__photo");
-
-        parents[i].append(img);
-
-        count++;
-      }
-    }
-  }
+  // function photosInsert(arr, parentClass) {
+  //   let parents = document.querySelectorAll(`.${parentClass}`);
+  //   let photosArr1 = [];
+  //   let photosArr2 = [];
+  //
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (i % 2) {
+  //       photosArr1.push(arr[i]);
+  //     } else {
+  //       photosArr2.push(arr[i]);
+  //     }
+  //   }
+  //
+  //   for (let i = 0; i < parents.length; i++) {
+  //     let img;
+  //     let currentArr;
+  //     let count = 0;
+  //
+  //     while (count < 2) {
+  //       if (parents[i].innerHTML === "") {
+  //         currentArr = photosArr2;
+  //       } else {
+  //         currentArr = photosArr1;
+  //       }
+  //       if (currentArr[i] && currentArr[i].src !== "") {
+  //         img = document.createElement("img");
+  //         // img.loading = "lazy";
+  //         img.src = `/${currentArr[i].src}`;
+  //
+  //         if (currentArr[i].flag !== "") {
+  //           currentArr[i].flag
+  //             .split(" ")
+  //             .forEach((cl) => img.classList.add(cl));
+  //         }
+  //       } else {
+  //         img = document.createElement("div");
+  //         img.classList.add("empty");
+  //       }
+  //
+  //       img.classList.add("photos__photo");
+  //
+  //       parents[i].append(img);
+  //
+  //       count++;
+  //     }
+  //   }
+  // }
 
   function classCreator(img) {
     img.onload = () => {
@@ -79,10 +80,8 @@
 
       if (w > h && !img.classList.contains("big")) {
         img.classList.add("_horizontal");
-
-        if (!img.classList.contains("_horizontal")) {
-          img.classList.add("_stretch");
-        }
+      } else if (w > h && !img.classList.contains("_horizontal")) {
+        img.classList.add("_stretch");
       }
     };
   }
@@ -104,15 +103,16 @@
   onMount(() => {
     window.scrollTo(0, 0);
 
-    photosRowCreator(project.photos);
-    photosInsert(project.photos, "photos__row");
+    // photosRowCreator(project.photos);
+    // photosInsert(project.photos, "photos__row");
+    const observer = lozad();
+    observer.observe();
 
-    let rows = document.querySelectorAll(".photos__row");
+    // let rows = document.querySelectorAll(".photos__row");
+    let images = document.querySelectorAll(".photos__photo");
 
-    rows.forEach((r) => {
-      r.childNodes.forEach((c) => {
-        classCreator(c);
-      });
+    images.forEach((img) => {
+      classCreator(img);
     });
 
     if (document.querySelector("video")) {
@@ -148,13 +148,13 @@
       {#if project.videoCover && project.videoCover !== ""}
         <div class="case__video-wrapper">
           <video
-            class="case__video-cover"
+            class="case__video-cover lozad"
             preload="auto"
-            poster="/{project.pageCover}"
+            data-poster="/{project.pageCover}"
             data-hover-trigger
             on:click={handleClick}
           >
-            <source src="/{project.videoCover}" />
+            <source data-src="/{project.videoCover}" />
           </video>
         </div>
       {:else}
@@ -196,7 +196,18 @@
     </div>
 
     {#if project.photos}
-      <div class="case__photos photos" />
+      <div class="case__photos photos">
+        {#each project.photos as photo}
+          {#if photo.src !== ""}
+            <img
+              data-src="/{photo.src}"
+              class="photos__photo lozad {photo.flag}"
+            />
+          {:else}
+            <div class="empty" />
+          {/if}
+        {/each}
+      </div>
     {/if}
   </section>
 
@@ -383,18 +394,23 @@
 
   .photos {
     margin-top: 150px;
-  }
-
-  :global(.photos__row) {
     display: grid;
     grid-template-columns: repeat(3, 31.5%);
     grid-column-gap: 35px;
+    grid-row-gap: 100px;
     align-items: center;
   }
 
-  :global(.photos__row:not(:last-child)) {
-    margin-bottom: 100px;
-  }
+  /*:global(.photos__row) {*/
+  /*  display: grid;*/
+  /*  grid-template-columns: repeat(3, 31.5%);*/
+  /*  grid-column-gap: 35px;*/
+  /*  align-items: center;*/
+  /*}*/
+
+  /*:global(.photos__row:not(:last-child)) {*/
+  /*  margin-bottom: 100px;*/
+  /*}*/
 
   :global(.photos__photo) {
     width: 100%;
@@ -509,11 +525,12 @@
 
     .photos {
       margin-top: 80px;
-    }
-
-    :global(.photos__row) {
       grid-column-gap: 20px;
     }
+
+    /*:global(.photos__row) {*/
+    /*  grid-column-gap: 20px;*/
+    /*}*/
 
     .case__gallery {
       height: 450px;
@@ -559,21 +576,22 @@
       border-bottom: none;
     }
 
-    :global(.photos__row) {
+    .photos {
       grid-template-columns: 100%;
+      grid-row-gap: 40px;
     }
 
     :global(.photos__photo.big) {
       grid-column: 1;
     }
 
-    :global(.photos__photo:not(:last-child)) {
-      margin-bottom: 40px;
-    }
+    /*:global(.photos__photo:not(:last-child)) {*/
+    /*  margin-bottom: 40px;*/
+    /*}*/
 
-    :global(.photos__row:not(:last-child)) {
-      margin-bottom: 40px;
-    }
+    /*:global(.photos__row:not(:last-child)) {*/
+    /*  margin-bottom: 40px;*/
+    /*}*/
     .case__gallery {
       height: 320px;
       margin: 100px 0;

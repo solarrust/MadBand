@@ -2,6 +2,7 @@
   import { locale, t } from "../../services/i18n";
   import { Link, Router } from "svelte-navigator";
   import { onMount } from "svelte";
+  import lozad from "lozad";
 
   export let projects;
   let current = "_horizontal";
@@ -24,6 +25,8 @@
 
   onMount(() => {
     window.addEventListener("load", transform);
+    const observer = lozad();
+    observer.observe();
   });
 </script>
 
@@ -43,7 +46,11 @@
             {/if}
           </div>
           <div class="work__img">
-            <img src={project.cover} alt={project.projectName[$locale]} />
+            <img
+              data-src={project.cover}
+              alt={project.projectName[$locale]}
+              class="lozad"
+            />
           </div>
         </div>
       </Link>
@@ -149,10 +156,10 @@
     writing-mode: tb;
   }
 
-  :global(.works__item:nth-of-type(even) .work__name) {
-    top: auto;
-    bottom: 0;
-  }
+  /*:global(.works__item:nth-of-type(even) .work__name) {*/
+  /*  top: auto;*/
+  /*  bottom: 0;*/
+  /*}*/
 
   /*:global(.works__item._horizontal .work__name) {*/
   /*  left: auto;*/
